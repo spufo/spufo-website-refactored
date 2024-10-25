@@ -14,7 +14,7 @@ const About = () => {
         <div className="md:w-1/2 md:pl-12">
           <h2 className="text-5xl font-bold text-white mb-6">About SPUFO</h2>
           <p className="text-white text-lg mb-6">
-            The <span className="text-[#FF6600]">SPUFO</span> app is a forensic iOS solution that simplifies and streamlines the collection of dactyloscopic traces at crime scenes.
+            The <span className="text-[#FF6600] hover:font-bold hover:scale-[1.1] transition-all duration-300 inline-block">SPUFO</span> app is a forensic iOS solution that simplifies and streamlines the collection of dactyloscopic traces at crime scenes.
           </p>
           <ul className="text-white text-lg space-y-4">
             <li className="flex items-start">
