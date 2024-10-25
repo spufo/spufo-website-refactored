@@ -12,16 +12,16 @@ const Contact = () => {
 
         <div className="flex justify-center gap-8 mb-16">
           <div className="flex items-center text-white">
-            <Mail className="w-5 h-5 mr-2 text-[#FF6600]" />
+            <Mail className="w-5 h-5 mr-2 text-[--orange-color]" />
             <a 
               href="mailto:contact@spufo.ch" 
-              className="text-lg hover:text-[#FF6600] hover:scale-[1.05] transition-all duration-300"
+              className="text-lg hover:text-[--orange-color] hover:scale-[1.05] transition-all duration-300"
             >
               contact@spufo.ch
             </a>
           </div>
           <div className="flex items-center text-white">
-            <MapPin className="w-5 h-5 mr-2 text-[#FF6600]" />
+            <MapPin className="w-5 h-5 mr-2 text-[--orange-color]" />
             <span className="text-lg">Zurich, Switzerland</span>
           </div>
         </div>
@@ -35,7 +35,7 @@ const Contact = () => {
                   type="text" 
                   id="name" 
                   name="name" 
-                  className="w-full px-4 py-3 rounded-xl bg-[#1E1E2E]/50 text-white border border-gray-700 focus:border-[#FF6600] focus:ring-1 focus:ring-[#FF6600] transition-colors" 
+                  className="w-full px-4 py-3 rounded-xl bg-[#1E1E2E]/50 text-white border border-gray-700 focus:border-[--orange-color] focus:ring-1 focus:ring-[--orange-color] transition-colors" 
                   required 
                 />
               </div>
@@ -45,7 +45,7 @@ const Contact = () => {
                   type="email" 
                   id="email" 
                   name="email" 
-                  className="w-full px-4 py-3 rounded-xl bg-[#1E1E2E]/50 text-white border border-gray-700 focus:border-[#FF6600] focus:ring-1 focus:ring-[#FF6600] transition-colors" 
+                  className="w-full px-4 py-3 rounded-xl bg-[#1E1E2E]/50 text-white border border-gray-700 focus:border-[--orange-color] focus:ring-1 focus:ring-[--orange-color] transition-colors" 
                   required 
                 />
               </div>
@@ -58,7 +58,7 @@ const Contact = () => {
                   type="text" 
                   id="company" 
                   name="company" 
-                  className="w-full px-4 py-3 rounded-xl bg-[#1E1E2E]/50 text-white border border-gray-700 focus:border-[#FF6600] focus:ring-1 focus:ring-[#FF6600] transition-colors" 
+                  className="w-full px-4 py-3 rounded-xl bg-[#1E1E2E]/50 text-white border border-gray-700 focus:border-[--orange-color] focus:ring-1 focus:ring-[--orange-color] transition-colors" 
                   required 
                 />
               </div>
@@ -68,7 +68,7 @@ const Contact = () => {
                   type="tel" 
                   id="phone" 
                   name="phone" 
-                  className="w-full px-4 py-3 rounded-xl bg-[#1E1E2E]/50 text-white border border-gray-700 focus:border-[#FF6600] focus:ring-1 focus:ring-[#FF6600] transition-colors" 
+                  className="w-full px-4 py-3 rounded-xl bg-[#1E1E2E]/50 text-white border border-gray-700 focus:border-[--orange-color] focus:ring-1 focus:ring-[--orange-color] transition-colors" 
                 />
               </div>
             </div>
@@ -79,7 +79,7 @@ const Contact = () => {
                 type="text" 
                 id="subject" 
                 name="subject" 
-                className="w-full px-4 py-3 rounded-xl bg-[#1E1E2E]/50 text-white border border-gray-700 focus:border-[#FF6600] focus:ring-1 focus:ring-[#FF6600] transition-colors" 
+                className="w-full px-4 py-3 rounded-xl bg-[#1E1E2E]/50 text-white border border-gray-700 focus:border-[--orange-color] focus:ring-1 focus:ring-[--orange-color] transition-colors" 
                 required 
               />
             </div>
@@ -90,14 +90,14 @@ const Contact = () => {
                 id="message" 
                 name="message" 
                 rows={6} 
-                className="w-full px-6 py-4 rounded-xl bg-[#1E1E2E]/50 text-white border border-gray-700 focus:border-[#FF6600] focus:ring-1 focus:ring-[#FF6600] transition-colors resize-none" 
+                className="w-full px-6 py-4 rounded-xl bg-[#1E1E2E]/50 text-white border border-gray-700 focus:border-[--orange-color] focus:ring-1 focus:ring-[--orange-color] transition-colors resize-none" 
                 required
               ></textarea>
             </div>
 
             <button 
               type="submit" 
-              className="w-full bg-[#FF6600] text-white px-8 py-3 rounded-xl text-lg font-semibold hover:bg-[#FF8533] transition-colors duration-300"
+              className="w-full bg-[--orange-color] text-white px-8 py-3 rounded-xl text-lg font-semibold hover:bg-[--orange-selected-color] transition-colors duration-300"
             >
               Send Message
               <Send className="w-5 h-5 ml-2 inline-block" />

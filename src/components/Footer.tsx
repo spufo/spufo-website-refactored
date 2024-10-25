@@ -35,7 +35,7 @@ const Footer = () => {
         <div className="flex flex-col">
           <span className="text-lg font-semibold mb-2">Contact</span>
           <address className=" text-gray-400">
-            <a href="mailto:contact@spufo.ch" className="text-gray-400 hover:text-[#FF6600] transition-all duration-300">
+            <a href="mailto:contact@spufo.ch" className="text-gray-400 hover:text-[--orange-color] transition-all duration-300">
               contact@spufo.ch
             </a>
           </address>
@@ -46,7 +46,7 @@ const Footer = () => {
           <span className="text-lg font-semibold mb-2">Socials</span>
           <a 
             href="https://www.linkedin.com/company/twojo/" 
-            className="flex text-gray-400 hover:text-[#FF6600] transition-all duration-300"
+            className="flex text-gray-400 hover:text-[--orange-color] transition-all duration-300"
           >
             <FaLinkedin className="mr-2" /> {/* LinkedIn icon */}
             LinkedIn
@@ -59,9 +59,9 @@ const Footer = () => {
         &copy; {new Date().getFullYear()} Twojo Software GmbH. All rights reserved.
         </div>
         <div className="flex justify-start text-gray-400 text-xs mt-2 bottom-0 left-0 ml-4">
-            <ScrollLink to="/datenschutz" className="hover:text-[#FF6600] mx-2 transition-all duration-300">Privacy Statement</ScrollLink>
+            <ScrollLink to="/datenschutz" className="hover:text-[--orange-color] mx-2 transition-all duration-300">Privacy Statement</ScrollLink>
             <span className="mx-2">|</span>
-            <ScrollLink to="/impressum" className="hover:text-[#FF6600] mx-2 transition-all duration-300">Publisher</ScrollLink>
+            <ScrollLink to="/impressum" className="hover:text-[--orange-color] mx-2 transition-all duration-300">Publisher</ScrollLink>
         </div>
     </footer>
   );

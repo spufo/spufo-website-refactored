@@ -26,7 +26,7 @@ const Hero = () => {
               <img src="/src/assets/images/Curved_FinalSpufoLogo.svg" alt="SPUFO Logo" className="w-20 mr-4" />
               <h1 className="text-6xl md:text-8xl font-bold text-[#1E1E2E]">SPUFO</h1>
             </div>
-            <h2 className="text-3xl md:text-3xl text-[#FF6600] mb-5 text-center md:text-left">The Crime Scene Photography App</h2>
+            <h2 className="text-3xl md:text-3xl text-[--orange-color] mb-5 text-center md:text-left">The Crime Scene Photography App</h2>
             <p className="text-2xl md:text-5xl font-bold mb-8 text-[#1E1E2E] text-center md:text-left">
               <span className="hover:scale-[1.1] transition-all duration-300 inline-block mx-2">Digital</span>
                - 
@@ -36,10 +36,10 @@ const Hero = () => {
             </p>
                 
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6 w-full sm:w-auto">
-              <ScrollLink to="/try-now" className="bg-[#FF6600] border-2 border-[#FF6600] text-white px-8 py-3 rounded-xl text-xl font-semibold hover:border-[#FF8533] hover:bg-[#FF8533] transition duration-300 transform hover:scale-105 w-full sm:w-auto text-center">
+              <ScrollLink to="/try-now" className="bg-[--orange-color] border-2 border-[--orange-color] text-white px-8 py-3 rounded-xl text-xl font-semibold hover:border-[--orange-selected-color] hover:bg-[--orange-selected-color] transition duration-300 transform hover:scale-105 w-full sm:w-auto text-center">
                 Try Now
               </ScrollLink>
-              <ScrollLink to="/brochure" className="bg-transparent border-2 border-[#FF6600] text-[#FF6600] px-8 py-3 rounded-xl text-xl font-semibold hover:bg-[#FF6600] hover:text-white transition duration-300 transform hover:scale-105 w-full sm:w-auto text-center">
+              <ScrollLink to="/brochure" className="bg-transparent border-2 border-[--orange-color] text-[--orange-color] px-8 py-3 rounded-xl text-xl font-semibold hover:bg-[--orange-color] hover:text-white transition duration-300 transform hover:scale-105 w-full sm:w-auto text-center">
                 PDF Brochure
               </ScrollLink>
             </div>
@@ -65,7 +65,7 @@ const Hero = () => {
       {/* Scroll down button */}
       <button 
         onClick={scrollToAbout}
-        className="absolute bottom-0 md:bottom-10 left-1/2 transform -translate-x-1/2 text-[#FF6600] hover:text-[#FF8533] transition-colors duration-300"
+        className="absolute bottom-0 md:bottom-10 left-1/2 transform -translate-x-1/2 text-[--orange-color] hover:text-[--orange-selected-color] transition-colors duration-300"
       >
         <ChevronDown className="w-12 h-12 animate-bounce" />
       </button>

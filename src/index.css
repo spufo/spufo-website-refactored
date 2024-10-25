@@ -4,10 +4,15 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --orange-color: #FF6600;
+  --orange-selected-color: #FF8533;
+}
+
 body {
   font-family: 'Inter', sans-serif;
 }
 
 ::selection {
-  background: #FF8533;
+  background: var(--orange-selected-color);
 }
