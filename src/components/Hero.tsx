@@ -10,14 +10,14 @@ const Hero = () => {
   };
 
   return (
-    <div className="relative bg-white min-h-screen flex items-center">
-      <div className="flex flex-col md:flex-row items-stretch justify-between max-w-7xl mx-auto w-full px-6">
-        <div className="md:w-1/2 py-12 flex flex-col items-start justify-center relative">
+    <div className="relative bg-white min-h-screen flex items-center overflow-hidden">
+      <div className="flex flex-col md:flex-row items-stretch justify-between max-w-7xl mx-auto w-full px-6 over">
           {/* Fingerprint background */}
           <div 
-            className="absolute invert rotate-[30deg] scale-[1.5] inset-0 bg-contain bg-no-repeat bg-center -translate-y-40 opacity-100"
+            className="absolute invert sm:-translate-y-40 -translate-x-80 sm:-translate-x-0 rotate-[46deg] sm:rotate-[34deg] scale-[1.5] sm:scale-[0.8] inset-0 bg-contain bg-no-repeat bg-center opacity-100"
           >
           <img src="/src/assets/images/Background.png"/></div>
+        <div className="md:w-1/2 py-12 flex flex-col items-start justify-center relative">
           {/* Content */}
           <div className="relative z-10">
             <div className="flex items-center mb-6">
@@ -25,7 +25,14 @@ const Hero = () => {
               <h1 className="text-8xl font-bold text-[#1E1E2E]">SPUFO</h1>
             </div>
             <h2 className="text-[#FF6600] text-3xl mb-5">The Crime Scene Photography App</h2>
-            <p className="text-5xl font-semibold mb-8 text-[#1E1E2E]">Digital - Fast - Efficient</p>
+            <p className="text-5xl font-semibold mb-8 text-[#1E1E2E]">
+              <span className="hover:scale-[1.1] transition-all duration-300 inline-block mx-2">Digital</span>
+               - 
+              <span className="hover:scale-[1.1] transition-all duration-300 inline-block mx-2">Fast</span>
+                - 
+              <span className="hover:scale-[1.1] transition-all duration-300 inline-block mx-2">Efficient</span>
+            </p>
+                
             <div className="flex space-x-6">
               <a href="/try-now" className="bg-[#FF6600] text-white px-8 py-3 rounded-xl text-xl font-semibold hover:bg-[#FF8533] transition duration-300 transform hover:scale-105">
                 Try Now
@@ -58,7 +65,7 @@ const Hero = () => {
         onClick={scrollToAbout}
         className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-[#FF6600] hover:text-[#FF8533] transition-colors duration-300"
       >
-        <ChevronDown className="w-12 h-12 animate-bounce" />
+        <ChevronDown className="w-12 h-12 animate-bounce hidden sm:block" />
       </button>
     </div>
   );

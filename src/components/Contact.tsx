@@ -15,7 +15,7 @@ const Contact = () => {
             <Mail className="w-5 h-5 mr-2 text-[#FF6600]" />
             <a 
               href="mailto:contact@spufo.ch" 
-              className="text-lg hover:text-[#FF6600] transition-colors duration-300"
+              className="text-lg hover:text-[#FF6600] hover:scale-[1.05] transition-all duration-300"
             >
               contact@spufo.ch
             </a>
