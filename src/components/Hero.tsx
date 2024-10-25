@@ -65,7 +65,7 @@ const Hero = () => {
         onClick={scrollToAbout}
         className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-[#FF6600] hover:text-[#FF8533] transition-colors duration-300"
       >
-        <ChevronDown className="w-12 h-12 animate-bounce" />
+        <ChevronDown className="w-12 h-12 animate-bounce hidden sm:block" />
       </button>
     </div>
   );

@@ -75,7 +75,7 @@ const SmartphoneAdvantages = () => {
               />
             ))}
           </div>
-          <div className="md:w-1/2 md:pl-12 flex justify-center">
+          <div className="md:w-1/2 md:pl-12 flex justify-center hidden sm:block">
             <img 
               src="/src/assets/images/MoreMockup.png"  
               alt="Smartphone Mockup" 
