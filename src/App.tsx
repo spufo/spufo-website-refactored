@@ -31,6 +31,10 @@ function App() {
           <Route path="/impressum" element={<Impressum />} />
           <Route path="/privacy/" element={<Privacy />} />
           <Route path="/datenschutz/" element={<Privacy />} />
+          <Route path="/contact/" element={
+            <div className="pt-12">
+              <Contact />
+            </div>} />
         </Routes>
         </main>
         <Footer />

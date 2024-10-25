@@ -36,7 +36,7 @@ const Hero = () => {
             </p>
                 
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6 w-full sm:w-auto">
-              <ScrollLink to="/try-now" className="bg-[--orange-color] border-2 border-[--orange-color] text-white px-8 py-3 rounded-xl text-xl font-semibold hover:border-[--orange-selected-color] hover:bg-[--orange-selected-color] transition duration-300 transform hover:scale-105 w-full sm:w-auto text-center">
+              <ScrollLink to="/contact" className="bg-[--orange-color] border-2 border-[--orange-color] text-white px-8 py-3 rounded-xl text-xl font-semibold hover:border-[--orange-selected-color] hover:bg-[--orange-selected-color] transition duration-300 transform hover:scale-105 w-full sm:w-auto text-center">
                 Try Now
               </ScrollLink>
               <ScrollLink to="/brochure" className="bg-transparent border-2 border-[--orange-color] text-[--orange-color] px-8 py-3 rounded-xl text-xl font-semibold hover:bg-[--orange-color] hover:text-white transition duration-300 transform hover:scale-105 w-full sm:w-auto text-center">
