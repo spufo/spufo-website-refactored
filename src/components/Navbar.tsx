@@ -37,7 +37,7 @@ const Navbar = () => {
         </ScrollLink>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex items-center justify-center space-x-16 flex-1">
+        <div className="hidden md:flex px-20 space-x-16 flex-1">
           <div className="flex space-x-16">
             <ScrollLink to="/spufo" className="text-[--orange-color] hover:text-[--orange-selected-color] text-2xl font-medium tracking-wide transition-colors duration-200">
               SPUFO
@@ -76,12 +76,12 @@ const Navbar = () => {
         </div>
 
         {/* Contact Button */}
-        <a 
-          href="/contact" 
+        <ScrollLink 
+          to="/contact" 
           className="hidden md:block bg-[--orange-color] text-white px-8 py-3 rounded-xl text-xl font-semibold hover:bg-[--orange-selected-color] transition-all duration-300 mr-6 hover:shadow-lg"
         >
           Contact
-        </a>
+        </ScrollLink>
       </div>
 
       {/* Mobile Menu */}
@@ -101,12 +101,12 @@ const Navbar = () => {
             About Us
           </ScrollLink>
           <div className="px-6 pt-3">
-            <a 
-              href="/contact" 
+            <ScrollLink 
+              to="/contact" 
               className="inline-block bg-[--orange-color] text-white px-3 py-2 rounded-xl font-semibold hover:bg-[--orange-selected-color] transition-all duration-300 hover:shadow-lg mt-0"
             >
               Contact
-            </a>
+            </ScrollLink>
           </div>
         </div>
       </div>
