@@ -1,5 +1,6 @@
 import React from 'react';
-import { FaLinkedin } from 'react-icons/fa'; // Importing LinkedIn icon from react-icons
+import { FaLinkedin } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -8,13 +9,13 @@ const Footer = () => {
         
         {/* Column 1: Logo and Company Name */}
         <div className="flex flex-col">
-          <a href="/" className="flex mb-4">
+          <Link to="/" className="flex mb-4">
             <img 
               src="/src/assets/images/Final_Twojo_Logo_White_SPUFO.png"
               alt="TWOJO Logo" 
               className="h-10"
             />
-          </a>
+          </Link>
           <span className="text-lg font-semibold">Twojo Software GmbH</span>
           <span className=" text-gray-400">CHE-461.740.370</span>
         </div>
@@ -57,9 +58,9 @@ const Footer = () => {
         &copy; {new Date().getFullYear()} Twojo Software GmbH. All rights reserved.
         </div>
         <div className="flex justify-start text-gray-400 text-xs mt-2 bottom-0 left-0 ml-4">
-            <a href="/datenschutz" className="hover:text-[#FF6600] mx-2 transition-all duration-300">Privacy Statement</a>
+            <Link to="/datenschutz" className="hover:text-[#FF6600] mx-2 transition-all duration-300">Privacy Statement</Link>
             <span className="mx-2">|</span>
-            <a href="/impressum" className="hover:text-[#FF6600] mx-2 transition-all duration-300">Publisher</a>
+            <Link to="/impressum" className="hover:text-[#FF6600] mx-2 transition-all duration-300">Publisher</Link>
         </div>
     </footer>
   );

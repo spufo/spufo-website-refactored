@@ -1,5 +1,6 @@
 import React from 'react';
 import { ChevronDown } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   const scrollToAbout = () => {
@@ -34,12 +35,12 @@ const Hero = () => {
             </p>
                 
             <div className="flex space-x-6">
-              <a href="/try-now" className="bg-[#FF6600] border-2 border-[#FF6600] text-white px-8 py-3 rounded-xl text-xl font-semibold hover:border-[#FF8533] hover:bg-[#FF8533] transition duration-300 transform hover:scale-105">
+              <Link to="/try-now" className="bg-[#FF6600] border-2 border-[#FF6600] text-white px-8 py-3 rounded-xl text-xl font-semibold hover:border-[#FF8533] hover:bg-[#FF8533] transition duration-300 transform hover:scale-105">
                 Try Now
-              </a>
-              <a href="/brochure" className="bg-transparent border-2 border-[#FF6600] text-[#FF6600] px-8 py-3 rounded-xl text-xl font-semibold hover:bg-[#FF6600] hover:text-white transition duration-300 transform hover:scale-105">
+              </Link>
+              <Link to="/brochure" className="bg-transparent border-2 border-[#FF6600] text-[#FF6600] px-8 py-3 rounded-xl text-xl font-semibold hover:bg-[#FF6600] hover:text-white transition duration-300 transform hover:scale-105">
                 PDF Brochure
-              </a>
+              </Link>
             </div>
           </div>
         </div>
