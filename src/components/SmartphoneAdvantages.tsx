@@ -1,7 +1,21 @@
 import React, { useState } from 'react';
 import { DollarSign, Zap, Smartphone, Compass, Camera, Cpu } from 'lucide-react';
 
-const advantages = [
+interface Advantage {
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+}
+
+interface AdvantageItemProps {
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+  isActive: boolean;
+  onClick: () => void;
+}
+
+const advantages: Advantage[] = [
   {
     icon: <DollarSign className="w-6 h-6" />,
     title: "Cost-effective",
@@ -34,36 +48,36 @@ const advantages = [
   }
 ];
 
-const AdvantageItem = ({ icon, title, description, isActive, onClick }) => (
+const AdvantageItem: React.FC<AdvantageItemProps> = ({ icon, title, description, isActive, onClick }) => (
   <div 
-    className={`bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer ${isActive ? 'text-[#FF6600]' : 'hover:text-[#FF6600]'}`}
+    className={`bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer group hover:scale-105 relative min-h-[100px] ${isActive ? 'text-[#FF6600]' : ''}`}
     onClick={onClick}
   >
-    <div className="p-6">
-      <div className="flex items-center space-x-4 mb-2">
-        <div className={`transition-colors duration-300 ${isActive ? 'text-[#FF6600]' : ''}`}>
+    <div className="p-8">
+      <div className="flex items-center space-x-4">
+        <div className="group-hover:text-[#FF6600] transition-all duration-300">
           {icon}
         </div>
-        <h3 className="text-xl font-semibold">{title}</h3>
+        <h3 className="text-xl font-semibold group-hover:text-[#FF6600] transition-all duration-300">{title}</h3>
       </div>
-      {isActive && (
-        <p className="mt-4 text-sm text-gray-600 transition-opacity duration-300 opacity-100">{description}</p>
-      )}
+      <div className={`transition-all duration-300 ${isActive ? 'opacity-100 max-h-[200px]' : 'opacity-0 max-h-0'} overflow-hidden`}>
+        <p className="mt-4 text-sm text-gray-600">{description}</p>
+      </div>
     </div>
   </div>
 );
 
-const SmartphoneAdvantages = () => {
-  const [activeIndex, setActiveIndex] = useState(null);
+const SmartphoneAdvantages: React.FC = () => {
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
-  const handleClick = (index) => {
+  const handleClick = (index: number): void => {
     setActiveIndex(activeIndex === index ? null : index);
   };
 
   return (
     <section className="py-24 px-6 bg-gray-100">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-5xl font-bold text-[#FF6600] mb-12 text-center">Revolutionizing Forensic Evidence Capture</h2>
+        <h2 className="text-7xl font-bold text-[#FF6600] mb-12 text-center">Revolutionizing Forensic Evidence Capture</h2>
         <div className="flex flex-col md:flex-row items-start justify-between">
           <div className="md:w-1/2 mb-12 md:mb-0 flex flex-col space-y-6">
             {advantages.map((advantage, index) => (

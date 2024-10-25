@@ -22,15 +22,15 @@ const Hero = () => {
           <div className="relative z-10">
             <div className="flex items-center mb-6">
               <img src="/src/assets/images/Curved_FinalSpufoLogo.svg" alt="SPUFO Logo" className="w-20 mr-4" />
-              <h1 className="text-6xl font-bold text-[#1E1E2E]">SPUFO</h1>
+              <h1 className="text-8xl font-bold text-[#1E1E2E]">SPUFO</h1>
             </div>
-            <h2 className="text-[#FF6600] text-2xl mb-5">The Crime Scene Photography App</h2>
-            <p className="text-3xl font-semibold mb-8 text-[#1E1E2E]">Digital - Fast - Efficient</p>
+            <h2 className="text-[#FF6600] text-3xl mb-5">The Crime Scene Photography App</h2>
+            <p className="text-5xl font-semibold mb-8 text-[#1E1E2E]">Digital - Fast - Efficient</p>
             <div className="flex space-x-6">
-              <a href="/try-now" className="bg-[#FF6600] text-white px-8 py-3 rounded-full text-xl font-semibold hover:bg-[#FF8533] transition duration-300 transform hover:scale-105">
+              <a href="/try-now" className="bg-[#FF6600] text-white px-8 py-3 rounded-xl text-xl font-semibold hover:bg-[#FF8533] transition duration-300 transform hover:scale-105">
                 Try Now
               </a>
-              <a href="/brochure" className="bg-transparent border-2 border-[#FF6600] text-[#FF6600] px-8 py-3 rounded-full text-xl font-semibold hover:bg-[#FF6600] hover:text-white transition duration-300 transform hover:scale-105">
+              <a href="/brochure" className="bg-transparent border-2 border-[#FF6600] text-[#FF6600] px-8 py-3 rounded-xl text-xl font-semibold hover:bg-[#FF6600] hover:text-white transition duration-300 transform hover:scale-105">
                 PDF Brochure
               </a>
             </div>

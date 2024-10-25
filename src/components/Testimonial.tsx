@@ -5,7 +5,7 @@ const Testimonial = () => {
   return (
     <section className="py-24 px-6 bg-gray-100 text-[#1E1E2E]">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-5xl font-bold text-[#FF6600] mb-12 text-center">Testimonial</h2>
+        <h2 className="text-7xl font-bold text-[#FF6600] mb-12 text-center">Testimonial</h2>
         <div className="relative">
           <Quote className="absolute top-0 left-0 w-16 h-16 text-[#FF6600] opacity-25 transform -translate-x-1/2 -translate-y-1/2" />
           <blockquote className="text-2xl md:text-4xl font-light italic text-center mb-8 relative z-10">

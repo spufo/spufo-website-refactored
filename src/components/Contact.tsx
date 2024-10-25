@@ -11,7 +11,7 @@ const Contact = () => {
         </p>
 
         <div className="flex justify-center gap-8 mb-16">
-          <div className="flex items-center text-gray-400">
+          <div className="flex items-center text-white">
             <Mail className="w-5 h-5 mr-2 text-[#FF6600]" />
             <a 
               href="mailto:contact@spufo.ch" 
@@ -20,7 +20,7 @@ const Contact = () => {
               contact@spufo.ch
             </a>
           </div>
-          <div className="flex items-center text-gray-400">
+          <div className="flex items-center text-white">
             <MapPin className="w-5 h-5 mr-2 text-[#FF6600]" />
             <span className="text-lg">Zurich, Switzerland</span>
           </div>
