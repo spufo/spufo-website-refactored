@@ -9,6 +9,7 @@ import Testimonial from './components/Testimonial';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Impressum from './components/Impressum';
+import Privacy from './components/Privacy';
 
 function App() {
   return (
@@ -28,6 +29,8 @@ function App() {
             </>
           } />
           <Route path="/impressum" element={<Impressum />} />
+          <Route path="/privacy/" element={<Privacy />} />
+          <Route path="/datenschutz/" element={<Privacy />} />
         </Routes>
         </main>
         <Footer />
