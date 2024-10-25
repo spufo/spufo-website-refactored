@@ -6,6 +6,7 @@ import Features from './components/Features';
 import SmartphoneAdvantages from './components/SmartphoneAdvantages';
 import Testimonial from './components/Testimonial';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <SmartphoneAdvantages />
       <Testimonial />
       <Contact />
+      <Footer />
     </div>
   );
 }
