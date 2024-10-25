@@ -2,8 +2,11 @@ import React from 'react';
 import { FaLinkedin } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import ScrollLink from './ScrollLink';
+import { useTranslation } from 'react-i18next';
+
 
 const Footer = () => {
+  const { t } = useTranslation();
   return (
     <footer className="bg-gradient-to-br from-[#1E1E2E] to-[#2A2A3A] text-white pt-10 pb-6">
       <div className="max-w-[1400px] mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
@@ -23,7 +26,7 @@ const Footer = () => {
 
         {/* Column 2: Address and Email */}
         <div className="flex flex-col">
-        <span className="text-lg font-semibold mb-2">Address</span>
+        <span className="text-lg font-semibold mb-2">{t('footerAdress')}</span>
         <address className=" text-gray-400">
                 Twojo Software GmbH<br />
                 Suurstoffi 1<br />
@@ -33,7 +36,7 @@ const Footer = () => {
 
         {/* Column 2: Address and Email */}
         <div className="flex flex-col">
-          <span className="text-lg font-semibold mb-2">Contact</span>
+          <span className="text-lg font-semibold mb-2">{t('footerContact')}</span>
           <address className=" text-gray-400">
             <a href="mailto:contact@spufo.ch" className="text-gray-400 hover:text-[--orange-color] transition-all duration-300">
               contact@spufo.ch
@@ -43,7 +46,7 @@ const Footer = () => {
 
         {/* Column 3: Social Media */}
         <div className="flex flex-col">
-          <span className="text-lg font-semibold mb-2">Socials</span>
+          <span className="text-lg font-semibold mb-2">{t('footerSocials')}</span>
           <a 
             href="https://www.linkedin.com/company/twojo/" 
             className="flex text-gray-400 hover:text-[--orange-color] transition-all duration-300"
@@ -56,12 +59,12 @@ const Footer = () => {
 
       {/* Copyright Notice and Links */}
       <div className="text-center text-gray-400 text-sm mt-16">
-        &copy; {new Date().getFullYear()} Twojo Software GmbH. All rights reserved.
+        &copy; {new Date().getFullYear()} {t('footerAllRightsReserved')}
         </div>
         <div className="flex justify-start text-gray-400 text-xs mt-2 bottom-0 left-0 ml-4">
-            <ScrollLink to="/datenschutz" className="hover:text-[--orange-color] mx-2 transition-all duration-300">Privacy Statement</ScrollLink>
+            <ScrollLink to="/datenschutz" className="hover:text-[--orange-color] mx-2 transition-all duration-300">{t('footerPrivacyStatement')}</ScrollLink>
             <span className="mx-2">|</span>
-            <ScrollLink to="/impressum" className="hover:text-[--orange-color] mx-2 transition-all duration-300">Publisher</ScrollLink>
+            <ScrollLink to="/impressum" className="hover:text-[--orange-color] mx-2 transition-all duration-300">{t('footerPublisher')}</ScrollLink>
         </div>
     </footer>
   );

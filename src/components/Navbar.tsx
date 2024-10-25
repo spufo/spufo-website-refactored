@@ -1,10 +1,25 @@
 import React, { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import ScrollLink from './ScrollLink';
 
 const Navbar = () => {
+  const { t, i18n } = useTranslation();
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
   const [isOpen, setIsOpen] = useState(false);
+  const [isLangMenuOpen, setIsLangMenuOpen] = useState(false);
+
+  const languages = [
+    { code: 'en', name: 'English' },
+    { code: 'de', name: 'Deutsch' },
+    { code: 'it', name: 'Italiano' },
+    { code: 'fr', name: 'Français' }
+  ];
+
+  const changeLanguage = (lng: string) => {
+    i18n.changeLanguage(lng);
+    setIsLangMenuOpen(false);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,6 +35,19 @@ const Navbar = () => {
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, [lastScrollY]);
+
+  // Close language menu when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      const target = event.target as HTMLElement;
+      if (!target.closest('.lang-menu')) {
+        setIsLangMenuOpen(false);
+      }
+    };
+
+    document.addEventListener('click', handleClickOutside);
+    return () => document.removeEventListener('click', handleClickOutside);
+  }, []);
 
   return (
     <nav 
@@ -46,10 +74,47 @@ const Navbar = () => {
               Blog
             </ScrollLink>
             <ScrollLink to="/about" className="text-white hover:text-[--orange-color] text-2xl font-medium tracking-wide transition-colors duration-200">
-              About Us
+              {t('about')}
             </ScrollLink>
           </div>
         </div>
+
+        {/* Desktop Language Selector */}
+        <div className="hidden md:block relative lang-menu mr-4">
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              setIsLangMenuOpen(!isLangMenuOpen);
+            }}
+            className="flex items-center space-x-2 text-white hover:text-[--orange-color] transition-colors duration-200"
+          >
+            <span>{languages.find(lang => lang.code === i18n.language)?.name || 'Language'}</span>
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          {isLangMenuOpen && (
+            <div className="absolute right-0 mt-2 py-2 w-48 bg-white rounded-lg shadow-xl z-50">
+              {languages.map((lang) => (
+                <button
+                  key={lang.code}
+                  onClick={() => changeLanguage(lang.code)}
+                  className="block w-full text-left px-4 py-2 text-gray-800 hover:bg-gray-100 hover:text-[--orange-color] transition-colors duration-200"
+                >
+                  {lang.name}
+                </button>
+              ))}
+            </div>
+          )}
+        </div>
+
+        {/* Contact Button */}
+        <a 
+          href="/contact" 
+          className="hidden md:block bg-[--orange-color] text-white px-8 py-3 rounded-xl text-xl font-semibold hover:bg-[--orange-selected-color] transition-all duration-300 mr-6 hover:shadow-lg"
+        >
+          {t('contact')}
+        </a>
 
         {/* Mobile Menu Button */}
         <div className="md:hidden">
@@ -74,14 +139,6 @@ const Navbar = () => {
             </svg>
           </button>
         </div>
-
-        {/* Contact Button */}
-        <a 
-          href="/contact" 
-          className="hidden md:block bg-[--orange-color] text-white px-8 py-3 rounded-xl text-xl font-semibold hover:bg-[--orange-selected-color] transition-all duration-300 mr-6 hover:shadow-lg"
-        >
-          Contact
-        </a>
       </div>
 
       {/* Mobile Menu */}
@@ -98,14 +155,34 @@ const Navbar = () => {
             Blog
           </ScrollLink>
           <ScrollLink to="/about" className="text-white hover:text-[--orange-color] font-medium py-3 px-6 hover:bg-[#2A2A3A] transition-colors duration-200">
-            About Us
+            {t('about')}
           </ScrollLink>
-          <div className="px-6 pt-3">
+
+          {/* Mobile Language Selector */}
+          <div className="px-6 py-3 border-t border-gray-700">
+            <div className="text-white mb-2">Language</div>
+            <div className="grid grid-cols-2 gap-2">
+              {languages.map((lang) => (
+                <button
+                  key={lang.code}
+                  onClick={() => changeLanguage(lang.code)}
+                  className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors duration-200
+                    ${i18n.language === lang.code 
+                      ? 'bg-[--orange-color] text-white' 
+                      : 'bg-gray-700 text-white hover:bg-[--orange-color]'}`}
+                >
+                  {lang.name}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          <div className="px-6 pt-3 border-t border-gray-700">
             <a 
               href="/contact" 
               className="inline-block bg-[--orange-color] text-white px-3 py-2 rounded-xl font-semibold hover:bg-[--orange-selected-color] transition-all duration-300 hover:shadow-lg mt-0"
             >
-              Contact
+              {t('contact')}
             </a>
           </div>
         </div>
