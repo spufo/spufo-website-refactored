@@ -22,7 +22,7 @@ const Contact = () => {
           </div>
           <div className="flex items-center text-white">
             <MapPin className="w-5 h-5 mr-2 text-[--orange-color]" />
-            <span className="text-lg">Zurich, Switzerland</span>
+            <span className="text-lg">Zug, Switzerland</span>
           </div>
         </div>
         
