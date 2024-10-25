@@ -6,7 +6,7 @@ const About = () => {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between">
           {/* Fingerprint background */}
           <div 
-            className="absolute invert translate-x-80 rotate-[-134deg] sm:rotate-[-134deg] scale-[2] sm:scale-[0.8] bg-contain bg-no-repeat bg-center opacity-100"
+            className="absolute invert translate-x-80 rotate-[-134deg] sm:rotate-[-134deg] scale-[2] sm:scale-[0.8] bg-contain bg-no-repeat bg-center opacity-100 z-0 pointer-events-none"
           >
           <img src="/src/assets/images/Background.png"/></div>
         <div className="md:w-1/2 mb-10 md:mb-0 flex justify-center">

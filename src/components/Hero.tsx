@@ -1,5 +1,7 @@
 import React from 'react';
 import { ChevronDown } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import ScrollLink from './ScrollLink';
 
 const Hero = () => {
   const scrollToAbout = () => {
@@ -14,7 +16,7 @@ const Hero = () => {
       <div className="flex flex-col md:flex-row items-stretch justify-between max-w-[100rem] mx-auto w-full px-6 over mt-16 md:mt-0">
           {/* Fingerprint background */}
           <div 
-            className="absolute invert sm:-translate-y-40 -translate-x-80 sm:-translate-x-0 rotate-[46deg] sm:rotate-[34deg] scale-[1.5] sm:scale-[0.8] inset-0 bg-contain bg-no-repeat bg-center opacity-100"
+            className="absolute invert sm:-translate-y-40 -translate-x-80 sm:-translate-x-0 rotate-[46deg] sm:rotate-[34deg] scale-[1.5] sm:scale-[0.9] inset-0 bg-contain bg-no-repeat bg-center opacity-100 z-0 pointer-events-none"
           >
           <img src="/src/assets/images/Background.png"/></div>
         <div className="md:w-1/2 py-4 md:py-12 flex flex-col items-center md:items-start justify-center relative w-full">
@@ -34,12 +36,12 @@ const Hero = () => {
             </p>
                 
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6 w-full sm:w-auto">
-              <a href="/try-now" className="bg-[#FF6600] text-white px-8 py-3 rounded-xl text-xl font-semibold hover:bg-[#FF8533] transition duration-300 transform hover:scale-105 w-full sm:w-auto text-center">
+              <ScrollLink to="/try-now" className="bg-[#FF6600] border-2 border-[#FF6600] text-white px-8 py-3 rounded-xl text-xl font-semibold hover:border-[#FF8533] hover:bg-[#FF8533] transition duration-300 transform hover:scale-105 w-full sm:w-auto text-center">
                 Try Now
-              </a>
-              <a href="/brochure" className="bg-transparent border-2 border-[#FF6600] text-[#FF6600] px-8 py-3 rounded-xl text-xl font-semibold hover:bg-[#FF6600] hover:text-white transition duration-300 transform hover:scale-105 w-full sm:w-auto text-center">
+              </ScrollLink>
+              <ScrollLink to="/brochure" className="bg-transparent border-2 border-[#FF6600] text-[#FF6600] px-8 py-3 rounded-xl text-xl font-semibold hover:bg-[#FF6600] hover:text-white transition duration-300 transform hover:scale-105 w-full sm:w-auto text-center">
                 PDF Brochure
-              </a>
+              </ScrollLink>
             </div>
           </div>
         </div>

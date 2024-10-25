@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import ScrollLink from './ScrollLink';
 
 const Navbar = () => {
   const [isVisible, setIsVisible] = useState(true);
