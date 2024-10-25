@@ -11,7 +11,7 @@ const Impressum = () => {
         <img src="/src/assets/images/Background.png" alt="Background" />
       </div>
 
-      <div className="flex-grow flex flex-col justify-center max-w-5xl mx-auto py-24 px-6 mt-24 z-10">
+      <div className="flex-grow flex flex-col max-w-5xl mx-auto py-24 px-6 mt-24 z-10">
         <h1 className="text-7xl font-bold text-[#FF6600] mb-12 text-center">Impressum</h1>
         <div className="flex flex-col items-center">
           <p className="text-lg md:text-xl mb-4 text-center">This website is operated by:</p>
