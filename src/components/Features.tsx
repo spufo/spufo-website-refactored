@@ -2,7 +2,7 @@ import React from 'react';
 import { Fingerprint, GitBranch, Maximize, Award } from 'lucide-react';
 
 const FeatureCard = ({ icon, title, description, link }: { icon: React.ReactNode; title: string; description: string; link: string }) => (
-  <div className="bg-white rounded-xl shadow-lg p-8 flex flex-col h-full transform hover:scale-105 transition duration-300">
+  <div className="bg-white rounded-3xl shadow-lg p-8 flex flex-col h-full transform hover:scale-105 transition duration-300">
     <div className="bg-[#FF6600] rounded-full p-4 mb-6 self-start">
       {icon}
     </div>
@@ -16,9 +16,9 @@ const FeatureCard = ({ icon, title, description, link }: { icon: React.ReactNode
 
 const Features = () => {
   return (
-    <section className="py-32 px-6 bg-gray-100 pt-60">
+    <section className="py-32 px-6 bg-gray-100">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-7xl font-bold text-center text-[#FF6600] mb-20">Key Advantages</h2>
+        <h2 className="text-4xl md:text-7xl font-bold text-center text-[#FF6600] mb-20">Key Advantages</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <FeatureCard
             icon={<Fingerprint className="w-8 h-8 text-white" />}

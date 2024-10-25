@@ -75,9 +75,9 @@ const SmartphoneAdvantages: React.FC = () => {
   };
 
   return (
-    <section className="py-24 px-6 bg-gray-100">
+    <section className="relative pt-12 pb-24 px-6 bg-gray-100">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-7xl font-bold text-[#FF6600] mb-12 text-center">Revolutionizing Forensic Evidence Capture</h2>
+        <h2 className="text-4xl md:text-7xl font-bold text-[#FF6600] mb-20 text-center">Redefining Evidence Capture</h2>
         <div className="flex flex-col md:flex-row items-start justify-between">
           <div className="md:w-1/2 mb-12 md:mb-0 flex flex-col space-y-6">
             {advantages.map((advantage, index) => (
@@ -89,7 +89,7 @@ const SmartphoneAdvantages: React.FC = () => {
               />
             ))}
           </div>
-          <div className="md:w-1/2 md:pl-12 flex justify-center hidden sm:block">
+          <div className="md:w-1/2 md:pl-12 flex justify-center">
             <img 
               src="/src/assets/images/MoreMockup.png"  
               alt="Smartphone Mockup" 
