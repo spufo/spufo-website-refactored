@@ -14,7 +14,7 @@ const Hero = () => {
       <div className="flex flex-col md:flex-row items-stretch justify-between max-w-7xl mx-auto w-full px-6 over">
           {/* Fingerprint background */}
           <div 
-            className="absolute invert sm:-translate-y-40 -translate-x-80 sm:-translate-x-0 rotate-[46deg] sm:rotate-[34deg] scale-[1.5] sm:scale-[0.8] inset-0 bg-contain bg-no-repeat bg-center opacity-100"
+            className="absolute invert sm:-translate-y-40 -translate-x-80 sm:-translate-x-0 rotate-[46deg] sm:rotate-[34deg] scale-[1.5] sm:scale-[0.9] inset-0 bg-contain bg-no-repeat bg-center opacity-100"
           >
           <img src="/src/assets/images/Background.png"/></div>
         <div className="md:w-1/2 py-12 flex flex-col items-start justify-center relative">
