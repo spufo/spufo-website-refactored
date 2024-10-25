@@ -25,7 +25,14 @@ const Hero = () => {
               <h1 className="text-6xl font-bold text-[#1E1E2E]">SPUFO</h1>
             </div>
             <h2 className="text-[#FF6600] text-2xl mb-5">The Crime Scene Photography App</h2>
-            <p className="text-3xl font-semibold mb-8 text-[#1E1E2E]">Digital - Fast - Efficient</p>
+            <p className="text-3xl font-semibold mb-8 text-[#1E1E2E]">
+              <span className="hover:scale-[1.1] transition-all duration-300 inline-block mx-2">Digital</span>
+               - 
+              <span className="hover:scale-[1.1] transition-all duration-300 inline-block mx-2">Fast</span>
+                - 
+              <span className="hover:scale-[1.1] transition-all duration-300 inline-block mx-2">Efficient</span>
+            </p>
+                
             <div className="flex space-x-6">
               <a href="/try-now" className="bg-[#FF6600] text-white px-8 py-3 rounded-full text-xl font-semibold hover:bg-[#FF8533] transition duration-300 transform hover:scale-105">
                 Try Now
