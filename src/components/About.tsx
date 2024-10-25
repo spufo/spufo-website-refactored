@@ -6,9 +6,9 @@ const About = () => {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between">
         <div className="md:w-1/2 mb-10 md:mb-0 flex justify-center">
           <img 
-            src="/src/assets/images/AboutSpufo.png" 
+            src="/src/assets/images/AboutImage.png" 
             alt="SPUFO in action" 
-            className="rounded-3xl shadow-2xl w-2/3 h-auto"
+            className="rounded-3xl shadow-2xl w-2/3 h-auto transform hover:scale-105 transition duration-300"
           />
         </div>
         <div className="md:w-1/2 md:pl-12">
