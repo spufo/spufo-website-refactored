@@ -10,14 +10,14 @@ const Hero = () => {
   };
 
   return (
-    <div className="relative bg-white min-h-screen flex items-center">
-      <div className="flex flex-col md:flex-row items-stretch justify-between max-w-7xl mx-auto w-full px-6">
-        <div className="md:w-1/2 py-12 flex flex-col items-start justify-center relative">
+    <div className="relative bg-white min-h-screen flex items-center overflow-hidden">
+      <div className="flex flex-col md:flex-row items-stretch justify-between max-w-7xl mx-auto w-full px-6 over">
           {/* Fingerprint background */}
           <div 
-            className="absolute invert rotate-[30deg] scale-[1.5] inset-0 bg-contain bg-no-repeat bg-center -translate-y-40 opacity-100"
+            className="absolute invert sm:-translate-y-40 -translate-x-80 sm:-translate-x-0 rotate-[46deg] sm:rotate-[34deg] scale-[1.5] sm:scale-[0.8] inset-0 bg-contain bg-no-repeat bg-center opacity-100"
           >
           <img src="/src/assets/images/Background.png"/></div>
+        <div className="md:w-1/2 py-12 flex flex-col items-start justify-center relative">
           {/* Content */}
           <div className="relative z-10">
             <div className="flex items-center mb-6">

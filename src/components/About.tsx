@@ -2,8 +2,13 @@ import React from 'react';
 
 const About = () => {
   return (
-    <section id="about" className="py-20 px-6 bg-[#1E1E2E]">
+    <section id="about" className="relative py-20 px-6 bg-[#1E1E2E] overflow-hidden">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between">
+          {/* Fingerprint background */}
+          <div 
+            className="absolute invert translate-x-80 rotate-[-134deg] sm:rotate-[-134deg] scale-[2] sm:scale-[0.8] bg-contain bg-no-repeat bg-center opacity-100"
+          >
+          <img src="/src/assets/images/Background.png"/></div>
         <div className="md:w-1/2 mb-10 md:mb-0 flex justify-center">
           <img 
             src="/src/assets/images/AboutImage.png" 
