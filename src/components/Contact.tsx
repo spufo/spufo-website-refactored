@@ -1,60 +1,106 @@
 import React from 'react';
-import { Phone, Mail, Send, MapPin } from 'lucide-react';
+import { Mail, Send, MapPin } from 'lucide-react';
 
 const Contact = () => {
   return (
     <section className="bg-gradient-to-br from-[#1E1E2E] to-[#2A2A3A] text-white py-24">
-      <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-5xl font-bold text-center text-[#FF6600] mb-16">Get in Touch</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
-          <div className="space-y-8">
-            <div className="bg-[#2A2A3C] p-8 rounded-lg shadow-xl">
-              <h3 className="text-3xl font-semibold mb-6">Contact Information</h3>
-              <div className="space-y-4">
-                <div className="flex items-center">
-                  <Phone className="w-6 h-6 mr-4 text-[#FF6600]" />
-                  <span className="text-lg">+41 77 777 77 77</span>
-                </div>
-                <div className="flex items-center">
-                  <Mail className="w-6 h-6 mr-4 text-[#FF6600]" />
-                  <span className="text-lg">contact@spufo.ch</span>
-                </div>
-                <div className="flex items-center">
-                  <MapPin className="w-6 h-6 mr-4 text-[#FF6600]" />
-                  <span className="text-lg">Zurich, Switzerland</span>
-                </div>
+      <div className="max-w-[1400px] mx-auto px-6">
+        <h2 className="text-7xl font-bold text-center text-white mb-4">Get in Touch</h2>
+        <p className="text-center text-gray-400 text-lg mb-8 max-w-2xl mx-auto">
+          Have a question or want to learn more? We'd love to hear from you.
+        </p>
+
+        <div className="flex justify-center gap-8 mb-16">
+          <div className="flex items-center text-gray-400">
+            <Mail className="w-5 h-5 mr-2 text-[#FF6600]" />
+            <a 
+              href="mailto:contact@spufo.ch" 
+              className="text-lg hover:text-[#FF6600] transition-colors duration-300"
+            >
+              contact@spufo.ch
+            </a>
+          </div>
+          <div className="flex items-center text-gray-400">
+            <MapPin className="w-5 h-5 mr-2 text-[#FF6600]" />
+            <span className="text-lg">Zurich, Switzerland</span>
+          </div>
+        </div>
+        
+        <div className="max-w-4xl mx-auto">
+          <form className="bg-[#2A2A3C]/50 backdrop-blur-lg p-8 rounded-xl shadow-2xl" onSubmit={(e) => e.preventDefault()}>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+              <div>
+                <label htmlFor="name" className="block text-sm font-medium mb-2 text-gray-300">Name *</label>
+                <input 
+                  type="text" 
+                  id="name" 
+                  name="name" 
+                  className="w-full px-4 py-3 rounded-xl bg-[#1E1E2E]/50 text-white border border-gray-700 focus:border-[#FF6600] focus:ring-1 focus:ring-[#FF6600] transition-colors" 
+                  required 
+                />
+              </div>
+              <div>
+                <label htmlFor="email" className="block text-sm font-medium mb-2 text-gray-300">Email Address *</label>
+                <input 
+                  type="email" 
+                  id="email" 
+                  name="email" 
+                  className="w-full px-4 py-3 rounded-xl bg-[#1E1E2E]/50 text-white border border-gray-700 focus:border-[#FF6600] focus:ring-1 focus:ring-[#FF6600] transition-colors" 
+                  required 
+                />
               </div>
             </div>
-            <div className="bg-[#2A2A3C] p-8 rounded-lg shadow-xl">
-              <h3 className="text-3xl font-semibold mb-6">Office Hours</h3>
-              <ul className="space-y-2">
-                <li>Monday - Friday: 9:00 AM - 6:00 PM</li>
-                <li>Saturday: 10:00 AM - 4:00 PM</li>
-                <li>Sunday: Closed</li>
-              </ul>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+              <div>
+                <label htmlFor="company" className="block text-sm font-medium mb-2 text-gray-300">Company/Organisation *</label>
+                <input 
+                  type="text" 
+                  id="company" 
+                  name="company" 
+                  className="w-full px-4 py-3 rounded-xl bg-[#1E1E2E]/50 text-white border border-gray-700 focus:border-[#FF6600] focus:ring-1 focus:ring-[#FF6600] transition-colors" 
+                  required 
+                />
+              </div>
+              <div>
+                <label htmlFor="phone" className="block text-sm font-medium mb-2 text-gray-300">Phone Number</label>
+                <input 
+                  type="tel" 
+                  id="phone" 
+                  name="phone" 
+                  className="w-full px-4 py-3 rounded-xl bg-[#1E1E2E]/50 text-white border border-gray-700 focus:border-[#FF6600] focus:ring-1 focus:ring-[#FF6600] transition-colors" 
+                />
+              </div>
             </div>
-          </div>
-          <form className="space-y-6 bg-[#2A2A3C] p-8 rounded-lg shadow-xl" onSubmit={(e) => e.preventDefault()}>
-            <h3 className="text-3xl font-semibold mb-6">Send Us a Message</h3>
-            <div>
-              <label htmlFor="name" className="block mb-2">Name</label>
-              <input type="text" id="name" name="name" className="w-full px-4 py-2 rounded bg-[#1E1E2E] text-white focus:ring-2 focus:ring-[#FF6600] transition duration-300" required />
+
+            <div className="mb-8">
+              <label htmlFor="subject" className="block text-sm font-medium mb-2 text-gray-300">Subject *</label>
+              <input 
+                type="text" 
+                id="subject" 
+                name="subject" 
+                className="w-full px-4 py-3 rounded-xl bg-[#1E1E2E]/50 text-white border border-gray-700 focus:border-[#FF6600] focus:ring-1 focus:ring-[#FF6600] transition-colors" 
+                required 
+              />
             </div>
-            <div>
-              <label htmlFor="email" className="block mb-2">Email</label>
-              <input type="email" id="email" name="email" className="w-full px-4 py-2 rounded bg-[#1E1E2E] text-white focus:ring-2 focus:ring-[#FF6600] transition duration-300" required />
+
+            <div className="mb-8">
+              <label htmlFor="message" className="block text-sm font-medium mb-2 text-gray-300">Message *</label>
+              <textarea 
+                id="message" 
+                name="message" 
+                rows={6} 
+                className="w-full px-6 py-4 rounded-xl bg-[#1E1E2E]/50 text-white border border-gray-700 focus:border-[#FF6600] focus:ring-1 focus:ring-[#FF6600] transition-colors resize-none" 
+                required
+              ></textarea>
             </div>
-            <div>
-              <label htmlFor="subject" className="block mb-2">Subject</label>
-              <input type="text" id="subject" name="subject" className="w-full px-4 py-2 rounded bg-[#1E1E2E] text-white focus:ring-2 focus:ring-[#FF6600] transition duration-300" required />
-            </div>
-            <div>
-              <label htmlFor="message" className="block mb-2">Message</label>
-              <textarea id="message" name="message" rows={4} className="w-full px-4 py-2 rounded bg-[#1E1E2E] text-white focus:ring-2 focus:ring-[#FF6600] transition duration-300" required></textarea>
-            </div>
-            <button type="submit" className="bg-[#FF6600] text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-[#FF8533] transition duration-300 flex items-center justify-center w-full">
+
+            <button 
+              type="submit" 
+              className="w-full bg-[#FF6600] text-white px-8 py-3 rounded-xl text-lg font-semibold hover:bg-[#FF8533] transition-colors duration-300"
+            >
               Send Message
-              <Send className="w-5 h-5 ml-2" />
+              <Send className="w-5 h-5 ml-2 inline-block" />
             </button>
           </form>
         </div>
