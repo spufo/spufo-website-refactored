@@ -6,7 +6,7 @@ const About = () => {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between">
         <div className="md:w-1/2 mb-10 md:mb-0 flex justify-center">
           <img 
-            src="https://cdn.discordapp.com/attachments/1236052301064700043/1296219595065004133/DSC02460_2.png?ex=67117e12&is=67102c92&hm=461bc40a56a3460d1df49e9cd3b66e1c387e32e9258613c17067acc3a563084a&" 
+            src="/src/assets/images/AboutSpufo.png" 
             alt="SPUFO in action" 
             className="rounded-3xl shadow-2xl w-2/3 h-auto"
           />

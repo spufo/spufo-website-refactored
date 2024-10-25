@@ -25,9 +25,9 @@ const Navbar = () => {
       <div className="flex items-center space-x-8">
         <a href="/" className="text-3xl font-bold text-white flex items-center">
           <img 
-            src="https://media.discordapp.net/attachments/1236052301064700043/1294990508858277928/Final_Twojo_Logo_White.png?ex=670fa865&is=670e56e5&hm=f562e4706da602171ca0c7246b41c5c7f9ff15b6b9204ddd0ed3f393d57067da&=&format=webp&quality=lossless&width=1920&height=366" 
+            src="/src/assets/images/Final_Twojo_Logo_White_SPUFO.png"
             alt="TWOJO Logo" 
-            className="h-10 mr-3" 
+            className="h-10 mr-3"
           />
         </a>
         <a href="/spufo" className="text-[#FF6600] hover:text-[#FF8533] text-lg">SPUFO</a>
