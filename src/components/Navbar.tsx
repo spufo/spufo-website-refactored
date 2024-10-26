@@ -58,7 +58,7 @@ const Navbar = () => {
       <div className="flex justify-between items-center">
         <ScrollLink to="/" className="text-3xl font-bold text-white flex items-center ml-2 md:ml-6">
           <img 
-            src="/src/assets/images/Final_Twojo_Logo_White_SPUFO.png"
+            src="/assets/images/Final_Twojo_Logo_White_SPUFO.png"
             alt="TWOJO Logo" 
             className="h-7 md:h-9 mr-2 md:mr-3"
           />

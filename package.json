@@ -1,5 +1,6 @@
 {
   "name": "vite-react-typescript-starter",
+  "homepage": "https://spufo.github.io/spufo-website-refactored/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
