@@ -38,7 +38,6 @@ const resources = {
       testimonialsTitle: 'What Our Users Say',
       testimonialText: 'SPUFO has completely transformed how I use my smartphone. The features are incredible!',
 
-
       // Features Section
       featuresTitle: 'Key Advantages',
       feature1: {
@@ -117,7 +116,20 @@ const resources = {
       footerSocials: 'Socials',
       footerAllRightsReserved: 'Twojo Software GmbH. All rights reserved.',
       footerPrivacyStatement: 'Privacy Statement',
-      footerPublisher: 'Publisher'
+      footerPublisher: 'Publisher',
+
+      // Impressum Section
+      impressum: {
+        publisher: 'Publisher',
+        operatedBy: 'This website is operated by:',
+        companyName: 'Twojo Software GmbH',
+        addressLine1: 'c/o Hochschule Luzern - Informatik',
+        addressLine2: 'Smart-up Campus Zug-Rotkreuz',
+        street: 'Suurstoffi 1',
+        cityCode: '6343 Rotkreuz',
+        email: 'E-Mail',
+        commercialRegister: 'Commercial Register'
+      }
     }
   },
   de: {
@@ -234,7 +246,20 @@ const resources = {
       footerSocials: 'Soziale Netzwerke',
       footerAllRightsReserved: 'Twojo Software GmbH. All Rechte vorbehalten.',
       footerPrivacyStatement: 'Datenschutzerklärung',
-      footerPublisher: 'Herausgeber'
+      footerPublisher: 'Herausgeber',
+
+      // Impressum Section
+      impressum: {
+        publisher: 'Herausgeber',
+        operatedBy: 'Diese Webseite wird betrieben durch',
+        companyName: 'Twojo Software GmbH',
+        addressLine1: 'c/o Hochschule Luzern - Informatik',
+        addressLine2: 'Smart-up Campus Zug-Rotkreuz',
+        street: 'Suurstoffi 1',
+        cityCode: '6343 Rotkreuz',
+        email: 'E-Mail',
+        commercialRegister: 'Handelsregister-Nr'
+      }
     }
   },
   it: {
@@ -349,7 +374,20 @@ const resources = {
       footerSocials: 'Social Media',
       footerAllRightsReserved: 'Twojo Software GmbH. Tutti i diritti riservati.',
       footerPrivacyStatement: 'Informativa sulla Privacy',
-      footerPublisher: 'Editore'
+      footerPublisher: 'Editore',
+
+      // Impressum Section
+      impressum: {
+        publisher: 'Editore',
+        operatedBy: 'Questo sito web è gestito da:',
+        companyName: 'Twojo Software GmbH',
+        addressLine1: 'c/o Hochschule Luzern - Informatik',
+        addressLine2: 'Smart-up Campus Zug-Rotkreuz',
+        street: 'Suurstoffi 1',
+        cityCode: '6343 Rotkreuz',
+        email: 'E-Mail',
+        commercialRegister: 'Registro delle imprese'
+      }
     }
   },
   fr: {
@@ -465,7 +503,20 @@ const resources = {
       footerSocials: 'Réseaux sociaux',
       footerAllRightsReserved: 'Twojo Software GmbH. Tous droits réservés.',
       footerPrivacyStatement: 'Politique de confidentialité',
-      footerPublisher: 'Éditeur'
+      footerPublisher: 'Éditeur',
+
+      // Impressum Section
+      impressum: {
+        publisher: 'Éditeur',
+        operatedBy: 'Ce site web est exploité par :',
+        companyName: 'Twojo Software GmbH',
+        addressLine1: 'c/o Haute école de Lucerne - Informatique',
+        addressLine2: 'Smart-up Campus Zoug-Rotkreuz',
+        street: 'Suurstoffi 1',
+        cityCode: '6343 Rotkreuz',
+        email: 'E-mail',
+        commercialRegister: 'Registre du commerce'
+      }
     }
   }
 };
