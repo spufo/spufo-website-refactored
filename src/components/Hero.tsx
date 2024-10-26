@@ -50,10 +50,10 @@ const Hero = () => {
             </p>
                 
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6 w-full sm:w-auto">
-              <ScrollLink to="/contact" className="bg-[--orange-color] border-2 border-[--orange-color] text-white px-8 py-2 sm:py-3 rounded-xl text-xl font-semibold hover:border-[--orange-selected-color] hover:bg-[--orange-selected-color] transition duration-300 transform hover:scale-105 w-full sm:w-auto text-center">
+              <ScrollLink to="/contact" className="bg-[--orange-color] border-2 border-[--orange-color] text-white px-8 py-1 sm:py-3 rounded-xl text-xl font-semibold hover:border-[--orange-selected-color] hover:bg-[--orange-selected-color] transition duration-300 transform hover:scale-105 w-full sm:w-auto text-center">
                 {t('tryNow')}
               </ScrollLink>
-              <ScrollLink to="/brochure" className="bg-transparent border-2 border-[--orange-color] text-[--orange-color] px-8 py-2 sm:py-3 rounded-xl text-xl font-semibold hover:bg-[--orange-color] hover:text-white transition duration-300 transform hover:scale-105 w-full sm:w-auto text-center">
+              <ScrollLink to="/brochure" className="bg-transparent border-2 border-[--orange-color] text-[--orange-color] px-8 py-1 sm:py-3 rounded-xl text-xl font-semibold hover:bg-[--orange-color] hover:text-white transition duration-300 transform hover:scale-105 w-full sm:w-auto text-center">
                 {t('pdfBrochure')}
               </ScrollLink>
             </div>
@@ -63,7 +63,7 @@ const Hero = () => {
           <img
             src={heroMockup}
             alt="SPUFO App"
-            className="max-w-full h-auto transform scale-90 sm:scale-100 md:scale-150 -mt-8 sm:mt-0"
+            className="max-w-full h-auto transform scale-75 sm:scale-90 md:scale-150 -mt-8 sm:mt-0"
           />
         </div>
       </div>
@@ -75,13 +75,13 @@ const Hero = () => {
         <img 
           src={logo_FOR_RGB}
           alt="FOR Zürich" 
-          className="h-12 sm:h-16"
+          className="h-10 sm:h-16"
         />
       </div>
       {/* Scroll down button */}
       <button 
         onClick={scrollToAbout}
-        className="absolute bottom-0 md:bottom-10 left-1/2 transform -translate-x-1/2 text-[--orange-color] hover:text-[--orange-selected-color] transition-colors duration-300"
+        className="absolute bottom-0 md:bottom-10 left-1/2 transform -translate-x-1/2 text-[--orange-color] hover:text-[--orange-selected-color] transition-colors duration-300 hidden md:block"
       >
         <ChevronDown className="w-12 h-12 animate-bounce" />
       </button>
