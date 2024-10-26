@@ -109,12 +109,12 @@ const Navbar = () => {
         </div>
 
         {/* Contact Button */}
-        <a 
-          href="/contact" 
+        <ScrollLink 
+          to="/contact" 
           className="hidden md:block bg-[--orange-color] text-white px-8 py-3 rounded-xl text-xl font-semibold hover:bg-[--orange-selected-color] transition-all duration-300 mr-6 hover:shadow-lg"
         >
           {t('contact')}
-        </a>
+        </ScrollLink>
 
         {/* Mobile Menu Button */}
         <div className="md:hidden">
