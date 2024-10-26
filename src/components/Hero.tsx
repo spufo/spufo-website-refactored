@@ -49,11 +49,11 @@ const Hero = () => {
               </span>
             </p>
                 
-            <div className="flex flex-row space-x-4 w-full">
-              <ScrollLink to="/contact" className="bg-[--orange-color] border-2 border-[--orange-color] text-white px-4 sm:px-8 py-2 sm:py-3 rounded-xl text-base sm:text-xl font-semibold hover:border-[--orange-selected-color] hover:bg-[--orange-selected-color] transition duration-300 transform hover:scale-105 flex-1 text-center">
+            <div className="flex flex-row space-x-4 w-full md:w-auto">
+              <ScrollLink to="/contact" className="bg-[--orange-color] border-2 border-[--orange-color] text-white px-4 sm:px-8 py-2 sm:py-3 rounded-xl text-base sm:text-xl font-semibold hover:border-[--orange-selected-color] hover:bg-[--orange-selected-color] transition duration-300 transform hover:scale-105 flex-1 md:flex-initial text-center">
                 {t('tryNow')}
               </ScrollLink>
-              <ScrollLink to="/brochure" className="bg-transparent border-2 border-[--orange-color] text-[--orange-color] px-4 sm:px-8 py-2 sm:py-3 rounded-xl text-base sm:text-xl font-semibold hover:bg-[--orange-color] hover:text-white transition duration-300 transform hover:scale-105 flex-1 text-center">
+              <ScrollLink to="/brochure" className="bg-transparent border-2 border-[--orange-color] text-[--orange-color] px-4 sm:px-8 py-2 sm:py-3 rounded-xl text-base sm:text-xl font-semibold hover:bg-[--orange-color] hover:text-white transition duration-300 transform hover:scale-105 flex-1 md:flex-initial text-center">
                 {t('pdfBrochure')}
               </ScrollLink>
             </div>
