@@ -10,11 +10,15 @@ const Navbar = () => {
   const [isLangMenuOpen, setIsLangMenuOpen] = useState(false);
 
   const languages = [
-    { code: 'en', name: 'English' },
-    { code: 'de', name: 'Deutsch' },
-    { code: 'it', name: 'Italiano' },
-    { code: 'fr', name: 'Français' }
+    { code: 'en', label: 'GB', name: 'English', flag: 'gb' },
+    { code: 'de', label: 'DE', name: 'Deutsch', flag: 'de' },
+    { code: 'it', label: 'IT', name: 'Italiano', flag: 'it' },
+    { code: 'fr', label: 'FR', name: 'Français', flag: 'fr' }
   ];
+
+  const getFlagUrl = (code: string) => {
+    return `https://flagcdn.com/24x18/${code.toLowerCase()}.png`;
+  };
 
   const changeLanguage = (lng: string) => {
     i18n.changeLanguage(lng);
@@ -88,7 +92,14 @@ const Navbar = () => {
             }}
             className="flex items-center space-x-2 text-white hover:text-[--orange-color] transition-colors duration-200"
           >
-            <span>{languages.find(lang => lang.code === i18n.language)?.name || 'Language'}</span>
+            <span className="flex items-center">
+              <img 
+                src={getFlagUrl(languages.find(lang => lang.code === i18n.language)?.flag || 'de')}
+                alt=""
+                className="w-6 h-4 mr-2"
+              />
+              {languages.find(lang => lang.code === i18n.language)?.name}
+            </span>
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
             </svg>
@@ -99,8 +110,13 @@ const Navbar = () => {
                 <button
                   key={lang.code}
                   onClick={() => changeLanguage(lang.code)}
-                  className="block w-full text-left px-4 py-2 text-gray-800 hover:bg-gray-100 hover:text-[--orange-color] transition-colors duration-200"
+                  className="flex items-center w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                 >
+                  <img 
+                    src={getFlagUrl(lang.flag)}
+                    alt=""
+                    className="w-6 h-4 mr-2"
+                  />
                   {lang.name}
                 </button>
               ))}
@@ -166,11 +182,16 @@ const Navbar = () => {
                 <button
                   key={lang.code}
                   onClick={() => changeLanguage(lang.code)}
-                  className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors duration-200
+                  className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors duration-200 flex items-center justify-center
                     ${i18n.language === lang.code 
                       ? 'bg-[--orange-color] text-white' 
                       : 'bg-gray-700 text-white hover:bg-[--orange-color]'}`}
                 >
+                  <img 
+                    src={getFlagUrl(lang.flag)}
+                    alt=""
+                    className="w-6 h-4 mr-2"
+                  />
                   {lang.name}
                 </button>
               ))}
