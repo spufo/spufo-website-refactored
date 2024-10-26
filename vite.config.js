@@ -4,5 +4,4 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/spufo-website-refactored/',  // Replace 'your-repo-name' with the actual name of your GitHub repository
 });
