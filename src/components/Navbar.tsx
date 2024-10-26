@@ -29,6 +29,13 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
+      
+      // Always show navbar if we're near the top (within 50 pixels)
+      if (currentScrollY <= 50) {
+        setIsVisible(true);
+        return;
+      } 
+
       if (currentScrollY < lastScrollY) {
         setIsVisible(true);
       } else {
