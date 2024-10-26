@@ -32,10 +32,10 @@ const Hero = () => {
               <img src={curved_FinalSpufoLogo} alt="SPUFO Logo" className="w-20 mr-4" />
               <h1 className="text-4xl md:text-8xl font-bold text-[#1E1E2E]">SPUFO</h1>
             </div>
-            <h2 className="text-2xl md:text-3xl text-[--orange-color] mb-5 text-center md:text-left">
+            <h2 className="text-xl md:text-3xl text-[--orange-color] mb-5 text-center md:text-left">
               {t('heroTitle')}
             </h2>
-            <p className="text-2xl md:text-5xl font-bold mb-8 text-[#1E1E2E] text-center md:text-left">
+            <p className="text-xl md:text-5xl font-bold mb-8 text-[#1E1E2E] text-center md:text-left">
               <span className="hover:scale-[1.1] transition-all duration-300 inline-block mx-2">
                 {t('heroDigital')}
               </span>
