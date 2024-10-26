@@ -1,5 +1,6 @@
 // src/components/PrivacyStatement.js
 import React from 'react';
+import background from '/assets/images/Background.png';
 
 const PrivacyStatement = () => {
   return (
@@ -8,7 +9,7 @@ const PrivacyStatement = () => {
       <div 
         className="absolute invert sm:-translate-y-40 -translate-x-[80rem] sm:-translate-x-[60rem] rotate-[46deg] sm:rotate-[64deg] scale-[1] sm:scale-[0.9] inset-0 bg-no-repeat bg-center opacity-100 z-0 pointer-events-none"
       >
-        <img src="/assets/images/Background.png" alt="Background" />
+        <img src={background} alt="Background" />
       </div>
 
       <div className="flex-grow flex flex-col max-w-5xl mx-auto py-24 px-6 mt-24 z-10">

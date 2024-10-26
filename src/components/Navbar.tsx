@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import ScrollLink from './ScrollLink';
+import twojoLogo from '/assets/images/Final_Twojo_Logo_White_SPUFO.png';
 
 const Navbar = () => {
   const { t, i18n } = useTranslation();
@@ -62,7 +63,7 @@ const Navbar = () => {
       <div className="flex justify-between items-center">
         <ScrollLink to="/" className="text-3xl font-bold text-white flex items-center ml-2 md:ml-6">
           <img 
-            src="/assets/images/Final_Twojo_Logo_White_SPUFO.png"
+            src={twojoLogo}
             alt="TWOJO Logo" 
             className="h-7 md:h-9 mr-2 md:mr-3"
           />
@@ -125,12 +126,12 @@ const Navbar = () => {
         </div>
 
         {/* Contact Button */}
-        <ScrollLink 
-          to="/contact" 
+        <a 
+          href="/contact" 
           className="hidden md:block bg-[--orange-color] text-white px-8 py-3 rounded-xl text-xl font-semibold hover:bg-[--orange-selected-color] transition-all duration-300 mr-6 hover:shadow-lg"
         >
           {t('contact')}
-        </ScrollLink>
+        </a>
 
         {/* Mobile Menu Button */}
         <div className="md:hidden">

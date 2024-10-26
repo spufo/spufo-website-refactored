@@ -3,6 +3,7 @@ import { FaLinkedin } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import ScrollLink from './ScrollLink';
 import { useTranslation } from 'react-i18next';
+import twojoLogo from '/assets/images/Final_Twojo_Logo_White_SPUFO.png';
 
 
 const Footer = () => {
@@ -15,7 +16,7 @@ const Footer = () => {
         <div className="flex flex-col">
           <ScrollLink to="/" className="flex mb-4">
             <img 
-              src="/assets/images/Final_Twojo_Logo_White_SPUFO.png"
+              src={twojoLogo}
               alt="TWOJO Logo" 
               className="h-10"
             />
