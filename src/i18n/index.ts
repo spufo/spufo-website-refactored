@@ -272,7 +272,7 @@ const resources = {
       contact: 'Contatti',
       
       // Hero Section
-      heroTitle: "L'App per la Fotografia della Scena del Crimine",
+      heroTitle: "L'App Forense Fotografica",
       heroDigital: 'Digitale',
       heroFast: 'Veloce',
       heroEfficient: 'Efficiente',
@@ -400,11 +400,11 @@ const resources = {
       contact: 'Contact',
       
       // Hero Section
-      heroTitle: 'L\'Application de Photographie de Scène de Crime',
+      heroTitle: 'L\'App Photo pour Scènes de Crime',
       heroDigital: 'Numérique',
       heroFast: 'Rapide',
       heroEfficient: 'Efficace',
-      tryNow: 'Essayer Maintenant',
+      tryNow: 'Essayer',
       pdfBrochure: 'Brochure PDF',
       developedWith: 'Développé en collaboration avec',
       
