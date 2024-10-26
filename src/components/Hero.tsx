@@ -75,7 +75,7 @@ const Hero = () => {
         <img 
           src={logo_FOR_RGB}
           alt="FOR Zürich" 
-          className="h-10 sm:h-16"
+          className="h-14 mb-20 sm:mb-0 sm:h-16"
         />
       </div>
       {/* Scroll down button */}
