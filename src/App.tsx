@@ -15,6 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Spufo/>} />
           <Route path="/spufo/" element={<Spufo/>} />
+          <Route path="/spufo-website-refactored/" element={<Spufo/>} />
           <Route path="/impressum/" element={<Impressum />} />
           <Route path="/privacy/" element={<Privacy />} />
           <Route path="/datenschutz/" element={<Privacy />} />
