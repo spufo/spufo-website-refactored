@@ -30,9 +30,9 @@ const Hero = () => {
           <div className="relative z-10 flex flex-col items-center md:items-start w-full">
             <div className="flex items-center mb-6 justify-center md:justify-start">
               <img src={curved_FinalSpufoLogo} alt="SPUFO Logo" className="w-20 mr-4" />
-              <h1 className="text-6xl md:text-8xl font-bold text-[#1E1E2E]">SPUFO</h1>
+              <h1 className="text-4xl md:text-8xl font-bold text-[#1E1E2E]">SPUFO</h1>
             </div>
-            <h2 className="text-3xl md:text-3xl text-[--orange-color] mb-5 text-center md:text-left">
+            <h2 className="text-2xl md:text-3xl text-[--orange-color] mb-5 text-center md:text-left">
               {t('heroTitle')}
             </h2>
             <p className="text-2xl md:text-5xl font-bold mb-8 text-[#1E1E2E] text-center md:text-left">
@@ -50,10 +50,10 @@ const Hero = () => {
             </p>
                 
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6 w-full sm:w-auto">
-              <ScrollLink to="/contact" className="bg-[--orange-color] border-2 border-[--orange-color] text-white px-8 py-3 rounded-xl text-xl font-semibold hover:border-[--orange-selected-color] hover:bg-[--orange-selected-color] transition duration-300 transform hover:scale-105 w-full sm:w-auto text-center">
+              <ScrollLink to="/contact" className="bg-[--orange-color] border-2 border-[--orange-color] text-white px-8 py-2 sm:py-3 rounded-xl text-xl font-semibold hover:border-[--orange-selected-color] hover:bg-[--orange-selected-color] transition duration-300 transform hover:scale-105 w-full sm:w-auto text-center">
                 {t('tryNow')}
               </ScrollLink>
-              <ScrollLink to="/brochure" className="bg-transparent border-2 border-[--orange-color] text-[--orange-color] px-8 py-3 rounded-xl text-xl font-semibold hover:bg-[--orange-color] hover:text-white transition duration-300 transform hover:scale-105 w-full sm:w-auto text-center">
+              <ScrollLink to="/brochure" className="bg-transparent border-2 border-[--orange-color] text-[--orange-color] px-8 py-2 sm:py-3 rounded-xl text-xl font-semibold hover:bg-[--orange-color] hover:text-white transition duration-300 transform hover:scale-105 w-full sm:w-auto text-center">
                 {t('pdfBrochure')}
               </ScrollLink>
             </div>
