@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import background from '/assets/images/Background.png';
 
 const Impressum = () => {
   const { t } = useTranslation();
@@ -10,7 +11,7 @@ const Impressum = () => {
       <div 
         className="absolute invert sm:-translate-y-40 -translate-x-80 sm:-translate-x-0 rotate-[46deg] sm:rotate-[34deg] scale-[1] sm:scale-[0.9] inset-0 bg-no-repeat bg-center opacity-100 z-0 pointer-events-none"
       >
-        <img src="/assets/images/Background.png" alt="Background" />
+        <img src={background} alt="Background" />
       </div>
 
       <div className="flex-grow flex flex-col max-w-5xl mx-auto py-24 px-6 mt-24 z-10">

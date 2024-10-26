@@ -1,5 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import aboutImage from '/assets/images/AboutImage.png';
+import background from '/assets/images/Background.png';
 
 const About = () => {
   const { t } = useTranslation();
@@ -11,10 +13,10 @@ const About = () => {
           <div 
             className="absolute invert translate-x-80 rotate-[-134deg] sm:rotate-[-134deg] scale-[2] sm:scale-[0.8] bg-contain bg-no-repeat bg-center opacity-100 z-0 pointer-events-none"
           >
-          <img src="/assets/images/Background.png" alt="Background Pattern" /></div>
+          <img src={background} alt="Background Pattern" /></div>
         <div className="md:w-1/2 mb-10 md:mb-0 flex justify-center">
           <img 
-            src="/assets/images/AboutImage.png" 
+            src={aboutImage}
             alt="SPUFO in action" 
             className="rounded-3xl shadow-2xl w-2/3 h-auto transform hover:scale-105 transition duration-300"
           />

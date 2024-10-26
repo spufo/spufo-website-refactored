@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { DollarSign, Zap, Smartphone, Compass, Camera, Cpu } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import moreMockup from '/assets/images/MoreMockup.png';
 
 interface Advantage {
   icon: React.ReactNode;
@@ -95,7 +96,7 @@ const SmartphoneAdvantages: React.FC = () => {
           </div>
           <div className="md:w-1/2 md:pl-12 flex justify-center">
             <img 
-              src="/assets/images/MoreMockup.png"  
+              src={moreMockup}
               alt="Smartphone Mockup" 
               className="max-w-full h-auto"
             />
