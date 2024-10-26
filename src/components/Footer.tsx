@@ -15,7 +15,7 @@ const Footer = () => {
         <div className="flex flex-col">
           <ScrollLink to="/" className="flex mb-4">
             <img 
-              src="/src/assets/images/Final_Twojo_Logo_White_SPUFO.png"
+              src="/assets/images/Final_Twojo_Logo_White_SPUFO.png"
               alt="TWOJO Logo" 
               className="h-10"
             />

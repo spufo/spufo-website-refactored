@@ -95,7 +95,7 @@ const SmartphoneAdvantages: React.FC = () => {
           </div>
           <div className="md:w-1/2 md:pl-12 flex justify-center">
             <img 
-              src="/src/assets/images/MoreMockup.png"  
+              src="/assets/images/MoreMockup.png"  
               alt="Smartphone Mockup" 
               className="max-w-full h-auto"
             />

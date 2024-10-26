@@ -20,12 +20,12 @@ const Hero = () => {
           <div 
             className="absolute invert sm:-translate-y-40 -translate-x-80 sm:-translate-x-0 rotate-[46deg] sm:rotate-[34deg] scale-[1.5] sm:scale-[0.9] inset-0 bg-contain bg-no-repeat bg-center opacity-100 z-0 pointer-events-none"
           >
-          <img src="/src/assets/images/Background.png" alt="Background" /></div>
+          <img src="/assets/images/Background.png" alt="Background" /></div>
         <div className="md:w-1/2 py-4 md:py-12 flex flex-col items-center md:items-start justify-center relative w-full">
           {/* Content */}
           <div className="relative z-10 flex flex-col items-center md:items-start w-full">
             <div className="flex items-center mb-6 justify-center md:justify-start">
-              <img src="/src/assets/images/Curved_FinalSpufoLogo.svg" alt="SPUFO Logo" className="w-20 mr-4" />
+              <img src="/assets/images/Curved_FinalSpufoLogo.svg" alt="SPUFO Logo" className="w-20 mr-4" />
               <h1 className="text-6xl md:text-8xl font-bold text-[#1E1E2E]">SPUFO</h1>
             </div>
             <h2 className="text-3xl md:text-3xl text-[--orange-color] mb-5 text-center md:text-left">
@@ -57,7 +57,7 @@ const Hero = () => {
         </div>
         <div className="md:w-1/2 bg-white py-0 md:py-12 flex flex-col justify-center items-center">
           <img
-            src="/src/assets/images/HeroMockup.png"
+            src="/assets/images/HeroMockup.png"
             alt="SPUFO App"
             className="max-w-full h-auto transform scale-90 sm:scale-100 md:scale-150 -mt-8 sm:mt-0"
           />
@@ -69,7 +69,7 @@ const Hero = () => {
           {t('developedWith')}
         </p>
         <img 
-          src="/src/assets/images/Logo_FOR_RGB.svg"
+          src="/assets/images/Logo_FOR_RGB.svg"
           alt="FOR Zürich" 
           className="h-12 sm:h-16"
         />
