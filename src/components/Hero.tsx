@@ -18,7 +18,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="relative bg-white min-h-screen flex items-start md:items-center overflow-hidden mt-0">
+    <div className="relative bg-white min-h-screen flex items-start md:items-center overflow-hidden mt-0" >
       <div className="flex flex-col md:flex-row items-stretch justify-between max-w-[100rem] mx-auto w-full px-6 over mt-16 md:mt-0">
           {/* Fingerprint background */}
           <div 

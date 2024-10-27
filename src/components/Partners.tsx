@@ -1,12 +1,15 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import logo_FOR from '/assets/images/Logo_FOR_RGB-White.svg';
 
 export default function Partners() {
+  const { t } = useTranslation();
+
   return (
     <div id="partners" className="bg-black pt-32 pb-24"> {/* Increased top padding to account for diagonal overlap */}
       <div className="container mx-auto px-6">
         <h2 className="text-[#00B7FF] text-3xl font-semibold text-center mb-16">
-          Partnered With
+          {t('twojo.partner.title')}
         </h2>
         
         <div className="flex flex-wrap justify-center items-center gap-24"> {/* Increased gap */}

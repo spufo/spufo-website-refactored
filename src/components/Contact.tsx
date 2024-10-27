@@ -6,7 +6,7 @@ const Contact = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="bg-gradient-to-br from-[#1E1E2E] to-[#2A2A3A] text-white py-24">
+    <section className="bg-gradient-to-br from-[#1E1E2E] to-[#2A2A3A] text-white py-24" >
       <div className="max-w-[1400px] mx-auto px-6">
         <h2 className="text-4xl md:text-7xl font-bold text-center text-white mb-4">
           {t('contactTitle')}

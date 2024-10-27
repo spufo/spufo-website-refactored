@@ -1,9 +1,11 @@
 import React from 'react';
-import matterhorn from '/assets/images/matterhorn.jpg';
+import { useTranslation } from 'react-i18next';
+import matterhorn from '/assets/images/matterhorn-cropped.jpg';
 import matterhornMobile from '/assets/images/matterhorn-mobile.jpg';
 import { ChevronDown } from 'lucide-react';
 
 export default function Hero() {
+    const { t } = useTranslation();
 
     const scrollToAbout = () => {
       const partnersSection = document.getElementById('partners');
@@ -19,18 +21,17 @@ export default function Hero() {
       > <img className="absolute inset-0 w-screen h-screen object-cover invisible md:visible" src={matterhorn} alt="Background" />
        <img className="absolute inset-0 w-screen h-screen object-cover visible md:invisible" src={matterhornMobile} alt="Background" />
         {/* Enhanced gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/60 to-black/100 md:via-black/20 md:to-black/90"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/60 to-black/90"></div>:
       </div>
       
       <div className="relative h-full flex pt-[20vh] md:pt-[30vh] md:pl-[20vh]">
         <div className="container mx-auto px-6">
           <div className="max-w-2xl ml-auto">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-8">
-              Developed in Switzerland.
+              {t('twojo.hero.title')}
             </h1>
             <p className="text-2xl md:text-3xl text-white leading-relaxed">
-              We're a dedicated team crafting 
-              solutions to help your business thrive.
+              {t('twojo.hero.subTitle')}
             </p>
           </div>
         </div>

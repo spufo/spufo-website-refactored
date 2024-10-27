@@ -7,8 +7,8 @@ const About = () => {
   const { t } = useTranslation();
 
   return (
-    <section id="about" className="relative py-20 px-6 bg-gradient-to-br from-[#1E1E2E] to-[#2A2A3A] overflow-hidden">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between">
+    <section id="about" className="relative py-20 px-6 bg-gradient-to-br from-[#1E1E2E] to-[#2A2A3A] overflow-hidden" >
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between" >
           {/* Fingerprint background */}
           <div 
             className="absolute invert translate-x-80 rotate-[-134deg] sm:rotate-[-134deg] scale-[2] sm:scale-[0.8] bg-contain bg-no-repeat bg-center opacity-100 z-0 pointer-events-none"

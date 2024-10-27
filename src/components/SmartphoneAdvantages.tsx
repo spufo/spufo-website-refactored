@@ -46,10 +46,10 @@ const AdvantageItem: React.FC<AdvantageItemProps> = ({ icon, advantageKey, isAct
   const { t } = useTranslation();
   return (
     <div 
-      className={`bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer group hover:scale-105 relative min-h-[100px] ${isActive ? 'text-[--orange-color]' : ''}`}
+      className={`bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer group hover:scale-105 relative min-h-[100px] ${isActive ? 'text-[--orange-color]' : ''}`} 
       onClick={onClick}
     >
-      <div className="p-8">
+      <div className="p-8" >
         <div className="flex items-center space-x-4">
           <div className="group-hover:text-[--orange-color] transition-all duration-300">
             {icon}
@@ -77,7 +77,10 @@ const SmartphoneAdvantages: React.FC = () => {
   };
 
   return (
-    <section className="relative pt-12 pb-24 px-6 bg-gray-100">
+    <section className="relative pt-12 pb-24 px-6 bg-gray-100" style={{
+      backgroundImage: 'radial-gradient(circle at 2px 2px, #D3D3D3	 1px, transparent 0)',
+      backgroundSize: '40px 40px',
+    }}>
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl md:text-7xl font-bold text-[--orange-color] mb-20 text-center">
           {t('smartphoneTitle')}

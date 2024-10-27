@@ -148,6 +148,50 @@ const resources = {
         cityCode: '6343 Rotkreuz',
         email: 'E-Mail',
         commercialRegister: 'Commercial Register'
+      },
+
+      twojo: {
+        hero: {
+          title: 'Developed in Switzerland.',
+          subTitle: 'We\'re a dedicated team crafting solutions to help your business thrive.'
+        },
+        partner: {
+          title: 'Partnered with'
+        },
+        solutions: {
+          title: 'Our Solutions',
+          subTitle: 'We offer flexible solutions for your business',
+          mobileDev: {
+            title: 'Mobile Development',
+            description: 'Apps that work on both iOS and Android.',
+            link: 'Learn more'
+          },
+          businessApp: {
+            title: 'Business Application',
+            description: 'Applications tailored for your business.',
+            link: 'Learn more',
+          },
+          interactiveExp: {
+            title: 'Interactive Experiences',
+            description: 'Gamify your advertisement.',
+            link: 'Learn more',
+          }
+        },
+        highlightedProduct: {
+          title: 'Highlighted Product',
+          product: {
+            title: 'SPUFO',
+            subTitle: 'The Crime Scene Photography App',
+            slogan: 'Digital - Fast - Efficient',
+            description: 'The SPUFO app is a forensic iOS solution that simplifies and streamlines the collection of dactyloscopic traces at crime scenes.',
+            bulletPoints: {
+              first: 'Replaces traditional DSLR cameras and gelatin sheets with mobile technology.',
+              second: 'Captures traces on-site, accurately scaled 1:1 and in 1000 dpi resolution.',
+              third: 'Allows direct numbering, cropping, and preparation for AFIS searches.'
+            },
+            button: 'Learn more'
+          }
+        }
       }
     }
   },
@@ -278,7 +322,52 @@ const resources = {
         cityCode: '6343 Rotkreuz',
         email: 'E-Mail',
         commercialRegister: 'Handelsregister-Nr'
-      }
+      },
+
+      twojo: {
+        hero: {
+            title: 'Entwickelt in der Schweiz.',
+            subTitle: 'Wir sind ein engagiertes Team, das Lösungen entwickelt, um Ihrem Unternehmen zum Erfolg zu verhelfen.'
+        },
+        partner: {
+            title: 'Partnerschaft mit'
+        },
+        solutions: {
+            title: 'Unsere Lösungen',
+            subTitle: 'Wir bieten flexible Lösungen für Ihr Unternehmen',
+            mobileDev: {
+                title: 'Mobile Entwicklung',
+                description: 'Apps, die sowohl auf iOS als auch auf Android funktionieren.',
+                link: 'Erfahren Sie mehr'
+            },
+            businessApp: {
+                title: 'Business-Anwendung',
+                description: 'Anwendungen maßgeschneidert für Ihr Unternehmen.',
+                link: 'Erfahren Sie mehr'
+            },
+            interactiveExp: {
+                title: 'Interaktive Erlebnisse',
+                description: 'Gamifizieren Sie Ihre Werbung.',
+                link: 'Erfahren Sie mehr'
+            }
+        },
+        highlightedProduct: {
+            title: 'Hervorgehobenes Produkt',
+            product: {
+                title: 'SPUFO',
+                subTitle: 'Die Tatort-Fotografie-App',
+                slogan: 'Digital - Schnell - Effizient',
+                description: 'Die SPUFO-App ist eine forensische iOS-Lösung, die das Sammeln daktyloskopischer Spuren am Tatort vereinfacht und optimiert.',
+                bulletPoints: {
+                    first: 'Ersetzt herkömmliche DSLR-Kameras und Gelatinefolien durch mobile Technologie.',
+                    second: 'Erfasst Spuren vor Ort, maßstabsgetreu 1:1 und in 1000 dpi Auflösung.',
+                    third: 'Ermöglicht direkte Nummerierung, Zuschneiden und Vorbereitung für AFIS-Suchen.'
+                },
+                button: 'Erfahren Sie mehr'
+            }
+        }
+    }
+    
     }
   },
   it: {
@@ -406,7 +495,51 @@ const resources = {
         cityCode: '6343 Rotkreuz',
         email: 'E-Mail',
         commercialRegister: 'Registro delle imprese'
-      }
+      },
+      twojo: {
+        hero: {
+            title: 'Sviluppato in Svizzera.',
+            subTitle: 'Siamo un team dedicato, che crea soluzioni per aiutare la tua azienda a prosperare.'
+        },
+        partner: {
+            title: 'In collaborazione con'
+        },
+        solutions: {
+            title: 'Le Nostre Soluzioni',
+            subTitle: 'Offriamo soluzioni flessibili per la tua azienda',
+            mobileDev: {
+                title: 'Sviluppo Mobile',
+                description: 'App che funzionano su iOS e Android.',
+                link: 'Scopri di più'
+            },
+            businessApp: {
+                title: 'Applicazione Aziendale',
+                description: 'Applicazioni su misura per la tua azienda.',
+                link: 'Scopri di più'
+            },
+            interactiveExp: {
+                title: 'Esperienze Interattive',
+                description: 'Gamifica la tua pubblicità.',
+                link: 'Scopri di più'
+            }
+        },
+        highlightedProduct: {
+            title: 'Prodotto in Evidenza',
+            product: {
+                title: 'SPUFO',
+                subTitle: 'L’app di fotografia per le scene del crimine',
+                slogan: 'Digitale - Veloce - Efficiente',
+                description: 'L’app SPUFO è una soluzione iOS forense che semplifica e ottimizza la raccolta di tracce dattiloscopiche nelle scene del crimine.',
+                bulletPoints: {
+                    first: 'Sostituisce le fotocamere DSLR tradizionali e le pellicole in gelatina con la tecnologia mobile.',
+                    second: 'Cattura le tracce sul posto, con scala 1:1 e risoluzione di 1000 dpi.',
+                    third: 'Permette la numerazione diretta, il ritaglio e la preparazione per le ricerche AFIS.'
+                },
+                button: 'Scopri di più'
+            }
+        }
+    }
+    
     }
   },
   fr: {
@@ -535,7 +668,51 @@ const resources = {
         cityCode: '6343 Rotkreuz',
         email: 'E-mail',
         commercialRegister: 'Registre du commerce'
-      }
+      },
+      twojo: {
+        hero: {
+            title: 'Développé en Suisse.',
+            subTitle: 'Nous sommes une équipe dédiée, créant des solutions pour faire prospérer votre entreprise.'
+        },
+        partner: {
+            title: 'Partenariat avec'
+        },
+        solutions: {
+            title: 'Nos Solutions',
+            subTitle: 'Nous offrons des solutions flexibles pour votre entreprise',
+            mobileDev: {
+                title: 'Développement Mobile',
+                description: 'Applications fonctionnant sur iOS et Android.',
+                link: 'En savoir plus'
+            },
+            businessApp: {
+                title: 'Application Professionnelle',
+                description: 'Applications adaptées à votre entreprise.',
+                link: 'En savoir plus'
+            },
+            interactiveExp: {
+                title: 'Expériences Interactives',
+                description: 'Gamifiez votre publicité.',
+                link: 'En savoir plus'
+            }
+        },
+        highlightedProduct: {
+            title: 'Produit Vedette',
+            product: {
+                title: 'SPUFO',
+                subTitle: 'L’application de photographie de scènes de crime',
+                slogan: 'Digital - Rapide - Efficace',
+                description: 'L’application SPUFO est une solution iOS médico-légale qui simplifie et optimise la collecte de traces dactyloscopiques sur les scènes de crime.',
+                bulletPoints: {
+                    first: 'Remplace les caméras DSLR traditionnelles et les feuilles de gélatine par la technologie mobile.',
+                    second: 'Capture les traces sur place, à l’échelle 1:1 et avec une résolution de 1000 dpi.',
+                    third: 'Permet la numérotation directe, le recadrage et la préparation pour les recherches AFIS.'
+                },
+                button: 'En savoir plus'
+            }
+        }
+    }
+    
     }
   }
 };
