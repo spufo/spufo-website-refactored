@@ -61,6 +61,25 @@ const resources = {
         link: 'Read success stories'
       },
 
+      //Solutions
+      solutions: {
+        mobile: {
+          title: "Mobile Development",
+          description: "Apps that work on both iOS and Android."
+        },
+        business: {
+          title: "Business Application",
+          description: "Applications tailored for your business."
+        },
+        interactive: {
+          title: "Interactive Experiences",
+          description: "Gamify your advertisement."
+        }
+      },
+      common: {
+        learnMore: "Learn more"
+      },
+
       // Smartphone Advantages Section
       smartphoneTitle: 'Redefining Evidence Capture',
       advantages: {

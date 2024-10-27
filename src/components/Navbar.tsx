@@ -1,9 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import ScrollLink from './ScrollLink';
-import twojoLogo from '/assets/images/Final_Twojo_Logo_White_SPUFO.png';
+import twojoLogoSpufo from '/assets/images/Final_Twojo_Logo_White_SPUFO.png';
+import twojoLogo from '/assets/images/Final_Twojo_Logo_White.png';
 
-const Navbar = () => {
+interface NavbarProps {
+  activePath: string;
+  twojo: boolean;
+}
+
+const Navbar = ({ activePath, twojo }: NavbarProps) => {
   const { t, i18n } = useTranslation();
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
@@ -30,7 +36,6 @@ const Navbar = () => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
       
-      // Always show navbar if we're near the top (within 50 pixels)
       if (currentScrollY <= 50) {
         setIsVisible(true);
         return;
@@ -48,11 +53,10 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, [lastScrollY]);
 
-  // Close language menu when clicking outside
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       const target = event.target as HTMLElement;
-      if (!target.closest('.lang-menu')) {
+      if (target != null && !target.closest('.lang-menu')) {
         setIsLangMenuOpen(false);
       }
     };
@@ -61,16 +65,26 @@ const Navbar = () => {
     return () => document.removeEventListener('click', handleClickOutside);
   }, []);
 
+  // Conditional colors based on the 'twojo' prop
+  const backgroundColor = twojo ? 'bg-black' : 'bg-[#1E1E2E]';
+  const textColor = 'text-white';
+  const textColorActive = twojo ? 'text-cyan-400' : 'text-[--orange-color]';
+  const hoverTextColor = twojo ? 'hover:text-cyan-400' : 'hover:text-[--orange-color]';
+  const borderColor = twojo ? 'border-cyan-400' : 'border-[--orange-color]';
+  const buttonBgColor = twojo ? 'bg-cyan-400' : 'bg-[--orange-color]';
+  const buttonHoverBgColor = twojo ? 'hover:bg-cyan-400' : 'hover:bg-[--orange-selected-color]';
+  const logoImage = twojo ? twojoLogo : twojoLogoSpufo;
+
   return (
     <nav 
-      className={`fixed top-0 left-0 right-0 bg-[#1E1E2E] py-3 md:py-5 px-2 
-        transition-transform duration-300 z-40 border-b-4 border-[--orange-color] 
+      className={`fixed top-0 left-0 right-0 ${backgroundColor} py-3 md:py-5 px-2 
+        transition-all duration-500 ease-in-out z-40 border-b-4 ${borderColor} 
         ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}
     >
       <div className="flex justify-between items-center">
         <ScrollLink to="/" className="text-3xl font-bold text-white flex items-center ml-2 md:ml-6">
           <img 
-            src={twojoLogo}
+            src={logoImage}
             alt="TWOJO Logo" 
             className="h-7 md:h-9 mr-2 md:mr-3"
           />
@@ -79,13 +93,13 @@ const Navbar = () => {
         {/* Desktop Menu */}
         <div className="hidden md:flex px-20 space-x-16 flex-1">
           <div className="flex space-x-16">
-            <ScrollLink to="/spufo" className="text-[--orange-color] hover:text-[--orange-selected-color] text-2xl font-medium tracking-wide transition-colors duration-200">
+            <ScrollLink to="/spufo" className={`${activePath == "spufo" ? textColorActive : textColor} ${hoverTextColor} text-2xl font-medium tracking-wide transition-colors duration-300`}>
               SPUFO
             </ScrollLink>
-            <ScrollLink to="/blog" className="text-white hover:text-[--orange-color] text-2xl font-medium tracking-wide transition-colors duration-200">
+            <ScrollLink to="/blog" className={`${activePath == "blog" ? textColorActive : textColor} ${hoverTextColor} text-2xl font-medium tracking-wide transition-colors duration-300`}>
               Blog
             </ScrollLink>
-            <ScrollLink to="/about" className="text-white hover:text-[--orange-color] text-2xl font-medium tracking-wide transition-colors duration-200">
+            <ScrollLink to="/about" className={`${activePath == "about" ? textColorActive : textColor} ${hoverTextColor} text-2xl font-medium tracking-wide transition-colors duration-300`}>
               {t('about')}
             </ScrollLink>
           </div>
@@ -98,7 +112,7 @@ const Navbar = () => {
               e.stopPropagation();
               setIsLangMenuOpen(!isLangMenuOpen);
             }}
-            className="flex items-center space-x-2 text-white hover:text-[--orange-color] transition-colors duration-200"
+            className="flex items-center space-x-2 text-white hover:text-skyblue transition-colors duration-300"
           >
             <span className="flex items-center">
               <img 
@@ -133,18 +147,18 @@ const Navbar = () => {
         </div>
 
         {/* Contact Button */}
-        <a 
-          href="/contact" 
-          className="hidden md:block bg-[--orange-color] text-white px-8 py-3 rounded-xl text-xl font-semibold hover:bg-[--orange-selected-color] transition-all duration-300 mr-6 hover:shadow-lg"
+        <ScrollLink 
+          to="/contact" 
+          className={`hidden md:block ${buttonBgColor} text-white px-8 py-3 rounded-xl text-xl font-semibold ${buttonHoverBgColor} transition-all duration-300 mr-6 hover:shadow-lg`}
         >
           {t('contact')}
-        </a>
+        </ScrollLink>
 
         {/* Mobile Menu Button */}
         <div className="md:hidden">
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="text-white focus:outline-none p-2 hover:bg-[--orange-color] rounded-lg transition-colors duration-200 mr-2"
+            className="text-white focus:outline-none p-2 hover:bg-[--orange-color] rounded-lg transition-colors duration-300 mr-2"
           >
             <svg
               className="h-6 w-6"
@@ -162,58 +176,6 @@ const Navbar = () => {
               )}
             </svg>
           </button>
-        </div>
-      </div>
-
-      {/* Mobile Menu */}
-      <div 
-        className={`${
-          isOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4 pointer-events-none'
-        } md:hidden mt-4 transition-all duration-300 ease-in-out absolute left-0 right-0 bg-[#1E1E2E] border-b-4 border-[--orange-color]`}
-      >
-        <div className="flex flex-col py-4">
-          <ScrollLink to="/spufo" className="text-[--orange-color] hover:text-[--orange-selected-color] font-medium py-3 px-6 hover:bg-[#2A2A3A] transition-colors duration-200">
-            SPUFO
-          </ScrollLink>
-          <ScrollLink to="/blog" className="text-white hover:text-[--orange-color] font-medium py-3 px-6 hover:bg-[#2A2A3A] transition-colors duration-200">
-            Blog
-          </ScrollLink>
-          <ScrollLink to="/about" className="text-white hover:text-[--orange-color] font-medium py-3 px-6 hover:bg-[#2A2A3A] transition-colors duration-200">
-            {t('about')}
-          </ScrollLink>
-
-          {/* Mobile Language Selector */}
-          <div className="px-6 py-3 border-t border-gray-700">
-            <div className="text-white mb-2">Language</div>
-            <div className="grid grid-cols-2 gap-2">
-              {languages.map((lang) => (
-                <button
-                  key={lang.code}
-                  onClick={() => changeLanguage(lang.code)}
-                  className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors duration-200 flex items-center justify-center
-                    ${i18n.language === lang.code 
-                      ? 'bg-[--orange-color] text-white' 
-                      : 'bg-gray-700 text-white hover:bg-[--orange-color]'}`}
-                >
-                  <img 
-                    src={getFlagUrl(lang.flag)}
-                    alt=""
-                    className="w-6 h-4 mr-2"
-                  />
-                  {lang.name}
-                </button>
-              ))}
-            </div>
-          </div>
-
-          <div className="px-6 pt-3 border-t border-gray-700">
-            <ScrollLink
-              to="/contact" 
-              className="inline-block bg-[--orange-color] text-white px-3 py-2 rounded-xl font-semibold hover:bg-[--orange-selected-color] transition-all duration-300 hover:shadow-lg mt-0"
-            >
-              {t('contact')}
-            </ScrollLink>
-          </div>
         </div>
       </div>
     </nav>

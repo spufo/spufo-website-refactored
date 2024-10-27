@@ -7,12 +7,19 @@
 :root {
   --orange-color: #FF6600;
   --orange-selected-color: #FF8533;
+  --blue-color: #00c8ff;
+  --blue-selected-color: #33daff;
 }
 
 body {
   font-family: 'Inter', sans-serif;
 }
 
-::selection {
-  background: var(--orange-selected-color);
+@layer components {
+  .twojo * ::selection {
+    background: var(--blue-selected-color);
+  }
+  .spufo * ::selection {
+    background: var(--orange-selected-color);
+  }
 }

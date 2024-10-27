@@ -8,12 +8,12 @@ import Contact from './Contact';
 const Spufo = () => {
   return (
     <>
-        <Hero />
-        <About />
-        <Features />
-        <SmartphoneAdvantages />
-        <Testimonial />
-        <Contact />
+      <Hero />
+      <About />
+      <Features />
+      <SmartphoneAdvantages />
+      <Testimonial />
+      <Contact />
     </>
   );
 };
