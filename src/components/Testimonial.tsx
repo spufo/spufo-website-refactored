@@ -6,10 +6,7 @@ const Testimonial = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="py-24 px-6 bg-gray-100 text-[#1E1E2E]" style={{
-      backgroundImage: 'radial-gradient(circle at 2px 2px, #D3D3D3	 1px, transparent 0)',
-      backgroundSize: '40px 40px',
-    }}>
+    <section className="py-24 px-6 bg-gray-100 text-[#1E1E2E]">
       <div className="max-w-5xl mx-auto">
         <h2 className="text-4xl md:text-7xl font-bold text-[--orange-color] mb-12 text-center">
           {t('testimonialTitle')}

@@ -222,6 +222,36 @@ const resources = {
             email: 'mailto:jordan.suter@twojo.ch'
           },
           closingStatement: 'While we each maintain our careers as software engineers at various companies, Twojo Software represents our shared vision to create impactful solutions. Our diverse professional experiences and complementary skill sets allow us to approach challenges from multiple perspectives, resulting in more robust and innovative solutions.'
+        },
+        blog: {
+          title: 'Blog',
+          description: 'Stay up to date with the latest news, updates, and insights from Twojo Software GmbH. Discover our innovative solutions and technology developments.',
+          featuredArticle: {
+            tag: 'News | October 8, 2024',
+            title: 'New Crime Scene App Secures Fingerprints for Police',
+            content: 'The Zurich Forensic Institute fully relies on SPUFO. The innovative app revolutionizes forensic work and makes it more efficient than ever.',
+            link: 'Learn More'
+          },
+          olderArticles: {
+            article1: {
+              tag: 'Update | August 22, 2024',
+              title: 'Enhanced Logging and User Experience',
+              content: 'The latest SPUFO update brings powerful logging functions and UI improvements. Users can now track app activities with local logs and send error reports via email when needed.',
+              link: 'Learn More'
+            },
+            article2: {
+              tag: 'Update | February 15, 2024',
+              title: 'Advanced Image Processing and Export Features',
+              content: 'SPUFO now offers advanced image processing functions with adjustable contrast, brightness, and free rotation. Exported images contain important metadata such as GPS coordinates and timestamps.',
+              link: 'Learn More'
+            },
+            article3: {
+              tag: 'Update | November 19, 2023',
+              title: 'Camera Improvements and Multilingual Support',
+              content: 'A new macro mode simplifies camera operation. The app now supports German, English, and French and offers improved data management with automatic case cleanup.',
+              link: 'Learn More'
+            }
+          }
         }
       }
     }
@@ -427,6 +457,36 @@ const resources = {
             email: 'mailto:jordan.suter@twojo.ch'
           },
           closingStatement: 'Während wir alle unsere Karrieren als Softwareingenieure in verschiedenen Unternehmen weiterführen, steht Twojo Software für unsere gemeinsame Vision, wirkungsvolle Lösungen zu schaffen. Unsere vielfältigen beruflichen Erfahrungen und komplementären Fähigkeiten ermöglichen es uns, Herausforderungen aus mehreren Perspektiven zu betrachten und so robustere und innovativere Lösungen zu schaffen.'
+        },
+        blog: {
+          title: 'Blog',
+          description: 'Bleiben Sie auf dem Laufenden über die neuesten Nachrichten, Updates und Einblicke von Twojo Software GmbH. Entdecken Sie unsere innovativen Lösungen und technologischen Entwicklungen.',
+          featuredArticle: {
+            tag: 'News | 8. Oktober 2024',
+            title: 'Neue Tatort-App sichert Fingerabdrücke für die Polizei',
+            content: 'Das Forensische Institut Zürich setzt voll auf SPUFO. Die innovative App revolutioniert die Spurensicherung und macht sie effizienter denn je.',
+            link: 'Mehr erfahren'
+          },
+          olderArticles: {
+            article1: {
+              tag: 'Update | 22. August 2024',
+              title: 'Enhanced Logging and User Experience',
+              content: 'Das neueste SPUFO Update bringt leistungsstarke Logging-Funktionen und UI-Verbesserungen. Nutzer können nun App-Aktivitäten mit lokalen Logs verfolgen und bei Bedarf Fehlerberichte per E-Mail senden.',
+              link: 'Mehr erfahren'
+            },
+            article2: {
+              tag: 'Update | 15. Februar 2024',
+              title: 'Advanced Image Processing and Export Features',
+              content: 'SPUFO bietet nun erweiterte Bildverarbeitungsfunktionen mit einstellbarem Kontrast, Helligkeit und freier Rotation. Exportierte Bilder enthalten wichtige Metadaten wie GPS-Koordinaten und Zeitstempel.',
+              link: 'Mehr erfahren'
+            },
+            article3: {
+              tag: 'Update | 19. November 2023',
+              title: 'Camera Improvements and Multilingual Support',
+              content: 'Ein neuer Nahaufnahmemodus vereinfacht die Kamerabedienung. Die App unterstützt nun Deutsch, Englisch und Französisch und bietet verbesserte Datenverwaltung mit automatischer Fallbereinigung.',
+              link: 'Mehr erfahren'
+            }
+          }
         }
       }
 
@@ -630,6 +690,36 @@ const resources = {
             email: 'mailto:jordan.suter@twojo.ch'
           },
           closingStatement: 'Pur mantenendo le nostre carriere come ingegneri del software in varie aziende, Twojo Software rappresenta la nostra visione comune di creare soluzioni di impatto. Le nostre diverse esperienze professionali e le nostre competenze complementari ci permettono di affrontare le sfide da diverse prospettive, con soluzioni più solide e innovative.'
+        },
+        blog: {
+          title: 'Blog',
+          description: 'Resta aggiornato sulle ultime novità, gli aggiornamenti e gli approfondimenti di Twojo Software GmbH. Scopri le nostre soluzioni innovative e gli sviluppi tecnologici.',
+          featuredArticle: {
+            tag: 'News | 8 Ottobre 2024',
+            title: 'Nuova app per la scena del crimine assicura le impronte digitali per la polizia',
+            content: 'L\'Istituto Forense di Zurigo si affida completamente a SPUFO. L\'app innovativa rivoluziona l\'analisi forense e la rende più efficiente che mai.',
+            link: 'Scopri di più'
+          },
+          olderArticles: {
+            article1: {
+              tag: 'Aggiornamento | 22 Agosto 2024',
+              title: 'Logging avanzato e esperienza utente migliorata',
+              content: 'L\'ultimo aggiornamento di SPUFO porta potenti funzioni di logging e miglioramenti dell\'interfaccia utente. Gli utenti possono ora monitorare le attività dell\'app con log locali e inviare report di errore via email quando necessario.',
+              link: 'Scopri di più'
+            },
+            article2: {
+              tag: 'Aggiornamento | 15 Febbraio 2024',
+              title: 'Elaborazione avanzata delle immagini e funzioni di esportazione',
+              content: 'SPUFO ora offre funzioni avanzate di elaborazione delle immagini con contrasto regolabile, luminosità e rotazione libera. Le immagini esportate contengono metadati importanti come coordinate GPS e timestamp.',
+              link: 'Scopri di più'
+            },
+            article3: {
+              tag: 'Aggiornamento | 19 Novembre 2023',
+              title: 'Miglioramenti della fotocamera e supporto multilingue',
+              content: 'Una nuova modalità macro semplifica l\'uso della fotocamera. L\'app ora supporta tedesco, inglese e francese e offre una gestione migliorata dei dati con pulizia automatica dei casi.',
+              link: 'Scopri di più'
+            }
+          }
         }
       }
 
@@ -834,6 +924,36 @@ const resources = {
             email: 'mailto:jordan.suter@twojo.ch'
           },
           closingStatement: 'Tout en maintenant nos carrières respectives en tant qu\'ingénieurs logiciels dans diverses entreprises, Twojo Software représente notre vision commune de créer des solutions impactantes. Nos expériences professionnelles diversifiées et nos compétences complémentaires nous permettent d\'aborder les défis sous plusieurs angles, aboutissant à des solutions plus robustes et innovantes.'
+        },
+        blog: {
+          title: 'Blog',
+          description: 'Restez informé des dernières actualités, mises à jour et perspectives de Twojo Software GmbH. Découvrez nos solutions innovantes et nos développements technologiques.',
+          featuredArticle: {
+            tag: 'Actualités | 8 octobre 2024',
+            title: 'Nouvelle application pour scènes de crime sécurise les empreintes digitales pour la police',
+            content: 'L\'Institut médico-légal de Zurich fait entièrement confiance à SPUFO. L\'application innovante révolutionne l\'investigation criminelle et la rend plus efficace que jamais.',
+            link: 'En savoir plus'
+          },
+          olderArticles: {
+            article1: {
+              tag: 'Mise à jour | 22 août 2024',
+              title: 'Journalisation améliorée et expérience utilisateur',
+              content: 'La dernière mise à jour de SPUFO apporte de puissantes fonctions de journalisation et des améliorations de l\'interface utilisateur. Les utilisateurs peuvent désormais suivre les activités de l\'application avec des journaux locaux et envoyer des rapports d\'erreur par e-mail si nécessaire.',
+              link: 'En savoir plus'
+            },
+            article2: {
+              tag: 'Mise à jour | 15 février 2024',
+              title: 'Traitement d\'image avancé et fonctionnalités d\'exportation',
+              content: 'SPUFO propose désormais des fonctions avancées de traitement d\'image avec contraste réglable, luminosité et rotation libre. Les images exportées contiennent des métadonnées importantes comme les coordonnées GPS et les horodatages.',
+              link: 'En savoir plus'
+            },
+            article3: {
+              tag: 'Mise à jour | 19 novembre 2023',
+              title: 'Améliorations de l\'appareil photo et support multilingue',
+              content: 'Un nouveau mode macro simplifie l\'utilisation de l\'appareil photo. L\'application prend maintenant en charge l\'allemand, l\'anglais et le français et offre une meilleure gestion des données avec un nettoyage automatique des cas.',
+              link: 'En savoir plus'
+            }
+          }
         }
       }
 

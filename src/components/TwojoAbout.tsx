@@ -3,6 +3,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { Linkedin, Mail } from 'lucide-react';
+import team from '/assets/images/team.jpg';
 
 const TwojoAbout: React.FC = () => {
   const { t } = useTranslation();
@@ -43,7 +44,7 @@ const TwojoAbout: React.FC = () => {
             <div className="relative overflow-hidden rounded-3xl">
               <img
                 className="w-full shadow-2xl transform transition-transform duration-700 group-hover:scale-105"
-                src="/assets/images/team.JPG"
+                src={team}
                 alt={t('twojo.about.teamImageAlt')}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#111]/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -60,8 +61,7 @@ const TwojoAbout: React.FC = () => {
                 className="group"
               >
                 <div className="rounded-3xl shadow-lg p-8 h-full bg-[#18181b] 
-                  transform hover:scale-105 transition duration-300
-                  hover:shadow-[0_0_30px_rgba(0,183,255,0.15)]">
+                  transform hover:scale-105 transition duration-300">
 
                   <h3 className="text-2xl font-bold text-white mb-2">{t(`twojo.about.${memberKey}.name`)}</h3>
                   

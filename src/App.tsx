@@ -7,6 +7,7 @@ import Privacy from './components/Privacy';
 import Spufo from './components/Spufo';
 import Twojo from './components/Twojo';
 import TwojoAbout from './components/TwojoAbout';
+import Blog from './components/Blog';
 import { usePageMeta } from './hooks/usePageMeta';
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
           <Route path="/spufo/" element={<Spufo />} />
           <Route path="/spufo-website-refactored/" element={<Twojo />} />
           <Route path="/about/" element={<TwojoAbout />} />
+          <Route path="/blog/" element={<Blog />} />
           <Route path="/impressum/" element={<Impressum />} />
           <Route path="/privacy/" element={<Privacy />} />
           <Route path="/datenschutz/" element={<Privacy />} />

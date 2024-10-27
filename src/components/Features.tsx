@@ -30,10 +30,7 @@ export default function Features() {
   ];
 
   return (
-    <section className="py-32 px-6 bg-gray-100" id="features" style={{
-      backgroundImage: 'radial-gradient(circle at 2px 2px, #D3D3D3	 1px, transparent 0)',
-      backgroundSize: '40px 40px',
-    }}>
+    <section className="py-32 px-6 bg-gray-100" id="features">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl md:text-7xl font-bold text-center text-[--orange-color] mb-20">
           {t('featuresTitle')}
