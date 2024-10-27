@@ -12,7 +12,7 @@ export default function Hero() {
     };
     
   return (
-    <div className="relative h-screen">
+    <div className="relative min-h-screen overflow-hidden mt-0">
       <div 
         className="absolute inset-0 bg-cover bg-center"
       > <img className="absolute inset-0 w-screen h-screen object-cover" src={matterhorn} alt="Background" />

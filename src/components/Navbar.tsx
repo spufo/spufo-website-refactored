@@ -158,7 +158,7 @@ const Navbar = ({ activePath, twojo }: NavbarProps) => {
         <div className="md:hidden">
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="text-white focus:outline-none p-2 hover:bg-[--orange-color] rounded-lg transition-colors duration-300 mr-2"
+            className={`text-white focus:outline-none p-2 hover:${buttonBgColor} rounded-lg transition-colors duration-300 mr-2`}
           >
             <svg
               className="h-6 w-6"
@@ -176,6 +176,58 @@ const Navbar = ({ activePath, twojo }: NavbarProps) => {
               )}
             </svg>
           </button>
+        </div>
+      </div>
+
+      {/* Mobile Menu */}
+      <div 
+        className={`${
+          isOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4 pointer-events-none'
+        } md:hidden mt-4 transition-all duration-300 ease-in-out absolute left-0 right-0 ${backgroundColor} border-b-4 ${borderColor}`}
+      >
+        <div className="flex flex-col py-4">
+          <ScrollLink to="/spufo"  className={`${activePath == "spufo" ? textColorActive : textColor}  ${hoverTextColor} font-medium py-3 px-6 hover:bg-[#2A2A3A] transition-colors duration-300`}>
+            SPUFO
+          </ScrollLink>
+          <ScrollLink to="/blog"  className={`${activePath == "blog" ? textColorActive : textColor}  ${hoverTextColor} font-medium py-3 px-6 hover:bg-[#2A2A3A] transition-colors duration-300`}>
+            Blog
+          </ScrollLink>
+          <ScrollLink to="/about"  className={`${activePath == "about" ? textColorActive : textColor} ${hoverTextColor} font-medium py-3 px-6 hover:bg-[#2A2A3A] transition-colors duration-300`}>
+            {t('about')}
+          </ScrollLink>
+
+          {/* Mobile Language Selector */}
+          <div className="px-6 py-3 border-t border-gray-700">
+            <div className="text-white mb-2">Language</div>
+            <div className="grid grid-cols-2 gap-2">
+              {languages.map((lang) => (
+                <button
+                  key={lang.code}
+                  onClick={() => changeLanguage(lang.code)}
+                  className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors duration-200 flex items-center justify-center
+                    ${i18n.language === lang.code 
+                      ? `${buttonBgColor} text-white` 
+                      : `bg-gray-700 text-white hover:${buttonBgColor}`}`}
+                >
+                  <img 
+                    src={getFlagUrl(lang.flag)}
+                    alt=""
+                    className="w-6 h-4 mr-2"
+                  />
+                  {lang.name}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          <div className="px-6 pt-3 border-t border-gray-700">
+            <ScrollLink
+              to="/contact" 
+              className={`inline-block ${buttonBgColor} text-white px-3 py-2 rounded-xl font-semibold ${buttonHoverBgColor} transition-all duration-300 hover:shadow-lg mt-0`}
+            >
+              {t('contact')}
+            </ScrollLink>
+          </div>
         </div>
       </div>
     </nav>
