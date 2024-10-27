@@ -36,7 +36,7 @@ const Hero = () => {
               {t('heroTitle')}
             </h2>
             <p className="text-xl md:text-5xl font-bold mb-8 text-[#1E1E2E] text-center md:text-left">
-              <span className="hover:scale-[1.1] transition-all duration-300 inline-block mx-2">
+              <span className="hover:scale-[1.1] transition-all duration-300 inline-block mr-2">
                 {t('heroDigital')}
               </span>
                - 
