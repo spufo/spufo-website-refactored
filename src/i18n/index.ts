@@ -11,7 +11,7 @@ const resources = {
       features: 'Features',
       testimonials: 'Testimonials',
       contact: 'Contact',
-      
+
       // Hero Section
       heroTitle: 'The Crime Scene Photography App',
       heroDigital: 'Digital',
@@ -20,14 +20,14 @@ const resources = {
       tryNow: 'Try Now',
       pdfBrochure: 'PDF Brochure',
       developedWith: 'Developed in collaboration with',
-      
+
       // About Section
       aboutTitle: 'About SPUFO',
       aboutDescription: 'The SPUFO app is a forensic iOS solution that simplifies and streamlines the collection of dactyloscopic traces at crime scenes.',
       aboutPoint1: 'Replaces traditional DSLR cameras and gelatin films with mobile technology.',
       aboutPoint2: 'Captures traces on-site, scaled 1:1, and saved in 1000 dpi resolution.',
       aboutPoint3: 'Allows direct numbering, cropping, and preparation for AFIS searches.',
-      
+
       // Advantages Section
       advantagesTitle: 'Smartphone Advantages',
       advantage1: 'Improved Efficiency',
@@ -191,6 +191,37 @@ const resources = {
             },
             button: 'Learn more'
           }
+        },
+        about: {
+          teamTitle: 'Meet Our Team',
+          teamSubtitle: 'Passionate Developers Creating Innovative Solutions',
+          description: 'We are a team of passionate software engineers who met during our apprenticeship at BBBaden School. While pursuing our individual careers in technology, we\'ve joined forces to create innovative solutions through Twojo Software.',
+          teamImageAlt: 'Twojo Software Team',
+          festim: {
+            name: 'Festim Jetishi',
+            role: 'Software Engineer',
+            education: 'FHNW Windisch/Brugg',
+            description: 'After completing his apprenticeship as an Informatiker at BBBaden School, Festim pursued his studies in Informatik at FHNW. His passion for software development and innovative solutions drives our technical excellence forward.',
+            linkedin: 'https://www.linkedin.com/in/festim-jetishi-b8ba82334/',
+            email: 'mailto:festim.jetishi@twojo.ch'
+          },
+          josip: {
+            name: 'Josip Corkovic',
+            role: 'Cybersecurity Specialist',
+            education: 'HSLU Rotkreuz',
+            description: 'Following his apprenticeship at BBBaden School, Josip specialized in Cybersecurity at HSLU. His expertise in security and system architecture ensures our solutions are both innovative and secure.',
+            linkedin: '#',
+            email: 'mailto:josip.corkovic@twojo.ch'
+          },
+          jordan: {
+            name: 'Jordan Suter',
+            role: 'Software Engineer',
+            education: 'HSLU Rotkreuz',
+            description: 'Jordan completed his apprenticeship at BBBaden School and continued his education in Informatik at HSLU. His technical knowledge and problem-solving skills contribute significantly to our development process.',
+            linkedin: 'https://www.linkedin.com/in/jordan-suter/',
+            email: 'mailto:jordan.suter@twojo.ch'
+          },
+          closingStatement: 'While we each maintain our careers as software engineers at various companies, Twojo Software represents our shared vision to create impactful solutions. Our diverse professional experiences and complementary skill sets allow us to approach challenges from multiple perspectives, resulting in more robust and innovative solutions.'
         }
       }
     }
@@ -203,7 +234,7 @@ const resources = {
       features: 'Funktionen',
       testimonials: 'Referenzen',
       contact: 'Kontakt',
-      
+
       // Hero Section
       heroTitle: 'Die Tatortfotografie-App',
       heroDigital: 'Digital',
@@ -212,26 +243,26 @@ const resources = {
       tryNow: 'Jetzt testen',
       pdfBrochure: 'PDF Broschüre',
       developedWith: 'Entwickelt in Zusammenarbeit mit',
-      
+
       // About Section
       aboutTitle: 'Über SPUFO',
       aboutDescription: 'Die SPUFO-App ist eine forensische iOS-Lösung, die die Erfassung von daktyloskopischen Spuren am Tatort vereinfacht und optimiert.',
       aboutPoint1: 'Ersetzt traditionelle DSLR-Kameras und Gelatinefolien durch mobile Technologie.',
       aboutPoint2: 'Erfasst Spuren vor Ort, maßstabsgetreu 1:1 und in 1000 dpi Auflösung.',
       aboutPoint3: 'Ermöglicht direkte Nummerierung, Zuschnitt und Vorbereitung für AFIS-Suchen.',
-      
-      
+
+
       // Advantages Section
       advantagesTitle: 'Smartphone-Vorteile',
       advantage1: 'Verbesserte Effizienz',
       advantage2: 'Erhöhte Sicherheit',
       advantage3: 'Bessere Leistung',
-      
+
       // Testimonials Section
       testimonialsTitle: 'Was unsere Nutzer sagen',
       testimonialText: 'SPUFO hat die Art und Weise, wie ich mein Smartphone nutze, komplett verändert. Die Funktionen sind unglaublich!',
-      
-      
+
+
       // Features Section
       featuresTitle: 'Hauptvorteile',
       feature1: {
@@ -326,48 +357,79 @@ const resources = {
 
       twojo: {
         hero: {
-            title: 'Entwickelt in der Schweiz.',
-            subTitle: 'Wir sind ein engagiertes Team, das Lösungen entwickelt, um Ihrem Unternehmen zum Erfolg zu verhelfen.'
+          title: 'Entwickelt in der Schweiz.',
+          subTitle: 'Wir sind ein engagiertes Team, das Lösungen entwickelt, um Ihrem Unternehmen zum Erfolg zu verhelfen.'
         },
         partner: {
-            title: 'Partnerschaft mit'
+          title: 'Partnerschaft mit'
         },
         solutions: {
-            title: 'Unsere Lösungen',
-            subTitle: 'Wir bieten flexible Lösungen für Ihr Unternehmen',
-            mobileDev: {
-                title: 'Mobile Entwicklung',
-                description: 'Apps, die sowohl auf iOS als auch auf Android funktionieren.',
-                link: 'Erfahren Sie mehr'
-            },
-            businessApp: {
-                title: 'Business-Anwendung',
-                description: 'Anwendungen maßgeschneidert für Ihr Unternehmen.',
-                link: 'Erfahren Sie mehr'
-            },
-            interactiveExp: {
-                title: 'Interaktive Erlebnisse',
-                description: 'Gamifizieren Sie Ihre Werbung.',
-                link: 'Erfahren Sie mehr'
-            }
+          title: 'Unsere Lösungen',
+          subTitle: 'Wir bieten flexible Lösungen für Ihr Unternehmen',
+          mobileDev: {
+            title: 'Mobile Entwicklung',
+            description: 'Apps, die sowohl auf iOS als auch auf Android funktionieren.',
+            link: 'Erfahren Sie mehr'
+          },
+          businessApp: {
+            title: 'Business-Anwendung',
+            description: 'Anwendungen maßgeschneidert für Ihr Unternehmen.',
+            link: 'Erfahren Sie mehr'
+          },
+          interactiveExp: {
+            title: 'Interaktive Erlebnisse',
+            description: 'Gamifizieren Sie Ihre Werbung.',
+            link: 'Erfahren Sie mehr'
+          }
         },
         highlightedProduct: {
-            title: 'Hervorgehobenes Produkt',
-            product: {
-                title: 'SPUFO',
-                subTitle: 'Die Tatort-Fotografie-App',
-                slogan: 'Digital - Schnell - Effizient',
-                description: 'Die SPUFO-App ist eine forensische iOS-Lösung, die das Sammeln daktyloskopischer Spuren am Tatort vereinfacht und optimiert.',
-                bulletPoints: {
-                    first: 'Ersetzt herkömmliche DSLR-Kameras und Gelatinefolien durch mobile Technologie.',
-                    second: 'Erfasst Spuren vor Ort, maßstabsgetreu 1:1 und in 1000 dpi Auflösung.',
-                    third: 'Ermöglicht direkte Nummerierung, Zuschneiden und Vorbereitung für AFIS-Suchen.'
-                },
-                button: 'Erfahren Sie mehr'
-            }
+          title: 'Hervorgehobenes Produkt',
+          product: {
+            title: 'SPUFO',
+            subTitle: 'Die Tatort-Fotografie-App',
+            slogan: 'Digital - Schnell - Effizient',
+            description: 'Die SPUFO-App ist eine forensische iOS-Lösung, die das Sammeln daktyloskopischer Spuren am Tatort vereinfacht und optimiert.',
+            bulletPoints: {
+              first: 'Ersetzt herkömmliche DSLR-Kameras und Gelatinefolien durch mobile Technologie.',
+              second: 'Erfasst Spuren vor Ort, maßstabsgetreu 1:1 und in 1000 dpi Auflösung.',
+              third: 'Ermöglicht direkte Nummerierung, Zuschneiden und Vorbereitung für AFIS-Suchen.'
+            },
+            button: 'Erfahren Sie mehr'
+          }
+        },
+        about: {
+          teamTitle: 'Treffen Sie Unser Team',
+          teamSubtitle: 'Leidenschaftliche Entwickler, die innovative Lösungen schaffen',
+          description: 'Wir sind ein Team leidenschaftlicher Softwareingenieure, die sich während ihrer Ausbildung an der BBBaden Schule kennengelernt haben. Während wir unsere individuellen Karrieren in der Technologie verfolgen, haben wir uns zusammengeschlossen, um durch Twojo Software innovative Lösungen zu schaffen.',
+          teamImageAlt: 'Twojo Software Team',
+          festim: {
+            name: 'Festim Jetishi',
+            role: 'Softwareingenieur',
+            education: 'FHNW Windisch/Brugg',
+            description: 'Nach seiner Ausbildung zum Informatiker an der BBBaden Schule setzte Festim sein Studium der Informatik an der FHNW fort. Seine Leidenschaft für Softwareentwicklung und innovative Lösungen treibt unsere technische Exzellenz voran.',
+            linkedin: 'https://www.linkedin.com/in/festim-jetishi-b8ba82334/',
+            email: 'mailto:festim.jetishi@twojo.ch'
+          },
+          josip: {
+            name: 'Josip Corkovic',
+            role: 'Cybersecurity-Spezialist',
+            education: 'HSLU Rotkreuz',
+            description: 'Nach seiner Ausbildung an der BBBaden Schule spezialisierte sich Josip an der HSLU auf Cybersicherheit. Seine Expertise in Sicherheit und Systemarchitektur stellt sicher, dass unsere Lösungen sowohl innovativ als auch sicher sind.',
+            linkedin: '#',
+            email: 'mailto:josip.corkovic@twojo.ch'
+          },
+          jordan: {
+            name: 'Jordan Suter',
+            role: 'Softwareingenieur',
+            education: 'HSLU Rotkreuz',
+            description: 'Jordan absolvierte seine Ausbildung an der BBBaden Schule und setzte seine Ausbildung in Informatik an der HSLU fort. Sein technisches Wissen und seine Problemlösungsfähigkeiten tragen erheblich zu unserem Entwicklungsprozess bei.',
+            linkedin: 'https://www.linkedin.com/in/jordan-suter/',
+            email: 'mailto:jordan.suter@twojo.ch'
+          },
+          closingStatement: 'Während wir alle unsere Karrieren als Softwareingenieure in verschiedenen Unternehmen weiterführen, steht Twojo Software für unsere gemeinsame Vision, wirkungsvolle Lösungen zu schaffen. Unsere vielfältigen beruflichen Erfahrungen und komplementären Fähigkeiten ermöglichen es uns, Herausforderungen aus mehreren Perspektiven zu betrachten und so robustere und innovativere Lösungen zu schaffen.'
         }
-    }
-    
+      }
+
     }
   },
   it: {
@@ -378,7 +440,7 @@ const resources = {
       features: 'Funzionalità',
       testimonials: 'Testimonianze',
       contact: 'Contatti',
-      
+
       // Hero Section
       heroTitle: "L'App Forense Fotografica",
       heroDigital: 'Digitale',
@@ -387,14 +449,14 @@ const resources = {
       tryNow: 'Prova Ora',
       pdfBrochure: 'Brochure PDF',
       developedWith: 'Sviluppato in collaborazione con',
-      
+
       // About Section
       aboutTitle: 'Chi è SPUFO',
       aboutDescription: "L'app SPUFO è una soluzione forense iOS che semplifica e ottimizza la raccolta di tracce dattiloscopiche sulla scena del crimine.",
       aboutPoint1: 'Sostituisce le tradizionali fotocamere DSLR e le pellicole di gelatina con tecnologia mobile.',
       aboutPoint2: 'Cattura tracce sul posto, in scala 1:1 e salvate in risoluzione 1000 dpi.',
       aboutPoint3: 'Permette numerazione diretta, ritaglio e preparazione per ricerche AFIS.',
-      
+
       // Advantages Section
       advantagesTitle: 'Vantaggi Smartphone',
       advantage1: 'Efficienza Migliorata',
@@ -498,48 +560,79 @@ const resources = {
       },
       twojo: {
         hero: {
-            title: 'Sviluppato in Svizzera.',
-            subTitle: 'Siamo un team dedicato, che crea soluzioni per aiutare la tua azienda a prosperare.'
+          title: 'Sviluppato in Svizzera.',
+          subTitle: 'Siamo un team dedicato, che crea soluzioni per aiutare la tua azienda a prosperare.'
         },
         partner: {
-            title: 'In collaborazione con'
+          title: 'In collaborazione con'
         },
         solutions: {
-            title: 'Le Nostre Soluzioni',
-            subTitle: 'Offriamo soluzioni flessibili per la tua azienda',
-            mobileDev: {
-                title: 'Sviluppo Mobile',
-                description: 'App che funzionano su iOS e Android.',
-                link: 'Scopri di più'
-            },
-            businessApp: {
-                title: 'Applicazione Aziendale',
-                description: 'Applicazioni su misura per la tua azienda.',
-                link: 'Scopri di più'
-            },
-            interactiveExp: {
-                title: 'Esperienze Interattive',
-                description: 'Gamifica la tua pubblicità.',
-                link: 'Scopri di più'
-            }
+          title: 'Le Nostre Soluzioni',
+          subTitle: 'Offriamo soluzioni flessibili per la tua azienda',
+          mobileDev: {
+            title: 'Sviluppo Mobile',
+            description: 'App che funzionano su iOS e Android.',
+            link: 'Scopri di più'
+          },
+          businessApp: {
+            title: 'Applicazione Aziendale',
+            description: 'Applicazioni su misura per la tua azienda.',
+            link: 'Scopri di più'
+          },
+          interactiveExp: {
+            title: 'Esperienze Interattive',
+            description: 'Gamifica la tua pubblicità.',
+            link: 'Scopri di più'
+          }
         },
         highlightedProduct: {
-            title: 'Prodotto in Evidenza',
-            product: {
-                title: 'SPUFO',
-                subTitle: 'L’app di fotografia per le scene del crimine',
-                slogan: 'Digitale - Veloce - Efficiente',
-                description: 'L’app SPUFO è una soluzione iOS forense che semplifica e ottimizza la raccolta di tracce dattiloscopiche nelle scene del crimine.',
-                bulletPoints: {
-                    first: 'Sostituisce le fotocamere DSLR tradizionali e le pellicole in gelatina con la tecnologia mobile.',
-                    second: 'Cattura le tracce sul posto, con scala 1:1 e risoluzione di 1000 dpi.',
-                    third: 'Permette la numerazione diretta, il ritaglio e la preparazione per le ricerche AFIS.'
-                },
-                button: 'Scopri di più'
-            }
+          title: 'Prodotto in Evidenza',
+          product: {
+            title: 'SPUFO',
+            subTitle: 'L’app di fotografia per le scene del crimine',
+            slogan: 'Digitale - Veloce - Efficiente',
+            description: 'L’app SPUFO è una soluzione iOS forense che semplifica e ottimizza la raccolta di tracce dattiloscopiche nelle scene del crimine.',
+            bulletPoints: {
+              first: 'Sostituisce le fotocamere DSLR tradizionali e le pellicole in gelatina con la tecnologia mobile.',
+              second: 'Cattura le tracce sul posto, con scala 1:1 e risoluzione di 1000 dpi.',
+              third: 'Permette la numerazione diretta, il ritaglio e la preparazione per le ricerche AFIS.'
+            },
+            button: 'Scopri di più'
+          }
+        },
+        about: {
+          teamTitle: 'Incontra il Nostro Team',
+          teamSubtitle: 'Sviluppatori appassionati che creano soluzioni innovative',
+          description: 'Siamo un team di ingegneri del software appassionati che si sono conosciuti durante il loro apprendistato presso la scuola BBBaden. Pur proseguendo le nostre carriere individuali nella tecnologia, ci siamo uniti per creare soluzioni innovative attraverso Twojo Software.',
+          teamImageAlt: 'Team di Twojo Software',
+          festim: {
+            name: 'Festim Jetishi',
+            role: 'Ingegnere del Software',
+            education: 'FHNW Windisch/Brugg',
+            description: 'Dopo aver completato il suo apprendistato come informatico presso la scuola BBBaden, Festim ha proseguito gli studi in informatica alla FHNW. La sua passione per lo sviluppo software e le soluzioni innovative spinge avanti la nostra eccellenza tecnica.',
+            linkedin: 'https://www.linkedin.com/in/festim-jetishi-b8ba82334/',
+            email: 'mailto:festim.jetishi@twojo.ch'
+          },
+          josip: {
+            name: 'Josip Corkovic',
+            role: 'Specialista di Cybersecurity',
+            education: 'HSLU Rotkreuz',
+            description: 'Dopo il suo apprendistato alla scuola BBBaden, Josip si è specializzato in Cybersecurity presso la HSLU. La sua esperienza in sicurezza e architettura dei sistemi garantisce che le nostre soluzioni siano innovative e sicure.',
+            linkedin: '#',
+            email: 'mailto:josip.corkovic@twojo.ch'
+          },
+          jordan: {
+            name: 'Jordan Suter',
+            role: 'Ingegnere del Software',
+            education: 'HSLU Rotkreuz',
+            description: 'Jordan ha completato il suo apprendistato presso la scuola BBBaden e ha proseguito la sua formazione in informatica presso la HSLU. Le sue conoscenze tecniche e le sue capacità di problem-solving contribuiscono in modo significativo al nostro processo di sviluppo.',
+            linkedin: 'https://www.linkedin.com/in/jordan-suter/',
+            email: 'mailto:jordan.suter@twojo.ch'
+          },
+          closingStatement: 'Pur mantenendo le nostre carriere come ingegneri del software in varie aziende, Twojo Software rappresenta la nostra visione comune di creare soluzioni di impatto. Le nostre diverse esperienze professionali e le nostre competenze complementari ci permettono di affrontare le sfide da diverse prospettive, con soluzioni più solide e innovative.'
         }
-    }
-    
+      }
+
     }
   },
   fr: {
@@ -550,7 +643,7 @@ const resources = {
       features: 'Fonctionnalités',
       testimonials: 'Témoignages',
       contact: 'Contact',
-      
+
       // Hero Section
       heroTitle: 'L\'App Photo pour Scènes de Crime',
       heroDigital: 'Numérique',
@@ -559,24 +652,24 @@ const resources = {
       tryNow: 'Essayer',
       pdfBrochure: 'Brochure PDF',
       developedWith: 'Développé en collaboration avec',
-      
+
       // About Section
       aboutTitle: 'À Propos de SPUFO',
       aboutDescription: 'L\'application SPUFO est une solution iOS médico-légale qui simplifie et rationalise la collecte des traces dactyloscopiques sur les scènes de crime.',
       aboutPoint1: 'Remplace les appareils photo DSLR traditionnels et les films de gélatine par la technologie mobile.',
       aboutPoint2: 'Capture les traces sur place, à l\'échelle 1:1, et sauvegardées en résolution 1000 dpi.',
-      aboutPoint3: 'Permet la numérotation directe, le recadrage et la préparation pour les recherches AFIS.',     
-      
+      aboutPoint3: 'Permet la numérotation directe, le recadrage et la préparation pour les recherches AFIS.',
+
       // Advantages Section
       advantagesTitle: 'Avantages Smartphone',
       advantage1: 'Efficacité Améliorée',
       advantage2: 'Sécurité Renforcée',
       advantage3: 'Meilleures Performances',
-      
+
       // Testimonials Section
       testimonialsTitle: 'Ce Que Disent Nos Utilisateurs',
       testimonialText: 'SPUFO a complètement transformé la façon dont j\'utilise mon smartphone. Les fonctionnalités sont incroyables !',
-      
+
       // Features Section
       featuresTitle: 'Avantages Clés',
       feature1: {
@@ -671,48 +764,79 @@ const resources = {
       },
       twojo: {
         hero: {
-            title: 'Développé en Suisse.',
-            subTitle: 'Nous sommes une équipe dédiée, créant des solutions pour faire prospérer votre entreprise.'
+          title: 'Développé en Suisse.',
+          subTitle: 'Nous sommes une équipe dédiée, créant des solutions pour faire prospérer votre entreprise.'
         },
         partner: {
-            title: 'Partenariat avec'
+          title: 'Partenariat avec'
         },
         solutions: {
-            title: 'Nos Solutions',
-            subTitle: 'Nous offrons des solutions flexibles pour votre entreprise',
-            mobileDev: {
-                title: 'Développement Mobile',
-                description: 'Applications fonctionnant sur iOS et Android.',
-                link: 'En savoir plus'
-            },
-            businessApp: {
-                title: 'Application Professionnelle',
-                description: 'Applications adaptées à votre entreprise.',
-                link: 'En savoir plus'
-            },
-            interactiveExp: {
-                title: 'Expériences Interactives',
-                description: 'Gamifiez votre publicité.',
-                link: 'En savoir plus'
-            }
+          title: 'Nos Solutions',
+          subTitle: 'Nous offrons des solutions flexibles pour votre entreprise',
+          mobileDev: {
+            title: 'Développement Mobile',
+            description: 'Applications fonctionnant sur iOS et Android.',
+            link: 'En savoir plus'
+          },
+          businessApp: {
+            title: 'Application Professionnelle',
+            description: 'Applications adaptées à votre entreprise.',
+            link: 'En savoir plus'
+          },
+          interactiveExp: {
+            title: 'Expériences Interactives',
+            description: 'Gamifiez votre publicité.',
+            link: 'En savoir plus'
+          }
         },
         highlightedProduct: {
-            title: 'Produit Vedette',
-            product: {
-                title: 'SPUFO',
-                subTitle: 'L’application de photographie de scènes de crime',
-                slogan: 'Digital - Rapide - Efficace',
-                description: 'L’application SPUFO est une solution iOS médico-légale qui simplifie et optimise la collecte de traces dactyloscopiques sur les scènes de crime.',
-                bulletPoints: {
-                    first: 'Remplace les caméras DSLR traditionnelles et les feuilles de gélatine par la technologie mobile.',
-                    second: 'Capture les traces sur place, à l’échelle 1:1 et avec une résolution de 1000 dpi.',
-                    third: 'Permet la numérotation directe, le recadrage et la préparation pour les recherches AFIS.'
-                },
-                button: 'En savoir plus'
-            }
+          title: 'Produit Vedette',
+          product: {
+            title: 'SPUFO',
+            subTitle: 'L’application de photographie de scènes de crime',
+            slogan: 'Digital - Rapide - Efficace',
+            description: 'L’application SPUFO est une solution iOS médico-légale qui simplifie et optimise la collecte de traces dactyloscopiques sur les scènes de crime.',
+            bulletPoints: {
+              first: 'Remplace les caméras DSLR traditionnelles et les feuilles de gélatine par la technologie mobile.',
+              second: 'Capture les traces sur place, à l’échelle 1:1 et avec une résolution de 1000 dpi.',
+              third: 'Permet la numérotation directe, le recadrage et la préparation pour les recherches AFIS.'
+            },
+            button: 'En savoir plus'
+          }
+        },
+        about: {
+          teamTitle: 'Rencontrez Notre Équipe',
+          teamSubtitle: 'Des développeurs passionnés créant des solutions innovantes',
+          description: 'Nous sommes une équipe d\'ingénieurs logiciels passionnés qui se sont rencontrés lors de notre apprentissage à l\'école BBBaden. Tout en poursuivant nos carrières individuelles dans la technologie, nous avons uni nos forces pour créer des solutions innovantes via Twojo Software.',
+          teamImageAlt: 'Équipe de Twojo Software',
+          festim: {
+            name: 'Festim Jetishi',
+            role: 'Ingénieur Logiciel',
+            education: 'FHNW Windisch/Brugg',
+            description: 'Après avoir terminé son apprentissage en tant qu\'informaticien à l\'école BBBaden, Festim a poursuivi ses études en informatique à la FHNW. Sa passion pour le développement de logiciels et les solutions innovantes fait progresser notre excellence technique.',
+            linkedin: 'https://www.linkedin.com/in/festim-jetishi-b8ba82334/',
+            email: 'mailto:festim.jetishi@twojo.ch'
+          },
+          josip: {
+            name: 'Josip Corkovic',
+            role: 'Spécialiste en Cybersécurité',
+            education: 'HSLU Rotkreuz',
+            description: 'Après son apprentissage à l\'école BBBaden, Josip s\'est spécialisé en cybersécurité à la HSLU. Son expertise en sécurité et architecture des systèmes garantit que nos solutions sont à la fois innovantes et sécurisées.',
+            linkedin: '#',
+            email: 'mailto:josip.corkovic@twojo.ch'
+          },
+          jordan: {
+            name: 'Jordan Suter',
+            role: 'Ingénieur Logiciel',
+            education: 'HSLU Rotkreuz',
+            description: 'Jordan a terminé son apprentissage à l\'école BBBaden et a poursuivi sa formation en informatique à la HSLU. Ses connaissances techniques et ses compétences en résolution de problèmes contribuent de manière significative à notre processus de développement.',
+            linkedin: 'https://www.linkedin.com/in/jordan-suter/',
+            email: 'mailto:jordan.suter@twojo.ch'
+          },
+          closingStatement: 'Tout en maintenant nos carrières respectives en tant qu\'ingénieurs logiciels dans diverses entreprises, Twojo Software représente notre vision commune de créer des solutions impactantes. Nos expériences professionnelles diversifiées et nos compétences complémentaires nous permettent d\'aborder les défis sous plusieurs angles, aboutissant à des solutions plus robustes et innovantes.'
         }
-    }
-    
+      }
+
     }
   }
 };

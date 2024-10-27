@@ -6,12 +6,17 @@ import Impressum from './components/Impressum';
 import Privacy from './components/Privacy';
 import Spufo from './components/Spufo';
 import Twojo from './components/Twojo';
+import TwojoAbout from './components/TwojoAbout';
+import { usePageMeta } from './hooks/usePageMeta';
 
 function App() {
   const location = useLocation();
 
   // Check if the current path is "/spufo" to set twojo to false
   const isSpufoPath = location.pathname === '/spufo';
+
+  // Use the custom hook to handle page meta
+  usePageMeta(isSpufoPath);
 
   return (
     <div className={`${isSpufoPath ? 'spufo' : 'twojo'} flex flex-col min-h-screen bg-white text-[#1E1E2E]`}>
@@ -21,6 +26,7 @@ function App() {
           <Route path="/" element={<Twojo />} />
           <Route path="/spufo/" element={<Spufo />} />
           <Route path="/spufo-website-refactored/" element={<Twojo />} />
+          <Route path="/about/" element={<TwojoAbout />} />
           <Route path="/impressum/" element={<Impressum />} />
           <Route path="/privacy/" element={<Privacy />} />
           <Route path="/datenschutz/" element={<Privacy />} />
