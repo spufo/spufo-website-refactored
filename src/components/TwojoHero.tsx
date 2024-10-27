@@ -30,7 +30,6 @@ export default function Hero() {
             </h1>
             <p className="text-2xl md:text-3xl text-white leading-relaxed">
               We're a dedicated team crafting 
-              <br />
               solutions to help your business thrive.
             </p>
           </div>
