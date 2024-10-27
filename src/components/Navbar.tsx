@@ -75,6 +75,10 @@ const Navbar = ({ activePath, twojo }: NavbarProps) => {
   const buttonHoverBgColor = twojo ? 'hover:bg-cyan-400' : 'hover:bg-[--orange-selected-color]';
   const logoImage = twojo ? twojoLogo : twojoLogoSpufo;
 
+  const handleMobileMenuClick = () => {
+    setIsOpen(false);
+  };
+
   return (
     <nav 
       className={`fixed top-0 left-0 right-0 ${backgroundColor} py-3 md:py-5 px-2 
@@ -186,13 +190,25 @@ const Navbar = ({ activePath, twojo }: NavbarProps) => {
         } md:hidden mt-4 transition-all duration-300 ease-in-out absolute left-0 right-0 ${backgroundColor} border-b-4 ${borderColor}`}
       >
         <div className="flex flex-col py-4">
-          <ScrollLink to="/spufo"  className={`${activePath == "spufo" ? textColorActive : textColor}  ${hoverTextColor} font-medium py-3 px-6 hover:bg-[#2A2A3A] transition-colors duration-300`}>
+          <ScrollLink 
+            to="/spufo" 
+            onClick={handleMobileMenuClick}
+            className={`${activePath == "spufo" ? textColorActive : textColor}  ${hoverTextColor} font-medium py-3 px-6 hover:bg-[#2A2A3A] transition-colors duration-300`}
+          >
             SPUFO
           </ScrollLink>
-          <ScrollLink to="/blog"  className={`${activePath == "blog" ? textColorActive : textColor}  ${hoverTextColor} font-medium py-3 px-6 hover:bg-[#2A2A3A] transition-colors duration-300`}>
+          <ScrollLink 
+            to="/blog" 
+            onClick={handleMobileMenuClick}
+            className={`${activePath == "blog" ? textColorActive : textColor}  ${hoverTextColor} font-medium py-3 px-6 hover:bg-[#2A2A3A] transition-colors duration-300`}
+          >
             Blog
           </ScrollLink>
-          <ScrollLink to="/about"  className={`${activePath == "about" ? textColorActive : textColor} ${hoverTextColor} font-medium py-3 px-6 hover:bg-[#2A2A3A] transition-colors duration-300`}>
+          <ScrollLink 
+            to="/about" 
+            onClick={handleMobileMenuClick}
+            className={`${activePath == "about" ? textColorActive : textColor} ${hoverTextColor} font-medium py-3 px-6 hover:bg-[#2A2A3A] transition-colors duration-300`}
+          >
             {t('about')}
           </ScrollLink>
 
@@ -203,7 +219,10 @@ const Navbar = ({ activePath, twojo }: NavbarProps) => {
               {languages.map((lang) => (
                 <button
                   key={lang.code}
-                  onClick={() => changeLanguage(lang.code)}
+                  onClick={() => {
+                    changeLanguage(lang.code);
+                    handleMobileMenuClick();
+                  }}
                   className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors duration-200 flex items-center justify-center
                     ${i18n.language === lang.code 
                       ? `${buttonBgColor} text-white` 
@@ -223,6 +242,7 @@ const Navbar = ({ activePath, twojo }: NavbarProps) => {
           <div className="px-6 pt-3 border-t border-gray-700">
             <ScrollLink
               to="/contact" 
+              onClick={handleMobileMenuClick}
               className={`inline-block ${buttonBgColor} text-white px-3 py-2 rounded-xl font-semibold ${buttonHoverBgColor} transition-all duration-300 hover:shadow-lg mt-0`}
             >
               {t('contact')}

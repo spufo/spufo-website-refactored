@@ -70,8 +70,8 @@ export default function HighlightedProduct() {
           </div>
           
           {/* Right Column - App Screenshot */}
-          <div className="relative">
-            <div className="relative z-10 transform lg:translate-x-[50%]">
+          <div>
+            <div className="relative z-10">
               <img 
                 src={heroImage}
                 alt="SPUFO App Interface"
