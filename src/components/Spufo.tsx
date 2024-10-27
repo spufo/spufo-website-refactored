@@ -13,7 +13,7 @@ const Spufo = () => {
       <Features />
       <SmartphoneAdvantages />
       <Testimonial />
-      <Contact />
+      <Contact twojo={false} />
     </>
   );
 };

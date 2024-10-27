@@ -28,7 +28,7 @@ function App() {
             path="/contact/"
             element={
               <div className="pt-12">
-                <Contact />
+                <Contact twojo={true} />
               </div>
             }
           />
