@@ -1,5 +1,6 @@
 import React from 'react';
 import matterhorn from '/assets/images/matterhorn.jpg';
+import matterhornMobile from '/assets/images/matterhorn-mobile.jpg';
 import { ChevronDown } from 'lucide-react';
 
 export default function Hero() {
@@ -12,21 +13,22 @@ export default function Hero() {
     };
     
   return (
-    <div className="relative min-h-screen overflow-hidden mt-0">
+    <div className="relative h-[65vh] md:min-h-screen overflow-hidden mt-0">
       <div 
         className="absolute inset-0 bg-cover bg-center"
-      > <img className="absolute inset-0 w-screen h-screen object-cover" src={matterhorn} alt="Background" />
+      > <img className="absolute inset-0 w-screen h-screen object-cover invisible md:visible" src={matterhorn} alt="Background" />
+       <img className="absolute inset-0 w-screen h-screen object-cover visible md:invisible" src={matterhornMobile} alt="Background" />
         {/* Enhanced gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/20 to-black/90"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/60 to-black/100 md:via-black/20 md:to-black/90"></div>
       </div>
       
-      <div className="relative h-full flex pt-[30vh] pl-[20vh]">
+      <div className="relative h-full flex pt-[20vh] md:pt-[30vh] md:pl-[20vh]">
         <div className="container mx-auto px-6">
           <div className="max-w-2xl ml-auto">
-            <h1 className="text-5xl font-bold text-white mb-8">
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-8">
               Developed in Switzerland.
             </h1>
-            <p className="text-3xl text-white leading-relaxed">
+            <p className="text-2xl md:text-3xl text-white leading-relaxed">
               We're a dedicated team crafting 
               <br />
               solutions to help your business thrive.
@@ -38,7 +40,7 @@ export default function Hero() {
       {/* Diagonal line separator */}
       <div className="absolute bottom-0 left-0 right-0">
         <div 
-          className="relative h-24 overflow-hidden"
+          className="relative h-12 md:h-24 overflow-hidden"
           style={{ 
             clipPath: 'polygon(100% 0, 100% 100%, 0% 100%)',
           }}
