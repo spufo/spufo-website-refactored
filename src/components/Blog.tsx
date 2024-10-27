@@ -2,6 +2,11 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 
+import featuredArticeImage from '/assets/images/team.jpg';
+import olderArticle1Image from '/assets/images/Curved_FinalSpufoLogo.svg';
+import olderArticle2Image from '/assets/images/Curved_FinalSpufoLogo.svg';
+import olderArticle3Image from '/assets/images/Curved_FinalSpufoLogo.svg';
+
 const Blog = () => {
   const { t } = useTranslation();
 
@@ -42,7 +47,7 @@ const Blog = () => {
             <div className="md:flex gap-8">
               <div className="md:w-1/2">
                 <img 
-                  src="/assets/images/team.jpg"
+                  src={featuredArticeImage}
                   alt="SPUFO Team" 
                   className="w-full h-full object-cover rounded-2xl"
                 />
@@ -83,7 +88,7 @@ const Blog = () => {
             <div className="rounded-3xl shadow-lg p-8 h-full bg-[#18181b] transform hover:scale-105 transition duration-300 flex flex-col">
               <div className="flex-grow">
                 <img 
-                  src="/assets/images/Curved_FinalSpufoLogo.svg"
+                  src={olderArticle1Image}
                   alt="SPUFO App" 
                   className="w-full h-48 object-cover rounded-2xl mb-6"
                 />
@@ -116,7 +121,7 @@ const Blog = () => {
             <div className="rounded-3xl shadow-lg p-8 h-full bg-[#18181b] transform hover:scale-105 transition duration-300 flex flex-col">
               <div className="flex-grow">
                 <img 
-                  src="/assets/images/Curved_FinalSpufoLogo.svg"
+                  src={olderArticle2Image}
                   alt="SPUFO Interface" 
                   className="w-full h-48 object-cover rounded-2xl mb-6"
                 />
@@ -149,7 +154,7 @@ const Blog = () => {
             <div className="rounded-3xl shadow-lg p-8 h-full bg-[#18181b] transform hover:scale-105 transition duration-300 flex flex-col">
               <div className="flex-grow">
                 <img 
-                  src="/assets/images/Curved_FinalSpufoLogo.svg"
+                  src={olderArticle3Image}
                   alt="SPUFO Features" 
                   className="w-full h-48 object-cover rounded-2xl mb-6"
                 />
