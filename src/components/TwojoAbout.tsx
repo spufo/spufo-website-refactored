@@ -24,7 +24,7 @@ const TwojoAbout: React.FC = () => {
             transition={{ duration: 0.6 }}
             className="text-center"
           >
-            <h2 className="text-cyan-400 text-4xl md:text-7xl font-semibold mb-4">
+            <h2 className="text-[--blue-color] text-4xl md:text-7xl font-semibold mb-4">
               {t('twojo.about.teamTitle')}
             </h2>
             <h3 className="text-white text-2xl font-bold mb-8">
@@ -65,7 +65,7 @@ const TwojoAbout: React.FC = () => {
 
                   <h3 className="text-2xl font-bold text-white mb-2">{t(`twojo.about.${memberKey}.name`)}</h3>
                   
-                  <div className="text-cyan-400 font-medium mb-1">{t(`twojo.about.${memberKey}.role`)}</div>
+                  <div className="text-[--blue-color] font-medium mb-1">{t(`twojo.about.${memberKey}.role`)}</div>
                   <div className="text-gray-400 mb-4">{t(`twojo.about.${memberKey}.education`)}</div>
                   
                   <p className="text-gray-400 leading-relaxed mb-6">
@@ -74,11 +74,11 @@ const TwojoAbout: React.FC = () => {
 
                   <div className="flex gap-4 text-gray-400">
                     <a href={t(`twojo.about.${memberKey}.linkedin`)} 
-                      className="hover:text-cyan-400 transition-colors duration-300 transform hover:scale-110">
+                      className="hover:text-[--blue-selected-color] transition-colors duration-300 transform hover:scale-110">
                       <Linkedin className="w-5 h-5" />
                     </a>
                     <a href={t(`twojo.about.${memberKey}.email`)}
-                      className="hover:text-cyan-400 transition-colors duration-300 transform hover:scale-110">
+                      className="hover:text-[--blue-selected-color] transition-colors duration-300 transform hover:scale-110">
                       <Mail className="w-5 h-5" />
                     </a>
                   </div>

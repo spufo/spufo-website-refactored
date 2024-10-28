@@ -28,7 +28,7 @@ const Blog = () => {
           transition={{ duration: 0.6 }}
           className="text-center"
         >
-          <h2 className="text-cyan-400 text-4xl md:text-7xl font-semibold mb-4">
+          <h2 className="text-[--blue-color] text-4xl md:text-7xl font-semibold mb-4">
             {t('twojo.blog.title')}
           </h2>
           <p className="mt-4 text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
@@ -54,7 +54,7 @@ const Blog = () => {
               </div>
               <div className="md:w-1/2 mt-6 md:mt-0 flex flex-col justify-between">
                 <div>
-                  <div className="text-cyan-400 font-medium mb-2">{t('twojo.blog.featuredArticle.tag')}</div>
+                  <div className="text-[--blue-color] font-medium mb-2">{t('twojo.blog.featuredArticle.tag')}</div>
                   <h3 className="text-2xl font-bold text-white mb-4">
                     {t('twojo.blog.featuredArticle.title')}
                   </h3>
@@ -66,7 +66,7 @@ const Blog = () => {
                   href="https://hub.hslu.ch/informatik/neue-tatort-app-sichert-fingerabdruecke-fuer-die-polizei/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center text-cyan-400 hover:text-cyan-300 transition-colors duration-300 mt-6"
+                  className="inline-flex items-center text-[--blue-color] hover:text-[--blue-selected-color] transition-colors duration-300 mt-6"
                 >
                   {t('twojo.blog.featuredArticle.link')}
                   <span className="ml-2">→</span>
@@ -92,7 +92,7 @@ const Blog = () => {
                   alt="SPUFO App" 
                   className="w-full h-48 object-cover rounded-2xl mb-6"
                 />
-                <div className="text-cyan-400 font-medium mb-2">{t('twojo.blog.olderArticles.article1.tag')}</div>
+                <div className="text-[--blue-color] font-medium mb-2">{t('twojo.blog.olderArticles.article1.tag')}</div>
                 <h3 className="text-2xl font-bold text-white mb-4">
                   {t('twojo.blog.olderArticles.article1.title')}
                 </h3>
@@ -103,7 +103,7 @@ const Blog = () => {
               <a 
                 href="https://business.apple.com/"
                 target="_blank"
-                className="inline-flex items-center text-cyan-400 hover:text-cyan-300 transition-colors duration-300 mt-6"
+                className="inline-flex items-center text-[--blue-color] hover:text-[--blue-selected-color] transition-colors duration-300 mt-6"
               >
                 {t('twojo.blog.olderArticles.article1.link')}
                 <span className="ml-2">→</span>
@@ -125,7 +125,7 @@ const Blog = () => {
                   alt="SPUFO Interface" 
                   className="w-full h-48 object-cover rounded-2xl mb-6"
                 />
-                <div className="text-cyan-400 font-medium mb-2">{t('twojo.blog.olderArticles.article2.tag')}</div>
+                <div className="text-[--blue-color] font-medium mb-2">{t('twojo.blog.olderArticles.article2.tag')}</div>
                 <h3 className="text-2xl font-bold text-white mb-4">
                   {t('twojo.blog.olderArticles.article2.title')}
                 </h3>
@@ -136,7 +136,7 @@ const Blog = () => {
               <a 
                 href="https://business.apple.com/"
                 target="_blank"
-                className="inline-flex items-center text-cyan-400 hover:text-cyan-300 transition-colors duration-300 mt-6"
+                className="inline-flex items-center text-[--blue-color] hover:text-[--blue-selected-color] transition-colors duration-300 mt-6"
               >
                 {t('twojo.blog.olderArticles.article2.link')}
                 <span className="ml-2">→</span>
@@ -158,7 +158,7 @@ const Blog = () => {
                   alt="SPUFO Features" 
                   className="w-full h-48 object-cover rounded-2xl mb-6"
                 />
-                <div className="text-cyan-400 font-medium mb-2">{t('twojo.blog.olderArticles.article3.tag')}</div>
+                <div className="text-[--blue-color] font-medium mb-2">{t('twojo.blog.olderArticles.article3.tag')}</div>
                 <h3 className="text-2xl font-bold text-white mb-4">
                   {t('twojo.blog.olderArticles.article3.title')}
                 </h3>
@@ -169,7 +169,7 @@ const Blog = () => {
               <a 
                 href="https://business.apple.com/"
                 target="_blank"
-                className="inline-flex items-center text-cyan-400 hover:text-cyan-300 transition-colors duration-300 mt-6"
+                className="inline-flex items-center text-[--blue-color] hover:text-[--blue-selected-color] transition-colors duration-300 mt-6"
               >
                 {t('twojo.blog.olderArticles.article3.link')}
                 <span className="ml-2">→</span>

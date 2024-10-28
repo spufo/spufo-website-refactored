@@ -62,7 +62,7 @@ export default function HighlightedProduct() {
               </li>
             </ul>
             <div>
-              <ScrollLink to="/spufo" className="bg-[#FF6B00] text-white px-8 py-3 mt-8 rounded-md hover:bg-[#e65600] transition-colors font-semibold">
+              <ScrollLink to="/spufo" className="bg-[--orange-color] text-white px-8 py-3 mt-8 rounded-md hover:bg-[--orange-selected-color] transition-colors duration-300 font-semibold">
                 {t('twojo.highlightedProduct.product.button')}
               </ScrollLink>
             </div>

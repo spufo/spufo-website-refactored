@@ -56,7 +56,7 @@ export default function Hero() {
       {/* Scroll down button */}
       <button 
         onClick={scrollToAbout}
-        className="absolute bottom-0 md:bottom-10 left-1/2 transform -translate-x-1/2 text-cyan-400 hover:text-cyan-400 transition-colors duration-300 hidden md:block"
+        className="absolute bottom-0 md:bottom-10 left-1/2 transform -translate-x-1/2 text-[--blue-color] hover:text-[--blue-selected-color] transition-colors duration-300 hidden md:block"
       >
         <ChevronDown className="w-12 h-12 animate-bounce" />
       </button>

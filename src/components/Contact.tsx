@@ -11,12 +11,12 @@ const Contact = ({ twojo = false }: ContactProps) => {
   const { t } = useTranslation();
 
   // Define color classes based on twojo prop
-  const accentColor = twojo ? 'text-cyan-400' : 'text-[--orange-color]';
-  const hoverAccentColor = twojo ? 'hover:text-cyan-400' : 'hover:text-[--orange-color]';
-  const bgAccentColor = twojo ? 'bg-cyan-400' : 'bg-[--orange-color]';
+  const accentColor = twojo ? 'text-[--blue-color]' : 'text-[--orange-color]';
+  const hoverAccentColor = twojo ? 'hover:text-[--blue-selected-color]' : 'hover:text-[--orange-color]';
+  const bgAccentColor = twojo ? 'bg-[--blue-color]' : 'bg-[--orange-color]';
   const hoverBgAccentColor = twojo ? 'hover:bg-cyan-500' : 'hover:bg-[--orange-selected-color]';
-  const focusBorderColor = twojo ? 'focus:border-cyan-400' : 'focus:border-[--orange-color]';
-  const focusRingColor = twojo ? 'focus:ring-cyan-400' : 'focus:ring-[--orange-color]';
+  const focusBorderColor = twojo ? 'focus:border-[--blue-color]' : 'focus:border-[--orange-color]';
+  const focusRingColor = twojo ? 'focus:ring-[--blue-color]' : 'focus:ring-[--orange-color]';
   const sectionBg = twojo ? 'bg-[#111]' : 'bg-gradient-to-br from-[#1E1E2E] to-[#2A2A3A]';
   const formBg = twojo ? 'bg-[#18181b]' : 'bg-[#2A2A3C]/50';
   const inputBg = twojo ? 'bg-black/50' : 'bg-[#1E1E2E]/50';
@@ -38,7 +38,7 @@ const Contact = ({ twojo = false }: ContactProps) => {
         )}
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16 relative">
-          <h2 className={`text-4xl md:text-7xl font-semibold mb-4 ${twojo ? 'text-cyan-400' : 'text-white'} text-center`}>
+          <h2 className={`text-4xl md:text-7xl font-semibold mb-4 ${twojo ? 'text-[--blue-color]' : 'text-white'} text-center`}>
             {t('contactTitle')}
           </h2>
           <p className="text-center text-gray-400 text-xl mb-16 max-w-3xl mx-auto leading-relaxed">

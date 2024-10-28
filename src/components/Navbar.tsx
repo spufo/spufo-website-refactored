@@ -68,11 +68,11 @@ const Navbar = ({ activePath, twojo }: NavbarProps) => {
   // Conditional colors based on the 'twojo' prop
   const backgroundColor = twojo ? 'bg-black' : 'bg-[#1E1E2E]';
   const textColor = 'text-white';
-  const textColorActive = twojo ? 'text-cyan-400' : 'text-[--orange-color]';
-  const hoverTextColor = twojo ? 'hover:text-cyan-400' : 'hover:text-[--orange-color]';
-  const borderColor = twojo ? 'border-cyan-400' : 'border-[--orange-color]';
-  const buttonBgColor = twojo ? 'bg-cyan-400' : 'bg-[--orange-color]';
-  const buttonHoverBgColor = twojo ? 'hover:bg-cyan-400' : 'hover:bg-[--orange-selected-color]';
+  const textColorActive = twojo ? 'text-[--blue-color]' : 'text-[--orange-color]';
+  const hoverTextColor = twojo ? 'hover:text-[--blue-selected-color]' : 'hover:text-[--orange-color]';
+  const borderColor = twojo ? 'border-[--blue-color]' : 'border-[--orange-color]';
+  const buttonBgColor = twojo ? 'bg-[--blue-color]' : 'bg-[--orange-color]';
+  const buttonHoverBgColor = twojo ? 'hover:bg-[--blue-selected-color]' : 'hover:bg-[--orange-selected-color]';
   const logoImage = twojo ? twojoLogo : twojoLogoSpufo;
 
   const handleMobileMenuClick = () => {
@@ -116,7 +116,7 @@ const Navbar = ({ activePath, twojo }: NavbarProps) => {
               e.stopPropagation();
               setIsLangMenuOpen(!isLangMenuOpen);
             }}
-            className="flex items-center space-x-2 text-white hover:text-skyblue transition-colors duration-300"
+            className="flex items-center space-x-2 text-white hover:text-./assets/ transition-colors duration-300"
           >
             <span className="flex items-center">
               <img 

@@ -9,7 +9,7 @@ const Footer = ({ twojo }: { twojo: boolean }) => {
 
   const backgroundColor = twojo ? 'bg-gradient-to-br from-black to-[#1A1A2B]' : 'bg-gradient-to-br from-[#1E1E2E] to-[#2A2A3A]';
   const textColor = 'text-white';
-  const linkHoverColor = twojo ? 'hover:text-cyan-400' : 'hover:text-[--orange-color]';
+  const linkHoverColor = twojo ? 'hover:text-[--blue-selected-color]' : 'hover:text-[--orange-color]';
   const logoImage = twojo ? twojoLogo : twojoLogoSpufo;
 
   return (
