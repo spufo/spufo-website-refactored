@@ -684,7 +684,7 @@ const resources = {
             role: 'Specialista di Cybersecurity',
             education: 'HSLU Rotkreuz',
             description: 'Dopo il suo apprendistato alla scuola BBBaden, Josip si è specializzato in Cybersecurity presso la HSLU. La sua esperienza in sicurezza e architettura dei sistemi garantisce che le nostre soluzioni siano innovative e sicure.',
-            linkedin: '#',
+            linkedin: 'https://www.linkedin.com/company/twojo/',
             email: 'mailto:josip.corkovic@twojo.ch'
           },
           jordan: {
