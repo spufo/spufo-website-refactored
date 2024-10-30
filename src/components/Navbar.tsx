@@ -90,7 +90,7 @@ const Navbar = ({ activePath, twojo }: NavbarProps) => {
           <img 
             src={logoImage}
             alt="TWOJO Logo" 
-            className="h-7 md:h-9 mr-2 md:mr-3"
+            className="h-7 min-w-20 md:h-9 mr-2 md:mr-3 object-contain"
           />
         </ScrollLink>
 
