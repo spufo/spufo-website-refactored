@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Mail, Send, MapPin } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import background from '/assets/images/Background.png';
@@ -7,8 +7,64 @@ interface ContactProps {
   twojo?: boolean;
 }
 
+type FormData = {
+  name: string;
+  email: string;
+  subject: string;
+  message: string;
+  company: string;
+  phone: string;
+  botcheck: string;
+};
+
 const Contact = ({ twojo = false }: ContactProps) => {
   const { t } = useTranslation();
+  const [formData, setFormData] = useState<FormData>({
+    name: '',
+    email: '',
+    subject: '',
+    message: '',
+    company: '',
+    phone: '',
+    botcheck: '',
+  });
+  const [showSuccessPopup, setShowSuccessPopup] = useState(false);
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          ...formData,
+          access_key: '388fd6bb-0325-469f-a4b3-cccf22e761f3', 
+        }),
+      });
+
+      if (response.ok) {
+        setShowSuccessPopup(true); // Show the success popup
+        setFormData({ name: '', email: '', subject: '', message: '', company: '', phone: '', botcheck: '' }); // Clear form
+
+        setTimeout(() => setShowSuccessPopup(false), 3000); // Hide popup after 3 seconds
+      } else {
+        console.error('Form submission error');
+      }
+    } catch (error) {
+      console.error('Error submitting form', error);
+    }
+  };
 
   // Define color classes based on twojo prop
   const accentColor = twojo ? 'text-[--blue-color]' : 'text-[--orange-color]';
@@ -18,7 +74,8 @@ const Contact = ({ twojo = false }: ContactProps) => {
   const focusBorderColor = twojo ? 'focus:border-[--blue-color]' : 'focus:border-[--orange-color]';
   const focusRingColor = twojo ? 'focus:ring-[--blue-color]' : 'focus:ring-[--orange-color]';
   const sectionBg = twojo ? 'bg-[#111]' : 'bg-gradient-to-br from-[#1E1E2E] to-[#2A2A3A]';
-  const formBg = twojo ? 'bg-[#18181b]' : 'bg-[#2A2A3C]/50';
+  const formBg = twojo ? 'bg-[#18181b]' : 'bg-[#262637]/50';
+  const popupBg = twojo ? 'bg-[#18181b]' : 'bg-[#262637]';
   const inputBg = twojo ? 'bg-black/50' : 'bg-[#1E1E2E]/50';
 
   return (
@@ -45,6 +102,13 @@ const Contact = ({ twojo = false }: ContactProps) => {
             {t('contactSubtitle')}
           </p>
 
+          {showSuccessPopup && (
+            <div className={`fixed top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ${popupBg} border border-gray-700 p-4 rounded-xl text-center shadow-lg z-50`}>
+              <p className={`text-lg font-semibold ${accentColor}`}>{t('formSuccessMessage')}</p>
+              <p className="text-gray-400">{t('formSuccessSubtitle')}</p>
+            </div>
+          )}
+
           <div className="flex justify-center gap-8 mb-16">
             <div className="flex items-center text-white">
               <Mail className={`w-5 h-5 mr-2 ${accentColor}`} />
@@ -60,9 +124,9 @@ const Contact = ({ twojo = false }: ContactProps) => {
               <span className="text-lg">{t('location')}</span>
             </div>
           </div>
-          
+
           <div className="max-w-4xl mx-auto">
-            <form className={`${formBg} rounded-3xl shadow-lg p-8`} onSubmit={(e) => e.preventDefault()}>
+            <form className={`${formBg} rounded-3xl shadow-lg p-8`} onSubmit={handleSubmit}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium mb-2 text-gray-300">
@@ -72,6 +136,8 @@ const Contact = ({ twojo = false }: ContactProps) => {
                     type="text" 
                     id="name" 
                     name="name" 
+                    value={formData.name}
+                    onChange={handleChange}
                     className={`w-full px-4 py-3 rounded-xl ${inputBg} text-white border border-gray-700 ${focusBorderColor} ${focusRingColor} focus:ring-1 transition-colors`} 
                     required 
                   />
@@ -84,6 +150,8 @@ const Contact = ({ twojo = false }: ContactProps) => {
                     type="email" 
                     id="email" 
                     name="email" 
+                    value={formData.email}
+                    onChange={handleChange}
                     className={`w-full px-4 py-3 rounded-xl ${inputBg} text-white border border-gray-700 ${focusBorderColor} ${focusRingColor} focus:ring-1 transition-colors`} 
                     required 
                   />
@@ -99,6 +167,8 @@ const Contact = ({ twojo = false }: ContactProps) => {
                     type="text" 
                     id="company" 
                     name="company" 
+                    value={formData.company}
+                    onChange={handleChange}
                     className={`w-full px-4 py-3 rounded-xl ${inputBg} text-white border border-gray-700 ${focusBorderColor} ${focusRingColor} focus:ring-1 transition-colors`} 
                     required 
                   />
@@ -111,6 +181,8 @@ const Contact = ({ twojo = false }: ContactProps) => {
                     type="tel" 
                     id="phone" 
                     name="phone" 
+                    value={formData.phone}
+                    onChange={handleChange}
                     className={`w-full px-4 py-3 rounded-xl ${inputBg} text-white border border-gray-700 ${focusBorderColor} ${focusRingColor} focus:ring-1 transition-colors`} 
                   />
                 </div>
@@ -124,6 +196,8 @@ const Contact = ({ twojo = false }: ContactProps) => {
                   type="text" 
                   id="subject" 
                   name="subject" 
+                  value={formData.subject}
+                  onChange={handleChange}
                   className={`w-full px-4 py-3 rounded-xl ${inputBg} text-white border border-gray-700 ${focusBorderColor} ${focusRingColor} focus:ring-1 transition-colors`} 
                   required 
                 />
@@ -137,10 +211,22 @@ const Contact = ({ twojo = false }: ContactProps) => {
                   id="message" 
                   name="message" 
                   rows={6} 
+                  value={formData.message}
+                  onChange={handleChange}
                   className={`w-full px-6 py-4 rounded-xl ${inputBg} text-white border border-gray-700 ${focusBorderColor} ${focusRingColor} focus:ring-1 transition-colors resize-none`} 
                   required
                 ></textarea>
               </div>
+
+              <input
+                type="checkbox"
+                name="botcheck"
+                value={formData.botcheck}
+                onChange={handleChange}
+                style={{ display: 'none' }}
+              />
+
+              <div className="h-captcha" data-captcha="true"></div>
 
               <button 
                 type="submit" 

@@ -122,6 +122,8 @@ const resources = {
       message: 'Message',
       required: '*',
       sendMessage: 'Send Message',
+      formSuccessMessage: 'Thank you for contacting us!',
+      formSuccessSubtitle: 'Your message has been received, and we will get back to you shortly.',
 
       // Testimonial Section
       testimonialTitle: 'Testimonial',
@@ -357,6 +359,8 @@ const resources = {
       message: 'Nachricht',
       required: '*',
       sendMessage: 'Nachricht senden',
+      formSuccessMessage: 'Vielen Dank für Ihre Kontaktaufnahme!',
+      formSuccessSubtitle: 'Ihre Nachricht ist bei uns eingegangen, und wir melden uns in Kürze bei Ihnen.',
 
       // Testimonial Section
       testimonialTitle: 'Testimonial',
@@ -591,6 +595,8 @@ const resources = {
       message: 'Messaggio',
       required: '*',
       sendMessage: 'Invia Messaggio',
+      formSuccessMessage: 'Grazie per averci contattato!',
+      formSuccessSubtitle: 'Abbiamo ricevuto il tuo messaggio e ti risponderemo al più presto.',
 
       // Testimonial Section
       testimonialTitle: 'Testimonianza',
@@ -825,6 +831,8 @@ const resources = {
       message: 'Message',
       required: '*',
       sendMessage: 'Envoyer le Message',
+      formSuccessMessage: 'Merci de nous avoir contactés !',
+      formSuccessSubtitle: 'Votre message a bien été reçu, et nous vous répondrons rapidement.',
 
       // Testimonial Section
       testimonialTitle: 'Témoignage',
