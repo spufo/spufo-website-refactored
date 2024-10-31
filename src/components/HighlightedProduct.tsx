@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { motion } from 'framer-motion';
 import heroImage from '/assets/images/HeroMockup.png';
 import curved_FinalSpufoLogo from '/assets/images/Curved_FinalSpufoLogo.svg';
 import ScrollLink from './ScrollLink';
@@ -19,13 +20,25 @@ export default function HighlightedProduct() {
       />
       
       <div className="container mx-auto px-6">
-        <h2 className="text-[--orange-color] text-3xl font-bold text-center mb-16">
+        <motion.h2 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6 }}
+          className="text-[--orange-color] text-3xl font-bold text-center mb-16"
+        >
           {t('twojo.highlightedProduct.title')}
-        </h2>
+        </motion.h2>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Column - Product Info */}
-          <div className="space-y-8">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.6 }}
+            className="space-y-8"
+          >
             <div className="flex items-center gap-4">
               <img 
                 src={curved_FinalSpufoLogo}
@@ -66,11 +79,15 @@ export default function HighlightedProduct() {
                 {t('twojo.highlightedProduct.product.button')}
               </ScrollLink>
             </div>
-            
-          </div>
+          </motion.div>
           
           {/* Right Column - App Screenshot */}
-          <div>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.6 }}
+          >
             <div className="relative z-10">
               <img 
                 src={heroImage}
@@ -78,7 +95,7 @@ export default function HighlightedProduct() {
                 className="rounded-3xl shadow-2xl hover:scale-105 transition duration-300"
               />
             </div>
-            </div>
+          </motion.div>
         </div>
       </div>
     </div>

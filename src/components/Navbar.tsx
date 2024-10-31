@@ -153,7 +153,7 @@ const Navbar = ({ activePath, twojo }: NavbarProps) => {
         {/* Contact Button */}
         <ScrollLink 
           to="/contact" 
-          className={`hidden md:block ${buttonBgColor} text-white px-8 py-3 rounded-xl text-xl font-semibold ${buttonHoverBgColor} transition-all duration-300 mr-6 hover:shadow-lg`}
+          className={`hidden md:block ${buttonBgColor} text-white px-8 py-3 rounded-xl text-xl font-semibold transform-gpu transition-all duration-500 ease-in-out mr-6 hover:scale-105 ${buttonHoverBgColor} hover:shadow-lg active:scale-95`}
         >
           {t('contact')}
         </ScrollLink>
@@ -243,7 +243,7 @@ const Navbar = ({ activePath, twojo }: NavbarProps) => {
             <ScrollLink
               to="/contact" 
               onClick={handleMobileMenuClick}
-              className={`inline-block ${buttonBgColor} text-white px-3 py-2 rounded-xl font-semibold ${buttonHoverBgColor} transition-all duration-300 hover:shadow-lg mt-0`}
+              className={`inline-block ${buttonBgColor} text-white px-3 py-2 rounded-xl font-semibold transform-gpu transition-all duration-500 ease-in-out hover:scale-105 ${buttonHoverBgColor} hover:shadow-lg active:scale-95 mt-0`}
             >
               {t('contact')}
             </ScrollLink>
