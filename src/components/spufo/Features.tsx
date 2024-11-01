@@ -2,7 +2,7 @@ import React from 'react';
 import { Fingerprint, GitBranch, Maximize, Award } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import FeatureCard from './FeatureCard';
+import FeatureCard from '../general/FeatureCard';
 
 export default function Features() {
   const { t } = useTranslation();

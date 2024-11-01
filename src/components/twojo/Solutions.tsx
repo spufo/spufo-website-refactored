@@ -2,7 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { Smartphone, LayoutGrid, Gamepad2 } from 'lucide-react';
-import FeatureCard from './FeatureCard';
+import FeatureCard from '../general/FeatureCard';
 
 export default function Solutions() {
   const { t } = useTranslation();

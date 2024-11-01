@@ -3,7 +3,7 @@ import About from './About';
 import Features from './Features';
 import SmartphoneAdvantages from './SmartphoneAdvantages';
 import Testimonial from './Testimonial';
-import Contact from './Contact';
+import Contact from '../general/Contact';
 
 const Spufo = () => {
   return (

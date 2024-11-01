@@ -1,13 +1,13 @@
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
-import Impressum from './components/Impressum';
-import Privacy from './components/Privacy';
-import Spufo from './components/Spufo';
-import Twojo from './components/Twojo';
-import TwojoAbout from './components/TwojoAbout';
-import Blog from './components/Blog';
+import Navbar from './components/general/Navbar';
+import Contact from './components/general/Contact';
+import Footer from './components/general/Footer';
+import Impressum from './components/general/Impressum';
+import Privacy from './components/general/Privacy';
+import Spufo from './components/spufo/Spufo';
+import Twojo from './components/twojo/Twojo';
+import TwojoAbout from './components/twojo/TwojoAbout';
+import Blog from './components/twojo/Blog';
 import { usePageMeta } from './hooks/usePageMeta';
 
 function App() {

@@ -2,7 +2,7 @@ import React from 'react';
 import { ChevronDown } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import ScrollLink from './ScrollLink';
+import ScrollLink from '../general/ScrollLink';
 import curved_FinalSpufoLogo from '/assets/images/Curved_FinalSpufoLogo.svg';
 import heroMockup from '/assets/images/HeroMockup.png';
 import logo_FOR_RGB from '/assets/images/Logo_FOR_RGB.svg';

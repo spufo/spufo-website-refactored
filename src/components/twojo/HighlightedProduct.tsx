@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import heroImage from '/assets/images/HeroMockup.png';
 import curved_FinalSpufoLogo from '/assets/images/Curved_FinalSpufoLogo.svg';
-import ScrollLink from './ScrollLink';
+import ScrollLink from '../general/ScrollLink';
 
 export default function HighlightedProduct() {
   const { t } = useTranslation();
