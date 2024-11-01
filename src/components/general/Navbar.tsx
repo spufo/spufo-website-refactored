@@ -89,25 +89,25 @@ const Navbar = ({ activePath, twojo }: NavbarProps) => {
   return (
     <nav 
       ref={navRef}
-      className={`fixed top-0 left-0 right-0 ${backgroundColor} py-3 md:py-5 px-2 
+      className={`fixed top-0 left-0 right-0 ${backgroundColor} py-3 lg:py-5 px-2 
         transition-all duration-500 ease-in-out z-40 border-b-4 ${borderColor} 
         ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}
     >
       <div className="flex justify-between items-center">
         <ScrollLink 
           to="/" 
-          className="text-3xl font-bold text-white flex items-center ml-2 md:ml-6"
+          className="text-3xl font-bold text-white flex items-center ml-2 lg:ml-6"
           onClick={handleMobileMenuClick}
         >
           <img 
             src={logoImage}
             alt="TWOJO Logo" 
-            className="h-7 min-w-20 md:h-9 mr-2 md:mr-3 object-contain"
+            className="h-7 min-w-20 lg:h-9 mr-2 lg:mr-3 object-contain"
           />
         </ScrollLink>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex px-20 space-x-16 flex-1">
+        <div className="hidden lg:flex px-20 space-x-16 flex-1">
           <div className="flex space-x-16">
             <ScrollLink to="/spufo" className={`${activePath == "spufo" ? textColorActive : textColor} ${hoverTextColor} text-2xl font-medium tracking-wide transition-colors duration-300`}>
               SPUFO
@@ -122,7 +122,7 @@ const Navbar = ({ activePath, twojo }: NavbarProps) => {
         </div>
 
         {/* Desktop Language Selector */}
-        <div className="hidden md:block relative lang-menu mr-4">
+        <div className="hidden lg:block relative lang-menu mr-4">
           <button
             onClick={(e) => {
               e.stopPropagation();
@@ -165,13 +165,13 @@ const Navbar = ({ activePath, twojo }: NavbarProps) => {
         {/* Contact Button */}
         <ScrollLink 
           to="/contact" 
-          className={`hidden md:block ${buttonBgColor} text-white px-8 py-3 rounded-xl text-xl font-semibold transform-gpu transition-all duration-500 ease-in-out mr-6 hover:scale-105 ${buttonHoverBgColor} hover:shadow-lg active:scale-95`}
+          className={`hidden lg:block ${buttonBgColor} text-white px-8 py-3 rounded-xl text-xl font-semibold transform-gpu transition-all duration-500 ease-in-out mr-6 hover:scale-105 ${buttonHoverBgColor} hover:shadow-lg active:scale-95`}
         >
           {t('contact')}
         </ScrollLink>
 
         {/* Mobile Menu Button */}
-        <div className="md:hidden">
+        <div className="lg:hidden">
           <button
             onClick={(e) => {
               e.stopPropagation();
@@ -202,7 +202,7 @@ const Navbar = ({ activePath, twojo }: NavbarProps) => {
       <div 
         className={`${
           isOpen && isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4 pointer-events-none'
-        } md:hidden mt-4 transition-all duration-300 ease-in-out absolute left-0 right-0 ${backgroundColor} border-b-4 ${borderColor} `}
+        } lg:hidden mt-4 transition-all duration-300 ease-in-out absolute left-0 right-0 ${backgroundColor} border-b-4 ${borderColor} `}
       >
         <div className="flex flex-col py-4">
           <ScrollLink 
