@@ -249,6 +249,7 @@ const resources = {
         },
         solutions: {
           title: 'Our Solutions',
+          about: "Experience",
           subTitle: 'We offer flexible solutions for your business',
           mobileDev: {
             title: 'Mobile Development',

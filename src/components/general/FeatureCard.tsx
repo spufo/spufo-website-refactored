@@ -7,8 +7,8 @@ interface FeatureCardProps {
   icon: LucideIcon;
   titleKey: string;
   descriptionKey: string;
-  linkKey: string;
-  linkTo: string;
+  linkKey?: string;
+  linkTo?: string;
   isTwojo?: boolean;
 }
 
@@ -42,7 +42,7 @@ export default function FeatureCard({
         {t(descriptionKey)}
       </p>
       
-      <ScrollLink 
+      {linkTo != null && linkKey != null && (<ScrollLink 
         to={linkTo}
         className={`
           ${isTwojo ? 'text-[#00B7FF]' : 'text-[--orange-color]'} font-semibold flex items-center 
@@ -54,6 +54,6 @@ export default function FeatureCard({
           →
         </span>
       </ScrollLink>
-    </div>
+      )}</div>
   );
 }

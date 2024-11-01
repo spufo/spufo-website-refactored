@@ -15,11 +15,13 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
-@layer components {
-  .twojo * ::selection {
-    background: var(--blue-selected-color);
-  }
-  .spufo * ::selection {
-    background: var(--orange-selected-color);
-  }
+@keyframes jump {
+  0% { transform: translateY(0); }
+  12% { transform: translateY(-20px); }
+  20% { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
+
+.animate-jump {
+  animation: jump 1.5s ease-in-out infinite;
 }
