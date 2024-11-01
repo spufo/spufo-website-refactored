@@ -8,13 +8,14 @@ import Spufo from './components/spufo/Spufo';
 import Twojo from './components/twojo/Twojo';
 import TwojoAbout from './components/twojo/TwojoAbout';
 import Blog from './components/twojo/Blog';
+import EvidenceCollection from './components/spufo/EvidenceCollection';
 import { usePageMeta } from './hooks/usePageMeta';
 
 function App() {
   const location = useLocation();
 
-  // Check if the current path is "/spufo" to set twojo to false
-  const isSpufoPath = location.pathname === '/spufo';
+  // Check if the current path starts with "/spufo" to set twojo to false
+  const isSpufoPath = location.pathname.startsWith('/spufo');
 
   // Use the custom hook to handle page meta
   usePageMeta(isSpufoPath, location.pathname);
@@ -26,6 +27,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Twojo />} />
           <Route path="/spufo/" element={<Spufo />} />
+          <Route path="/spufo/evidence-collection/" element={<EvidenceCollection />} />
           <Route path="/spufo-website-refactored/" element={<Twojo />} />
           <Route path="/about/" element={<TwojoAbout />} />
           <Route path="/blog/" element={<Blog />} />
