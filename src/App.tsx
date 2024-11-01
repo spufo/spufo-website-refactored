@@ -16,6 +16,7 @@ function App() {
 
   // Check if the current path starts with "/spufo" to set twojo to false
   const isSpufoPath = location.pathname.startsWith('/spufo/');
+  console.log('locationpath:', location.pathname) // Debuggin
   console.log('isSpufoPath:', isSpufoPath) // Debuggin
   // Use the custom hook to handle page meta
   usePageMeta(isSpufoPath, location.pathname);
