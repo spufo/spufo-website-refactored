@@ -13,21 +13,21 @@ export default function Solutions() {
       titleKey: 'twojo.solutions.mobileDev.title',
       descriptionKey: 'twojo.solutions.mobileDev.description',
       linkKey: 'twojo.solutions.mobileDev.link',
-      linkTo: '#mobile'
+      linkTo: '/mobile/'
     },
     {
       icon: LayoutGrid,
       titleKey: 'twojo.solutions.businessApp.title',
       descriptionKey: 'twojo.solutions.businessApp.description',
       linkKey: 'twojo.solutions.businessApp.link',
-      linkTo: '#business'
+      linkTo: '/application/'
     },
     {
       icon: Gamepad2,
       titleKey: 'twojo.solutions.interactiveExp.title',
       descriptionKey: 'twojo.solutions.interactiveExp.description',
       linkKey: 'twojo.solutions.interactiveExp.link',
-      linkTo: '#interactive'
+      linkTo: '/interactive/'
     }
   ];
 

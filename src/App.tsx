@@ -9,6 +9,9 @@ import Twojo from './components/twojo/Twojo';
 import TwojoAbout from './components/twojo/TwojoAbout';
 import Blog from './components/twojo/Blog';
 import { usePageMeta } from './hooks/usePageMeta';
+import MobileDevelopment from './components/twojo/mobile/MobileDevelopment';
+import BusinessApplication from './components/twojo/applications/BusinessApplication';
+import Games from './components/twojo/games/Games';
 
 function App() {
   const location = useLocation();
@@ -28,6 +31,9 @@ function App() {
           <Route path="/spufo/" element={<Spufo />} />
           <Route path="/spufo-website-refactored/" element={<Twojo />} />
           <Route path="/about/" element={<TwojoAbout />} />
+          <Route path="/mobile/" element={<MobileDevelopment />} />
+          <Route path="/application/" element={<BusinessApplication />} />
+          <Route path="/interactive/" element={<Games />} />
           <Route path="/blog/" element={<Blog />} />
           <Route path="/impressum/" element={<Impressum />} />
           <Route path="/privacy/" element={<Privacy />} />
