@@ -280,7 +280,7 @@ const resources = {
       aboutTitle: 'Über SPUFO',
       aboutDescription: 'Die SPUFO-App ist eine forensische iOS-Lösung, die die Erfassung von daktyloskopischen Spuren am Tatort vereinfacht und optimiert.',
       aboutPoint1: 'Ersetzt traditionelle DSLR-Kameras und Gelatinefolien durch mobile Technologie.',
-      aboutPoint2: 'Erfasst Spuren vor Ort, maßstabsgetreu 1:1 und in 1000 dpi Auflösung.',
+      aboutPoint2: 'Erfasst Spuren vor Ort, massstabsgetreu 1:1 und in 1000 dpi Auflösung.',
       aboutPoint3: 'Ermöglicht direkte Nummerierung, Zuschnitt und Vorbereitung für AFIS-Suchen.',
 
 
@@ -407,7 +407,7 @@ const resources = {
           },
           businessApp: {
             title: 'Business-Anwendung',
-            description: 'Anwendungen maßgeschneidert für Ihr Unternehmen.',
+            description: 'Anwendungen massgeschneidert für Ihr Unternehmen.',
             link: 'Erfahren Sie mehr'
           },
           interactiveExp: {
@@ -425,7 +425,7 @@ const resources = {
             description: 'Die SPUFO-App ist eine forensische iOS-Lösung, die das Sammeln daktyloskopischer Spuren am Tatort vereinfacht und optimiert.',
             bulletPoints: {
               first: 'Ersetzt herkömmliche DSLR-Kameras und Gelatinefolien durch mobile Technologie.',
-              second: 'Erfasst Spuren vor Ort, maßstabsgetreu 1:1 und in 1000 dpi Auflösung.',
+              second: 'Erfasst Spuren vor Ort, massstabsgetreu 1:1 und in 1000 dpi Auflösung.',
               third: 'Ermöglicht direkte Nummerierung, Zuschneiden und Vorbereitung für AFIS-Suchen.'
             },
             button: 'Erfahren Sie mehr'

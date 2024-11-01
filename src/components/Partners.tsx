@@ -11,10 +11,12 @@ export default function Partners() {
         <h2 className="text-[#00B7FF] text-3xl font-semibold text-center mb-16">
           {t('twojo.partner.title')}
         </h2>
-        
+
         <div className="flex flex-wrap justify-center items-center gap-24"> {/* Increased gap */}
           <div className="w-64 h-32 flex items-center justify-center p-4 backdrop-blur-sm">
-            <img className="h-24 my-12 brightness-50 hover:brightness-100 hover:scale-[1.1] transition-all duration-300" src={logo_FOR} alt="Forensisches Institut Zürich"></img>
+            <a href="https://for-zh.ch" target="_blank" rel="noopener noreferrer">
+              <img className="h-24 my-12 brightness-50 hover:brightness-100 hover:scale-[1.1] transition-all duration-300" src={logo_FOR} alt="Forensisches Institut Zürich" />
+            </a>
           </div>
         </div>
       </div>

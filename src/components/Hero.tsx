@@ -72,11 +72,13 @@ const Hero = () => {
         <p className="text-sm sm:text-lg font-bold mb-1 sm:mb-2">
           {t('developedWith')}
         </p>
-        <img 
-          src={logo_FOR_RGB}
-          alt="FOR Zürich" 
-          className="h-14 mb-12 sm:mb-0 sm:h-16"
-        />
+        <a href="https://for-zh.ch" target="_blank" rel="noopener noreferrer">
+          <img 
+            src={logo_FOR_RGB}
+            alt="FOR Zürich" 
+            className="h-14 mb-12 sm:mb-0 sm:h-16 hover:scale-[1.1] transition-all duration-30"
+          />            
+        </a>
       </div>
       {/* Scroll down button */}
       <button 
