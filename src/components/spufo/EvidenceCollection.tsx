@@ -3,28 +3,37 @@ import { motion } from 'framer-motion';
 import { Check, X, Shield, Timer, ArrowRight, Database, MapPin, Clock, FileText } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
+import camera from '/assets/images/camera.png';
+import cameraFlashlight from '/assets/images/camera_flashlight.png';
+import tripod from '/assets/images/tripod.png';
+import gelatine from '/assets/images/gelatine.png';
+import smartphone from '/assets/images/smartphone.png';
+import flashlight from '/assets/images/flashlight.png';
+
+
+
 const EvidenceCollection = () => {
   const { t } = useTranslation();
 
   const traditionalEquipment = [
     { 
       name: t('evidence.traditional.dslr.name'),
-      image: '/assets/images/camera.png',
+      image: camera,
       negatives: [t('evidence.traditional.dslr.negative1'), t('evidence.traditional.dslr.negative2')]
     },
     { 
       name: t('evidence.traditional.flash.name'), 
-      image: '/assets/images/camera_flashlight.png',
+      image: cameraFlashlight,
       negatives: [t('evidence.traditional.flash.negative1'), t('evidence.traditional.flash.negative2')]
     },
     { 
       name: t('evidence.traditional.tripod.name'), 
-      image: '/assets/images/tripod.png',
+      image: tripod,
       negatives: [t('evidence.traditional.tripod.negative1'), t('evidence.traditional.tripod.negative2')]
     },
     { 
       name: t('evidence.traditional.gelatin.name'), 
-      image: '/assets/images/gelatine.png',
+      image: gelatine,
       negatives: [t('evidence.traditional.gelatin.negative1'), t('evidence.traditional.gelatin.negative2')]
     },
   ];
@@ -120,7 +129,7 @@ const EvidenceCollection = () => {
                 >
                   <div className="flex justify-center mb-4">
                     <div className="w-56 h-56 bg-white rounded-lg p-6 flex items-center justify-center">
-                      <img src="/assets/images/smartphone.png" alt="Smartphone" className="w-48 h-48 object-contain" />
+                      <img src={smartphone} alt="Smartphone" className="w-48 h-48 object-contain" />
                     </div>
                   </div>
                   <div className="flex flex-col items-center space-y-3">
@@ -151,7 +160,7 @@ const EvidenceCollection = () => {
                 >
                   <div className="flex justify-center mb-2">
                     <div className="w-36 h-36 bg-white rounded-lg p-4 flex items-center justify-center">
-                      <img src="/assets/images/flashlight.png" alt="Flashlight" className="w-28 h-28 object-contain" />
+                      <img src={flashlight} alt="Flashlight" className="w-28 h-28 object-contain" />
                     </div>
                   </div>
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">{t('evidence.spufo.optional.title')}</h3>
