@@ -201,11 +201,7 @@ const EvidenceCollection = () => {
 
           <div className="grid md:grid-cols-3 gap-8">
             {/* Case Details Card */}
-            <motion.div 
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              className="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 relative overflow-hidden"
-            >
+            <div className="rounded-2xl shadow-lg p-8 bg-white transform hover:scale-105 transition duration-300 relative overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-br from-[--orange-color]/5 to-[--orange-color]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               
               <div className="relative z-10">
@@ -231,15 +227,10 @@ const EvidenceCollection = () => {
                   </div>
                 </div>
               </div>
-            </motion.div>
+            </div>
 
             {/* Location Information Card */}
-            <motion.div 
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.1 }}
-              className="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 relative overflow-hidden"
-            >
+            <div className="rounded-2xl shadow-lg p-8 bg-white transform hover:scale-105 transition duration-300 relative overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-br from-[--orange-color]/5 to-[--orange-color]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               
               <div className="relative z-10">
@@ -265,15 +256,10 @@ const EvidenceCollection = () => {
                   </div>
                 </div>
               </div>
-            </motion.div>
+            </div>
 
             {/* Temporal Data Card */}
-            <motion.div 
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2 }}
-              className="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 relative overflow-hidden"
-            >
+            <div className="rounded-2xl shadow-lg p-8 bg-white transform hover:scale-105 transition duration-300 relative overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-br from-[--orange-color]/5 to-[--orange-color]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               
               <div className="relative z-10">
@@ -299,7 +285,7 @@ const EvidenceCollection = () => {
                   </div>
                 </div>
               </div>
-            </motion.div>
+            </div>
           </div>
         </motion.div>
       </div>

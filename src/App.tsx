@@ -22,9 +22,12 @@ function App() {
   // Use the custom hook to handle page meta
   usePageMeta(isSpufoPath, location.pathname);
 
+  // Keep the full path for spufo routes, remove leading slash for others
+  const activePath = isSpufoPath ? location.pathname : location.pathname.replace('/', '');
+
   return (
     <div className={`${isSpufoPath ? 'spufo' : 'twojo'} flex flex-col min-h-screen bg-white text-[#1E1E2E]`}>
-      <Navbar activePath={location.pathname.replace('/','')} twojo={!isSpufoPath} />
+      <Navbar activePath={activePath} twojo={!isSpufoPath} />
       <main className="flex-grow">
         <Routes>
           <Route path="/" element={<Twojo />} />
