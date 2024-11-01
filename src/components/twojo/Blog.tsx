@@ -6,7 +6,7 @@ import featuredArticeImage from '/assets/images/team.jpg';
 import olderArticle1Image from '/assets/images/Curved_FinalSpufoLogo.svg';
 import olderArticle2Image from '/assets/images/Curved_FinalSpufoLogo.svg';
 import olderArticle3Image from '/assets/images/Curved_FinalSpufoLogo.svg';
-import ScrollLink from './ScrollLink';
+import ScrollLink from '../general/ScrollLink';
 
 const Blog = () => {
   const { t } = useTranslation();
