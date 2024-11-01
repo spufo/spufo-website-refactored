@@ -46,6 +46,7 @@ const Navbar = ({ activePath, twojo }: NavbarProps) => {
         setIsVisible(true);
       } else {
         setIsVisible(false);
+        setIsOpen(false);
       }
       setLastScrollY(currentScrollY);
     };
@@ -200,8 +201,8 @@ const Navbar = ({ activePath, twojo }: NavbarProps) => {
       {/* Mobile Menu */}
       <div 
         className={`${
-          isOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4 pointer-events-none'
-        } md:hidden mt-4 transition-all duration-300 ease-in-out absolute left-0 right-0 ${backgroundColor} border-b-4 ${borderColor}`}
+          isOpen && isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4 pointer-events-none'
+        } md:hidden mt-4 transition-all duration-300 ease-in-out absolute left-0 right-0 ${backgroundColor} border-b-4 ${borderColor} `}
       >
         <div className="flex flex-col py-4">
           <ScrollLink 
