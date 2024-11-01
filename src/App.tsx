@@ -17,7 +17,7 @@ function App() {
   const isSpufoPath = location.pathname === '/spufo';
 
   // Use the custom hook to handle page meta
-  usePageMeta(isSpufoPath);
+  usePageMeta(isSpufoPath, location.pathname);
 
   return (
     <div className={`${isSpufoPath ? 'spufo' : 'twojo'} flex flex-col min-h-screen bg-white text-[#1E1E2E]`}>
