@@ -77,7 +77,7 @@ const Contact = ({ twojo = false }: ContactProps) => {
   const inputBg = twojo ? 'bg-black/50' : 'bg-[#1E1E2E]/50';
 
   return (
-    <div className="relative">
+    <div className={`relative ${twojo ? 'bg-[#111]' : ''} text-white min-h-screen overflow-hidden`}>
       {twojo && (
         <div 
           className="absolute inset-0 opacity-[0.06]"
