@@ -212,7 +212,7 @@ const resources = {
             role: 'Cybersecurity Specialist',
             education: 'HSLU Rotkreuz',
             description: 'Following his apprenticeship at BBBaden School, Josip specialized in Cybersecurity at HSLU. His expertise in security and system architecture ensures our solutions are both innovative and secure.',
-            linkedin: '#',
+            linkedin: 'https://www.linkedin.com/company/twojo/',
             email: 'mailto:josip.corkovic@twojo.ch'
           },
           jordan: {
@@ -449,7 +449,7 @@ const resources = {
             role: 'Cybersecurity-Spezialist',
             education: 'HSLU Rotkreuz',
             description: 'Nach seiner Ausbildung an der BBBaden Schule spezialisierte sich Josip an der HSLU auf Cybersicherheit. Seine Expertise in Sicherheit und Systemarchitektur stellt sicher, dass unsere Lösungen sowohl innovativ als auch sicher sind.',
-            linkedin: '#',
+            linkedin: 'https://www.linkedin.com/company/twojo/',
             email: 'mailto:josip.corkovic@twojo.ch'
           },
           jordan: {
@@ -920,7 +920,7 @@ const resources = {
             role: 'Spécialiste en Cybersécurité',
             education: 'HSLU Rotkreuz',
             description: 'Après son apprentissage à l\'école BBBaden, Josip s\'est spécialisé en cybersécurité à la HSLU. Son expertise en sécurité et architecture des systèmes garantit que nos solutions sont à la fois innovantes et sécurisées.',
-            linkedin: '#',
+            linkedin: 'https://www.linkedin.com/company/twojo/',
             email: 'mailto:josip.corkovic@twojo.ch'
           },
           jordan: {
