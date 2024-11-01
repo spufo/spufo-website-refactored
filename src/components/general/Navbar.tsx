@@ -109,7 +109,7 @@ const Navbar = ({ activePath, twojo }: NavbarProps) => {
         {/* Desktop Menu */}
         <div className="hidden lg:flex px-20 space-x-16 flex-1">
           <div className="flex space-x-16">
-            <ScrollLink to="/spufo" className={`${activePath.startsWith("spufo/") ? textColorActive : textColor} ${hoverTextColor} text-2xl font-medium tracking-wide transition-colors duration-300`}>
+            <ScrollLink to="/spufo" className={`${activePath.startsWith("/spufo/") ? textColorActive : textColor} ${hoverTextColor} text-2xl font-medium tracking-wide transition-colors duration-300`}>
               SPUFO
             </ScrollLink>
             <ScrollLink to="/blog" className={`${activePath == "blog" ? textColorActive : textColor} ${hoverTextColor} text-2xl font-medium tracking-wide transition-colors duration-300`}>
