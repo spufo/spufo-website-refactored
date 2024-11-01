@@ -11,7 +11,7 @@ export default function Features() {
     {
       icon: Fingerprint,
       featureKey: 'feature1',
-      linkTo: '#security'
+      linkTo: '/spufo/evidence-collection/'
     },
     {
       icon: GitBranch,
