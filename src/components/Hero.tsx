@@ -1,6 +1,7 @@
 import React from 'react';
 import { ChevronDown } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import { motion } from 'framer-motion';
 import ScrollLink from './ScrollLink';
 import curved_FinalSpufoLogo from '/assets/images/Curved_FinalSpufoLogo.svg';
 import heroMockup from '/assets/images/HeroMockup.png';
@@ -18,13 +19,19 @@ const Hero = () => {
   };
 
   return (
-    <div className="relative bg-white min-h-screen flex items-start md:items-center overflow-hidden mt-0">
+    <motion.div 
+      className="relative bg-white min-h-screen flex items-start md:items-center overflow-hidden mt-0"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}
+    >
       <div className="flex flex-col md:flex-row items-stretch justify-between max-w-[100rem] mx-auto w-full px-6 over mt-16 md:mt-0">
-          {/* Fingerprint background */}
-          <div 
-            className="absolute invert sm:-translate-y-40 -translate-x-80 sm:-translate-x-0 rotate-[46deg] sm:rotate-[34deg] scale-[1.5] sm:scale-[0.9] inset-0 bg-contain bg-no-repeat bg-center opacity-100 z-0 pointer-events-none"
-          >
-          <img src={background} alt="Background" /></div>
+        {/* Fingerprint background */}
+        <div 
+          className="absolute invert sm:-translate-y-40 -translate-x-80 sm:-translate-x-0 rotate-[46deg] sm:rotate-[34deg] scale-[1.5] sm:scale-[0.9] inset-0 bg-contain bg-no-repeat bg-center opacity-100 z-0 pointer-events-none"
+        >
+          <img src={background} alt="Background" />
+        </div>
         <div className="md:w-1/2 py-4 md:py-12 flex flex-col items-center md:items-start justify-center relative w-full">
           {/* Content */}
           <div className="relative z-10 flex flex-col items-center md:items-start w-full">
@@ -87,7 +94,7 @@ const Hero = () => {
       >
         <ChevronDown className="w-12 h-12 animate-bounce" />
       </button>
-    </div>
+    </motion.div>
   );
 };
 

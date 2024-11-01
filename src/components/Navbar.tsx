@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import ScrollLink from './ScrollLink';
 import twojoLogoSpufo from '/assets/images/Final_Twojo_Logo_White_SPUFO.png';
@@ -15,6 +15,7 @@ const Navbar = ({ activePath, twojo }: NavbarProps) => {
   const [lastScrollY, setLastScrollY] = useState(0);
   const [isOpen, setIsOpen] = useState(false);
   const [isLangMenuOpen, setIsLangMenuOpen] = useState(false);
+  const navRef = useRef<HTMLDivElement>(null);
 
   const languages = [
     { code: 'en', label: 'GB', name: 'English', flag: 'gb' },
@@ -57,8 +58,13 @@ const Navbar = ({ activePath, twojo }: NavbarProps) => {
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       const target = event.target as HTMLElement;
+      // Handle language menu close
       if (target != null && !target.closest('.lang-menu')) {
         setIsLangMenuOpen(false);
+      }
+      // Handle mobile menu close when clicking outside
+      if (navRef.current && !navRef.current.contains(target as Node)) {
+        setIsOpen(false);
       }
     };
 
@@ -82,12 +88,17 @@ const Navbar = ({ activePath, twojo }: NavbarProps) => {
 
   return (
     <nav 
+      ref={navRef}
       className={`fixed top-0 left-0 right-0 ${backgroundColor} py-3 md:py-5 px-2 
         transition-all duration-500 ease-in-out z-40 border-b-4 ${borderColor} 
         ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}
     >
       <div className="flex justify-between items-center">
-        <ScrollLink to="/" className="text-3xl font-bold text-white flex items-center ml-2 md:ml-6">
+        <ScrollLink 
+          to="/" 
+          className="text-3xl font-bold text-white flex items-center ml-2 md:ml-6"
+          onClick={handleMobileMenuClick}
+        >
           <img 
             src={logoImage}
             alt="TWOJO Logo" 
@@ -154,7 +165,7 @@ const Navbar = ({ activePath, twojo }: NavbarProps) => {
         {/* Contact Button */}
         <ScrollLink 
           to="/contact" 
-          className={`hidden md:block ${buttonBgColor} text-white px-8 py-3 rounded-xl text-xl font-semibold ${buttonHoverBgColor} transition-all duration-300 mr-6 hover:shadow-lg`}
+          className={`hidden md:block ${buttonBgColor} text-white px-8 py-3 rounded-xl text-xl font-semibold transform-gpu transition-all duration-500 ease-in-out mr-6 hover:scale-105 ${buttonHoverBgColor} hover:shadow-lg active:scale-95`}
         >
           {t('contact')}
         </ScrollLink>
@@ -162,7 +173,10 @@ const Navbar = ({ activePath, twojo }: NavbarProps) => {
         {/* Mobile Menu Button */}
         <div className="md:hidden">
           <button
-            onClick={() => setIsOpen(!isOpen)}
+            onClick={(e) => {
+              e.stopPropagation();
+              setIsOpen(!isOpen);
+            }}
             className={`text-white focus:outline-none p-2 hover:${buttonBgColor} rounded-lg transition-colors duration-300 mr-2`}
           >
             <svg
@@ -244,7 +258,7 @@ const Navbar = ({ activePath, twojo }: NavbarProps) => {
             <ScrollLink
               to="/contact" 
               onClick={handleMobileMenuClick}
-              className={`inline-block ${buttonBgColor} text-white px-3 py-2 rounded-xl font-semibold ${buttonHoverBgColor} transition-all duration-300 hover:shadow-lg mt-0`}
+              className={`inline-block ${buttonBgColor} text-white px-3 py-2 rounded-xl font-semibold transform-gpu transition-all duration-500 ease-in-out hover:scale-105 ${buttonHoverBgColor} hover:shadow-lg active:scale-95 mt-0`}
             >
               {t('contact')}
             </ScrollLink>

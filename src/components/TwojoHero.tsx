@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { motion } from 'framer-motion';
 import matterhorn from '/assets/images/matterhorn-cropped.jpg';
 import matterhornMobile from '/assets/images/matterhorn-mobile.jpg';
 import { ChevronDown } from 'lucide-react';
@@ -18,22 +19,28 @@ export default function Hero() {
     <div className="relative h-[65vh] md:min-h-screen overflow-hidden mt-0">
       <div 
         className="absolute inset-0 bg-cover bg-center"
-      > <img className="absolute inset-0 w-screen h-screen object-cover invisible md:visible" src={matterhorn} alt="Background" />
-       <img className="absolute inset-0 w-screen h-screen object-cover visible md:invisible" src={matterhornMobile} alt="Background" />
+      > 
+        <img className="absolute inset-0 w-screen h-screen object-cover invisible md:visible" src={matterhorn} alt="Background" />
+        <img className="absolute inset-0 w-screen h-screen object-cover visible md:invisible" src={matterhornMobile} alt="Background" />
         {/* Enhanced gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/80 md:from-black/10 md:via-black/30 md:to-black/80"></div>:
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/80 md:from-black/10 md:via-black/30 md:to-black/80"></div>
       </div>
       
       <div className="relative h-full flex pt-[20vh] md:pt-[30vh] md:pl-[20vh]">
         <div className="container mx-auto px-6">
-          <div className="max-w-2xl ml-auto">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="max-w-2xl ml-auto"
+          >
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-8">
               {t('twojo.hero.title')}
             </h1>
             <p className="text-2xl md:text-3xl text-white leading-relaxed">
               {t('twojo.hero.subTitle')}
             </p>
-          </div>
+          </motion.div>
         </div>
       </div>
 
@@ -54,12 +61,15 @@ export default function Hero() {
         </div>
       </div>
       {/* Scroll down button */}
-      <button 
+      <motion.button 
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.3 }}
         onClick={scrollToAbout}
         className="absolute bottom-0 md:bottom-10 left-1/2 transform -translate-x-1/2 text-[--blue-color] hover:text-[--blue-selected-color] transition-colors duration-300 hidden md:block"
       >
         <ChevronDown className="w-12 h-12 animate-bounce" />
-      </button>
+      </motion.button>
     </div>
   );
 }
