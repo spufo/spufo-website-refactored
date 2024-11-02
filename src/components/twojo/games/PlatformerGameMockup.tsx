@@ -4,10 +4,10 @@ function PlatformerGameMockup() {
   return (
     <div className="flex items-center justify-center">
       {/* Background Glow */}
-      <div className="absolute w-[50rem] h-[50rem] bg-cyan-500 blur-3xl opacity-40 rounded-full shadow-[0_0_80px_rgba(0,150,255,0.5)]"></div>
+      <div className="absolute w-[34rem] h-[34rem] bg-cyan-500 blur-3xl opacity-40 rounded-full shadow-[0_0_80px_rgba(0,150,255,0.5)]"></div>
 
       {/* Game Window */}
-      <div className="relative w-[40em] h-[25em] bg-gray-800 rounded-lg p-5 border border-gray-700 shadow-[0_20px_40px_rgba(0,0,0,0.8)]">
+      <div className="relative w-[40em] h-[25em] bg-gray-800 rounded-lg p-5 border border-gray-700 drop-shadow-[0_15px_15px_rgba(0,0,0,0.9)]">
         
         {/* Score Display */}
         <div className="absolute top-3 left-3 bg-gray-700 rounded-md p-2 px-4 shadow-lg">
