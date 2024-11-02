@@ -17,8 +17,8 @@ body {
 
 @keyframes jump {
   0% { transform: translateY(0); }
-  12% { transform: translateY(-20px); }
-  20% { transform: translateY(-20px); }
+  12% { transform: translateY(-50px); }
+  20% { transform: translateY(-50px); }
   100% { transform: translateY(0); }
 }
 
