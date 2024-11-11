@@ -523,7 +523,7 @@ const resources = {
               title: "Standortdetails",
               address: {
                 title: "Adressinformationen",
-                description: "Straßenadresse und Stadtdetails"
+                description: "Strassenadresse und Stadtdetails"
               },
               specific: {
                 title: "Spezieller Standort oder andere Hinweise",
