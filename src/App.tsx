@@ -9,6 +9,7 @@ import Twojo from './components/twojo/Twojo';
 import TwojoAbout from './components/twojo/TwojoAbout';
 import Blog from './components/twojo/Blog';
 import EvidenceCollection from './components/spufo/EvidenceCollection';
+import RulerRecognition from './components/spufo/RulerRecognition';
 import { usePageMeta } from './hooks/usePageMeta';
 import MobileDevelopment from './components/twojo/mobile/MobileDevelopment';
 import BusinessApplication from './components/twojo/applications/BusinessApplication';
@@ -33,6 +34,7 @@ function App() {
           <Route path="/" element={<Twojo />} />
           <Route path="/spufo/" element={<Spufo />} />
           <Route path="/spufo/evidence-collection/" element={<EvidenceCollection />} />
+          <Route path="/spufo/ruler-recognition/" element={<RulerRecognition />} />
           <Route path="/spufo-website-refactored/" element={<Twojo />} />
           <Route path="/about/" element={<TwojoAbout />} />
           <Route path="/mobile/" element={<MobileDevelopment />} />
