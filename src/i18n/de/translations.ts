@@ -23,7 +23,6 @@ const deTranslations = {
         aboutPoint2: 'Erfasst Spuren vor Ort, massstabsgetreu 1:1 und in 1000 dpi Auflösung.',
         aboutPoint3: 'Ermöglicht direkte Nummerierung, Zuschnitt und Vorbereitung für AFIS-Suchen.',
 
-
         // Advantages Section
         advantagesTitle: 'Smartphone-Vorteile',
         advantage1: 'Verbesserte Effizienz',
@@ -33,7 +32,6 @@ const deTranslations = {
         // Testimonials Section
         testimonialsTitle: 'Was unsere Nutzer sagen',
         testimonialText: 'SPUFO hat die Art und Weise, wie ich mein Smartphone nutze, komplett verändert. Die Funktionen sind unglaublich!',
-
 
         // Features Section
         featuresTitle: 'Hauptvorteile',
@@ -57,6 +55,30 @@ const deTranslations = {
             description: 'Entwickelt in Zusammenarbeit mit der Forensischen Wissenschaft Zürich, wird SPUFO aktiv in realen Szenarien eingesetzt. Unsere App hat die Anzahl der erfassten Fingerabdrücke deutlich erhöht und demonstriert ihre Effektivität und Zuverlässigkeit in forensischen Untersuchungen.',
             link: 'Erfolgsgeschichten lesen'
         },
+
+        // Forensic Success Section
+        forensicSuccess: {
+            title: 'Operativer Erfolg mit der Kantonspolizei Zürich',
+            subtitle: 'Wie SPUFO die forensische Fingerabdruckfotografie im echten Polizeieinsatz revolutioniert',
+            adoption: {
+                title: 'Flächendeckende Einführung in Zürich',
+                description: 'SPUFO hat bedeutende Meilensteine bei der Einführung in Zürichs Strafverfolgung erreicht:',
+                points: [
+                    'Implementierung durch FOR Zürich seit April 2024',
+                    'Vollständige Übernahme durch die Kantonspolizei (KAPO) seit Oktober 2024',
+                    'Aktuell im täglichen Einsatz bei tausenden Polizeibeamten'
+                ]
+            },
+            efficiency: {
+                title: 'Verbesserte Ermittlungseffizienz',
+                description: 'Durch die Optimierung des Fingerabdruckfotografie-Prozesses hat SPUFO die erforderliche Zeit für die Beweisaufnahme am Tatort erheblich reduziert. Diese Effizienz ermöglicht es den forensischen Teams, mehr Fälle zu bearbeiten und dabei höchste Beweisqualität zu gewährleisten.'
+            },
+            standard: {
+                title: 'Professioneller Standard',
+                description: 'SPUFO dient weiterhin als Standardwerkzeug für die forensische Fingerabdruckfotografie im Einsatz der Zürcher Polizei und demonstriert seine Effektivität und Zuverlässigkeit in realen Strafverfolgungsszenarien.'
+            }
+        },
+
         // Smartphone Advantages Section
         smartphoneTitle: 'Neudefinition der Beweisaufnahme',
         advantages: {
@@ -85,28 +107,6 @@ const deTranslations = {
                 description: 'Leistungsstarke Smartphone-Prozessoren ermöglichen Echtzeitanalyse und Beweisaufbereitung.'
             }
         },
-
-        // Contact Section
-        contactTitle: 'Kontaktieren Sie uns',
-        contactSubtitle: 'Haben Sie eine Frage oder möchten Sie mehr erfahren? Wir freuen uns von Ihnen zu hören.',
-        email: 'E-Mail',
-        location: 'Zug, Schweiz',
-        name: 'Name',
-        emailAddress: 'E-Mail-Adresse',
-        company: 'Firma/Organisation',
-        phone: 'Telefonnummer',
-        subject: 'Betreff',
-        message: 'Nachricht',
-        required: '*',
-        sendMessage: 'Nachricht senden',
-        formSuccessMessage: 'Vielen Dank für Ihre Kontaktaufnahme!',
-        formSuccessSubtitle: 'Ihre Nachricht ist bei uns eingegangen, und wir melden uns in Kürze bei Ihnen.',
-
-        // Testimonial Section
-        testimonialTitle: 'Testimonial',
-        testimonialQuote: '«Das Beispiel SPUFO zeigt auf, wie bedeutsam neue Technologien auch für die Kriminaltechnik sind.» ... «Die App sorgt für deutlich mehr Effizienz und vor allem mehr eingelieferte Spuren.»',
-        testimonialAuthor: 'Dominik Hänni',
-        testimonialRole: 'Leiter Informatik beim Forensischen Institut Zürich',
 
         evidence: {
             title: "Verändern Sie Ihre Beweissammlung",
@@ -196,6 +196,27 @@ const deTranslations = {
             }
         },
 
+        // Contact Section
+        contactTitle: 'Kontaktieren Sie uns',
+        contactSubtitle: 'Haben Sie eine Frage oder möchten Sie mehr erfahren? Wir freuen uns von Ihnen zu hören.',
+        email: 'E-Mail',
+        location: 'Zug, Schweiz',
+        name: 'Name',
+        emailAddress: 'E-Mail-Adresse',
+        company: 'Firma/Organisation',
+        phone: 'Telefonnummer',
+        subject: 'Betreff',
+        message: 'Nachricht',
+        required: '*',
+        sendMessage: 'Nachricht senden',
+        formSuccessMessage: 'Vielen Dank für Ihre Kontaktaufnahme!',
+        formSuccessSubtitle: 'Ihre Nachricht ist bei uns eingegangen, und wir melden uns in Kürze bei Ihnen.',
+
+        // Testimonial Section
+        testimonialTitle: 'Testimonial',
+        testimonialQuote: '«Das Beispiel SPUFO zeigt auf, wie bedeutsam neue Technologien auch für die Kriminaltechnik sind.» ... «Die App sorgt für deutlich mehr Effizienz und vor allem mehr eingelieferte Spuren.»',
+        testimonialAuthor: 'Dominik Hänni',
+        testimonialRole: 'Leiter Informatik beim Forensischen Institut Zürich',
 
         // Footer Section
         footerAdress: 'Adresse',
@@ -322,7 +343,6 @@ const deTranslations = {
                 }
             }
         }
-
     }
 };
 

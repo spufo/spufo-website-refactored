@@ -196,6 +196,30 @@ const frTranslations = {
         },
 
 
+        // Forensic Success Section
+        forensicSuccess: {
+            title: 'Succès opérationnel avec la police cantonale de Zurich',
+            subtitle: 'Comment SPUFO révolutionne la photographie d\'empreintes digitales dans les opérations policières réelles',
+            adoption: {
+                title: 'Adoption généralisée à Zurich',
+                description: 'SPUFO a atteint des étapes significatives dans son introduction dans les forces de l\'ordre zurichoises :',
+                points: [
+                    'Mise en œuvre par FOR Zurich depuis avril 2024',
+                    'Adoption complète par la police cantonale (KAPO) depuis octobre 2024',
+                    'Actuellement utilisé quotidiennement par des milliers de policiers'
+                ]
+            },
+            efficiency: {
+                title: 'Efficacité des enquêtes améliorée',
+                description: 'En optimisant le processus de photographie d\'empreintes digitales, SPUFO a considérablement réduit le temps nécessaire à la collecte des preuves sur les scènes de crime. Cette efficacité permet aux équipes forensiques de traiter plus de cas tout en garantissant la qualité maximale des preuves.'
+            },
+            standard: {
+                title: 'Norme professionnelle',
+                description: 'SPUFO continue de servir d\'outil standard pour la photographie d\'empreintes digitales utilisé par la police zurichoise, démontrant son efficacité et sa fiabilité dans des scénarios réels d\'application de la loi.'
+            }
+        },
+
+
         // Footer Section
         footerAdress: 'Adresse',
         footerContact: 'Contact',

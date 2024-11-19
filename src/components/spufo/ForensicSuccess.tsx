@@ -16,10 +16,10 @@ export default function ForensicSuccess() {
           className="text-center mb-16"
         >
           <h1 className="text-4xl md:text-6xl font-bold text-[--orange-color] mb-6">
-            Operational Success with Zurich Police
+            {t('forensicSuccess.title')}
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            How SPUFO revolutionizes forensic fingerprint photography in real police operations
+            {t('forensicSuccess.subtitle')}
           </p>
         </motion.div>
 
@@ -46,16 +46,16 @@ export default function ForensicSuccess() {
             <div className="flex items-center mb-4">
               <Shield className="w-8 h-8 text-[--orange-color] mr-4 flex-shrink-0" />
               <h3 className="text-2xl font-semibold text-gray-900">
-                Widespread Adoption in Zurich
+                {t('forensicSuccess.adoption.title')}
               </h3>
             </div>
             <p className="text-gray-600 mb-4 ml-12">
-              SPUFO has achieved significant milestones in its deployment across Zurich's law enforcement:
+              {t('forensicSuccess.adoption.description')}
             </p>
             <ul className="list-disc pl-18 text-gray-600 space-y-2 ml-12">
-              <li>Implemented by FOR Zurich since April 2024</li>
-              <li>Full adoption by the Cantonal Police (KAPO) since October 2024</li>
-              <li>Currently being utilized by thousands of police officers in their daily operations</li>
+              {(t('forensicSuccess.adoption.points', { returnObjects: true }) as string[]).map((point, index) => (
+                <li key={index}>{point}</li>
+              ))}
             </ul>
           </motion.div>
 
@@ -68,11 +68,11 @@ export default function ForensicSuccess() {
             <div className="flex items-center mb-4">
               <Search className="w-8 h-8 text-[--orange-color] mr-4 flex-shrink-0" />
               <h3 className="text-2xl font-semibold text-gray-900">
-                Improved Investigation Efficiency
+                {t('forensicSuccess.efficiency.title')}
               </h3>
             </div>
             <p className="text-gray-600 ml-12">
-              By streamlining the fingerprint photography process, SPUFO has significantly reduced the time required for evidence collection at crime scenes. This efficiency allows forensic teams to process more cases while maintaining the highest standards of evidence quality.
+              {t('forensicSuccess.efficiency.description')}
             </p>
           </motion.div>
 
@@ -85,11 +85,11 @@ export default function ForensicSuccess() {
             <div className="flex items-center mb-4">
               <Stamp className="w-8 h-8 text-[--orange-color] mr-4 flex-shrink-0" />
               <h3 className="text-2xl font-semibold text-gray-900">
-                Professional Standard
+                {t('forensicSuccess.standard.title')}
               </h3>
             </div>
             <p className="text-gray-600 ml-12">
-              SPUFO continues to serve as the standard tool for forensic fingerprint photography in Zurich Police operations, demonstrating its effectiveness and reliability in real-world law enforcement scenarios.
+              {t('forensicSuccess.standard.description')}
             </p>
           </motion.div>
         </div>
