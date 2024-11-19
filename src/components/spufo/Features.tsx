@@ -1,5 +1,5 @@
 import React from 'react';
-import { Fingerprint, GitBranch, Maximize, Award } from 'lucide-react';
+import { Fingerprint, GitBranch, Ruler, Award } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import FeatureCard from '../general/FeatureCard';
@@ -19,9 +19,9 @@ export default function Features() {
       linkTo: '#version-control'
     },
     {
-      icon: Maximize,
+      icon: Ruler,
       featureKey: 'feature3',
-      linkTo: '#scalability'
+      linkTo: '/spufo/ruler-recognition/'
     },
     {
       icon: Award,

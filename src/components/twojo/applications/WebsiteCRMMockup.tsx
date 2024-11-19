@@ -4,7 +4,7 @@ function WebsiteCRMMockup() {
   return (
     <div className="flex items-center justify-center relative">
       {/* Stronger Background Glow with Shadow */}
-      <div className="absolute w-[40rem] h-[40rem] bg-cyan-500 blur-3xl opacity-40 rounded-full shadow-[0_0_60px_rgba(0,169,255,0.8)]"></div>
+      <div className="absolute w-[34rem] h-[34rem] bg-cyan-500 blur-3xl opacity-40 rounded-full shadow-[0_0_60px_rgba(0,169,255,0.8)]"></div>
 
       {/* CRM Mockup */}
       <div className="relative w-[48em] h-[32em] bg-gradient-to-b from-gray-800/70 to-gray-900 rounded-lg p-4 drop-shadow-[0_15px_15px_rgba(0,0,0,0.9)] border border-gray-700">
