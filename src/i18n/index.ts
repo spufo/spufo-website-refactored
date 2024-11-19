@@ -479,7 +479,7 @@ const resources = {
             negative2: "Zeitaufwendige Einrichtung"
           },
           gelatin: {
-            name: "Gelatinefilm",
+            name: "Gelatine-Folie",
             negative1: "Zeitaufwendige Anwendung",
             negative2: "Risiko einer Verschmierung"
           },
