@@ -18,7 +18,7 @@ const Hero = () => {
   };
 
   return (
-    <motion.div 
+    <motion.div
       className="relative bg-white min-h-screen flex items-start md:items-center overflow-hidden mt-0"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
@@ -26,7 +26,7 @@ const Hero = () => {
     >
       <div className="flex flex-col md:flex-row items-stretch justify-between max-w-[100rem] mx-auto w-full px-6 over mt-16 md:mt-0">
         {/* Fingerprint background */}
-        <div 
+        <div
           className="absolute invert sm:-translate-y-40 -translate-x-80 sm:-translate-x-0 rotate-[46deg] sm:rotate-[34deg] scale-[1.5] sm:scale-[0.9] inset-0 bg-contain bg-no-repeat bg-center opacity-100 z-0 pointer-events-none"
         >
           <img src={background} alt="Background" />
@@ -45,21 +45,21 @@ const Hero = () => {
               <span className="hover:scale-[1.1] transition-all duration-300 inline-block mr-2">
                 {t('heroDigital')}
               </span>
-               - 
+              -
               <span className="hover:scale-[1.1] transition-all duration-300 inline-block mx-2">
                 {t('heroFast')}
               </span>
-                - 
+              -
               <span className="hover:scale-[1.1] transition-all duration-300 inline-block mx-2">
                 {t('heroEfficient')}
               </span>
             </p>
-                
+
             <div className="flex flex-row space-x-4 w-full md:w-auto">
               <ScrollLink to="/contact" className="bg-[--orange-color] border-2 border-[--orange-color] text-white px-4 sm:px-8 py-2 sm:py-3 rounded-xl text-base sm:text-xl font-semibold hover:border-[--orange-selected-color] hover:bg-[--orange-selected-color] transition duration-300 transform hover:scale-105 flex-1 md:flex-initial text-center">
                 {t('tryNow')}
               </ScrollLink>
-              <ScrollLink to="/brochure" className="bg-transparent border-2 border-[--orange-color] text-[--orange-color] px-4 sm:px-8 py-2 sm:py-3 rounded-xl text-base sm:text-xl font-semibold hover:bg-[--orange-color] hover:text-white transition duration-300 transform hover:scale-105 flex-1 md:flex-initial text-center">
+              <ScrollLink to="/brochure" className="bg-transparent hidden border-2 border-[--orange-color] text-[--orange-color] px-4 sm:px-8 py-2 sm:py-3 rounded-xl text-base sm:text-xl font-semibold hover:bg-[--orange-color] hover:text-white transition duration-300 transform hover:scale-105 flex-1 md:flex-initial text-center">
                 {t('pdfBrochure')}
               </ScrollLink>
             </div>
@@ -79,15 +79,15 @@ const Hero = () => {
           {t('developedWith')}
         </p>
         <a href="https://for-zh.ch" target="_blank" rel="noopener noreferrer">
-          <img 
+          <img
             src={logo_FOR_RGB}
-            alt="FOR Zürich" 
+            alt="FOR Zürich"
             className="h-14 mb-12 sm:mb-0 sm:h-16 hover:scale-[1.1] transition-all duration-30"
-          />            
+          />
         </a>
       </div>
       {/* Scroll down button */}
-      <button 
+      <button
         onClick={scrollToAbout}
         className="absolute bottom-0 md:bottom-10 left-1/2 transform -translate-x-1/2 text-[--orange-color] hover:text-[--orange-selected-color] transition-colors duration-300 hidden md:block"
       >
