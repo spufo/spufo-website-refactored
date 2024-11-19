@@ -26,7 +26,7 @@ export default function Features() {
     {
       icon: Award,
       featureKey: 'feature4',
-      linkTo: '#quality'
+      linkTo: '/spufo/forensic-success/'
     }
   ];
 
