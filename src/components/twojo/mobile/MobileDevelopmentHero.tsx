@@ -40,7 +40,7 @@ const MobileDevelopmentHero: React.FC = () => {
           transition={{ duration: 0.8, delay: 0.3 }}
           className="md:w-1/2 py-0 md:py-12 flex flex-col justify-center items-center"
         >
-          <div className="max-w-full h-auto transform scale-75 sm:scale-90 md:scale-150 -mt-8 sm:mt-0">
+          <div className="max-w-full h-auto transform scale-75 sm:scale-90 md:scale-120 -mt-8 sm:mt-0">
             <PhoneMockup></PhoneMockup>
           </div>
         </motion.div>
