@@ -37,17 +37,17 @@ const deTranslations = {
         featuresTitle: 'Hauptvorteile',
         feature1: {
             title: 'Mobile Fingerabdruckerfassung',
-            description: 'Erfassen Sie mühelos hochwertige Fingerabdrücke am Tatort mit der Spufo App auf Ihrem iOS-Gerät. Entwickelt für forensische Techniker und Einsatzkräfte.',
-            link: 'Erfahren Sie wie es funktioniert'
+            description: 'Mühelose Erfassung hochwertiger Fingerabdrücke am Tatort mit der Spufo App auf iOS-Geräten. Entwickelt für forensische Techniker und Einsatzkräfte.',
+            link: 'Mehr erfahren'
         },
         feature2: {
-            title: 'Optimierte Beweisaufnahme',
-            description: 'Ersetzen Sie schwere DSLR-Kameras und Gelatinefolien durch unsere effiziente mobile Lösung. Die Spufo App beschleunigt Ihren Beweisaufnahmeprozess und spart Zeit und Aufwand.',
-            link: 'Entdecken Sie die Vorteile'
+            title: 'Bildbearbeitung direkt in der App',
+            description: 'Bilder können direkt in der App bearbeitet werden. Dadurch entfällt der Umweg über zusätzliche Software.',
+            link: 'Zur Funktionsübersicht'
         },
         feature3: {
             title: 'Optimale Auflösungsbildgebung',
-            description: 'Erfassen Sie automatisch 1:1 skalierte Fotografien in 1000 dpi Auflösung. Stellen Sie sicher, dass jeder Fingerabdruck in höchster Qualität für eine genaue Analyse aufgezeichnet wird.',
+            description: 'Automatische Erfassung von 1:1 skalierten Fotografien in 1000 dpi Auflösung. Jeder Fingerabdruck wird in höchster Qualität für eine genaue Analyse aufgezeichnet.',
             link: 'Technische Details ansehen'
         },
         feature4: {

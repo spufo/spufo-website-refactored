@@ -41,12 +41,12 @@ const frTranslations = {
             link: 'Découvrez comment ça marche'
         },
         feature2: {
-            title: 'Collection de Preuves Optimisée',
-            description: 'Remplacez les appareils photo DSLR encombrants et les feuilles de gélatine par notre solution mobile efficace. L\'application Spufo accélère votre processus de collecte de preuves, économisant temps et effort.',
+            title: 'Édition d\'images directement dans l\'application',
+            description: 'Les images peuvent être éditées directement dans l\'application, supprimant ainsi le besoin de logiciels supplémentaires.',
             link: 'Découvrez les avantages'
         },
         feature3: {
-            title: 'Imagerie à Résolution Optimale',
+            title: 'Optimal Resolution Imaging',
             description: 'Capturez automatiquement des photographies à l\'échelle 1:1 en résolution 1000 dpi. Assurez-vous que chaque empreinte digitale est enregistrée avec la plus haute qualité pour une analyse précise.',
             link: 'Voir les détails techniques'
         },

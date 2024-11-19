@@ -16,7 +16,7 @@ export default function Features() {
     {
       icon: GitBranch,
       featureKey: 'feature2',
-      linkTo: '#version-control'
+      linkTo: '/spufo/image-editing/'
     },
     {
       icon: Ruler,
@@ -33,7 +33,7 @@ export default function Features() {
   return (
     <section className="py-32 px-6 bg-gray-100" id="features">
       <div className="max-w-7xl mx-auto">
-        <motion.h2 
+        <motion.h2
           className="text-4xl md:text-7xl font-bold text-center text-[--orange-color] mb-20"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
