@@ -432,7 +432,7 @@ const deTranslations = {
                 ]
             },
             mobile: {
-                about: 'Bei der Twojo Software GmbH entwickeln wir innovative mobiles Anwendungen für Android- und iOS-Plattformen. Ein erfahrenes Team kombiniert technisches Fachwissen mit einem Fokus auf Benutzerfreundlichkeit und sorgt dafür, dass jede entwickelte App intuitiv und effizient ist. Besondere Expertise besteht in der Nutzung von Kamerafunktionen und Bildverarbeitung, um die Möglichkeiten mobiler Anwendungen zu erweitern.',
+                about: 'Bei der Twojo Software GmbH entwickeln wir innovative mobile Anwendungen für Android- und iOS-Plattformen. Ein erfahrenes Team kombiniert technisches Fachwissen mit einem Fokus auf Benutzerfreundlichkeit und sorgt dafür, dass jede entwickelte App intuitiv und effizient ist. Besondere Expertise besteht in der Nutzung von Kamerafunktionen und Bildverarbeitung, um die Möglichkeiten mobiler Anwendungen zu erweitern.',
                 experience: [
                     {
                         title: 'Plattformübergreifende Entwicklung',
