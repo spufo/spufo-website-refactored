@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import aboutImage from '/assets/images/AboutImage.png';
+import aboutImage from '/assets/images/About_Image.jpg';
 import background from '/assets/images/Background.png';
 
 const About = () => {
@@ -17,7 +17,7 @@ const About = () => {
           <img src={background} alt="Background Pattern" />
         </div>
         
-        <div className="md:w-1/2 mb-10 md:mb-0 flex justify-center">
+        <div className="md:w-1/2 mb-10 md:mb-0 flex flex-col items-center">
           <motion.img 
             src={aboutImage}
             alt="SPUFO in action" 
@@ -27,6 +27,7 @@ const About = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.3 }}
           />
+          <span className="text-sm text-gray-400 mt-2 italic">20min.ch</span>
         </div>
 
         <div className="md:w-1/2 md:pl-12">

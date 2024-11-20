@@ -49,7 +49,7 @@ const RulerRecognition = () => {
                 alt="Ruler Recognition Example"
                 className="w-full rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300"
               />
-              <p className="text-sm text-gray-500 italic text-center mt-4">Image credit: 20min.ch</p>
+              <p className="text-sm text-gray-500 italic text-center mt-4">20min.ch</p>
             </motion.div>
 
             {/* Features Side */}
