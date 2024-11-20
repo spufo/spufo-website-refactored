@@ -18,15 +18,15 @@ const deTranslations = {
 
     // About Section
     aboutTitle: 'Über SPUFO',
-    aboutDescription: 'Die SPUFO-App ist eine forensische iOS-Lösung, die die Erfassung von daktyloskopischen Spuren am Tatort vereinfacht und optimiert.',
+    aboutDescription: 'Die SPUFO-App ist eine forensische Applikaiton, welche die Erfassung von daktyloskopischen Spuren am Tatort vereinfacht und optimiert.',
     aboutPoint1: 'Ersetzt traditionelle DSLR-Kameras und Gelatinefolien durch mobile Technologie.',
     aboutPoint2: 'Erfasst Spuren vor Ort, massstabsgetreu 1:1 und in 1000 dpi Auflösung.',
-    aboutPoint3: 'Ermöglicht direkte Nummerierung, Zuschnitt und Vorbereitung für AFIS-Suchen.',
+    aboutPoint3: 'Ermöglicht direkte Nummerierung, Zuschnitt und Vorbereitung für AFIS-Suchläufe.',
 
     // Image Editing Section
     imageEditing: {
       title: 'Professionelle Bildbearbeitung',
-      subtitle: 'Nutzen Sie unsere umfangreichen Bildbearbeitungswerkzeuge, um Ihre Spurenaufnahmen optimal für die Analyse vorzubereiten.',
+      subtitle: 'Umfangreiche Bildbearbeitungswerkzeuge stehen bereit, um Spurenaufnahmen optimal für die Analyse vorzubereiten.',
       features: {
         colorInversion: {
           title: 'Farbinvertierung',
@@ -64,21 +64,48 @@ const deTranslations = {
       bottomText: 'Alle Bearbeitungsfunktionen sind speziell für die forensische Arbeit optimiert und gewährleisten die Integrität der Beweismittel.'
     },
 
+    rulerRecognition: {
+      title: 'Linealerkennung',
+      description: 'Fortschrittliche Mess- und Dokumentationsfunktionen für präzise Beweisaufnahme',
+      features: {
+        accurate_measurements: {
+          title: 'Genaues Messen',
+          description: 'Erkennt automatisch Lineale und berechnet präzise Abmessungen. Spezialisierte Lineale mit ArUco-Markern werden für beste Ergebnisse empfohlen.'
+        },
+        high_quality_images: {
+          title: 'Hochwertige Bilder',
+          description: 'Erzeugt Bilder mit einer Auflösung von 1000 DPI, die Details für eine zuverlässige Analyse bewahren. Originalbilder werden immer für die Nachvollziehbarkeit aufbewahrt.'
+        },
+        detailed_documentation: {
+          title: 'Detaillierte Dokumentation',
+          description: 'Exportiert Bilder mit Metadaten wie GPS-Koordinaten und Zeitstempeln. Unterstützt RAW- und TIFF-Formate für Flexibilität.'
+        }
+      },
+      advanced_capabilities: 'Fortschrittliche Funktionen',
+      comprehensive_suite: 'Umfassende Suite von Funktionen für die professionelle Beweisdokumentation',
+      extra_features: {
+        ultra_high_resolution: 'Ultra-hohe Auflösung mit 1000 DPI',
+        embedded_gps_metadata: 'Eingebettete GPS- und Metadaten',
+        supports_raw_tiff: 'Unterstützt RAW- und TIFF-Formate',
+        true_to_scale_output: 'Massstabsgetreue Bilder',
+        automatic_ruler_detection: 'Automatische Linealerkennung',
+        greyscale_enhancement: 'Graustufenverbesserung',
+        original_image_preservation: 'Erhaltung des Originalbildes',
+        advanced_processing_algorithms: 'Fortschrittliche Verarbeitungsalgorithmen'
+      }
+    },
+
     // Advantages Section
     advantagesTitle: 'Smartphone-Vorteile',
     advantage1: 'Verbesserte Effizienz',
     advantage2: 'Erhöhte Sicherheit',
     advantage3: 'Bessere Leistung',
 
-    // Testimonials Section
-    testimonialsTitle: 'Was unsere Nutzer sagen',
-    testimonialText: 'SPUFO hat die Art und Weise, wie ich mein Smartphone nutze, komplett verändert. Die Funktionen sind unglaublich!',
-
     // Features Section
     featuresTitle: 'Hauptvorteile',
     feature1: {
       title: 'Mobile Fingerabdruckerfassung',
-      description: 'Mühelose Erfassung hochwertiger Fingerabdrücke am Tatort mit der Spufo App auf iOS-Geräten. Entwickelt für forensische Techniker und Einsatzkräfte.',
+      description: 'Mühelose Erfassung hochwertiger Fingerabdrücke am Tatort mit der SPUFO App. Entwickelt für forensische Techniker und Einsatzkräfte.',
       link: 'Mehr erfahren'
     },
     feature2: {
@@ -87,13 +114,13 @@ const deTranslations = {
       link: 'Zur Funktionsübersicht'
     },
     feature3: {
-      title: 'Optimale Auflösungsbildgebung',
+      title: 'Bildgebung mit optimaler Auflösung',
       description: 'Automatische Erfassung von 1:1 skalierten Fotografien in 1000 dpi Auflösung. Jeder Fingerabdruck wird in höchster Qualität für eine genaue Analyse aufgezeichnet.',
       link: 'Technische Details ansehen'
     },
     feature4: {
       title: 'Praxiserprobt',
-      description: 'Entwickelt in Zusammenarbeit mit der Forensischen Wissenschaft Zürich, wird SPUFO aktiv in realen Szenarien eingesetzt. Unsere App hat die Anzahl der erfassten Fingerabdrücke deutlich erhöht und demonstriert ihre Effektivität und Zuverlässigkeit in forensischen Untersuchungen.',
+      description: 'Entwickelt in Zusammenarbeit mit der Forensischen Institut Zürich, wird SPUFO aktiv in realen Szenarien eingesetzt. Unsere App hat die Anzahl der erfassten Fingerabdrücke deutlich erhöht und demonstriert ihre Effektivität und Zuverlässigkeit in forensischen Untersuchungen.',
       link: 'Erfolgsgeschichten lesen'
     },
 
@@ -125,11 +152,11 @@ const deTranslations = {
     advantages: {
       costEffective: {
         title: 'Kostengünstig',
-        description: 'Nutzen Sie vorhandene Smartphone-Technologie, um Ausrüstungskosten erheblich zu reduzieren.'
+        description: 'Durch vorhandene Smartphone-Technologie lassen sich Ausrüstungskosten erheblich reduzieren.'
       },
       efficient: {
         title: 'Effizient',
-        description: 'Optimieren Sie den Beweisaufnahmeprozess und sparen Sie wertvolle Zeit am Tatort.'
+        description: 'Der Beweisaufnahmeprozess wird optimiert, wodurch wertvolle Zeit am Tatort gespart werden kann.'
       },
       easeOfUse: {
         title: 'Einfache Bedienung',
@@ -150,8 +177,8 @@ const deTranslations = {
     },
 
     evidence: {
-      title: "Verändern Sie Ihre Beweissammlung",
-      subtitle: "Erleben Sie die Evolution von komplexer Ausrüstung zu optimierter Effizienz",
+      title: "Die Beweissammlung neu gedacht",
+      subtitle: "Die Evolution von komplexer Ausrüstung hin zu optimierter Effizienz erleben",
       traditional: {
         label: "TRADITIONELLE METHODEN",
         title: "Komplexe Geräteeinrichtung",
@@ -184,8 +211,8 @@ const deTranslations = {
       spufo: {
         label: "SPUFO-LÖSUNG",
         title: "Intelligente Integration",
-        subtitle: "Verwendung des Geräts, das Sie bereits tragen",
-        advantage1: "Immer in Ihrer Tasche - kein zusätzliches Equipment erforderlich",
+        subtitle: "Ein Gerät verwenden, das bereits zur Verfügung steht",
+        advantage1: "Immer griffbereit - kein zusätzliches Equipment notwendig",
         advantage2: "Einfach und intuitiv zu bedienen",
         advantage3: "Integrierte Bildstabilisierung",
         advantage4: "Integrierter Blitz für die meisten Lichtverhältnisse",
@@ -194,7 +221,7 @@ const deTranslations = {
           description: "Zusätzliche Beleuchtung bei Bedarf"
         },
         summary: {
-          title: "Bereit, wenn Sie es brauchen",
+          title: "Immer bereit für den Einsatz",
           description: "Keine Einrichtung erforderlich"
         }
       },
@@ -238,8 +265,8 @@ const deTranslations = {
     },
 
     // Contact Section
-    contactTitle: 'Kontaktieren Sie uns',
-    contactSubtitle: 'Haben Sie eine Frage oder möchten Sie mehr erfahren? Wir freuen uns von Ihnen zu hören.',
+    contactTitle: 'Kontakt aufnehmen',
+    contactSubtitle: 'Fragen oder Interesse an weiteren Informationen? Es freut uns, von Interessierten zu hören.',
     email: 'E-Mail',
     location: 'Zug, Schweiz',
     name: 'Name',
@@ -250,8 +277,8 @@ const deTranslations = {
     message: 'Nachricht',
     required: '*',
     sendMessage: 'Nachricht senden',
-    formSuccessMessage: 'Vielen Dank für Ihre Kontaktaufnahme!',
-    formSuccessSubtitle: 'Ihre Nachricht ist bei uns eingegangen, und wir melden uns in Kürze bei Ihnen.',
+    formSuccessMessage: 'Vielen Dank für die Kontaktaufnahme!',
+    formSuccessSubtitle: 'Die Nachricht ist bei uns eingegangen, und wir melden uns in Kürze bei Ihnen.',
 
     // Testimonial Section
     testimonialTitle: 'Testimonial',
@@ -283,28 +310,28 @@ const deTranslations = {
     twojo: {
       hero: {
         title: 'Entwickelt in der Schweiz.',
-        subTitle: 'Wir sind ein engagiertes Team, das Lösungen entwickelt, um Ihrem Unternehmen zum Erfolg zu verhelfen.'
+        subTitle: 'Ein engagiertes Team entwickelt Lösungen, die Unternehmen zum Erfolg verhelfen.'
       },
       partner: {
         title: 'Partnerschaft mit'
       },
       solutions: {
         title: 'Unsere Lösungen',
-        subTitle: 'Wir bieten flexible Lösungen für Ihr Unternehmen',
+        subTitle: 'Wir bieten flexible Lösungen in diversen Bereichen',
         mobileDev: {
           title: 'Mobile Entwicklung',
           description: 'Apps, die sowohl auf iOS als auch auf Android funktionieren.',
-          link: 'Erfahren Sie mehr'
+          link: 'Mehr erfahren'
         },
         businessApp: {
           title: 'Business-Anwendung',
-          description: 'Anwendungen massgeschneidert für Ihr Unternehmen.',
-          link: 'Erfahren Sie mehr'
+          description: 'Anwendungen, die passgenau auf Anforderungen zugeschnitten werden.',
+          link: 'Mehr erfahren'
         },
         interactiveExp: {
           title: 'Interaktive Erlebnisse',
-          description: 'Gamifizieren Sie Ihre Werbung.',
-          link: 'Erfahren Sie mehr'
+          description: 'Werbung mit spielerischen Elementen bereichern.',
+          link: 'Mehr erfahren'
         }
       },
       highlightedProduct: {
@@ -313,17 +340,17 @@ const deTranslations = {
           title: 'SPUFO',
           subTitle: 'Die Tatort-Fotografie-App',
           slogan: 'Digital - Schnell - Effizient',
-          description: 'Die SPUFO-App ist eine forensische iOS-Lösung, die das Sammeln daktyloskopischer Spuren am Tatort vereinfacht und optimiert.',
+          description: 'Die SPUFO-App ist eine forensische Applikation, die das Sichern daktyloskopischer Spuren am Tatort vereinfacht und optimiert.',
           bulletPoints: {
             first: 'Ersetzt herkömmliche DSLR-Kameras und Gelatinefolien durch mobile Technologie.',
             second: 'Erfasst Spuren vor Ort, massstabsgetreu 1:1 und in 1000 dpi Auflösung.',
-            third: 'Ermöglicht direkte Nummerierung, Zuschneiden und Vorbereitung für AFIS-Suchen.'
+            third: 'Ermöglicht direkte Nummerierung, Zuschneiden und Vorbereitung für AFIS-Suchläufe.'
           },
-          button: 'Erfahren Sie mehr'
+          button: 'Mehr erfahren'
         }
       },
       about: {
-        teamTitle: 'Treffen Sie Unser Team',
+        teamTitle: 'Das Team',
         teamSubtitle: 'Leidenschaftliche Entwickler, die innovative Lösungen schaffen',
         description: 'Wir sind ein Team leidenschaftlicher Softwareingenieure, die sich während ihrer Ausbildung an der BBBaden Schule kennengelernt haben. Während wir unsere individuellen Karrieren in der Technologie verfolgen, haben wir uns zusammengeschlossen, um durch Twojo Software innovative Lösungen zu schaffen.',
         teamImageAlt: 'Twojo Software Team',
@@ -387,6 +414,58 @@ const deTranslations = {
             title: 'Camera Improvements and Multilingual Support',
             content: 'Ein neuer Nahaufnahmemodus vereinfacht die Kamerabedienung. Die App unterstützt nun Deutsch, Englisch und Französisch und bietet verbesserte Datenverwaltung mit automatischer Fallbereinigung.',
             link: 'Mehr erfahren'
+          }
+        }
+      },
+      games: {
+        about: 'Twojo Software GmbH unterstützt Unternehmen dabei, Spiele als effektives Marketinginstrument zu nutzen. Von auffälligen Spielen für Messestände bis hin zu mitreißenden Wettbewerben werden kreative Ideen umgesetzt. Die Spiele unterhalten nicht nur, sondern steigern die Sichtbarkeit der Marke und fördern tiefere Verbindungen zur Zielgruppe. Ob Marketingstrategien gamifiziert oder unvergessliche Event-Erlebnisse geschaffen werden sollen – passende Lösungen sind verfügbar.',
+        experience: [
+          {
+            title: 'Interaktive Spielentwicklung',
+            description: 'Wir sind spezialisiert auf die Entwicklung fesselnder Spiele, die die Aufmerksamkeit der Kunden auf sich ziehen.'
+          },
+          {
+            title: 'Wettbewerbe und Events',
+            description: 'Unsere Spiele eignen sich perfekt, um bei Events durch interaktive Wettbewerbe für Engagement zu sorgen.'
+          },
+          {
+            title: 'Markeninteraktion stärken',
+            description: 'Gamification eröffnet Möglichkeiten, mit einer Zielgruppe in Kontakt zu treten und unvergessliche Markenerlebnisse zu schaffen.'
+          }
+        ]
+      },
+      mobile: {
+        about: 'Bei der Twojo Software GmbH entwickeln wir innovative mobile Anwendungen für Android- und iOS-Plattformen. Ein erfahrenes Team kombiniert technisches Fachwissen mit einem Fokus auf Benutzerfreundlichkeit und sorgt dafür, dass jede entwickelte App intuitiv und effizient ist. Besondere Expertise besteht in der Nutzung von Kamerafunktionen und Bildverarbeitung, um die Möglichkeiten mobiler Anwendungen zu erweitern.',
+        experience: [
+          {
+            title: 'Plattformübergreifende Entwicklung',
+            description: 'Kompetent in der Erstellung hochwertiger Anwendungen für Android und iOS.'
+          },
+          {
+            title: 'Kamera und Bildverarbeitung',
+            description: 'Experten in der Implementierung fortschrittlicher Bildaufnahmefunktionen und Echtzeit-Bildmanipulation.'
+          },
+          {
+            title: 'Benutzerzentriertes Design',
+            description: 'Engagiert für die Bereitstellung ansprechender Benutzererlebnisse durch durchdachtes Design und Funktionalität.'
+          }
+        ]
+      },
+      businessApplication: {
+        about: 'Massgeschneiderte Geschäftsanwendungens',
+        about_description: 'Bei Twojo Software GmbH sind wir auf die Entwicklung innovativer Geschäftsanwendungen spezialisiert, die auf Unternehmen zugeschnitten sind. Unsere Lösungen konzentrieren sich auf effiziente Datenmanipulation, nahtloses Cloud-Hosting von Webanwendungen und die Automatisierung von Prozessen zur Steigerung der betrieblichen Effizienz. Durch die Kombination technischer Expertise mit einem geschäftsorientierten Ansatz liefern wir skalierbare, intuitive und robuste Anwendungen.',
+        experience: {
+          data_manipulation_expertise: {
+            title: 'Expertise in Datenmanipulation',
+            description: 'Erfahren in der Erstellung effizienter Lösungen für die Verwaltung, Verarbeitung und Analyse von Geschäftsdaten.'
+          },
+          web_application_hosting: {
+            title: 'Webanwendungs-Hosting',
+            description: 'Versiert in der Bereitstellung und Wartung skalierbarer und sicherer Webanwendungen.'
+          },
+          automation_and_efficiency: {
+            title: 'Automatisierung und Effizienz',
+            description: 'Unsere Anwendungen optimieren Geschäftsprozesse und helfen Unternehmen, automatisierter und effizienter zu werden.'
           }
         }
       }

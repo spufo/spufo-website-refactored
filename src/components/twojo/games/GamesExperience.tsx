@@ -10,18 +10,18 @@ const GamesExperience: React.FC = () => {
   const experience = [
     {
       icon: Gamepad2,
-      titleKey: 'Interactive Game Development',
-      descriptionKey: 'We specialize in creating engaging games designed to attract customer attention.'
+      title: t('twojo.games.experience.0.title'),
+      description: t('twojo.games.experience.0.description')
     },
     {
       icon: Trophy,
-      titleKey: 'Competitions and Events',
-      descriptionKey: 'Our games are perfect for driving engagement at events through interactive competitions.'
+      title: t('twojo.games.experience.1.title'),
+      description: t('twojo.games.experience.1.description')
     },
     {
       icon: Users,
-      titleKey: 'Boost Brand Interaction',
-      descriptionKey: 'Use gamification to connect with your audience and create memorable brand experiences.'
+      title: t('twojo.games.experience.2.title'),
+      description: t('twojo.games.experience.2.description')
     }
   ];
 
@@ -39,11 +39,12 @@ const GamesExperience: React.FC = () => {
             {t('twojo.solutions.about')}
           </h2>
           <p className="mt-4 text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
-            At Twojo Software GmbH, we help businesses leverage games as a powerful marketing tool. From eye-catching games for convention stands to competitions designed to engage and excite audiences, we bring creative ideas to life. Our games don’t just entertain—they amplify your brand's visibility and foster deeper connections with your target audience. Whether you're looking to gamify your marketing strategy or create an unforgettable event experience, we’ve got you covered.
+            {t('twojo.games.about')}
           </p>
         </motion.div>
       </div>
 
+      {/* Solutions Section */}
       <div className="bg-[#18181b] py-24" id="solutions">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -57,8 +58,8 @@ const GamesExperience: React.FC = () => {
               >
                 <FeatureCard
                   icon={solution.icon}
-                  titleKey={solution.titleKey}
-                  descriptionKey={solution.descriptionKey}
+                  titleKey={solution.title}
+                  descriptionKey={solution.description}
                   isTwojo={true}
                 />
               </motion.div>

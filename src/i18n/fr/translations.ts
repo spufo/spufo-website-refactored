@@ -64,6 +64,36 @@ const frTranslations = {
       bottomText: 'Toutes les fonctions d\'édition sont spécialement optimisées pour le travail médico-légal et garantissent l\'intégrité des preuves.'
     },
 
+    rulerRecognition: {
+      title: 'Reconnaissance de Règle',
+      description: 'Capacités avancées de mesure et de documentation pour un enregistrement précis des preuves',
+      features: {
+        accurate_measurements: {
+          title: 'Mesures Précises',
+          description: 'Détecte automatiquement les règles et calcule des dimensions précises. Des règles spécialisées avec des marqueurs ArUco sont recommandées pour de meilleurs résultats.'
+        },
+        high_quality_images: {
+          title: 'Images de Haute Qualité',
+          description: 'Produit des images avec une résolution de 1000 DPI, préservant les détails pour une analyse fiable. Les images originales sont toujours préservées pour la traçabilité.'
+        },
+        detailed_documentation: {
+          title: 'Documentation Détaillée',
+          description: 'Exporte des images avec des métadonnées telles que les coordonnées GPS et les horodatages. Prend en charge les formats RAW et TIFF pour plus de flexibilité.'
+        }
+      },
+      advanced_capabilities: 'Fonctionnalités Avancées',
+      comprehensive_suite: 'Suite complète de fonctionnalités pour la documentation professionnelle des preuves',
+      extra_features: {
+        ultra_high_resolution: 'Résolution ultra-haute de 1000 DPI',
+        embedded_gps_metadata: 'GPS et métadonnées intégrés',
+        supports_raw_tiff: 'Prend en charge les formats RAW et TIFF',
+        true_to_scale_output: 'Sortie à l’échelle réelle',
+        automatic_ruler_detection: 'Détection automatique de la règle',
+        greyscale_enhancement: 'Amélioration en niveaux de gris',
+        original_image_preservation: 'Préservation de l’image originale',
+        advanced_processing_algorithms: 'Algorithmes de traitement avancés'
+      }
+    },
 
     // Advantages Section
     advantagesTitle: 'Avantages Smartphone',
@@ -71,15 +101,11 @@ const frTranslations = {
     advantage2: 'Sécurité Renforcée',
     advantage3: 'Meilleures Performances',
 
-    // Testimonials Section
-    testimonialsTitle: 'Ce Que Disent Nos Utilisateurs',
-    testimonialText: 'SPUFO a complètement transformé la façon dont j\'utilise mon smartphone. Les fonctionnalités sont incroyables !',
-
     // Features Section
     featuresTitle: 'Avantages Clés',
     feature1: {
       title: 'Capture Mobile d\'Empreintes Digitales',
-      description: 'Collectez facilement des empreintes digitales de haute qualité sur les scènes de crime à l\'aide de l\'application Spufo sur votre appareil iOS. Conçue pour les techniciens médico-légaux et les agents de première ligne.',
+      description: 'Collectez facilement des empreintes digitales de haute qualité sur les scènes de crime à l\'aide de l\'application SPUFO sur votre appareil iOS. Conçue pour les techniciens médico-légaux et les agents de première ligne.',
       link: 'Découvrez comment ça marche'
     },
     feature2: {
@@ -389,6 +415,58 @@ const frTranslations = {
             title: 'Améliorations de la caméra et support multilingue',
             content: 'Un nouveau mode macro simplifie l’utilisation de la caméra. L’application prend désormais en charge l’allemand, l’anglais et le français, avec une gestion des données améliorée grâce au nettoyage automatique des cas.',
             link: 'En savoir plus'
+          }
+        }
+      },
+      games: {
+        about: 'Chez Twojo Software GmbH, nous aidons les entreprises à utiliser les jeux comme un outil marketing puissant. Des jeux accrocheurs pour les stands de conventions aux compétitions conçues pour engager et enthousiasmer les audiences, nous donnons vie à des idées créatives. Nos jeux ne se contentent pas de divertir : ils amplifient la visibilité de votre marque et favorisent des liens plus profonds avec votre public cible. Que vous souhaitiez gamifier votre stratégie marketing ou créer une expérience événementielle inoubliable, nous avons la solution.',
+        experience: [
+          {
+            title: 'Développement de jeux interactifs',
+            description: 'Nous sommes spécialisés dans la création de jeux engageants conçus pour attirer l\'attention des clients.'
+          },
+          {
+            title: 'Compétitions et événements',
+            description: 'Nos jeux sont parfaits pour stimuler l\'engagement lors d\'événements grâce à des compétitions interactives.'
+          },
+          {
+            title: 'Renforcer l\'interaction avec la marque',
+            description: 'Utilisez la gamification pour établir des liens avec votre public et créer des expériences mémorables autour de votre marque.'
+          }
+        ]
+      },
+      mobile: {
+        about: 'Chez Twojo Software GmbH, nous excellons dans la création d\'applications mobiles innovantes pour les plateformes Android et iOS. Notre équipe expérimentée combine expertise technique et attention à l\'expérience utilisateur, garantissant que chaque application que nous développons est intuitive et efficace. Nous sommes particulièrement compétents dans l\'exploitation des fonctionnalités de la caméra et le traitement d\'images pour améliorer les capacités de votre application.',
+        experience: [
+          {
+            title: 'Développement multiplateforme',
+            description: 'Compétence dans la création d\'applications de haute qualité pour Android et iOS.'
+          },
+          {
+            title: 'Caméra et traitement d\'images',
+            description: 'Expertise dans la mise en œuvre de fonctionnalités avancées de capture d\'images et de manipulation d\'images en temps réel.'
+          },
+          {
+            title: 'Design centré sur l\'utilisateur',
+            description: 'Engagés à offrir des expériences utilisateur captivantes grâce à un design et une fonctionnalité réfléchis.'
+          }
+        ]
+      },
+      businessApplication: {
+        about: 'Applications d\'entreprise sur mesure pour le succès',
+        about_description: 'Chez Twojo Software GmbH, nous sommes spécialisés dans la création d\'applications d\'entreprise innovantes adaptées aux entreprises. Nos solutions se concentrent sur la manipulation efficace des données, l\'hébergement cloud transparent des applications Web et l\'automatisation des processus pour améliorer l\'efficacité opérationnelle. En combinant une expertise technique avec une approche axée sur les affaires, nous livrons des applications évolutives, intuitives et robustes.',
+        experience: {
+          data_manipulation_expertise: {
+            title: 'Expertise en manipulation de données',
+            description: 'Compétent dans la création de solutions efficaces pour la gestion, le traitement et l\'analyse des données d\'entreprise.'
+          },
+          web_application_hosting: {
+            title: 'Hébergement d\'applications Web',
+            description: 'Compétent dans le déploiement et la gestion d\'applications Web évolutives et sécurisées.'
+          },
+          automation_and_efficiency: {
+            title: 'Automatisation et efficacité',
+            description: 'Nos applications rationalisent les processus métier, aidant les entreprises à devenir plus automatisées et efficaces.'
           }
         }
       }

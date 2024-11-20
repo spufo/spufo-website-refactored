@@ -64,6 +64,36 @@ const itTranslations = {
       bottomText: 'Tutte le funzioni di editing sono appositamente ottimizzate per il lavoro forense e garantiscono l\'integrità delle prove.'
     },
 
+    rulerRecognition: {
+      title: 'Riconoscimento Righello',
+      description: 'Funzionalità avanzate di misurazione e documentazione per una registrazione precisa delle prove',
+      features: {
+        accurate_measurements: {
+          title: 'Misure Precise',
+          description: 'Rileva automaticamente i righelli e calcola le dimensioni precise. Si consiglia l\'uso di righelli specializzati con marker ArUco per ottenere i migliori risultati.'
+        },
+        high_quality_images: {
+          title: 'Immagini di Alta Qualità',
+          description: 'Genera immagini con risoluzione di 1000 DPI, mantenendo i dettagli per un\'analisi affidabile. Le immagini originali sono sempre conservate per la tracciabilità.'
+        },
+        detailed_documentation: {
+          title: 'Documentazione Dettagliata',
+          description: 'Esporta immagini con metadati come coordinate GPS e timestamp. Supporta i formati RAW e TIFF per maggiore flessibilità.'
+        }
+      },
+      advanced_capabilities: 'Funzionalità Avanzate',
+      comprehensive_suite: 'Suite completa di funzionalità per la documentazione professionale delle prove',
+      extra_features: {
+        ultra_high_resolution: 'Ultra alta risoluzione a 1000 DPI',
+        embedded_gps_metadata: 'GPS e metadati integrati',
+        supports_raw_tiff: 'Supporta i formati RAW e TIFF',
+        true_to_scale_output: 'Uscita in scala reale',
+        automatic_ruler_detection: 'Rilevamento automatico del righello',
+        greyscale_enhancement: 'Miglioramento in scala di grigi',
+        original_image_preservation: 'Conservazione dell\'immagine originale',
+        advanced_processing_algorithms: 'Algoritmi di elaborazione avanzata'
+      }
+    },
 
     // Advantages Section
     advantagesTitle: 'Vantaggi Smartphone',
@@ -71,14 +101,11 @@ const itTranslations = {
     advantage2: 'Sicurezza Avanzata',
     advantage3: 'Prestazioni Migliori',
 
-    // Testimonials Section
-    testimonialsTitle: 'Cosa Dicono i Nostri Utenti',
-    testimonialText: 'SPUFO ha completamente trasformato il modo in cui uso il mio smartphone. Le funzionalità sono incredibili!',
     // Features Section
     featuresTitle: 'Vantaggi Principali',
     feature1: {
       title: 'Acquisizione Mobile delle Impronte Digitali',
-      description: 'Raccogli facilmente impronte digitali di alta qualità sulla scena del crimine utilizzando l\'app Spufo sul tuo dispositivo iOS. Progettata per tecnici forensi e agenti di prima linea.',
+      description: 'Raccogli facilmente impronte digitali di alta qualità sulla scena del crimine utilizzando l\'app SPUFO sul tuo dispositivo iOS. Progettata per tecnici forensi e agenti di prima linea.',
       link: 'Scopri come funziona'
     },
     feature2: {
@@ -386,6 +413,58 @@ const itTranslations = {
             title: 'Miglioramenti della fotocamera e supporto multilingue',
             content: 'Una nuova modalità macro semplifica l’utilizzo della fotocamera. L’app ora supporta tedesco, inglese e francese, con una gestione dei dati migliorata grazie alla pulizia automatica dei casi.',
             link: 'Scopri di più'
+          }
+        }
+      },
+      games: {
+        about: 'Presso Twojo Software GmbH, aiutiamo le aziende a sfruttare i giochi come potente strumento di marketing. Dai giochi accattivanti per gli stand delle fiere alle competizioni progettate per coinvolgere ed entusiasmare il pubblico, diamo vita a idee creative. I nostri giochi non si limitano a intrattenere: amplificano la visibilità del vostro marchio e favoriscono connessioni più profonde con il vostro pubblico target. Che vogliate gamificare la vostra strategia di marketing o creare un\'esperienza evento indimenticabile, abbiamo la soluzione per voi.',
+        experience: [
+          {
+            title: 'Sviluppo di giochi interattivi',
+            description: 'Siamo specializzati nella creazione di giochi coinvolgenti progettati per attirare l\'attenzione dei clienti.'
+          },
+          {
+            title: 'Competizioni ed eventi',
+            description: 'I nostri giochi sono perfetti per stimolare il coinvolgimento negli eventi attraverso competizioni interattive.'
+          },
+          {
+            title: 'Migliorare l\'interazione con il marchio',
+            description: 'Utilizzate la gamification per connettervi con il vostro pubblico e creare esperienze memorabili legate al marchio.'
+          }
+        ]
+      },
+      mobile: {
+        about: 'Presso Twojo Software GmbH, eccelliamo nella creazione di applicazioni mobili innovative per le piattaforme Android e iOS. Il nostro team esperto combina competenze tecniche con un focus sull\'esperienza utente, garantendo che ogni app sviluppata sia intuitiva ed efficiente. Siamo particolarmente esperti nell\'utilizzo delle funzionalità della fotocamera e nel trattamento delle immagini per migliorare le capacità della vostra applicazione.',
+        experience: [
+          {
+            title: 'Sviluppo multipiattaforma',
+            description: 'Competenza nella creazione di applicazioni di alta qualità per Android e iOS.'
+          },
+          {
+            title: 'Fotocamera e elaborazione delle immagini',
+            description: 'Esperti nell\'implementazione di funzionalità avanzate di acquisizione di immagini e manipolazione delle immagini in tempo reale.'
+          },
+          {
+            title: 'Design centrato sull\'utente',
+            description: 'Impegnati a fornire esperienze utente coinvolgenti attraverso un design e una funzionalità accuratamente progettati.'
+          }
+        ]
+      },
+      businessApplication: {
+        about: 'Applicazioni aziendali su misura per il successo',
+        about_description: 'Presso Twojo Software GmbH, siamo specializzati nella creazione di applicazioni aziendali innovative su misura per le aziende. Le nostre soluzioni si concentrano sulla manipolazione efficiente dei dati, sull\'hosting cloud delle applicazioni web e sull\'automazione dei processi per migliorare l\'efficienza operativa. Combinando competenze tecniche con un approccio orientato al business, offriamo applicazioni scalabili, intuitive e robuste.',
+        experience: {
+          data_manipulation_expertise: {
+            title: 'Esperienza nella manipolazione dei dati',
+            description: 'Esperti nella creazione di soluzioni efficienti per la gestione, l\'elaborazione e l\'analisi dei dati aziendali.'
+          },
+          web_application_hosting: {
+            title: 'Hosting di applicazioni web',
+            description: 'Competenti nel distribuire e mantenere applicazioni web scalabili e sicure.'
+          },
+          automation_and_efficiency: {
+            title: 'Automazione ed efficienza',
+            description: 'Le nostre applicazioni ottimizzano i processi aziendali, aiutando le aziende a diventare più automatizzate ed efficienti.'
           }
         }
       }

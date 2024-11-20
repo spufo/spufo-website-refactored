@@ -1,13 +1,72 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/assets/images/Final_Twojo_Logo_White.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Twojo Software GmbH</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/assets/images/twojo_logo_black.png" id="favicon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Twojo Software GmbH</title>
+
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="Twojo Software GmbH" />
+  <meta name="description"
+    content="Entwickelt in der Schweiz. Ein engagiertes Team entwickelt Lösungen, die Unternehmen zum Erfolg verhelfen." />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://twojo.ch/" />
+  <meta property="og:title" content="Twojo Software GmbH" />
+  <meta property="og:description"
+    content="Entwickelt in der Schweiz. Ein engagiertes Team entwickelt Lösungen, die Unternehmen zum Erfolg verhelfen." />
+  <meta property="og:image" content="/assets/images/twojo_logo_black.png" id="og-image" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://twojo.ch/" />
+  <meta property="twitter:title" content="Twojo Software GmbH" />
+  <meta property="twitter:description"
+    content="Entwickelt in der Schweiz. Ein engagiertes Team entwickelt Lösungen, die Unternehmen zum Erfolg verhelfen." />
+  <meta property="twitter:image" content="/assets/images/twojo_logo_black.png" id="twitter-image" />
+
+  <script>
+    // Function to update meta tags based on URL
+    function updateMetaTags() {
+      const isSpufo = window.location.pathname.includes('spufo');
+      const favicon = document.getElementById('favicon');
+      const ogImage = document.getElementById('og-image');
+      const twitterImage = document.getElementById('twitter-image');
+      const metaDescription = document.querySelector('meta[name="description"]');
+      const ogDescription = document.querySelector('meta[property="og:description"]');
+      const twitterDescription = document.querySelector('meta[property="twitter:description"]');
+
+      if (isSpufo) {
+        favicon.href = '/assets/images/Curved_FinalSpufoLogo.svg';
+        ogImage.content = '/assets/images/Curved_FinalSpufoLogo.svg';
+        twitterImage.content = '/assets/images/Curved_FinalSpufoLogo.svg';
+        const spufoDesc = 'SPUFO - Die innovative Lösung für die professionelle Spurensicherung';
+        metaDescription.content = spufoDesc;
+        ogDescription.content = spufoDesc;
+        twitterDescription.content = spufoDesc;
+      } else {
+        favicon.href = '/assets/images/twojo_logo_black.png';
+        ogImage.content = '/assets/images/twojo_logo_black.png';
+        twitterImage.content = '/assets/images/twojo_logo_black.png';
+        const twojoDesc = 'Entwickelt in der Schweiz. Ein engagiertes Team entwickelt Lösungen, die Unternehmen zum Erfolg verhelfen.';
+        metaDescription.content = twojoDesc;
+        ogDescription.content = twojoDesc;
+        twitterDescription.content = twojoDesc;
+      }
+    }
+
+    // Update meta tags on page load and when URL changes
+    window.addEventListener('load', updateMetaTags);
+    window.addEventListener('popstate', updateMetaTags);
+  </script>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+
 </html>

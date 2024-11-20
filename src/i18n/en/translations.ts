@@ -18,7 +18,7 @@ const enTranslations = {
 
     // About Section
     aboutTitle: 'About SPUFO',
-    aboutDescription: 'The SPUFO app is a forensic iOS solution that simplifies and streamlines the collection of dactyloscopic traces at crime scenes.',
+    aboutDescription: 'The SPUFO app is a forensic iOS solution that simplifies the collection of dactyloscopic traces at crime scenes.',
     aboutPoint1: 'Replaces traditional DSLR cameras and gelatin films with mobile technology.',
     aboutPoint2: 'Captures traces on-site, scaled 1:1, and saved in 1000 dpi resolution.',
     aboutPoint3: 'Allows direct numbering, cropping, and preparation for AFIS searches.',
@@ -26,7 +26,7 @@ const enTranslations = {
     // Image Editing Section
     imageEditing: {
       title: 'Professional Image Editing',
-      subtitle: 'Utilize our comprehensive image editing tools to optimally prepare your trace recordings for analysis.',
+      subtitle: 'Utilize our comprehensive image editing tools to prepare your latent fingerprints for analysis.',
       features: {
         colorInversion: {
           title: 'Color Inversion',
@@ -38,7 +38,7 @@ const enTranslations = {
         },
         contrast: {
           title: 'Contrast Control',
-          description: 'Contrast enhancement to more clearly highlight fingerprint patterns.'
+          description: 'Contrast enhancement to clearly highlight fingerprint patterns.'
         },
         brightness: {
           title: 'Brightness Adjustment',
@@ -46,7 +46,7 @@ const enTranslations = {
         },
         rotation: {
           title: 'Free Image Rotation',
-          description: 'Flexible rotation of images for optimal alignment.'
+          description: 'Flexible rotation of images for manual alignment.'
         },
         crop: {
           title: 'Precise Cropping',
@@ -58,10 +58,41 @@ const enTranslations = {
         },
         numbering: {
           title: 'Evidence Numbering',
-          description: 'Photos can be numbered to facilitate assignment.'
+          description: 'Photos can be numbered to identify assignments.'
         }
       },
-      bottomText: 'All editing functions are specially optimized for forensic work and ensure the integrity of the evidence.'
+      bottomText: 'All editing functions are optimized for forensic work, ensuring the integrity of the evidence.'
+    },
+
+    rulerRecognition: {
+      title: 'Ruler Recognition',
+      description: 'Advanced measurement and documentation capabilities for precise evidence recording',
+      features: {
+        accurate_measurements: {
+          title: 'Accurate Measurements',
+          description: 'Automatically detects rulers and calculates precise dimensions. Specialized rulers with ArUco markers are recommended for best results.'
+        },
+        high_quality_images: {
+          title: 'High-Quality Images',
+          description: 'Produces images at 1000 DPI resolution, preserving detail for reliable analysis. Original images are always preserved for traceability.'
+        },
+        detailed_documentation: {
+          title: 'Detailed Documentation',
+          description: 'Export images with metadata like GPS coordinates and timestamps. Supports RAW and TIFF formats for flexibility.'
+        }
+      },
+      advanced_capabilities: 'Advanced Capabilities',
+      comprehensive_suite: 'Comprehensive suite of features for professional evidence documentation',
+      extra_features: {
+        ultra_high_resolution: 'Ultra-high resolution at 1000 DPI',
+        embedded_gps_metadata: 'Embedded GPS and metadata',
+        supports_raw_tiff: 'Supports RAW and TIFF formats',
+        true_to_scale_output: 'True-to-scale output',
+        automatic_ruler_detection: 'Automatic ruler detection',
+        greyscale_enhancement: 'Greyscale enhancement',
+        original_image_preservation: 'Original image preservation',
+        advanced_processing_algorithms: 'Advanced processing algorithms'
+      }
     },
 
 
@@ -71,15 +102,11 @@ const enTranslations = {
     advantage2: 'Enhanced Security',
     advantage3: 'Better Performance',
 
-    // Testimonials Section
-    testimonialsTitle: 'What Our Users Say',
-    testimonialText: 'SPUFO has completely transformed how I use my smartphone. The features are incredible!',
-
     // Features Section
     featuresTitle: 'Key Advantages',
     feature1: {
       title: 'Mobile Fingerprint Capture',
-      description: 'Effortlessly collect high-quality fingerprints at crime scenes using the Spufo App on your iOS device. Designed for both forensic technicians and front-line officers.',
+      description: 'Effortlessly collect high-quality fingerprints at crime scenes using the SPUFO App on your iOS device. Designed for both forensic technicians and front-line officers.',
       link: 'Learn how it works'
     },
     feature2: {
@@ -89,12 +116,12 @@ const enTranslations = {
     },
     feature3: {
       title: 'Optimal Resolution Imaging',
-      description: 'Automatic capture of 1:1 scaled photographs at 1000 dpi resolution. Every fingerprint is recorded in the highest quality for precise analysis.',
+      description: 'Automatic capture of 1:1 scaled photographs at 1000 dpi resolution. Every fingerprint is captured in the highest quality for precise analysis.',
       link: 'See the technical details'
     },
     feature4: {
       title: 'Proven in the Field',
-      description: 'Developed in collaboration with Forensic Science Zurich, SPUFO is actively used in real-world scenarios. Our app has significantly increased the number of fingerprints captured, demonstrating its effectiveness and reliability in forensic investigations.',
+      description: 'Developed in collaboration with Zurich Forensic Science Institute, SPUFO is actively used in real-world scenarios. Our app has significantly increased the number of fingerprints being captured, demonstrating its effectiveness and reliability in forensic investigations.',
       link: 'Read success stories'
     },
 
@@ -106,11 +133,11 @@ const enTranslations = {
       },
       business: {
         title: "Business Application",
-        description: "Applications tailored for your business."
+        description: "Applications tailored to your business."
       },
       interactive: {
         title: "Interactive Experiences",
-        description: "Gamify your advertisement."
+        description: "Gamify your advertising."
       }
     },
     common: {
@@ -166,7 +193,7 @@ const enTranslations = {
     testimonialTitle: 'Testimonial',
     testimonialQuote: '"The example of SPUFO shows how significant new technologies are for forensic science." ... "The app ensures significantly more efficiency and, above all, more traces submitted."',
     testimonialAuthor: 'Dominik Hänni',
-    testimonialRole: 'Head of IT at the Forensic Institute Zurich',
+    testimonialRole: 'Head of IT at the Zurich Forensic Science Institute',
 
     evidence: {
       title: "Transform Your Evidence Collection",
@@ -219,7 +246,7 @@ const enTranslations = {
       },
       caseInfo: {
         title: "Intelligent Case Information Storage",
-        description: "Users can add and securely store comprehensive case information for every investigation within the SPUFO app",
+        description: "Users can add and securely store case information from every investigation within the SPUFO app",
         details: {
           title: "Case Details",
           classification: {
@@ -311,7 +338,7 @@ const enTranslations = {
       solutions: {
         title: 'Our Solutions',
         about: "Experience",
-        subTitle: 'We offer flexible solutions for your business',
+        subTitle: 'Flexible solutions for your business',
         mobileDev: {
           title: 'Mobile Development',
           description: 'Apps that work on both iOS and Android.',
@@ -319,12 +346,12 @@ const enTranslations = {
         },
         businessApp: {
           title: 'Business Application',
-          description: 'Applications tailored for your business.',
+          description: 'Applications tailored to your business.',
           link: 'Learn more',
         },
         interactiveExp: {
           title: 'Interactive Experiences',
-          description: 'Gamify your advertisement.',
+          description: 'Gamify your advertising.',
           link: 'Learn more',
         }
       },
@@ -334,10 +361,10 @@ const enTranslations = {
           title: 'SPUFO',
           subTitle: 'The Crime Scene Photography App',
           slogan: 'Digital - Fast - Efficient',
-          description: 'The SPUFO app is a forensic iOS solution that simplifies and streamlines the collection of dactyloscopic traces at crime scenes.',
+          description: 'The SPUFO app is a forensic iOS solution that simplifies the collection of dactyloscopic traces at crime scenes.',
           bulletPoints: {
             first: 'Replaces traditional DSLR cameras and gelatin sheets with mobile technology.',
-            second: 'Captures traces on-site, accurately scaled 1:1 and in 1000 dpi resolution.',
+            second: 'Captures traces on-site, accurately scaled 1:1 and in 1000 DPI resolution.',
             third: 'Allows direct numbering, cropping, and preparation for AFIS searches.'
           },
           button: 'Learn more'
@@ -346,7 +373,7 @@ const enTranslations = {
       about: {
         teamTitle: 'Meet Our Team',
         teamSubtitle: 'Passionate Developers Creating Innovative Solutions',
-        description: 'We are a team of passionate software engineers who met during our apprenticeship at BBBaden School. While pursuing our individual careers in technology, we\'ve joined forces to create innovative solutions through Twojo Software.',
+        description: 'We are a team of software engineers who met during our apprenticeship at BBBaden School. While pursuing our individual careers in technology, we\'ve joined forces to create innovative solutions through Twojo Software.',
         teamImageAlt: 'Twojo Software Team',
         festim: {
           name: 'Festim Jetishi',
@@ -406,8 +433,60 @@ const enTranslations = {
           article4: {
             tag: 'Update | November 19, 2023',
             title: 'Camera Improvements and Multilingual Support',
-            content: 'A new close-up mode simplifies camera handling. The app now supports German, English, and French, along with improved data management featuring automatic case cleanup.',
-            link: 'Learn more'
+            content: 'A new macro mode simplifies camera operation. The app now supports German, English, and French and offers improved data management with automatic case cleanup.',
+            link: 'Learn More'
+          }
+        }
+      },
+      games: {
+        about: 'At Twojo Software GmbH, we help businesses utilize games as a powerful marketing tool. From eye-catching games for convention stands to competitions designed to engage and excite audiences, we bring creative ideas to life. Our games don’t just entertain — they amplify your brand\'s visibility and foster deeper connections with your target audience. Whether you\'re looking to gamify your marketing strategy or create an unforgettable event experience, we’ve got you covered.',
+        experience: [
+          {
+            title: 'Interactive Game Development',
+            description: 'We create engaging games designed to attract customer attention.'
+          },
+          {
+            title: 'Competitions and Events',
+            description: 'Our games are perfect for driving engagement at events through interactive competitions.'
+          },
+          {
+            title: 'Boost Brand Interaction',
+            description: 'Use gamification to connect with your audience and create memorable brand experiences.'
+          }
+        ]
+      },
+      mobile: {
+        about: 'At Twojo Software GmbH, we create innovative mobile applications for both Android and iOS platforms. Our experienced team combines technical expertise with a focus on user experience, ensuring that every app we develop is intuitive and efficient. We are particularly focused on leveraging camera functionalities and image processing to enhance your app\'s capabilities.',
+        experience: [
+          {
+            title: 'Cross-Platform Development',
+            description: 'Creating high-quality applications for both Android and iOS.'
+          },
+          {
+            title: 'Camera and Image Processing',
+            description: 'Implementing advanced image capture features and real-time image manipulation.'
+          },
+          {
+            title: 'User-Centric Design',
+            description: 'Delivering engaging user experiences through thoughtful design and functionality.'
+          }
+        ]
+      },
+      businessApplication: {
+        about: 'Business Applications Designed for Success',
+        about_description: 'At Twojo Software GmbH, we specialize in creating innovative business applications tailored to companies. Our solutions focus on efficient data manipulation, seamless cloud hosting of web applications, and automating processes to enhance operational efficiency. Combining technical expertise with a business-oriented approach, we deliver scalable, intuitive, and robust applications.',
+        experience: {
+          data_manipulation_expertise: {
+            title: 'Data Manipulation Expertise',
+            description: 'Creating efficient solutions for managing, processing, and analyzing business data.'
+          },
+          web_application_hosting: {
+            title: 'Web Application Hosting',
+            description: 'Deploying and maintaining scalable and secure web applications.'
+          },
+          automation_and_efficiency: {
+            title: 'Automation and Efficiency',
+            description: 'Our applications streamline business processes, enabling companies to become more automated and efficient.'
           }
         }
       }
