@@ -15,6 +15,7 @@ const Navbar = ({ activePath, twojo }: NavbarProps) => {
   const [lastScrollY, setLastScrollY] = useState(0);
   const [isOpen, setIsOpen] = useState(false);
   const [isLangMenuOpen, setIsLangMenuOpen] = useState(false);
+  const [hoveredItem, setHoveredItem] = useState<string | null>(null);
   const navRef = useRef<HTMLDivElement>(null);
 
   const languages = [
@@ -22,6 +23,21 @@ const Navbar = ({ activePath, twojo }: NavbarProps) => {
     { code: 'de', label: 'DE', name: 'Deutsch', flag: 'de' },
     { code: 'it', label: 'IT', name: 'Italiano', flag: 'it' },
     { code: 'fr', label: 'FR', name: 'Français', flag: 'fr' }
+  ];
+
+  const spufoRoutes = [
+    { path: '/spufo/', label: 'Overview' },
+    { path: '/spufo/evidence-collection/', label: 'Evidence Collection' },
+    { path: '/spufo/forensic-success/', label: 'Forensic Success' },
+    { path: '/spufo/image-editing/', label: 'Image Editing' },
+    { path: '/spufo/ruler-recognition/', label: 'Ruler Recognition' }
+  ];
+
+  const twojoRoutes = [
+    { path: '/', label: 'Overview' },
+    { path: '/mobile/', label: 'Mobile Development' },
+    { path: '/application/', label: 'Business Applications' },
+    { path: '/interactive/', label: 'Interactive Solutions' }
   ];
 
   const getFlagUrl = (code: string) => {
@@ -36,11 +52,11 @@ const Navbar = ({ activePath, twojo }: NavbarProps) => {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
-      
+
       if (currentScrollY <= 50) {
         setIsVisible(true);
         return;
-      } 
+      }
 
       if (currentScrollY < lastScrollY) {
         setIsVisible(true);
@@ -58,11 +74,9 @@ const Navbar = ({ activePath, twojo }: NavbarProps) => {
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       const target = event.target as HTMLElement;
-      // Handle language menu close
       if (target != null && !target.closest('.lang-menu')) {
         setIsLangMenuOpen(false);
       }
-      // Handle mobile menu close when clicking outside
       if (navRef.current && !navRef.current.contains(target as Node)) {
         setIsOpen(false);
       }
@@ -72,7 +86,6 @@ const Navbar = ({ activePath, twojo }: NavbarProps) => {
     return () => document.removeEventListener('click', handleClickOutside);
   }, []);
 
-  // Conditional colors based on the 'twojo' prop
   const backgroundColor = twojo ? 'bg-black' : 'bg-[#1E1E2E]';
   const textColor = 'text-white';
   const textColorActive = twojo ? 'text-[--blue-color]' : 'text-[--orange-color]';
@@ -84,24 +97,60 @@ const Navbar = ({ activePath, twojo }: NavbarProps) => {
 
   const handleMobileMenuClick = () => {
     setIsOpen(false);
+    setHoveredItem(null);
+  };
+
+  const renderDropdownCard = (item: string) => {
+    if (item === 'spufo') {
+      return (
+        <div className={`absolute top-full left-0 mt-1 w-64 ${backgroundColor} rounded-lg shadow-xl border-2 ${borderColor} overflow-hidden`}>
+          {spufoRoutes.map((route) => (
+            <ScrollLink
+              key={route.path}
+              to={route.path}
+              className={`block px-4 py-3 ${textColor} ${hoverTextColor} transition-colors duration-300 ${activePath === route.path ? textColorActive : ''}`}
+              onClick={() => setHoveredItem(null)}
+            >
+              {route.label}
+            </ScrollLink>
+          ))}
+        </div>
+      );
+    } else if (item === 'twojo') {
+      return (
+        <div className={`absolute top-full left-0 mt-1 w-64 ${backgroundColor} rounded-lg shadow-xl border-2 ${borderColor} overflow-hidden`}>
+          {twojoRoutes.map((route) => (
+            <ScrollLink
+              key={route.path}
+              to={route.path}
+              className={`block px-4 py-3 ${textColor} ${hoverTextColor} transition-colors duration-300 ${activePath === route.path ? textColorActive : ''}`}
+              onClick={() => setHoveredItem(null)}
+            >
+              {route.label}
+            </ScrollLink>
+          ))}
+        </div>
+      );
+    }
+    return null;
   };
 
   return (
-    <nav 
+    <nav
       ref={navRef}
       className={`fixed top-0 left-0 right-0 ${backgroundColor} py-3 lg:py-5 px-2 
         transition-all duration-500 ease-in-out z-40 border-b-4 ${borderColor} 
         ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}
     >
       <div className="flex justify-between items-center">
-        <ScrollLink 
-          to="/" 
+        <ScrollLink
+          to="/"
           className="text-3xl font-bold text-white flex items-center ml-2 lg:ml-6"
           onClick={handleMobileMenuClick}
         >
-          <img 
+          <img
             src={logoImage}
-            alt="TWOJO Logo" 
+            alt="TWOJO Logo"
             className="h-7 min-w-20 lg:h-9 mr-2 lg:mr-3 object-contain"
           />
         </ScrollLink>
@@ -109,13 +158,42 @@ const Navbar = ({ activePath, twojo }: NavbarProps) => {
         {/* Desktop Menu */}
         <div className="hidden lg:flex px-20 space-x-16 flex-1">
           <div className="flex space-x-16">
-            <ScrollLink to="/spufo" className={`${activePath === '/spufo' || activePath.startsWith('/spufo/') ? textColorActive : textColor} ${hoverTextColor} text-2xl font-medium tracking-wide transition-colors duration-300`}>
-              SPUFO
-            </ScrollLink>
-            <ScrollLink to="/blog" className={`${activePath == "blog" ? textColorActive : textColor} ${hoverTextColor} text-2xl font-medium tracking-wide transition-colors duration-300`}>
+            <div
+              className="relative"
+              onMouseEnter={() => setHoveredItem('spufo')}
+              onMouseLeave={() => setHoveredItem(null)}
+            >
+              <ScrollLink
+                to="/spufo"
+                className={`${activePath === '/spufo' || activePath.startsWith('/spufo/') ? textColorActive : textColor} ${hoverTextColor} text-2xl font-medium tracking-wide transition-colors duration-300`}
+              >
+                SPUFO
+              </ScrollLink>
+              {hoveredItem === 'spufo' && renderDropdownCard('spufo')}
+            </div>
+            <div
+              className="relative"
+              onMouseEnter={() => setHoveredItem('twojo')}
+              onMouseLeave={() => setHoveredItem(null)}
+            >
+              <ScrollLink
+                to="/"
+                className={`${!activePath.startsWith('/spufo') && activePath !== '/blog' && activePath !== '/about' && activePath !== '/contact' ? textColorActive : textColor} ${hoverTextColor} text-2xl font-medium tracking-wide transition-colors duration-300`}
+              >
+                TWOJO
+              </ScrollLink>
+              {hoveredItem === 'twojo' && renderDropdownCard('twojo')}
+            </div>
+            <ScrollLink
+              to="/blog"
+              className={`${activePath === "blog" ? textColorActive : textColor} ${hoverTextColor} text-2xl font-medium tracking-wide transition-colors duration-300`}
+            >
               Blog
             </ScrollLink>
-            <ScrollLink to="/about" className={`${activePath == "about" ? textColorActive : textColor} ${hoverTextColor} text-2xl font-medium tracking-wide transition-colors duration-300`}>
+            <ScrollLink
+              to="/about"
+              className={`${activePath === "about" ? textColorActive : textColor} ${hoverTextColor} text-2xl font-medium tracking-wide transition-colors duration-300`}
+            >
               {t('about')}
             </ScrollLink>
           </div>
@@ -128,10 +206,10 @@ const Navbar = ({ activePath, twojo }: NavbarProps) => {
               e.stopPropagation();
               setIsLangMenuOpen(!isLangMenuOpen);
             }}
-            className="flex items-center space-x-2 text-white hover:text-./assets/ transition-colors duration-300"
+            className="flex items-center space-x-2 text-white hover:text-gray-300 transition-colors duration-300"
           >
             <span className="flex items-center">
-              <img 
+              <img
                 src={getFlagUrl(languages.find(lang => lang.code === i18n.language)?.flag || 'de')}
                 alt=""
                 className="w-6 h-4 mr-2"
@@ -150,7 +228,7 @@ const Navbar = ({ activePath, twojo }: NavbarProps) => {
                   onClick={() => changeLanguage(lang.code)}
                   className="flex items-center w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                 >
-                  <img 
+                  <img
                     src={getFlagUrl(lang.flag)}
                     alt=""
                     className="w-6 h-4 mr-2"
@@ -163,8 +241,8 @@ const Navbar = ({ activePath, twojo }: NavbarProps) => {
         </div>
 
         {/* Contact Button */}
-        <ScrollLink 
-          to="/contact" 
+        <ScrollLink
+          to="/contact"
           className={`hidden lg:block ${buttonBgColor} text-white px-8 py-3 rounded-xl text-xl font-semibold transform-gpu transition-all duration-500 ease-in-out mr-6 hover:scale-105 ${buttonHoverBgColor} hover:shadow-lg active:scale-95`}
         >
           {t('contact')}
@@ -199,30 +277,52 @@ const Navbar = ({ activePath, twojo }: NavbarProps) => {
       </div>
 
       {/* Mobile Menu */}
-      <div 
-        className={`${
-          isOpen && isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4 pointer-events-none'
-        } lg:hidden mt-4 transition-all duration-300 ease-in-out absolute left-0 right-0 ${backgroundColor} border-b-4 ${borderColor} `}
+      <div
+        className={`${isOpen && isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4 pointer-events-none'
+          } lg:hidden mt-4 transition-all duration-300 ease-in-out absolute left-0 right-0 ${backgroundColor} border-b-4 ${borderColor}`}
       >
         <div className="flex flex-col py-4">
-          <ScrollLink 
-            to="/spufo" 
+          {/* SPUFO Section */}
+          <div className="border-b border-gray-700">
+            <div className={`${textColor} font-medium py-3 px-6`}>SPUFO</div>
+            {spufoRoutes.map((route) => (
+              <ScrollLink
+                key={route.path}
+                to={route.path}
+                onClick={handleMobileMenuClick}
+                className={`${activePath === route.path ? textColorActive : textColor} ${hoverTextColor} font-medium py-2 px-10 block hover:bg-[#2A2A3A] transition-colors duration-300`}
+              >
+                {route.label}
+              </ScrollLink>
+            ))}
+          </div>
+
+          {/* TWOJO Section */}
+          <div className="border-b border-gray-700">
+            <div className={`${textColor} font-medium py-3 px-6`}>TWOJO</div>
+            {twojoRoutes.map((route) => (
+              <ScrollLink
+                key={route.path}
+                to={route.path}
+                onClick={handleMobileMenuClick}
+                className={`${activePath === route.path ? textColorActive : textColor} ${hoverTextColor} font-medium py-2 px-10 block hover:bg-[#2A2A3A] transition-colors duration-300`}
+              >
+                {route.label}
+              </ScrollLink>
+            ))}
+          </div>
+
+          <ScrollLink
+            to="/blog"
             onClick={handleMobileMenuClick}
-            className={`${activePath == "spufo" ? textColorActive : textColor}  ${hoverTextColor} font-medium py-3 px-6 hover:bg-[#2A2A3A] transition-colors duration-300`}
-          >
-            SPUFO
-          </ScrollLink>
-          <ScrollLink 
-            to="/blog" 
-            onClick={handleMobileMenuClick}
-            className={`${activePath == "blog" ? textColorActive : textColor}  ${hoverTextColor} font-medium py-3 px-6 hover:bg-[#2A2A3A] transition-colors duration-300`}
+            className={`${activePath === "blog" ? textColorActive : textColor} ${hoverTextColor} font-medium py-3 px-6 hover:bg-[#2A2A3A] transition-colors duration-300`}
           >
             Blog
           </ScrollLink>
-          <ScrollLink 
-            to="/about" 
+          <ScrollLink
+            to="/about"
             onClick={handleMobileMenuClick}
-            className={`${activePath == "about" ? textColorActive : textColor} ${hoverTextColor} font-medium py-3 px-6 hover:bg-[#2A2A3A] transition-colors duration-300`}
+            className={`${activePath === "about" ? textColorActive : textColor} ${hoverTextColor} font-medium py-3 px-6 hover:bg-[#2A2A3A] transition-colors duration-300`}
           >
             {t('about')}
           </ScrollLink>
@@ -239,11 +339,11 @@ const Navbar = ({ activePath, twojo }: NavbarProps) => {
                     handleMobileMenuClick();
                   }}
                   className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors duration-200 flex items-center justify-center
-                    ${i18n.language === lang.code 
-                      ? `${buttonBgColor} text-white` 
+                    ${i18n.language === lang.code
+                      ? `${buttonBgColor} text-white`
                       : `bg-gray-700 text-white hover:${buttonBgColor}`}`}
                 >
-                  <img 
+                  <img
                     src={getFlagUrl(lang.flag)}
                     alt=""
                     className="w-6 h-4 mr-2"
@@ -256,7 +356,7 @@ const Navbar = ({ activePath, twojo }: NavbarProps) => {
 
           <div className="px-6 pt-3 border-t border-gray-700">
             <ScrollLink
-              to="/contact" 
+              to="/contact"
               onClick={handleMobileMenuClick}
               className={`inline-block ${buttonBgColor} text-white px-3 py-2 rounded-xl font-semibold transform-gpu transition-all duration-500 ease-in-out hover:scale-105 ${buttonHoverBgColor} hover:shadow-lg active:scale-95 mt-0`}
             >
