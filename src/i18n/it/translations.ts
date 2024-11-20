@@ -354,30 +354,37 @@ const itTranslations = {
       },
       blog: {
         title: 'Blog',
-        description: 'Resta aggiornato sulle ultime novità, gli aggiornamenti e gli approfondimenti di Twojo Software GmbH. Scopri le nostre soluzioni innovative e gli sviluppi tecnologici.',
+        description: 'Rimani aggiornato con le ultime notizie, aggiornamenti e approfondimenti di Twojo Software GmbH. Scopri le nostre soluzioni innovative e gli sviluppi tecnologici.',
         featuredArticle: {
-          tag: 'News | 8 Ottobre 2024',
-          title: 'Nuova app per la scena del crimine assicura le impronte digitali per la polizia',
-          content: 'L\'Istituto Forense di Zurigo si affida completamente a SPUFO. L\'app innovativa rivoluziona l\'analisi forense e la rende più efficiente che mai.',
-          link: 'Scopri di più'
+          tag: 'Notizie | 20 novembre 2024',
+          title: 'App SPUFO: Innovazione svizzera nella criminologia',
+          content: 'Tre studenti svizzeri stanno rivoluzionando la criminologia con la loro app SPUFO. Questa soluzione innovativa rende molto più semplice la raccolta, la fotografia e l’archiviazione delle impronte digitali.',
+          link: 'Scopri di più',
+          url: 'https://www.20min.ch/story/app-spufo-innovazione-svizzera-nella-criminologia-103223322'
         },
         olderArticles: {
           article1: {
-            tag: 'Aggiornamento | 22 Agosto 2024',
-            title: 'Logging avanzato e esperienza utente migliorata',
-            content: 'L\'ultimo aggiornamento di SPUFO porta potenti funzioni di logging e miglioramenti dell\'interfaccia utente. Gli utenti possono ora monitorare le attività dell\'app con log locali e inviare report di errore via email quando necessario.',
+            tag: 'Notizie | 8 ottobre 2024',
+            title: 'Nuova app per scene del crimine raccoglie impronte per la polizia',
+            content: 'L’Istituto Forense di Zurigo punta tutto su SPUFO. Questa app innovativa sta rivoluzionando la criminologia e rendendola più efficiente che mai.',
             link: 'Scopri di più'
           },
           article2: {
-            tag: 'Aggiornamento | 15 Febbraio 2024',
-            title: 'Elaborazione avanzata delle immagini e funzioni di esportazione',
-            content: 'SPUFO ora offre funzioni avanzate di elaborazione delle immagini con contrasto regolabile, luminosità e rotazione libera. Le immagini esportate contengono metadati importanti come coordinate GPS e timestamp.',
+            tag: 'Aggiornamento | 22 agosto 2024',
+            title: 'Registrazione avanzata e esperienza utente migliorata',
+            content: 'L’ultimo aggiornamento di SPUFO introduce potenti funzioni di registrazione e miglioramenti dell’interfaccia utente. Gli utenti possono ora monitorare le attività dell’app con registri locali e inviare report di errore via e-mail se necessario.',
             link: 'Scopri di più'
           },
           article3: {
-            tag: 'Aggiornamento | 19 Novembre 2023',
+            tag: 'Aggiornamento | 15 febbraio 2024',
+            title: 'Elaborazione avanzata delle immagini e funzionalità di esportazione',
+            content: 'SPUFO ora offre funzionalità avanzate di elaborazione delle immagini con regolazioni di contrasto, luminosità e rotazione libera. Le immagini esportate includono metadati importanti come coordinate GPS e timestamp.',
+            link: 'Scopri di più'
+          },
+          article4: {
+            tag: 'Aggiornamento | 19 novembre 2023',
             title: 'Miglioramenti della fotocamera e supporto multilingue',
-            content: 'Una nuova modalità macro semplifica l\'uso della fotocamera. L\'app ora supporta tedesco, inglese e francese e offre una gestione migliorata dei dati con pulizia automatica dei casi.',
+            content: 'Una nuova modalità macro semplifica l’utilizzo della fotocamera. L’app ora supporta tedesco, inglese e francese, con una gestione dei dati migliorata grazie alla pulizia automatica dei casi.',
             link: 'Scopri di più'
           }
         }

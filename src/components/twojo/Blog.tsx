@@ -2,10 +2,11 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 
-import featuredArticeImage from '/assets/images/team.jpg';
-import olderArticle1Image from '/assets/images/Curved_FinalSpufoLogo.svg';
+import featuredArticeImage from '/assets/images/team_2.jpg';
+import olderArticle1Image from '/assets/images/team.jpg';
 import olderArticle2Image from '/assets/images/Curved_FinalSpufoLogo.svg';
 import olderArticle3Image from '/assets/images/Curved_FinalSpufoLogo.svg';
+import olderArticle4Image from '/assets/images/Curved_FinalSpufoLogo.svg';
 import FeaturedArticle from './articles/FeaturedArticle';
 import ArticleCard from './articles/ArticleCard';
 
@@ -18,7 +19,7 @@ const Blog = () => {
       tag: t('twojo.blog.olderArticles.article1.tag'),
       title: t('twojo.blog.olderArticles.article1.title'),
       content: t('twojo.blog.olderArticles.article1.content'),
-      link: '/contact',
+      link: 'https://hub.hslu.ch/informatik/neue-tatort-app-sichert-fingerabdruecke-fuer-die-polizei/',
       linkText: t('twojo.blog.olderArticles.article1.link'),
     },
     {
@@ -36,6 +37,14 @@ const Blog = () => {
       content: t('twojo.blog.olderArticles.article3.content'),
       link: '/contact',
       linkText: t('twojo.blog.olderArticles.article3.link'),
+    },
+    {
+      image: olderArticle4Image,
+      tag: t('twojo.blog.olderArticles.article4.tag'),
+      title: t('twojo.blog.olderArticles.article4.title'),
+      content: t('twojo.blog.olderArticles.article4.content'),
+      link: '/contact',
+      linkText: t('twojo.blog.olderArticles.article4.link'),
     },
   ];
 
@@ -71,8 +80,9 @@ const Blog = () => {
           tag={t('twojo.blog.featuredArticle.tag')}
           title={t('twojo.blog.featuredArticle.title')}
           content={t('twojo.blog.featuredArticle.content')}
-          link="https://hub.hslu.ch/informatik/neue-tatort-app-sichert-fingerabdruecke-fuer-die-polizei/"
+          link={t('twojo.blog.featuredArticle.url')}
           linkText={t('twojo.blog.featuredArticle.link')}
+          credit='20min.ch'
         />
 
         {/* Older Articles Grid */}

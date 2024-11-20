@@ -376,31 +376,38 @@ const enTranslations = {
       },
       blog: {
         title: 'Blog',
-        description: 'Stay up to date with the latest news, updates, and insights from Twojo Software GmbH. Discover our innovative solutions and technology developments.',
+        description: 'Stay up to date with the latest news, updates, and insights from Twojo Software GmbH. Discover our innovative solutions and technological advancements.',
         featuredArticle: {
-          tag: 'News | October 8, 2024',
-          title: 'New Crime Scene App Secures Fingerprints for Police',
-          content: 'The Zurich Forensic Institute fully relies on SPUFO. The innovative app revolutionizes forensic work and makes it more efficient than ever.',
-          link: 'Learn More'
+          tag: 'News | November 20, 2024',
+          title: 'SPUFO App: Swiss Innovation in Forensics',
+          content: 'Three Swiss students are revolutionizing forensic science with their SPUFO app. The innovative solution makes securing, photographing, and archiving fingerprints much easier.',
+          link: 'Learn more',
+          url: 'https://www.20min.ch/story/spufo-app-swiss-innovation-in-forensics-103223322'
         },
         olderArticles: {
           article1: {
-            tag: 'Update | August 22, 2024',
-            title: 'Enhanced Logging and User Experience',
-            content: 'The latest SPUFO update brings powerful logging functions and UI improvements. Users can now track app activities with local logs and send error reports via email when needed.',
-            link: 'Learn More'
+            tag: 'News | October 8, 2024',
+            title: 'New Crime Scene App Secures Fingerprints for Police',
+            content: 'The Zurich Forensic Institute is fully committed to SPUFO. The innovative app is revolutionizing forensic science and making it more efficient than ever.',
+            link: 'Learn more'
           },
           article2: {
-            tag: 'Update | February 15, 2024',
-            title: 'Advanced Image Processing and Export Features',
-            content: 'SPUFO now offers advanced image processing functions with adjustable contrast, brightness, and free rotation. Exported images contain important metadata such as GPS coordinates and timestamps.',
-            link: 'Learn More'
+            tag: 'Update | August 22, 2024',
+            title: 'Enhanced Logging and User Experience',
+            content: 'The latest SPUFO update introduces powerful logging features and UI enhancements. Users can now track app activities with local logs and send error reports via email if needed.',
+            link: 'Learn more'
           },
           article3: {
+            tag: 'Update | February 15, 2024',
+            title: 'Advanced Image Processing and Export Features',
+            content: 'SPUFO now offers advanced image processing capabilities with adjustable contrast, brightness, and free rotation. Exported images include important metadata like GPS coordinates and timestamps.',
+            link: 'Learn more'
+          },
+          article4: {
             tag: 'Update | November 19, 2023',
             title: 'Camera Improvements and Multilingual Support',
-            content: 'A new macro mode simplifies camera operation. The app now supports German, English, and French and offers improved data management with automatic case cleanup.',
-            link: 'Learn More'
+            content: 'A new close-up mode simplifies camera handling. The app now supports German, English, and French, along with improved data management featuring automatic case cleanup.',
+            link: 'Learn more'
           }
         }
       }

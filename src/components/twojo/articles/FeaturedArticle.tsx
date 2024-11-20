@@ -8,6 +8,7 @@ interface FeaturedArticleProps {
   content: string;
   link: string;
   linkText: string;
+  credit?: string;
 }
 
 const FeaturedArticle: React.FC<FeaturedArticleProps> = ({
@@ -17,6 +18,7 @@ const FeaturedArticle: React.FC<FeaturedArticleProps> = ({
   content,
   link,
   linkText,
+  credit,
 }) => {
   return (
     <motion.div
@@ -35,6 +37,11 @@ const FeaturedArticle: React.FC<FeaturedArticleProps> = ({
                 className="w-full h-full object-cover rounded-2xl"
               />
             </a>
+            {credit && (
+              <p className="text-gray-400 text-sm mt-2 text-center">
+                {credit}
+              </p>
+            )}
           </div>
           <div className="md:w-1/2 mt-6 md:mt-0 flex flex-col justify-between">
             <div>
