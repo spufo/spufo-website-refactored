@@ -109,7 +109,7 @@ const deTranslations = {
         featuresTitle: 'Hauptvorteile',
         feature1: {
             title: 'Mobile Fingerabdruckerfassung',
-            description: 'Mühelose Erfassung hochwertiger Fingerabdrücke am Tatort mit der SPUFO App auf iOS-Geräten. Entwickelt für forensische Techniker und Einsatzkräfte.',
+            description: 'Mühelose Erfassung hochwertiger Fingerabdrücke am Tatort mit der SPUFO App. Entwickelt für forensische Techniker und Einsatzkräfte.',
             link: 'Mehr erfahren'
         },
         feature2: {
