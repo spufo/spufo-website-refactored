@@ -18,7 +18,7 @@ const enTranslations = {
 
     // About Section
     aboutTitle: 'About SPUFO',
-    aboutDescription: 'The SPUFO app is a forensic iOS solution that simplifies and streamlines the collection of dactyloscopic traces at crime scenes.',
+    aboutDescription: 'The SPUFO app is a forensic iOS solution that simplifies the collection of dactyloscopic traces at crime scenes.',
     aboutPoint1: 'Replaces traditional DSLR cameras and gelatin films with mobile technology.',
     aboutPoint2: 'Captures traces on-site, scaled 1:1, and saved in 1000 dpi resolution.',
     aboutPoint3: 'Allows direct numbering, cropping, and preparation for AFIS searches.',
@@ -26,7 +26,7 @@ const enTranslations = {
     // Image Editing Section
     imageEditing: {
       title: 'Professional Image Editing',
-      subtitle: 'Utilize our comprehensive image editing tools to optimally prepare your trace recordings for analysis.',
+      subtitle: 'Utilize our comprehensive image editing tools to prepare your fingerprint latents for analysis.',
       features: {
         colorInversion: {
           title: 'Color Inversion',
