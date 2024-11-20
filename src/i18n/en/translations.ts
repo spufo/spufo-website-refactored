@@ -26,7 +26,7 @@ const enTranslations = {
     // Image Editing Section
     imageEditing: {
       title: 'Professional Image Editing',
-      subtitle: 'Utilize our comprehensive image editing tools to prepare your fingerprint latents for analysis.',
+      subtitle: 'Utilize our comprehensive image editing tools to prepare your latent fingerprints for analysis.',
       features: {
         colorInversion: {
           title: 'Color Inversion',
@@ -38,7 +38,7 @@ const enTranslations = {
         },
         contrast: {
           title: 'Contrast Control',
-          description: 'Contrast enhancement to more clearly highlight fingerprint patterns.'
+          description: 'Contrast enhancement to clearly highlight fingerprint patterns.'
         },
         brightness: {
           title: 'Brightness Adjustment',
@@ -46,7 +46,7 @@ const enTranslations = {
         },
         rotation: {
           title: 'Free Image Rotation',
-          description: 'Flexible rotation of images for optimal alignment.'
+          description: 'Flexible rotation of images for manual alignment.'
         },
         crop: {
           title: 'Precise Cropping',
@@ -58,10 +58,10 @@ const enTranslations = {
         },
         numbering: {
           title: 'Evidence Numbering',
-          description: 'Photos can be numbered to facilitate assignment.'
+          description: 'Photos can be numbered to identify assignments.'
         }
       },
-      bottomText: 'All editing functions are specially optimized for forensic work and ensure the integrity of the evidence.'
+      bottomText: 'All editing functions are optimized for forensic work, ensuring the integrity of the evidence.'
     },
 
     rulerRecognition: {
@@ -116,12 +116,12 @@ const enTranslations = {
     },
     feature3: {
       title: 'Optimal Resolution Imaging',
-      description: 'Automatic capture of 1:1 scaled photographs at 1000 dpi resolution. Every fingerprint is recorded in the highest quality for precise analysis.',
+      description: 'Automatic capture of 1:1 scaled photographs at 1000 dpi resolution. Every fingerprint is captured in the highest quality for precise analysis.',
       link: 'See the technical details'
     },
     feature4: {
       title: 'Proven in the Field',
-      description: 'Developed in collaboration with Forensic Science Zurich, SPUFO is actively used in real-world scenarios. Our app has significantly increased the number of fingerprints captured, demonstrating its effectiveness and reliability in forensic investigations.',
+      description: 'Developed in collaboration with Zurich Forensic Science Institute, SPUFO is actively used in real-world scenarios. Our app has significantly increased the number of fingerprints being captured, demonstrating its effectiveness and reliability in forensic investigations.',
       link: 'Read success stories'
     },
 
@@ -133,11 +133,11 @@ const enTranslations = {
       },
       business: {
         title: "Business Application",
-        description: "Applications tailored for your business."
+        description: "Applications tailored to your business."
       },
       interactive: {
         title: "Interactive Experiences",
-        description: "Gamify your advertisement."
+        description: "Gamify your advertising."
       }
     },
     common: {
@@ -193,7 +193,7 @@ const enTranslations = {
     testimonialTitle: 'Testimonial',
     testimonialQuote: '"The example of SPUFO shows how significant new technologies are for forensic science." ... "The app ensures significantly more efficiency and, above all, more traces submitted."',
     testimonialAuthor: 'Dominik Hänni',
-    testimonialRole: 'Head of IT at the Forensic Institute Zurich',
+    testimonialRole: 'Head of IT at the Zurich Forensic Science Institute',
 
     evidence: {
       title: "Transform Your Evidence Collection",
@@ -246,7 +246,7 @@ const enTranslations = {
       },
       caseInfo: {
         title: "Intelligent Case Information Storage",
-        description: "Users can add and securely store comprehensive case information for every investigation within the SPUFO app",
+        description: "Users can add and securely store case information from every investigation within the SPUFO app",
         details: {
           title: "Case Details",
           classification: {
@@ -361,10 +361,10 @@ const enTranslations = {
           title: 'SPUFO',
           subTitle: 'The Crime Scene Photography App',
           slogan: 'Digital - Fast - Efficient',
-          description: 'The SPUFO app is a forensic iOS solution that simplifies and streamlines the collection of dactyloscopic traces at crime scenes.',
+          description: 'The SPUFO app is a forensic iOS solution that simplifies the collection of dactyloscopic traces at crime scenes.',
           bulletPoints: {
             first: 'Replaces traditional DSLR cameras and gelatin sheets with mobile technology.',
-            second: 'Captures traces on-site, accurately scaled 1:1 and in 1000 dpi resolution.',
+            second: 'Captures traces on-site, accurately scaled 1:1 and in 1000 DPI resolution.',
             third: 'Allows direct numbering, cropping, and preparation for AFIS searches.'
           },
           button: 'Learn more'
@@ -373,7 +373,7 @@ const enTranslations = {
       about: {
         teamTitle: 'Meet Our Team',
         teamSubtitle: 'Passionate Developers Creating Innovative Solutions',
-        description: 'We are a team of passionate software engineers who met during our apprenticeship at BBBaden School. While pursuing our individual careers in technology, we\'ve joined forces to create innovative solutions through Twojo Software.',
+        description: 'We are a team of software engineers who met during our apprenticeship at BBBaden School. While pursuing our individual careers in technology, we\'ve joined forces to create innovative solutions through Twojo Software.',
         teamImageAlt: 'Twojo Software Team',
         festim: {
           name: 'Festim Jetishi',
@@ -407,7 +407,7 @@ const enTranslations = {
         featuredArticle: {
           tag: 'News | October 8, 2024',
           title: 'New Crime Scene App Secures Fingerprints for Police',
-          content: 'The Zurich Forensic Institute fully relies on SPUFO. The innovative app revolutionizes forensic work and makes it more efficient than ever.',
+          content: 'The Zurich Forensic Science Institute relies on SPUFO daily. The app revolutionizes forensic work and makes these processes more efficient than ever.',
           link: 'Learn More'
         },
         olderArticles: {
@@ -432,11 +432,11 @@ const enTranslations = {
         }
       },
       games: {
-        about: 'At Twojo Software GmbH, we help businesses leverage games as a powerful marketing tool. From eye-catching games for convention stands to competitions designed to engage and excite audiences, we bring creative ideas to life. Our games don’t just entertain—they amplify your brand\'s visibility and foster deeper connections with your target audience. Whether you\'re looking to gamify your marketing strategy or create an unforgettable event experience, we’ve got you covered.',
+        about: 'At Twojo Software GmbH, we help businesses utilize games as a powerful marketing tool. From eye-catching games for convention stands to competitions designed to engage and excite audiences, we bring creative ideas to life. Our games don’t just entertain — they amplify your brand\'s visibility and foster deeper connections with your target audience. Whether you\'re looking to gamify your marketing strategy or create an unforgettable event experience, we’ve got you covered.',
         experience: [
           {
             title: 'Interactive Game Development',
-            description: 'We specialize in creating engaging games designed to attract customer attention.'
+            description: 'We create engaging games designed to attract customer attention.'
           },
           {
             title: 'Competitions and Events',
@@ -453,33 +453,33 @@ const enTranslations = {
         experience: [
           {
             title: 'Cross-Platform Development',
-            description: 'Proficient in creating high-quality applications for both Android and iOS.'
+            description: 'Creating high-quality applications for both Android and iOS.'
           },
           {
             title: 'Camera and Image Processing',
-            description: 'Expertise in implementing advanced image capture features and real-time image manipulation.'
+            description: 'Implementing advanced image capture features and real-time image manipulation.'
           },
           {
             title: 'User-Centric Design',
-            description: 'Committed to delivering engaging user experiences through thoughtful design and functionality.'
+            description: 'Delivering engaging user experiences through thoughtful design and functionality.'
           }
         ]
       },
       businessApplication: {
-        about: 'Business Applications Tailored for Success',
-        about_description: 'At Twojo Software GmbH, we specialize in creating innovative business applications tailored for companies. Our solutions focus on efficient data manipulation, seamless cloud hosting of web applications, and automating processes to enhance operational efficiency. Combining technical expertise with a business-oriented approach, we deliver scalable, intuitive, and robust applications.',
+        about: 'Business Applications Designed for Success',
+        about_description: 'At Twojo Software GmbH, we specialize in creating innovative business applications tailored to companies. Our solutions focus on efficient data manipulation, seamless cloud hosting of web applications, and automating processes to enhance operational efficiency. Combining technical expertise with a business-oriented approach, we deliver scalable, intuitive, and robust applications.',
         experience: {
           data_manipulation_expertise: {
             title: 'Data Manipulation Expertise',
-            description: 'Skilled in creating efficient solutions for managing, processing, and analyzing business data.'
+            description: 'Creating efficient solutions for managing, processing, and analyzing business data.'
           },
           web_application_hosting: {
             title: 'Web Application Hosting',
-            description: 'Proficient in deploying and maintaining scalable and secure web applications.'
+            description: 'Deploying and maintaining scalable and secure web applications.'
           },
           automation_and_efficiency: {
             title: 'Automation and Efficiency',
-            description: 'Our applications streamline business processes, helping companies become more automated and efficient.'
+            description: 'Our applications streamline business processes, enabling companies to become more automated and efficient.'
           }
         }
       }
