@@ -62,7 +62,7 @@ const RulerRecognition = () => {
               <img
                 src={rulerRecognitionImage}
                 alt={t('rulerRecognition.title')}
-                className="w-full rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300"
+                className="w-full rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
               />
               <p className="text-sm text-gray-500 italic text-center mt-4">20min.ch</p>
             </motion.div>
