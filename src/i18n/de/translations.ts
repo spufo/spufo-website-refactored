@@ -23,6 +23,47 @@ const deTranslations = {
         aboutPoint2: 'Erfasst Spuren vor Ort, massstabsgetreu 1:1 und in 1000 dpi Auflösung.',
         aboutPoint3: 'Ermöglicht direkte Nummerierung, Zuschnitt und Vorbereitung für AFIS-Suchen.',
 
+        // Image Editing Section
+        imageEditing: {
+            title: 'Professionelle Bildbearbeitung',
+            subtitle: 'Nutzen Sie unsere umfangreichen Bildbearbeitungswerkzeuge, um Ihre Spurenaufnahmen optimal für die Analyse vorzubereiten.',
+            features: {
+                colorInversion: {
+                    title: 'Farbinvertierung',
+                    description: 'Invertierung der Farben zur verbesserten Sichtbarkeit von Beweismitteln auf dunklem Hintergrund.'
+                },
+                gamma: {
+                    title: 'Gamma-Einstellung',
+                    description: 'Präzise Anpassung der Gamma-Werte für die Sichtbarmachung feiner Details.'
+                },
+                contrast: {
+                    title: 'Kontrastregelung',
+                    description: 'Kontrastverstärkung zur deutlicheren Hervorhebung von Fingerabdruckmustern.'
+                },
+                brightness: {
+                    title: 'Helligkeitsanpassung',
+                    description: 'Korrektur von über- oder unterbelichteten Bereichen für optimale Darstellung.'
+                },
+                rotation: {
+                    title: 'Freie Bildrotation',
+                    description: 'Flexible Drehung von Aufnahmen für eine optimale Ausrichtung.'
+                },
+                crop: {
+                    title: 'Präziser Bildausschnitt',
+                    description: 'Gezieltes Zuschneiden zur Fokussierung auf relevante Bereiche.'
+                },
+                mirror: {
+                    title: 'Bildspiegelung',
+                    description: 'Spiegelung von Bildern zur Korrektur der Ausrichtung oder Perspektive.'
+                },
+                numbering: {
+                    title: 'Beweismittel-Nummerierung',
+                    description: 'Fotos können mit Nummern versehen werden, um die Zuordnung zu erleichtern.'
+                }
+            },
+            bottomText: 'Alle Bearbeitungsfunktionen sind speziell für die forensische Arbeit optimiert und gewährleisten die Integrität der Beweismittel.'
+        },
+
         // Advantages Section
         advantagesTitle: 'Smartphone-Vorteile',
         advantage1: 'Verbesserte Effizienz',

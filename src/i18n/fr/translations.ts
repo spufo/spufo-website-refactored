@@ -23,6 +23,48 @@ const frTranslations = {
         aboutPoint2: 'Capture les traces sur place, à l\'échelle 1:1, et sauvegardées en résolution 1000 dpi.',
         aboutPoint3: 'Permet la numérotation directe, le recadrage et la préparation pour les recherches AFIS.',
 
+        // Image Editing Section
+        imageEditing: {
+            title: 'Édition d\'images professionnelle',
+            subtitle: 'Utilisez nos outils d\'édition d\'images complets pour préparer de manière optimale vos enregistrements de traces pour l\'analyse.',
+            features: {
+                colorInversion: {
+                    title: 'Inversion des couleurs',
+                    description: 'Inversion des couleurs pour améliorer la visibilité des preuves sur les arrière-plans sombres.'
+                },
+                gamma: {
+                    title: 'Réglage du gamma',
+                    description: 'Ajustement précis des valeurs gamma pour révéler les détails fins.'
+                },
+                contrast: {
+                    title: 'Contrôle du contraste',
+                    description: 'Renforcement du contraste pour mieux mettre en évidence les motifs d\'empreintes digitales.'
+                },
+                brightness: {
+                    title: 'Ajustement de la luminosité',
+                    description: 'Correction des zones surexposées ou sous-exposées pour un affichage optimal.'
+                },
+                rotation: {
+                    title: 'Rotation libre de l\'image',
+                    description: 'Rotation flexible des images pour un alignement optimal.'
+                },
+                crop: {
+                    title: 'Recadrage précis',
+                    description: 'Recadrage ciblé pour se concentrer sur les zones pertinentes.'
+                },
+                mirror: {
+                    title: 'Miroir de l\'image',
+                    description: 'Miroir des images pour corriger l\'orientation ou la perspective.'
+                },
+                numbering: {
+                    title: 'Numérotation des preuves',
+                    description: 'Les photos peuvent être numérotées pour faciliter l\'attribution.'
+                }
+            },
+            bottomText: 'Toutes les fonctions d\'édition sont spécialement optimisées pour le travail médico-légal et garantissent l\'intégrité des preuves.'
+        },
+
+
         // Advantages Section
         advantagesTitle: 'Avantages Smartphone',
         advantage1: 'Efficacité Améliorée',

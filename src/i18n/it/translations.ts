@@ -23,6 +23,48 @@ const itTranslations = {
     aboutPoint2: 'Cattura tracce sul posto, in scala 1:1 e salvate in risoluzione 1000 dpi.',
     aboutPoint3: 'Permette numerazione diretta, ritaglio e preparazione per ricerche AFIS.',
 
+    // Image Editing Section
+    imageEditing: {
+      title: 'Elaborazione immagini professionale',
+      subtitle: 'Utilizza i nostri completi strumenti di elaborazione delle immagini per preparare al meglio le tue registrazioni di tracce per l\'analisi.',
+      features: {
+        colorInversion: {
+          title: 'Inversione dei colori',
+          description: 'Inversione dei colori per migliorare la visibilità delle prove su sfondi scuri.'
+        },
+        gamma: {
+          title: 'Regolazione gamma',
+          description: 'Regolazione precisa dei valori gamma per rivelare dettagli fini.'
+        },
+        contrast: {
+          title: 'Controllo del contrasto',
+          description: 'Aumento del contrasto per evidenziare più chiaramente i motivi delle impronte digitali.'
+        },
+        brightness: {
+          title: 'Regolazione della luminosità',
+          description: 'Correzione delle aree sovraesposte o sottoesposte per una visualizzazione ottimale.'
+        },
+        rotation: {
+          title: 'Rotazione libera dell\'immagine',
+          description: 'Rotazione flessibile delle immagini per un allineamento ottimale.'
+        },
+        crop: {
+          title: 'Ritaglio preciso',
+          description: 'Ritaglio mirato per focalizzarsi sulle aree rilevanti.'
+        },
+        mirror: {
+          title: 'Specchiatura dell\'immagine',
+          description: 'Specchiatura delle immagini per correggere l\'orientamento o la prospettiva.'
+        },
+        numbering: {
+          title: 'Numerazione delle prove',
+          description: 'Le foto possono essere numerate per facilitare l\'assegnazione.'
+        }
+      },
+      bottomText: 'Tutte le funzioni di editing sono appositamente ottimizzate per il lavoro forense e garantiscono l\'integrità delle prove.'
+    },
+
+
     // Advantages Section
     advantagesTitle: 'Vantaggi Smartphone',
     advantage1: 'Efficienza Migliorata',

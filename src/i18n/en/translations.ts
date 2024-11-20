@@ -23,6 +23,48 @@ const enTranslations = {
     aboutPoint2: 'Captures traces on-site, scaled 1:1, and saved in 1000 dpi resolution.',
     aboutPoint3: 'Allows direct numbering, cropping, and preparation for AFIS searches.',
 
+    // Image Editing Section
+    imageEditing: {
+      title: 'Professional Image Editing',
+      subtitle: 'Utilize our comprehensive image editing tools to optimally prepare your trace recordings for analysis.',
+      features: {
+        colorInversion: {
+          title: 'Color Inversion',
+          description: 'Inversion of colors to enhance the visibility of evidence on dark backgrounds.'
+        },
+        gamma: {
+          title: 'Gamma Adjustment',
+          description: 'Precise adjustment of gamma values to reveal fine details.'
+        },
+        contrast: {
+          title: 'Contrast Control',
+          description: 'Contrast enhancement to more clearly highlight fingerprint patterns.'
+        },
+        brightness: {
+          title: 'Brightness Adjustment',
+          description: 'Correction of overexposed or underexposed areas for optimal display.'
+        },
+        rotation: {
+          title: 'Free Image Rotation',
+          description: 'Flexible rotation of images for optimal alignment.'
+        },
+        crop: {
+          title: 'Precise Cropping',
+          description: 'Targeted cropping to focus on relevant areas.'
+        },
+        mirror: {
+          title: 'Image Mirroring',
+          description: 'Mirroring of images to correct orientation or perspective.'
+        },
+        numbering: {
+          title: 'Evidence Numbering',
+          description: 'Photos can be numbered to facilitate assignment.'
+        }
+      },
+      bottomText: 'All editing functions are specially optimized for forensic work and ensure the integrity of the evidence.'
+    },
+
+
     // Advantages Section
     advantagesTitle: 'Smartphone Advantages',
     advantage1: 'Improved Efficiency',

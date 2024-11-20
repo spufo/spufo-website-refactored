@@ -15,6 +15,7 @@ import { usePageMeta } from './hooks/usePageMeta';
 import MobileDevelopment from './components/twojo/mobile/MobileDevelopment';
 import BusinessApplication from './components/twojo/applications/BusinessApplication';
 import Games from './components/twojo/games/Games';
+import ImageEditing from './components/spufo/ImageEditing';
 
 function App() {
   const location = useLocation();
@@ -36,6 +37,7 @@ function App() {
           <Route path="/spufo/" element={<Spufo />} />
           <Route path="/spufo/evidence-collection/" element={<EvidenceCollection />} />
           <Route path="/spufo/forensic-success/" element={<ForensicSuccess />} />
+          <Route path="/spufo/image-editing/" element={<ImageEditing />} />
           <Route path="/spufo/ruler-recognition/" element={<RulerRecognition />} />
           <Route path="/" element={<Twojo />} />
           <Route path="/about/" element={<TwojoAbout />} />
