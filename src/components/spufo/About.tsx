@@ -17,18 +17,18 @@ const About = () => {
           <img src={background} alt="Background Pattern" />
         </div>
 
-        <div className="md:w-1/2 mb-10 md:mb-0 flex flex-col items-center">
-          <motion.img
+        <motion.div className="md:w-1/2 mb-10 md:mb-0 flex flex-col items-center"
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
+        >
+          <img
             src={aboutImage}
             alt="SPUFO in action"
-            className="rounded-3xl shadow-2xl w-2/3 h-auto transform hover:scale-105 transition duration-300 z-0"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.3 }}
+            className="text-center rounded-3xl shadow-2xl w-2/3 h-auto transform hover:scale-105 transition duration-300 z-0"
           />
-          <span className="text-sm text-gray-400 mt-2 italic">20min.ch</span>
-        </div>
+          <p className="text-sm text-gray-400 mt-2 italic text-center">20min.ch</p>
+        </motion.div>
+
 
         <div className="md:w-1/2 md:pl-12">
           <motion.div
