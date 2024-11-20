@@ -110,7 +110,7 @@ const enTranslations = {
     featuresTitle: 'Key Advantages',
     feature1: {
       title: 'Mobile Fingerprint Capture',
-      description: 'Effortlessly collect high-quality fingerprints at crime scenes using the Spufo App on your iOS device. Designed for both forensic technicians and front-line officers.',
+      description: 'Effortlessly collect high-quality fingerprints at crime scenes using the SPUFO App on your iOS device. Designed for both forensic technicians and front-line officers.',
       link: 'Learn how it works'
     },
     feature2: {

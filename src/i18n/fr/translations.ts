@@ -109,7 +109,7 @@ const frTranslations = {
         featuresTitle: 'Avantages Clés',
         feature1: {
             title: 'Capture Mobile d\'Empreintes Digitales',
-            description: 'Collectez facilement des empreintes digitales de haute qualité sur les scènes de crime à l\'aide de l\'application Spufo sur votre appareil iOS. Conçue pour les techniciens médico-légaux et les agents de première ligne.',
+            description: 'Collectez facilement des empreintes digitales de haute qualité sur les scènes de crime à l\'aide de l\'application SPUFO sur votre appareil iOS. Conçue pour les techniciens médico-légaux et les agents de première ligne.',
             link: 'Découvrez comment ça marche'
         },
         feature2: {

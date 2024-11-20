@@ -108,7 +108,7 @@ const itTranslations = {
     featuresTitle: 'Vantaggi Principali',
     feature1: {
       title: 'Acquisizione Mobile delle Impronte Digitali',
-      description: 'Raccogli facilmente impronte digitali di alta qualità sulla scena del crimine utilizzando l\'app Spufo sul tuo dispositivo iOS. Progettata per tecnici forensi e agenti di prima linea.',
+      description: 'Raccogli facilmente impronte digitali di alta qualità sulla scena del crimine utilizzando l\'app SPUFO sul tuo dispositivo iOS. Progettata per tecnici forensi e agenti di prima linea.',
       link: 'Scopri come funziona'
     },
     feature2: {

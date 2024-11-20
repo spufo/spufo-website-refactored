@@ -109,7 +109,7 @@ const deTranslations = {
         featuresTitle: 'Hauptvorteile',
         feature1: {
             title: 'Mobile Fingerabdruckerfassung',
-            description: 'Mühelose Erfassung hochwertiger Fingerabdrücke am Tatort mit der Spufo App auf iOS-Geräten. Entwickelt für forensische Techniker und Einsatzkräfte.',
+            description: 'Mühelose Erfassung hochwertiger Fingerabdrücke am Tatort mit der SPUFO App auf iOS-Geräten. Entwickelt für forensische Techniker und Einsatzkräfte.',
             link: 'Mehr erfahren'
         },
         feature2: {
@@ -124,7 +124,7 @@ const deTranslations = {
         },
         feature4: {
             title: 'Praxiserprobt',
-            description: 'Entwickelt in Zusammenarbeit mit der Forensischen Wissenschaft Zürich, wird SPUFO aktiv in realen Szenarien eingesetzt. Unsere App hat die Anzahl der erfassten Fingerabdrücke deutlich erhöht und demonstriert ihre Effektivität und Zuverlässigkeit in forensischen Untersuchungen.',
+            description: 'Entwickelt in Zusammenarbeit mit der Forensischen Institut Zürich, wird SPUFO aktiv in realen Szenarien eingesetzt. Unsere App hat die Anzahl der erfassten Fingerabdrücke deutlich erhöht und demonstriert ihre Effektivität und Zuverlässigkeit in forensischen Untersuchungen.',
             link: 'Erfolgsgeschichten lesen'
         },
 
