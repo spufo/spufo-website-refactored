@@ -21,7 +21,7 @@ const About = () => {
           <motion.img 
             src={aboutImage}
             alt="SPUFO in action" 
-            className="rounded-3xl shadow-2xl w-2/3 h-auto transform hover:scale-105 transition duration-300"
+            className="rounded-3xl shadow-2xl w-2/3 h-auto transform hover:scale-105 transition duration-300 z-0"
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
