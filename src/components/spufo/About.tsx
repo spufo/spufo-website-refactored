@@ -22,6 +22,8 @@ const About = () => {
             src={aboutImage}
             alt="SPUFO in action"
             className="rounded-3xl shadow-2xl w-2/3 h-auto transform hover:scale-105 transition duration-300 z-0"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.3 }}
           />
