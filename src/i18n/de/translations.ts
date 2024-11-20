@@ -118,7 +118,7 @@ const deTranslations = {
             link: 'Zur Funktionsübersicht'
         },
         feature3: {
-            title: 'Optimale Auflösungsbildgebung',
+            title: 'Bildgebung mit optimaler Auflösung',
             description: 'Automatische Erfassung von 1:1 skalierten Fotografien in 1000 dpi Auflösung. Jeder Fingerabdruck wird in höchster Qualität für eine genaue Analyse aufgezeichnet.',
             link: 'Technische Details ansehen'
         },

@@ -342,7 +342,7 @@ const enTranslations = {
       solutions: {
         title: 'Our Solutions',
         about: "Experience",
-        subTitle: 'We offer flexible solutions for your business',
+        subTitle: 'Flexible solutions for your business',
         mobileDev: {
           title: 'Mobile Development',
           description: 'Apps that work on both iOS and Android.',
@@ -350,12 +350,12 @@ const enTranslations = {
         },
         businessApp: {
           title: 'Business Application',
-          description: 'Applications tailored for your business.',
+          description: 'Applications tailored to your business.',
           link: 'Learn more',
         },
         interactiveExp: {
           title: 'Interactive Experiences',
-          description: 'Gamify your advertisement.',
+          description: 'Gamify your advertising.',
           link: 'Learn more',
         }
       },
@@ -453,7 +453,7 @@ const enTranslations = {
         ]
       },
       mobile: {
-        about: 'At Twojo Software GmbH, we excel in crafting innovative mobile applications for both Android and iOS platforms. Our experienced team combines technical expertise with a focus on user experience, ensuring that every app we develop is intuitive and efficient. We are particularly skilled in leveraging camera functionalities and image processing to enhance your app\'s capabilities.',
+        about: 'At Twojo Software GmbH, we create innovative mobile applications for both Android and iOS platforms. Our experienced team combines technical expertise with a focus on user experience, ensuring that every app we develop is intuitive and efficient. We are particularly focused on leveraging camera functionalities and image processing to enhance your app\'s capabilities.',
         experience: [
           {
             title: 'Cross-Platform Development',
