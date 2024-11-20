@@ -1,21 +1,36 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Check, FileText } from 'lucide-react';
+import { Check } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import rulerRecognitionImage from '/assets/images/ruler_recognition.jpg';
 
 const RulerRecognition = () => {
+  const { t } = useTranslation();
+
+  const extraFeatureKeys = [
+    'rulerRecognition.extra_features.ultra_high_resolution',
+    'rulerRecognition.extra_features.embedded_gps_metadata',
+    'rulerRecognition.extra_features.supports_raw_tiff',
+    'rulerRecognition.extra_features.true_to_scale_output',
+    'rulerRecognition.extra_features.automatic_ruler_detection',
+    'rulerRecognition.extra_features.greyscale_enhancement',
+    'rulerRecognition.extra_features.original_image_preservation',
+    'rulerRecognition.extra_features.advanced_processing_algorithms'
+  ];
+
+
   const features = [
     {
-      title: 'Accurate Measurements',
-      description: 'Automatically detects rulers and calculates precise dimensions. Specialized rulers with ArUco markers are recommended for best results.',
+      title: t('rulerRecognition.features.accurate_measurements.title'),
+      description: t('rulerRecognition.features.accurate_measurements.description'),
     },
     {
-      title: 'High-Quality Images',
-      description: 'Produces images at 1000 DPI resolution, preserving detail for reliable analysis. Original images are always preserved for traceability.',
+      title: t('rulerRecognition.features.high_quality_images.title'),
+      description: t('rulerRecognition.features.high_quality_images.description'),
     },
     {
-      title: 'Detailed Documentation',
-      description: 'Export images with metadata like GPS coordinates and timestamps. Supports RAW and TIFF formats for flexibility.',
+      title: t('rulerRecognition.features.detailed_documentation.title'),
+      description: t('rulerRecognition.features.detailed_documentation.description'),
     }
   ];
 
@@ -29,10 +44,10 @@ const RulerRecognition = () => {
           className="text-center mb-16"
         >
           <h1 className="text-5xl md:text-6xl font-bold text-[--orange-color] mb-6">
-            Ruler Recognition
+            {t('rulerRecognition.title')}
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Advanced measurement and documentation capabilities for precise evidence recording
+            {t('rulerRecognition.description')}
           </p>
         </motion.div>
 
@@ -46,7 +61,7 @@ const RulerRecognition = () => {
             >
               <img
                 src={rulerRecognitionImage}
-                alt="Ruler Recognition Example"
+                alt={t('rulerRecognition.title')}
                 className="w-full rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300"
               />
               <p className="text-sm text-gray-500 italic text-center mt-4">20min.ch</p>
@@ -77,9 +92,11 @@ const RulerRecognition = () => {
           className="pb-24"
         >
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-[--orange-color] mb-6">Advanced Capabilities</h2>
+            <h2 className="text-3xl font-bold text-[--orange-color] mb-6">
+              {t('rulerRecognition.advanced_capabilities')}
+            </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Comprehensive suite of features for professional evidence documentation
+              {t('rulerRecognition.comprehensive_suite')}
             </p>
           </div>
 
@@ -89,22 +106,10 @@ const RulerRecognition = () => {
             className="bg-white p-8 rounded-xl shadow-lg"
           >
             <div className="grid grid-cols-2 md:grid-cols-2 gap-4">
-              {[
-                'Ultra-high resolution at 1000 DPI',
-                'Embedded GPS and metadata',
-                'Supports RAW and TIFF formats',
-                'True-to-scale output',
-                'Automatic ruler detection',
-                'Greyscale enhancement',
-                'Original image preservation',
-                'Advanced processing algorithms'
-              ].map((feature, index) => (
-                <div
-                  key={index}
-                  className="flex items-center space-x-3"
-                >
+              {extraFeatureKeys.map((key, index) => (
+                <div key={index} className="flex items-center space-x-3">
                   <Check className="w-5 h-5 text-[--orange-color] flex-shrink-0" />
-                  <span className="text-sm text-gray-700">{feature}</span>
+                  <span className="text-sm text-gray-700">{t(key)}</span>
                 </div>
               ))}
             </div>

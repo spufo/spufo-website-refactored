@@ -64,6 +64,37 @@ const enTranslations = {
       bottomText: 'All editing functions are specially optimized for forensic work and ensure the integrity of the evidence.'
     },
 
+    rulerRecognition: {
+      title: 'Ruler Recognition',
+      description: 'Advanced measurement and documentation capabilities for precise evidence recording',
+      features: {
+        accurate_measurements: {
+          title: 'Accurate Measurements',
+          description: 'Automatically detects rulers and calculates precise dimensions. Specialized rulers with ArUco markers are recommended for best results.'
+        },
+        high_quality_images: {
+          title: 'High-Quality Images',
+          description: 'Produces images at 1000 DPI resolution, preserving detail for reliable analysis. Original images are always preserved for traceability.'
+        },
+        detailed_documentation: {
+          title: 'Detailed Documentation',
+          description: 'Export images with metadata like GPS coordinates and timestamps. Supports RAW and TIFF formats for flexibility.'
+        }
+      },
+      advanced_capabilities: 'Advanced Capabilities',
+      comprehensive_suite: 'Comprehensive suite of features for professional evidence documentation',
+      extra_features: {
+        ultra_high_resolution: 'Ultra-high resolution at 1000 DPI',
+        embedded_gps_metadata: 'Embedded GPS and metadata',
+        supports_raw_tiff: 'Supports RAW and TIFF formats',
+        true_to_scale_output: 'True-to-scale output',
+        automatic_ruler_detection: 'Automatic ruler detection',
+        greyscale_enhancement: 'Greyscale enhancement',
+        original_image_preservation: 'Original image preservation',
+        advanced_processing_algorithms: 'Advanced processing algorithms'
+      }
+    },
+
 
     // Advantages Section
     advantagesTitle: 'Smartphone Advantages',
@@ -401,6 +432,24 @@ const enTranslations = {
             title: 'Camera Improvements and Multilingual Support',
             content: 'A new macro mode simplifies camera operation. The app now supports German, English, and French and offers improved data management with automatic case cleanup.',
             link: 'Learn More'
+          }
+        }
+      },
+      businessApplication: {
+        about: 'Business Applications Tailored for Success',
+        about_description: 'At Twojo Software GmbH, we specialize in creating innovative business applications tailored for companies. Our solutions focus on efficient data manipulation, seamless cloud hosting of web applications, and automating processes to enhance operational efficiency. Combining technical expertise with a business-oriented approach, we deliver scalable, intuitive, and robust applications.',
+        experience: {
+          data_manipulation_expertise: {
+            title: 'Data Manipulation Expertise',
+            description: 'Skilled in creating efficient solutions for managing, processing, and analyzing business data.'
+          },
+          web_application_hosting: {
+            title: 'Web Application Hosting',
+            description: 'Proficient in deploying and maintaining scalable and secure web applications.'
+          },
+          automation_and_efficiency: {
+            title: 'Automation and Efficiency',
+            description: 'Our applications streamline business processes, helping companies become more automated and efficient.'
           }
         }
       }

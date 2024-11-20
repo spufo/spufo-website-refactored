@@ -64,6 +64,37 @@ const deTranslations = {
             bottomText: 'Alle Bearbeitungsfunktionen sind speziell für die forensische Arbeit optimiert und gewährleisten die Integrität der Beweismittel.'
         },
 
+        rulerRecognition: {
+            title: 'Linealerkennung',
+            description: 'Fortschrittliche Mess- und Dokumentationsfunktionen für präzise Beweisaufnahme',
+            features: {
+                accurate_measurements: {
+                    title: 'Genaues Messen',
+                    description: 'Erkennt automatisch Lineale und berechnet präzise Abmessungen. Spezialisierte Lineale mit ArUco-Markern werden für beste Ergebnisse empfohlen.'
+                },
+                high_quality_images: {
+                    title: 'Hochwertige Bilder',
+                    description: 'Erzeugt Bilder mit einer Auflösung von 1000 DPI, die Details für eine zuverlässige Analyse bewahren. Originalbilder werden immer für die Nachvollziehbarkeit aufbewahrt.'
+                },
+                detailed_documentation: {
+                    title: 'Detaillierte Dokumentation',
+                    description: 'Exportiert Bilder mit Metadaten wie GPS-Koordinaten und Zeitstempeln. Unterstützt RAW- und TIFF-Formate für Flexibilität.'
+                }
+            },
+            advanced_capabilities: 'Fortschrittliche Funktionen',
+            comprehensive_suite: 'Umfassende Suite von Funktionen für die professionelle Beweisdokumentation',
+            extra_features: {
+                ultra_high_resolution: 'Ultra-hohe Auflösung mit 1000 DPI',
+                embedded_gps_metadata: 'Eingebettete GPS- und Metadaten',
+                supports_raw_tiff: 'Unterstützt RAW- und TIFF-Formate',
+                true_to_scale_output: 'Massstabsgetreue Bilder',
+                automatic_ruler_detection: 'Automatische Linealerkennung',
+                greyscale_enhancement: 'Graustufenverbesserung',
+                original_image_preservation: 'Erhaltung des Originalbildes',
+                advanced_processing_algorithms: 'Fortschrittliche Verarbeitungsalgorithmen'
+            }
+        },
+
         // Advantages Section
         advantagesTitle: 'Smartphone-Vorteile',
         advantage1: 'Verbesserte Effizienz',
@@ -380,6 +411,24 @@ const deTranslations = {
                         title: 'Camera Improvements and Multilingual Support',
                         content: 'Ein neuer Nahaufnahmemodus vereinfacht die Kamerabedienung. Die App unterstützt nun Deutsch, Englisch und Französisch und bietet verbesserte Datenverwaltung mit automatischer Fallbereinigung.',
                         link: 'Mehr erfahren'
+                    }
+                }
+            },
+            businessApplication: {
+                about: 'Massgeschneiderte Geschäftsanwendungens',
+                about_description: 'Bei Twojo Software GmbH sind wir auf die Entwicklung innovativer Geschäftsanwendungen spezialisiert, die auf Unternehmen zugeschnitten sind. Unsere Lösungen konzentrieren sich auf effiziente Datenmanipulation, nahtloses Cloud-Hosting von Webanwendungen und die Automatisierung von Prozessen zur Steigerung der betrieblichen Effizienz. Durch die Kombination technischer Expertise mit einem geschäftsorientierten Ansatz liefern wir skalierbare, intuitive und robuste Anwendungen.',
+                experience: {
+                    data_manipulation_expertise: {
+                        title: 'Expertise in Datenmanipulation',
+                        description: 'Erfahren in der Erstellung effizienter Lösungen für die Verwaltung, Verarbeitung und Analyse von Geschäftsdaten.'
+                    },
+                    web_application_hosting: {
+                        title: 'Webanwendungs-Hosting',
+                        description: 'Versiert in der Bereitstellung und Wartung skalierbarer und sicherer Webanwendungen.'
+                    },
+                    automation_and_efficiency: {
+                        title: 'Automatisierung und Effizienz',
+                        description: 'Unsere Anwendungen optimieren Geschäftsprozesse und helfen Unternehmen, automatisierter und effizienter zu werden.'
                     }
                 }
             }

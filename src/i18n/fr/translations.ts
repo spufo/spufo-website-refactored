@@ -64,6 +64,36 @@ const frTranslations = {
             bottomText: 'Toutes les fonctions d\'édition sont spécialement optimisées pour le travail médico-légal et garantissent l\'intégrité des preuves.'
         },
 
+        rulerRecognition: {
+            title: 'Reconnaissance de Règle',
+            description: 'Capacités avancées de mesure et de documentation pour un enregistrement précis des preuves',
+            features: {
+                accurate_measurements: {
+                    title: 'Mesures Précises',
+                    description: 'Détecte automatiquement les règles et calcule des dimensions précises. Des règles spécialisées avec des marqueurs ArUco sont recommandées pour de meilleurs résultats.'
+                },
+                high_quality_images: {
+                    title: 'Images de Haute Qualité',
+                    description: 'Produit des images avec une résolution de 1000 DPI, préservant les détails pour une analyse fiable. Les images originales sont toujours préservées pour la traçabilité.'
+                },
+                detailed_documentation: {
+                    title: 'Documentation Détaillée',
+                    description: 'Exporte des images avec des métadonnées telles que les coordonnées GPS et les horodatages. Prend en charge les formats RAW et TIFF pour plus de flexibilité.'
+                }
+            },
+            advanced_capabilities: 'Fonctionnalités Avancées',
+            comprehensive_suite: 'Suite complète de fonctionnalités pour la documentation professionnelle des preuves',
+            extra_features: {
+                ultra_high_resolution: 'Résolution ultra-haute de 1000 DPI',
+                embedded_gps_metadata: 'GPS et métadonnées intégrés',
+                supports_raw_tiff: 'Prend en charge les formats RAW et TIFF',
+                true_to_scale_output: 'Sortie à l’échelle réelle',
+                automatic_ruler_detection: 'Détection automatique de la règle',
+                greyscale_enhancement: 'Amélioration en niveaux de gris',
+                original_image_preservation: 'Préservation de l’image originale',
+                advanced_processing_algorithms: 'Algorithmes de traitement avancés'
+            }
+        },
 
         // Advantages Section
         advantagesTitle: 'Avantages Smartphone',
@@ -382,6 +412,24 @@ const frTranslations = {
                         title: 'Améliorations de l\'appareil photo et support multilingue',
                         content: 'Un nouveau mode macro simplifie l\'utilisation de l\'appareil photo. L\'application prend maintenant en charge l\'allemand, l\'anglais et le français et offre une meilleure gestion des données avec un nettoyage automatique des cas.',
                         link: 'En savoir plus'
+                    }
+                }
+            },
+            businessApplication: {
+                about: 'Applications d\'entreprise sur mesure pour le succès',
+                about_description: 'Chez Twojo Software GmbH, nous sommes spécialisés dans la création d\'applications d\'entreprise innovantes adaptées aux entreprises. Nos solutions se concentrent sur la manipulation efficace des données, l\'hébergement cloud transparent des applications Web et l\'automatisation des processus pour améliorer l\'efficacité opérationnelle. En combinant une expertise technique avec une approche axée sur les affaires, nous livrons des applications évolutives, intuitives et robustes.',
+                experience: {
+                    data_manipulation_expertise: {
+                        title: 'Expertise en manipulation de données',
+                        description: 'Compétent dans la création de solutions efficaces pour la gestion, le traitement et l\'analyse des données d\'entreprise.'
+                    },
+                    web_application_hosting: {
+                        title: 'Hébergement d\'applications Web',
+                        description: 'Compétent dans le déploiement et la gestion d\'applications Web évolutives et sécurisées.'
+                    },
+                    automation_and_efficiency: {
+                        title: 'Automatisation et efficacité',
+                        description: 'Nos applications rationalisent les processus métier, aidant les entreprises à devenir plus automatisées et efficaces.'
                     }
                 }
             }

@@ -10,18 +10,18 @@ const BusinessApplicationExperience: React.FC = () => {
   const experience = [
     {
       icon: Database,
-      titleKey: 'Data Manipulation Expertise',
-      descriptionKey: 'Skilled in creating efficient solutions for managing, processing, and analyzing business data.'
+      titleKey: 'twojo.businessApplication.experience.data_manipulation_expertise.title',
+      descriptionKey: 'twojo.businessApplication.experience.data_manipulation_expertise.description'
     },
     {
       icon: Cloud,
-      titleKey: 'Web Application Hosting',
-      descriptionKey: 'Proficient in deploying and maintaining scalable and secure web applications.'
+      titleKey: 'twojo.businessApplication.experience.web_application_hosting.title',
+      descriptionKey: 'twojo.businessApplication.experience.web_application_hosting.description'
     },
     {
       icon: Settings,
-      titleKey: 'Automation and Efficiency',
-      descriptionKey: 'Our applications streamline business processes, helping companies become more automated and efficient.'
+      titleKey: 'twojo.businessApplication.experience.automation_and_efficiency.title',
+      descriptionKey: 'twojo.businessApplication.experience.automation_and_efficiency.description'
     }
   ];
 
@@ -36,10 +36,10 @@ const BusinessApplicationExperience: React.FC = () => {
           className="text-center"
         >
           <h2 className="text-cyan-400 text-4xl md:text-6xl font-semibold mb-4">
-            {t('twojo.solutions.about')}
+            {t('twojo.businessApplication.about')}
           </h2>
           <p className="mt-4 text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
-            At Twojo Software GmbH, we specialize in creating innovative business applications tailored for companies. Our solutions focus on efficient data manipulation, seamless cloud hosting of web applications, and automating processes to enhance operational efficiency. Combining technical expertise with a business-oriented approach, we deliver scalable, intuitive, and robust applications.
+            {t('twojo.businessApplication.about_description')}
           </p>
         </motion.div>
       </div>
