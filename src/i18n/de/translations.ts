@@ -26,7 +26,7 @@ const deTranslations = {
         // Image Editing Section
         imageEditing: {
             title: 'Professionelle Bildbearbeitung',
-            subtitle: 'Nutzen Sie unsere umfangreichen Bildbearbeitungswerkzeuge, um Ihre Spurenaufnahmen optimal für die Analyse vorzubereiten.',
+            subtitle: 'Umfangreiche Bildbearbeitungswerkzeuge stehen bereit, um Spurenaufnahmen optimal für die Analyse vorzubereiten.',
             features: {
                 colorInversion: {
                     title: 'Farbinvertierung',
@@ -156,11 +156,11 @@ const deTranslations = {
         advantages: {
             costEffective: {
                 title: 'Kostengünstig',
-                description: 'Nutzen Sie vorhandene Smartphone-Technologie, um Ausrüstungskosten erheblich zu reduzieren.'
+                description: 'Durch vorhandene Smartphone-Technologie lassen sich Ausrüstungskosten erheblich reduzieren.'
             },
             efficient: {
                 title: 'Effizient',
-                description: 'Optimieren Sie den Beweisaufnahmeprozess und sparen Sie wertvolle Zeit am Tatort.'
+                description: 'Der Beweisaufnahmeprozess wird optimiert, wodurch wertvolle Zeit am Tatort gespart werden kann.'
             },
             easeOfUse: {
                 title: 'Einfache Bedienung',
@@ -181,8 +181,8 @@ const deTranslations = {
         },
 
         evidence: {
-            title: "Verändern Sie Ihre Beweissammlung",
-            subtitle: "Erleben Sie die Evolution von komplexer Ausrüstung zu optimierter Effizienz",
+            title: "Die Beweissammlung neu gedacht",
+            subtitle: "Die Evolution von komplexer Ausrüstung hin zu optimierter Effizienz erleben",
             traditional: {
                 label: "TRADITIONELLE METHODEN",
                 title: "Komplexe Geräteeinrichtung",
@@ -215,8 +215,8 @@ const deTranslations = {
             spufo: {
                 label: "SPUFO-LÖSUNG",
                 title: "Intelligente Integration",
-                subtitle: "Verwendung des Geräts, das Sie bereits tragen",
-                advantage1: "Immer in Ihrer Tasche - kein zusätzliches Equipment erforderlich",
+                subtitle: "Ein Gerät verwenden, das bereits zur Verfügung steht",
+                advantage1: "Immer griffbereit - kein zusätzliches Equipment notwendig",
                 advantage2: "Einfach und intuitiv zu bedienen",
                 advantage3: "Integrierte Bildstabilisierung",
                 advantage4: "Integrierter Blitz für die meisten Lichtverhältnisse",
@@ -225,7 +225,7 @@ const deTranslations = {
                     description: "Zusätzliche Beleuchtung bei Bedarf"
                 },
                 summary: {
-                    title: "Bereit, wenn Sie es brauchen",
+                    title: "Immer bereit für den Einsatz",
                     description: "Keine Einrichtung erforderlich"
                 }
             },
@@ -269,8 +269,8 @@ const deTranslations = {
         },
 
         // Contact Section
-        contactTitle: 'Kontaktieren Sie uns',
-        contactSubtitle: 'Haben Sie eine Frage oder möchten Sie mehr erfahren? Wir freuen uns von Ihnen zu hören.',
+        contactTitle: 'Kontakt aufnehmen',
+        contactSubtitle: 'Fragen oder Interesse an weiteren Informationen? Es freut uns, von Interessierten zu hören.',
         email: 'E-Mail',
         location: 'Zug, Schweiz',
         name: 'Name',
@@ -281,8 +281,8 @@ const deTranslations = {
         message: 'Nachricht',
         required: '*',
         sendMessage: 'Nachricht senden',
-        formSuccessMessage: 'Vielen Dank für Ihre Kontaktaufnahme!',
-        formSuccessSubtitle: 'Ihre Nachricht ist bei uns eingegangen, und wir melden uns in Kürze bei Ihnen.',
+        formSuccessMessage: 'Vielen Dank für die Kontaktaufnahme!',
+        formSuccessSubtitle: 'Die Nachricht ist bei uns eingegangen, und wir melden uns in Kürze bei Ihnen.',
 
         // Testimonial Section
         testimonialTitle: 'Testimonial',
@@ -314,28 +314,28 @@ const deTranslations = {
         twojo: {
             hero: {
                 title: 'Entwickelt in der Schweiz.',
-                subTitle: 'Wir sind ein engagiertes Team, das Lösungen entwickelt, um Ihrem Unternehmen zum Erfolg zu verhelfen.'
+                subTitle: 'Ein engagiertes Team entwickelt Lösungen, die Unternehmen zum Erfolg verhelfen.'
             },
             partner: {
                 title: 'Partnerschaft mit'
             },
             solutions: {
                 title: 'Unsere Lösungen',
-                subTitle: 'Wir bieten flexible Lösungen für Ihr Unternehmen',
+                subTitle: 'Wir bieten flexible Lösungen in diversen Bereichen',
                 mobileDev: {
                     title: 'Mobile Entwicklung',
                     description: 'Apps, die sowohl auf iOS als auch auf Android funktionieren.',
-                    link: 'Erfahren Sie mehr'
+                    link: 'Mehr erfahren'
                 },
                 businessApp: {
                     title: 'Business-Anwendung',
-                    description: 'Anwendungen massgeschneidert für Ihr Unternehmen.',
-                    link: 'Erfahren Sie mehr'
+                    description: 'Anwendungen, die passgenau auf Anforderungen zugeschnitten werden.',
+                    link: 'Mehr erfahren'
                 },
                 interactiveExp: {
                     title: 'Interaktive Erlebnisse',
-                    description: 'Gamifizieren Sie Ihre Werbung.',
-                    link: 'Erfahren Sie mehr'
+                    description: 'Werbung mit spielerischen Elementen bereichern.',
+                    link: 'Mehr erfahren'
                 }
             },
             highlightedProduct: {
@@ -344,17 +344,17 @@ const deTranslations = {
                     title: 'SPUFO',
                     subTitle: 'Die Tatort-Fotografie-App',
                     slogan: 'Digital - Schnell - Effizient',
-                    description: 'Die SPUFO-App ist eine forensische iOS-Lösung, die das Sammeln daktyloskopischer Spuren am Tatort vereinfacht und optimiert.',
+                    description: 'Die SPUFO-App ist eine forensische iOS-Lösung, die das Sichern daktyloskopischer Spuren am Tatort vereinfacht und optimiert.',
                     bulletPoints: {
                         first: 'Ersetzt herkömmliche DSLR-Kameras und Gelatinefolien durch mobile Technologie.',
                         second: 'Erfasst Spuren vor Ort, massstabsgetreu 1:1 und in 1000 dpi Auflösung.',
                         third: 'Ermöglicht direkte Nummerierung, Zuschneiden und Vorbereitung für AFIS-Suchen.'
                     },
-                    button: 'Erfahren Sie mehr'
+                    button: 'Mehr erfahren'
                 }
             },
             about: {
-                teamTitle: 'Treffen Sie Unser Team',
+                teamTitle: 'Das Team',
                 teamSubtitle: 'Leidenschaftliche Entwickler, die innovative Lösungen schaffen',
                 description: 'Wir sind ein Team leidenschaftlicher Softwareingenieure, die sich während ihrer Ausbildung an der BBBaden Schule kennengelernt haben. Während wir unsere individuellen Karrieren in der Technologie verfolgen, haben wir uns zusammengeschlossen, um durch Twojo Software innovative Lösungen zu schaffen.',
                 teamImageAlt: 'Twojo Software Team',
@@ -386,7 +386,7 @@ const deTranslations = {
             },
             blog: {
                 title: 'Blog',
-                description: 'Bleiben Sie auf dem Laufenden über die neuesten Nachrichten, Updates und Einblicke von Twojo Software GmbH. Entdecken Sie unsere innovativen Lösungen und technologischen Entwicklungen.',
+                description: 'Neueste Nachrichten, Updates und Einblicke von Twojo Software GmbH werden hier geteilt. Innovative Lösungen und technologische Entwicklungen entdecken.',
                 featuredArticle: {
                     tag: 'News | 8. Oktober 2024',
                     title: 'Neue Tatort-App sichert Fingerabdrücke für die Polizei',
@@ -415,7 +415,7 @@ const deTranslations = {
                 }
             },
             games: {
-                about: 'Bei der Twojo Software GmbH helfen wir Unternehmen, Spiele als leistungsstarkes Marketinginstrument zu nutzen. Von auffälligen Spielen für Messestände bis hin zu Wettbewerben, die das Publikum begeistern und mitreißen, setzen wir kreative Ideen um. Unsere Spiele unterhalten nicht nur – sie steigern die Sichtbarkeit Ihrer Marke und fördern tiefere Verbindungen mit Ihrer Zielgruppe. Ob Sie Ihre Marketingstrategie gamifizieren oder ein unvergessliches Event-Erlebnis schaffen möchten – wir haben die Lösung für Sie.',
+                about: 'Twojo Software GmbH unterstützt Unternehmen dabei, Spiele als effektives Marketinginstrument zu nutzen. Von auffälligen Spielen für Messestände bis hin zu mitreißenden Wettbewerben werden kreative Ideen umgesetzt. Die Spiele unterhalten nicht nur, sondern steigern die Sichtbarkeit der Marke und fördern tiefere Verbindungen zur Zielgruppe. Ob Marketingstrategien gamifiziert oder unvergessliche Event-Erlebnisse geschaffen werden sollen – passende Lösungen sind verfügbar.',
                 experience: [
                     {
                         title: 'Interaktive Spielentwicklung',
@@ -427,12 +427,12 @@ const deTranslations = {
                     },
                     {
                         title: 'Markeninteraktion stärken',
-                        description: 'Nutzen Sie Gamification, um mit Ihrer Zielgruppe in Kontakt zu treten und unvergessliche Markenerlebnisse zu schaffen.'
+                        description: 'Gamification eröffnet Möglichkeiten, mit einer Zielgruppe in Kontakt zu treten und unvergessliche Markenerlebnisse zu schaffen.'
                     }
                 ]
             },
             mobile: {
-                about: 'Bei der Twojo Software GmbH sind wir führend in der Entwicklung innovativer mobiler Anwendungen für Android- und iOS-Plattformen. Unser erfahrenes Team kombiniert technisches Fachwissen mit einem Fokus auf Benutzerfreundlichkeit und stellt sicher, dass jede von uns entwickelte App intuitiv und effizient ist. Wir sind besonders darauf spezialisiert, Kamerafunktionen und Bildverarbeitung zu nutzen, um die Möglichkeiten Ihrer App zu erweitern.',
+                about: 'Bei der Twojo Software GmbH entwickeln wir innovative mobiles Anwendungen für Android- und iOS-Plattformen. Ein erfahrenes Team kombiniert technisches Fachwissen mit einem Fokus auf Benutzerfreundlichkeit und sorgt dafür, dass jede entwickelte App intuitiv und effizient ist. Besondere Expertise besteht in der Nutzung von Kamerafunktionen und Bildverarbeitung, um die Möglichkeiten mobiler Anwendungen zu erweitern.',
                 experience: [
                     {
                         title: 'Plattformübergreifende Entwicklung',
