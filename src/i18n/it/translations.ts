@@ -101,9 +101,6 @@ const itTranslations = {
     advantage2: 'Sicurezza Avanzata',
     advantage3: 'Prestazioni Migliori',
 
-    // Testimonials Section
-    testimonialsTitle: 'Cosa Dicono i Nostri Utenti',
-    testimonialText: 'SPUFO ha completamente trasformato il modo in cui uso il mio smartphone. Le funzionalità sono incredibili!',
     // Features Section
     featuresTitle: 'Vantaggi Principali',
     feature1: {

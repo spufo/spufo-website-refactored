@@ -101,10 +101,6 @@ const frTranslations = {
         advantage2: 'Sécurité Renforcée',
         advantage3: 'Meilleures Performances',
 
-        // Testimonials Section
-        testimonialsTitle: 'Ce Que Disent Nos Utilisateurs',
-        testimonialText: 'SPUFO a complètement transformé la façon dont j\'utilise mon smartphone. Les fonctionnalités sont incroyables !',
-
         // Features Section
         featuresTitle: 'Avantages Clés',
         feature1: {
