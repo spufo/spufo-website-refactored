@@ -415,6 +415,40 @@ const frTranslations = {
                     }
                 }
             },
+            games: {
+                about: 'Chez Twojo Software GmbH, nous aidons les entreprises à utiliser les jeux comme un outil marketing puissant. Des jeux accrocheurs pour les stands de conventions aux compétitions conçues pour engager et enthousiasmer les audiences, nous donnons vie à des idées créatives. Nos jeux ne se contentent pas de divertir : ils amplifient la visibilité de votre marque et favorisent des liens plus profonds avec votre public cible. Que vous souhaitiez gamifier votre stratégie marketing ou créer une expérience événementielle inoubliable, nous avons la solution.',
+                experience: [
+                    {
+                        title: 'Développement de jeux interactifs',
+                        description: 'Nous sommes spécialisés dans la création de jeux engageants conçus pour attirer l\'attention des clients.'
+                    },
+                    {
+                        title: 'Compétitions et événements',
+                        description: 'Nos jeux sont parfaits pour stimuler l\'engagement lors d\'événements grâce à des compétitions interactives.'
+                    },
+                    {
+                        title: 'Renforcer l\'interaction avec la marque',
+                        description: 'Utilisez la gamification pour établir des liens avec votre public et créer des expériences mémorables autour de votre marque.'
+                    }
+                ]
+            },
+            mobile: {
+                about: 'Chez Twojo Software GmbH, nous excellons dans la création d\'applications mobiles innovantes pour les plateformes Android et iOS. Notre équipe expérimentée combine expertise technique et attention à l\'expérience utilisateur, garantissant que chaque application que nous développons est intuitive et efficace. Nous sommes particulièrement compétents dans l\'exploitation des fonctionnalités de la caméra et le traitement d\'images pour améliorer les capacités de votre application.',
+                experience: [
+                    {
+                        title: 'Développement multiplateforme',
+                        description: 'Compétence dans la création d\'applications de haute qualité pour Android et iOS.'
+                    },
+                    {
+                        title: 'Caméra et traitement d\'images',
+                        description: 'Expertise dans la mise en œuvre de fonctionnalités avancées de capture d\'images et de manipulation d\'images en temps réel.'
+                    },
+                    {
+                        title: 'Design centré sur l\'utilisateur',
+                        description: 'Engagés à offrir des expériences utilisateur captivantes grâce à un design et une fonctionnalité réfléchis.'
+                    }
+                ]
+            },
             businessApplication: {
                 about: 'Applications d\'entreprise sur mesure pour le succès',
                 about_description: 'Chez Twojo Software GmbH, nous sommes spécialisés dans la création d\'applications d\'entreprise innovantes adaptées aux entreprises. Nos solutions se concentrent sur la manipulation efficace des données, l\'hébergement cloud transparent des applications Web et l\'automatisation des processus pour améliorer l\'efficacité opérationnelle. En combinant une expertise technique avec une approche axée sur les affaires, nous livrons des applications évolutives, intuitives et robustes.',

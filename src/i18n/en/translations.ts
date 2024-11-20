@@ -435,6 +435,40 @@ const enTranslations = {
           }
         }
       },
+      games: {
+        about: 'At Twojo Software GmbH, we help businesses leverage games as a powerful marketing tool. From eye-catching games for convention stands to competitions designed to engage and excite audiences, we bring creative ideas to life. Our games don’t just entertain—they amplify your brand\'s visibility and foster deeper connections with your target audience. Whether you\'re looking to gamify your marketing strategy or create an unforgettable event experience, we’ve got you covered.',
+        experience: [
+          {
+            title: 'Interactive Game Development',
+            description: 'We specialize in creating engaging games designed to attract customer attention.'
+          },
+          {
+            title: 'Competitions and Events',
+            description: 'Our games are perfect for driving engagement at events through interactive competitions.'
+          },
+          {
+            title: 'Boost Brand Interaction',
+            description: 'Use gamification to connect with your audience and create memorable brand experiences.'
+          }
+        ]
+      },
+      mobile: {
+        about: 'At Twojo Software GmbH, we excel in crafting innovative mobile applications for both Android and iOS platforms. Our experienced team combines technical expertise with a focus on user experience, ensuring that every app we develop is intuitive and efficient. We are particularly skilled in leveraging camera functionalities and image processing to enhance your app\'s capabilities.',
+        experience: [
+          {
+            title: 'Cross-Platform Development',
+            description: 'Proficient in creating high-quality applications for both Android and iOS.'
+          },
+          {
+            title: 'Camera and Image Processing',
+            description: 'Expertise in implementing advanced image capture features and real-time image manipulation.'
+          },
+          {
+            title: 'User-Centric Design',
+            description: 'Committed to delivering engaging user experiences through thoughtful design and functionality.'
+          }
+        ]
+      },
       businessApplication: {
         about: 'Business Applications Tailored for Success',
         about_description: 'At Twojo Software GmbH, we specialize in creating innovative business applications tailored for companies. Our solutions focus on efficient data manipulation, seamless cloud hosting of web applications, and automating processes to enhance operational efficiency. Combining technical expertise with a business-oriented approach, we deliver scalable, intuitive, and robust applications.',

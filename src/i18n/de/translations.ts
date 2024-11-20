@@ -414,6 +414,40 @@ const deTranslations = {
                     }
                 }
             },
+            games: {
+                about: 'Bei der Twojo Software GmbH helfen wir Unternehmen, Spiele als leistungsstarkes Marketinginstrument zu nutzen. Von auffälligen Spielen für Messestände bis hin zu Wettbewerben, die das Publikum begeistern und mitreißen, setzen wir kreative Ideen um. Unsere Spiele unterhalten nicht nur – sie steigern die Sichtbarkeit Ihrer Marke und fördern tiefere Verbindungen mit Ihrer Zielgruppe. Ob Sie Ihre Marketingstrategie gamifizieren oder ein unvergessliches Event-Erlebnis schaffen möchten – wir haben die Lösung für Sie.',
+                experience: [
+                    {
+                        title: 'Interaktive Spielentwicklung',
+                        description: 'Wir sind spezialisiert auf die Entwicklung fesselnder Spiele, die die Aufmerksamkeit der Kunden auf sich ziehen.'
+                    },
+                    {
+                        title: 'Wettbewerbe und Events',
+                        description: 'Unsere Spiele eignen sich perfekt, um bei Events durch interaktive Wettbewerbe für Engagement zu sorgen.'
+                    },
+                    {
+                        title: 'Markeninteraktion stärken',
+                        description: 'Nutzen Sie Gamification, um mit Ihrer Zielgruppe in Kontakt zu treten und unvergessliche Markenerlebnisse zu schaffen.'
+                    }
+                ]
+            },
+            mobile: {
+                about: 'Bei der Twojo Software GmbH sind wir führend in der Entwicklung innovativer mobiler Anwendungen für Android- und iOS-Plattformen. Unser erfahrenes Team kombiniert technisches Fachwissen mit einem Fokus auf Benutzerfreundlichkeit und stellt sicher, dass jede von uns entwickelte App intuitiv und effizient ist. Wir sind besonders darauf spezialisiert, Kamerafunktionen und Bildverarbeitung zu nutzen, um die Möglichkeiten Ihrer App zu erweitern.',
+                experience: [
+                    {
+                        title: 'Plattformübergreifende Entwicklung',
+                        description: 'Kompetent in der Erstellung hochwertiger Anwendungen für Android und iOS.'
+                    },
+                    {
+                        title: 'Kamera und Bildverarbeitung',
+                        description: 'Experten in der Implementierung fortschrittlicher Bildaufnahmefunktionen und Echtzeit-Bildmanipulation.'
+                    },
+                    {
+                        title: 'Benutzerzentriertes Design',
+                        description: 'Engagiert für die Bereitstellung ansprechender Benutzererlebnisse durch durchdachtes Design und Funktionalität.'
+                    }
+                ]
+            },
             businessApplication: {
                 about: 'Massgeschneiderte Geschäftsanwendungens',
                 about_description: 'Bei Twojo Software GmbH sind wir auf die Entwicklung innovativer Geschäftsanwendungen spezialisiert, die auf Unternehmen zugeschnitten sind. Unsere Lösungen konzentrieren sich auf effiziente Datenmanipulation, nahtloses Cloud-Hosting von Webanwendungen und die Automatisierung von Prozessen zur Steigerung der betrieblichen Effizienz. Durch die Kombination technischer Expertise mit einem geschäftsorientierten Ansatz liefern wir skalierbare, intuitive und robuste Anwendungen.',
