@@ -8,6 +8,8 @@ const routes = [
   '/interactive',
   '/application',
   '/mobile',
+  '/blog',
+  '/about',
   '/privacy',
   '/impressum',
   '/contact'
