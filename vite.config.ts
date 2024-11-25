@@ -4,6 +4,10 @@ import sitemap from 'vite-plugin-sitemap';
 
 const routes = [
   '/spufo',
+  '/spufo/evidence-collection',
+  '/spufo/image-editing',
+  '/spufo/ruler-recognition',
+  '/spufo/forensic-success',
   '/twojo',
   '/interactive',
   '/application',
