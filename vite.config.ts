@@ -5,9 +5,9 @@ import sitemap from 'vite-plugin-sitemap';
 const routes = [
   '/spufo',
   '/twojo',
-  '/twojo/games',
-  '/twojo/applications',
-  '/twojo/mobile',
+  '/interactive',
+  '/applications',
+  '/mobile',
   '/privacy',
   '/impressum',
   '/contact'

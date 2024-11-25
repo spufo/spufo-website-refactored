@@ -29,13 +29,13 @@ const Hero = () => {
         <div
           className="absolute invert sm:-translate-y-40 -translate-x-80 sm:-translate-x-0 rotate-[46deg] sm:rotate-[34deg] scale-[1.5] sm:scale-[0.9] inset-0 bg-contain bg-no-repeat bg-center opacity-100 z-0 pointer-events-none"
         >
-          <img src={background} alt="Background" />
+          <img src={background} alt="SPUFO Fingerprint Background" />
         </div>
         <div className="md:w-1/2 py-4 md:py-12 flex flex-col items-center md:items-start justify-center relative w-full">
           {/* Content */}
           <div className="relative z-10 flex flex-col items-center md:items-start w-full">
             <div className="flex items-center mb-6 justify-center md:justify-start">
-              <img src={curved_FinalSpufoLogo} alt="SPUFO Logo" className="w-20 mr-4" />
+              <img src={curved_FinalSpufoLogo} alt="SPUFO Logo Icon" className="w-20 mr-4" />
               <h1 className="text-4xl md:text-8xl font-bold text-[#1E1E2E]">SPUFO</h1>
             </div>
             <h2 className="text-xl md:text-3xl text-[--orange-color] mb-5 text-center md:text-left">

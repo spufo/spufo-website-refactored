@@ -39,7 +39,7 @@ function App() {
           <Route path="/spufo/forensic-success/" element={<ForensicSuccess />} />
           <Route path="/spufo/image-editing/" element={<ImageEditing />} />
           <Route path="/spufo/ruler-recognition/" element={<RulerRecognition />} />
-          <Route path="/" element={<Twojo />} />
+          <Route path="/twojo/" element={<Twojo />} />
           <Route path="/about/" element={<TwojoAbout />} />
           <Route path="/mobile/" element={<MobileDevelopment />} />
           <Route path="/application/" element={<BusinessApplication />} />
