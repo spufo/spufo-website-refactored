@@ -6,7 +6,7 @@ const routes = [
   '/spufo',
   '/twojo',
   '/interactive',
-  '/applications',
+  '/application',
   '/mobile',
   '/privacy',
   '/impressum',
