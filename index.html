@@ -28,6 +28,151 @@
     content="Entwickelt in der Schweiz. Ein engagiertes Team entwickelt Lösungen, die Unternehmen zum Erfolg verhelfen." />
   <meta property="twitter:image" content="/assets/images/twojo_logo_black.png" id="twitter-image" />
 
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": ["Organization", "LocalBusiness", "SoftwareCompany"],
+          "@id": "https://twojo.ch/#organization",
+          "name": "Twojo Software GmbH",
+          "url": "https://twojo.ch",
+          "logo": "https://twojo.ch/assets/images/twojo_logo_black.png",
+          "image": "https://twojo.ch/assets/images/twojo_logo_black.png",
+          "description": "Entwickelt in der Schweiz. Ein engagiertes Team entwickelt Lösungen, die Unternehmen zum Erfolg verhelfen.",
+          "legalName": "Twojo Software GmbH",
+          "vatID": "CHE-461.740.370",
+          "email": "contact@spufo.ch",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Suurstoffi 1",
+            "addressLocality": "Rotkreuz",
+            "postalCode": "6343",
+            "addressCountry": "CH"
+          },
+          "sameAs": [
+            "https://www.linkedin.com/company/twojo/",
+            "https://twojo.ch"
+          ],
+          "areaServed": {
+            "@type": "Country",
+            "name": "Switzerland"
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://twojo.ch/#website",
+          "url": "https://twojo.ch",
+          "name": "Twojo Software GmbH",
+          "publisher": {
+            "@id": "https://twojo.ch/#organization"
+          },
+          "inLanguage": ["de-CH", "en-CH", "fr-CH"]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://twojo.ch/#breadcrumb-de",
+          "name": "Deutsche Navigation",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Startseite",
+              "item": "https://twojo.ch/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "SPUFO",
+              "item": "https://twojo.ch/spufo/"
+            }
+          ]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://twojo.ch/#breadcrumb-en",
+          "name": "English Navigation",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://twojo.ch/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "SPUFO",
+              "item": "https://twojo.ch/spufo/"
+            }
+          ]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://twojo.ch/#breadcrumb-fr",
+          "name": "Navigation Française",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Accueil",
+              "item": "https://twojo.ch/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "SPUFO",
+              "item": "https://twojo.ch/spufo/"
+            }
+          ]
+        },
+        {
+          "@type": "SoftwareApplication",
+          "@id": "https://twojo.ch/spufo/#product",
+          "name": "SPUFO",
+          "applicationCategory": "Forensic Software",
+          "operatingSystem": ["iOS", "Android"],
+          "description": {
+            "de": "Die SPUFO-App ist eine forensische Applikation, welche die Erfassung von daktyloskopischen Spuren am Tatort vereinfacht und optimiert.",
+            "en": "The SPUFO app is a forensic application that simplifies and optimizes the collection of dactyloscopic traces at crime scenes.",
+            "fr": "L'application SPUFO est une application médico-légale qui simplifie et optimise la collecte des traces dactyloscopiques sur les scènes de crime."
+          },
+          "image": "https://twojo.ch/assets/images/HeroMockup.png",
+          "logo": "https://twojo.ch/assets/images/Curved_FinalSpufoLogo.svg",
+          "url": "https://twojo.ch/spufo/",
+          "offers": {
+            "@type": "Offer",
+            "category": "Professional Forensic Software"
+          },
+          "featureList": {
+            "de": [
+              "Ersetzt traditionelle DSLR-Kameras und Gelatinefolien durch mobile Technologie",
+              "Erfasst Spuren vor Ort, massstabsgetreu 1:1 und in 1000 dpi Auflösung",
+              "Ermöglicht direkte Nummerierung, Zuschnitt und Vorbereitung für AFIS-Suchläufe"
+            ],
+            "en": [
+              "Replaces traditional DSLR cameras and gelatin sheets with mobile technology",
+              "Captures traces on-site, true to scale 1:1 and in 1000 dpi resolution",
+              "Enables direct numbering, cropping and preparation for AFIS searches"
+            ],
+            "fr": [
+              "Remplace les appareils photo reflex traditionnels et les feuilles de gélatine par la technologie mobile",
+              "Capture les traces sur place, à l'échelle 1:1 et en résolution 1000 dpi",
+              "Permet la numérotation directe, le recadrage et la préparation pour les recherches AFIS"
+            ]
+          },
+          "author": {
+            "@id": "https://twojo.ch/#organization"
+          },
+          "publisher": {
+            "@id": "https://twojo.ch/#organization"
+          }
+        }
+      ]
+    }
+  </script>
+
   <script>
     // Function to update meta tags based on URL
     function updateMetaTags() {
