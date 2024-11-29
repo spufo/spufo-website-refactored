@@ -25,6 +25,7 @@ const About = () => {
             src={aboutImage}
             alt="SPUFO in action"
             className="text-center rounded-3xl shadow-2xl w-2/3 h-auto transform hover:scale-105 transition duration-300 z-0"
+            loading="lazy"
           />
           <p className="text-sm text-gray-400 mt-2 italic text-center">20min.ch</p>
         </motion.div>

@@ -35,7 +35,7 @@ const Hero = () => {
           {/* Content */}
           <div className="relative z-10 flex flex-col items-center md:items-start w-full">
             <div className="flex items-center mb-6 justify-center md:justify-start">
-              <img src={curved_FinalSpufoLogo} alt="SPUFO Logo Icon" className="w-20 mr-4" />
+              <img src={curved_FinalSpufoLogo} alt="SPUFO Logo Icon" className="w-20 mr-4" loading="lazy" />
               <h1 className="text-4xl md:text-8xl font-bold text-[#1E1E2E]">SPUFO</h1>
             </div>
             <h2 className="text-xl md:text-3xl text-[--orange-color] mb-5 text-center md:text-left">
@@ -70,6 +70,7 @@ const Hero = () => {
             src={heroMockup}
             alt="SPUFO App"
             className="max-w-full h-auto transform scale-75 sm:scale-90 md:scale-150 -mt-8 sm:mt-0"
+            loading="lazy"
           />
         </div>
       </div>

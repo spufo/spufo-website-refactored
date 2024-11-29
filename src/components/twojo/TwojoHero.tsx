@@ -20,8 +20,8 @@ export default function Hero() {
       <div 
         className="absolute inset-0 bg-cover bg-center"
       > 
-        <img className="absolute inset-0 w-screen h-screen object-cover invisible md:visible" src={matterhorn} alt="Background" />
-        <img className="absolute inset-0 w-screen h-screen object-cover visible md:invisible" src={matterhornMobile} alt="Background" />
+        <img className="absolute inset-0 w-screen h-screen object-cover invisible md:visible" loading="lazy" src={matterhorn} alt="Background" />
+        <img className="absolute inset-0 w-screen h-screen object-cover visible md:invisible" loading="lazy" src={matterhornMobile} alt="Background" />
         {/* Enhanced gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/80 md:from-black/10 md:via-black/30 md:to-black/80"></div>
       </div>
