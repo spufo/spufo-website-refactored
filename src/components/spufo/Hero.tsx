@@ -29,7 +29,7 @@ const Hero = () => {
         <div
           className="absolute invert sm:-translate-y-40 -translate-x-80 sm:-translate-x-0 rotate-[46deg] sm:rotate-[34deg] scale-[1.5] sm:scale-[0.9] inset-0 bg-contain bg-no-repeat bg-center opacity-100 z-0 pointer-events-none"
         >
-          <img src={background} alt="SPUFO Fingerprint Background" />
+          <img src={background} alt="SPUFO Fingerprint Background" loading="lazy" />
         </div>
         <div className="md:w-1/2 py-4 md:py-12 flex flex-col items-center md:items-start justify-center relative w-full">
           {/* Content */}

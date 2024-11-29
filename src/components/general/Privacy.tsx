@@ -1,5 +1,3 @@
-import React from 'react';
-import background from '/assets/images/Background.png';
 
 const PrivacyStatement = () => {
   return (

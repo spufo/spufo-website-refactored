@@ -14,7 +14,7 @@ const About = () => {
         <div
           className="absolute invert translate-x-80 rotate-[-134deg] sm:rotate-[-134deg] scale-[2] sm:scale-[0.8] bg-contain bg-no-repeat bg-center opacity-100 z-0 pointer-events-none"
         >
-          <img src={background} alt="Background Pattern" />
+          <img src={background} alt="Background Pattern" loading="lazy" />
         </div>
 
         <motion.div className="md:w-1/2 mb-10 md:mb-0 flex flex-col items-center"
