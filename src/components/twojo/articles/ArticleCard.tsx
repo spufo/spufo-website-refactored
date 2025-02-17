@@ -9,6 +9,7 @@ interface ArticleCardProps {
   content: string;
   link: string;
   linkText: string;
+  credit: string;
   delay: number;
 }
 
@@ -19,6 +20,7 @@ const ArticleCard: React.FC<ArticleCardProps> = ({
   content,
   link,
   linkText,
+  credit,
   delay,
 }) => {
   const isExternalLink = !link.startsWith('/');
@@ -44,9 +46,15 @@ const ArticleCard: React.FC<ArticleCardProps> = ({
             <img 
               src={image}
               alt={title} 
-              className="w-full h-48 object-cover rounded-2xl mb-6"
+              className="w-full h-48 object-cover rounded-2xl"
             />
           </LinkComponent>
+            {credit && (
+              <p className="text-gray-400 text-sm mt-1 text-center">
+                {credit}
+              </p>
+            )}
+          <br></br>
           <div className="text-[--blue-color] font-medium mb-2">{tag}</div>
           <LinkComponent {...linkProps}>
             <h3 className="text-2xl font-bold text-white mb-4">

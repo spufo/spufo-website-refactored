@@ -384,13 +384,22 @@ const deTranslations = {
         title: 'Blog',
         description: 'Bleiben Sie auf dem Laufenden über die neuesten Nachrichten, Updates und Einblicke von Twojo Software GmbH. Entdecken Sie unsere innovativen Lösungen und technologischen Entwicklungen.',
         featuredArticle: {
-          tag: 'News | 20. November 2024',
-          title: 'SPUFO App: Schweizer Innovation in der Spurensicherung',
-          content: 'Drei Schweizer Studenten revolutionieren die Spurensicherung mit ihrer App SPUFO. Die innovative Lösung ermöglicht es, Fingerabdrücke viel einfacher zu sichern, zu fotografieren und zu archivieren.',
+          tag: 'News | 14. Februar 2025',
+          title: '«Die Idee»: Digitale Spurensicherung',
+          content: 'Drei Schweizer Informatik-Studenten haben eine neuartige Tatort-App entwickelt: die Spurensicherungs-Foto-App SPUFO. Dank ihr kann die Polizei Fingerabdrücke einfacher erfassen. Die Kantonspolizei Zürich benutzt diese App bereits und rüstet auch die uniformierte Frontpolizei damit aus.',
           link: 'Mehr erfahren',
-          url: 'https://www.20min.ch/story/spufo-app-schweizer-innovation-in-der-spurensicherung-103223322'
+          url: 'https://www.srf.ch/play/tv/10-vor-10/video/die-idee-digitale-spurensicherung?urn=urn%3Asrf%3Avideo%3Ac1ddc7ab-205d-40b5-931c-b6d1425b371d',
+          credit: 'SRF Schweizer Radio und Fernsehen'
         },
         olderArticles: {
+          article081024: {
+            tag: 'News | 20. November 2024',
+            title: 'SPUFO App: Schweizer Innovation in der Spurensicherung',
+            content: 'Drei Schweizer Studenten revolutionieren die Spurensicherung mit ihrer App SPUFO. Die innovative Lösung ermöglicht es, Fingerabdrücke viel einfacher zu sichern, zu fotografieren und zu archivieren.',
+            link: 'Mehr erfahren',
+            url: 'https://www.20min.ch/story/spufo-app-schweizer-innovation-in-der-spurensicherung-103223322',
+            credit: '20min.ch'
+          },
           article1: {
             tag: 'News | 8. Oktober 2024',
             title: 'Neue Tatort-App sichert Fingerabdrücke für die Polizei',

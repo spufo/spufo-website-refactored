@@ -385,13 +385,22 @@ const frTranslations = {
         title: 'Blog',
         description: 'Restez informé des dernières actualités, mises à jour et insights de Twojo Software GmbH. Découvrez nos solutions innovantes et nos avancées technologiques.',
         featuredArticle: {
-          tag: 'Actualités | 20 novembre 2024',
-          title: 'Application SPUFO : Une innovation suisse dans la criminalistique',
-          content: 'Trois étudiants suisses révolutionnent la criminalistique avec leur application SPUFO. Cette solution innovante simplifie considérablement la sécurisation, la photographie et l’archivage des empreintes digitales.',
+          tag: 'Actualités | 14 février 2025',
+          title: '«L’idée» : Relevé numérique des traces',
+          content: 'Trois étudiants suisses en informatique ont développé une application innovante pour les scènes de crime : l’application de relevé des traces SPUFO. Grâce à celle-ci, la police peut relever les empreintes digitales plus facilement. La Police cantonale de Zurich utilise déjà cette application et équipe également la police en uniforme.',
           link: 'En savoir plus',
-          url: 'https://www.20min.ch/story/spufo-app-innovation-suisse-dans-la-criminalistique-103223322'
+          url: 'https://www.srf.ch/play/tv/10-vor-10/video/die-idee-digitale-spurensicherung?urn=urn%3Asrf%3Avideo%3Ac1ddc7ab-205d-40b5-931c-b6d1425b371d',        
+          credit: 'SRF Schweizer Radio und Fernsehen'
         },
         olderArticles: {
+          article081024: {
+            tag: 'Actualités | 20 novembre 2024',
+            title: 'Application SPUFO : Une innovation suisse dans la criminalistique',
+            content: 'Trois étudiants suisses révolutionnent la criminalistique avec leur application SPUFO. Cette solution innovante simplifie considérablement la sécurisation, la photographie et l’archivage des empreintes digitales.',
+            link: 'En savoir plus',
+            url: 'https://www.20min.ch/story/spufo-app-innovation-suisse-dans-la-criminalistique-103223322',
+            credit: '20min.ch'
+          },
           article1: {
             tag: 'Actualités | 8 octobre 2024',
             title: 'Nouvelle application de scène de crime pour sécuriser les empreintes pour la police',

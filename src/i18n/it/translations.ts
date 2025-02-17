@@ -383,13 +383,22 @@ const itTranslations = {
         title: 'Blog',
         description: 'Rimani aggiornato con le ultime notizie, aggiornamenti e approfondimenti di Twojo Software GmbH. Scopri le nostre soluzioni innovative e gli sviluppi tecnologici.',
         featuredArticle: {
-          tag: 'Notizie | 20 novembre 2024',
-          title: 'App SPUFO: Innovazione svizzera nella criminologia',
-          content: 'Tre studenti svizzeri stanno rivoluzionando la criminologia con la loro app SPUFO. Questa soluzione innovativa rende molto più semplice la raccolta, la fotografia e l’archiviazione delle impronte digitali.',
+          tag: 'Notizie | 14 febbraio 2025',
+          title: '«L’idea»: Rilevamento digitale delle tracce',
+          content: 'Tre studenti svizzeri di informatica hanno sviluppato un’innovativa app per la scena del crimine: l’app per il rilevamento delle tracce SPUFO. Grazie a questa, la polizia può rilevare le impronte digitali in modo più semplice. La Polizia Cantonale di Zurigo utilizza già questa app e sta equipaggiando anche la polizia in uniforme.',
           link: 'Scopri di più',
-          url: 'https://www.20min.ch/story/app-spufo-innovazione-svizzera-nella-criminologia-103223322'
+          url: 'https://www.srf.ch/play/tv/10-vor-10/video/die-idee-digitale-spurensicherung?urn=urn%3Asrf%3Avideo%3Ac1ddc7ab-205d-40b5-931c-b6d1425b371d',
+          credit: 'SRF'
         },
         olderArticles: {
+          article081024: {
+            tag: 'Notizie | 20 novembre 2024',
+            title: 'App SPUFO: Innovazione svizzera nella criminologia',
+            content: 'Tre studenti svizzeri stanno rivoluzionando la criminologia con la loro app SPUFO. Questa soluzione innovativa rende molto più semplice la raccolta, la fotografia e l’archiviazione delle impronte digitali.',
+            link: 'Scopri di più',
+            url: 'https://www.20min.ch/story/app-spufo-innovazione-svizzera-nella-criminologia-103223322',
+            credit: '20min.ch'
+          },
           article1: {
             tag: 'Notizie | 8 ottobre 2024',
             title: 'Nuova app per scene del crimine raccoglie impronte per la polizia',

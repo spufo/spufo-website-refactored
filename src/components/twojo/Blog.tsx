@@ -2,7 +2,8 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 
-import featuredArticeImage from '/assets/images/team_2.jpg';
+import featuredArticeImage from '/assets/images/srf.jpg';
+import olderArticle081024Image from '/assets/images/team_2.jpg';
 import olderArticle1Image from '/assets/images/team.jpg';
 import olderArticle2Image from '/assets/images/Curved_FinalSpufoLogo.svg';
 import olderArticle3Image from '/assets/images/Curved_FinalSpufoLogo.svg';
@@ -15,12 +16,22 @@ const Blog = () => {
 
   const olderArticles = [
     {
+      image: olderArticle081024Image,
+      tag: t('twojo.blog.olderArticles.article081024.tag'),
+      title: t('twojo.blog.olderArticles.article081024.title'),
+      content: t('twojo.blog.olderArticles.article081024.content'),
+      link: t('twojo.blog.olderArticles.article081024.url'),
+      linkText: t('twojo.blog.olderArticles.article081024.link'),
+      credit: t('twojo.blog.olderArticles.article081024.credit'),
+    },
+    {
       image: olderArticle1Image,
       tag: t('twojo.blog.olderArticles.article1.tag'),
       title: t('twojo.blog.olderArticles.article1.title'),
       content: t('twojo.blog.olderArticles.article1.content'),
       link: 'https://hub.hslu.ch/informatik/neue-tatort-app-sichert-fingerabdruecke-fuer-die-polizei/',
       linkText: t('twojo.blog.olderArticles.article1.link'),
+      credit: '',
     },
     {
       image: olderArticle2Image,
@@ -29,6 +40,7 @@ const Blog = () => {
       content: t('twojo.blog.olderArticles.article2.content'),
       link: '/contact',
       linkText: t('twojo.blog.olderArticles.article2.link'),
+      credit: '',
     },
     {
       image: olderArticle3Image,
@@ -37,6 +49,7 @@ const Blog = () => {
       content: t('twojo.blog.olderArticles.article3.content'),
       link: '/contact',
       linkText: t('twojo.blog.olderArticles.article3.link'),
+      credit: '',
     },
     {
       image: olderArticle4Image,
@@ -45,6 +58,7 @@ const Blog = () => {
       content: t('twojo.blog.olderArticles.article4.content'),
       link: '/contact',
       linkText: t('twojo.blog.olderArticles.article4.link'),
+      credit: '',
     },
   ];
 
@@ -82,7 +96,7 @@ const Blog = () => {
           content={t('twojo.blog.featuredArticle.content')}
           link={t('twojo.blog.featuredArticle.url')}
           linkText={t('twojo.blog.featuredArticle.link')}
-          credit='20min.ch'
+          credit={t('twojo.blog.featuredArticle.credit')}
         />
 
         {/* Older Articles Grid */}

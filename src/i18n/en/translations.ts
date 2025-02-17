@@ -405,13 +405,22 @@ const enTranslations = {
         title: 'Blog',
         description: 'Stay up to date with the latest news, updates, and insights from Twojo Software GmbH. Discover our innovative solutions and technological advancements.',
         featuredArticle: {
-          tag: 'News | November 20, 2024',
-          title: 'SPUFO App: Swiss Innovation in Forensics',
-          content: 'Three Swiss students are revolutionizing forensic science with their SPUFO app. The innovative solution makes securing, photographing, and archiving fingerprints much easier.',
+          tag: 'News | February 14, 2025',
+          title: '«The Idea»: Digital Crime Scene Investigation',
+          content: 'Three Swiss computer science students have developed an innovative crime scene app: the SPUFO forensic photography app. Thanks to this app, the police can capture fingerprints more easily. The Zurich Cantonal Police are already using this app and are also equipping the uniformed police with it.',
           link: 'Learn more',
-          url: 'https://www.20min.ch/story/spufo-app-swiss-innovation-in-forensics-103223322'
+          url: 'https://www.srf.ch/play/tv/10-vor-10/video/die-idee-digitale-spurensicherung?urn=urn%3Asrf%3Avideo%3Ac1ddc7ab-205d-40b5-931c-b6d1425b371d',
+          credit: 'SRF Schweizer Radio und Fernsehen'
         },
         olderArticles: {
+          article081024: {
+            tag: 'News | November 20, 2024',
+            title: 'SPUFO App: Swiss Innovation in Forensics',
+            content: 'Three Swiss students are revolutionizing forensic science with their SPUFO app. The innovative solution makes securing, photographing, and archiving fingerprints much easier.',
+            link: 'Learn more',
+            url: 'https://www.20min.ch/story/spufo-app-swiss-innovation-in-forensics-103223322',
+            credit: '20min.ch'
+          },
           article1: {
             tag: 'News | October 8, 2024',
             title: 'New Crime Scene App Secures Fingerprints for Police',
