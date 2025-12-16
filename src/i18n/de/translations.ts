@@ -18,7 +18,7 @@ const deTranslations = {
 
     // About Section
     aboutTitle: 'Über SPUFO',
-    aboutDescription: 'Die SPUFO-App ist eine forensische Applikaiton, welche die Erfassung von daktyloskopischen Spuren am Tatort vereinfacht und optimiert.',
+    aboutDescription: 'Die SPUFO-App ist eine forensische Applikation, welche die Erfassung von daktyloskopischen Spuren am Tatort vereinfacht und optimiert.',
     aboutPoint1: 'Ersetzt traditionelle DSLR-Kameras und Gelatinefolien durch mobile Technologie.',
     aboutPoint2: 'Erfasst Spuren vor Ort, massstabsgetreu 1:1 und in 1000 dpi Auflösung.',
     aboutPoint3: 'Ermöglicht direkte Nummerierung, Zuschnitt und Vorbereitung für AFIS-Suchläufe.',
