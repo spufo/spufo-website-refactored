@@ -16,6 +16,7 @@ import MobileDevelopment from './components/twojo/mobile/MobileDevelopment';
 import BusinessApplication from './components/twojo/applications/BusinessApplication';
 import Games from './components/twojo/games/Games';
 import ImageEditing from './components/spufo/ImageEditing';
+import AppPrivacy from './components/spufo/AppPrivacy';
 
 function App() {
   const location = useLocation();
@@ -39,6 +40,7 @@ function App() {
           <Route path="/spufo/forensic-success/" element={<ForensicSuccess />} />
           <Route path="/spufo/image-editing/" element={<ImageEditing />} />
           <Route path="/spufo/ruler-recognition/" element={<RulerRecognition />} />
+          <Route path="/spufo/datenschutz_app/" element={<AppPrivacy />} />
           <Route path="/twojo/" element={<Twojo />} />
           <Route path="/about/" element={<TwojoAbout />} />
           <Route path="/mobile/" element={<MobileDevelopment />} />

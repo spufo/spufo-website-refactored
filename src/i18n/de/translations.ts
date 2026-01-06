@@ -478,6 +478,73 @@ const deTranslations = {
           }
         }
       }
+    },
+
+    // App Privacy Section
+    appPrivacy: {
+      title: 'Datenschutzerklärung für die SPUFO App',
+      subtitle: 'Wir legen grossen Wert auf den Schutz Ihrer Daten und möchten Ihnen daher transparent machen, wie wir mit Ihren Informationen umgehen.',
+      permissions: {
+        title: 'App Berechtigungen',
+        location: {
+          title: 'Standort',
+          description: 'Die App ermittelt den Standort für Fälle und Bilder.'
+        },
+        photos: {
+          title: 'Fotos',
+          description: 'Die App kann Bilder zur Galerie hinzufügen.'
+        },
+        camera: {
+          title: 'Kamera',
+          description: 'Die App greift beim Fotografieren auf die Kamera zu.'
+        }
+      },
+      processing: {
+        title: 'Datenverarbeitung und -speicherung',
+        description: 'Die SPUFO App speichert alle Daten lokal auf Ihrem Gerät. Es gibt kein Backup und kein Backend, auf dem Ihre Daten zentral gespeichert werden. Die einzige Ausnahme sind Crash-Protokolle (Crash Logs), die von Apple automatisch erfasst werden, um App-Stabilität und Fehlerbehebung zu gewährleisten.'
+      },
+      localData: {
+        title: 'Welche Daten werden lokal auf Ihrem Gerät erfasst und gespeichert?',
+        photos: {
+          title: 'Fotos',
+          description: 'Eine Kernfunktion der App ist das Erfassen und Bearbeiten von Kameraaufnahmen.'
+        },
+        location: {
+          title: 'Standort',
+          description: 'Der Standort wird als Koordinatenpaar bei Spurbildern in den Metadaten hinterlegt.'
+        },
+        device: {
+          title: 'Smartphone-Modell',
+          description: 'Der Modell Name wird in den Metadaten der Spurbildern hinterlegt.'
+        },
+        language: {
+          title: 'Sprache',
+          description: 'Die App passt sich automatisch der Gerätesprache an. Die Sprache kann in den Einstellungen angepasst werden.'
+        },
+        initials: {
+          title: 'Kürzel',
+          description: 'Kürzel der Person, welche die App verwendet.'
+        },
+        caseLifetime: {
+          title: 'Fall-Lebensdauer',
+          description: 'Nach Ablauf dieser Zeit wird der Fall beim nächsten App Start gelöscht (Standard 30 Tage).'
+        },
+        caseData: {
+          title: 'Falldaten',
+          description: 'Folgende Falldaten können erfasst werden: ESW Bezeichnung, Ort, Strasse, Geschädigt (Person), Datum / Zeit, Sachbearbeitung (Kürzel), Notiz, Übersichten, Übersichtsfotos, Spurfotos.'
+        }
+      },
+      externalData: {
+        title: 'Welche Daten werden an Externe übermittelt?',
+        googleMaps: {
+          title: 'Google Maps API',
+          description: 'Um Ihnen beim Erfassen von Adressen zu helfen, verwenden wir die Google Maps API. Dafür wird Ihr Standort an Google übermittelt. Bitte beachten Sie, dass dies nur für das Adress-Autocomplete verwendet wird und keine weiteren Daten an Google gesendet werden.'
+        }
+      },
+      deletion: {
+        title: 'Löschung der Daten',
+        description: 'Über die Einstellungen können jederzeit sämtliche App-Daten auf Ihrem Gerät gelöscht werden.'
+      }
     }
   }
 };

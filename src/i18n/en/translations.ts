@@ -499,6 +499,73 @@ const enTranslations = {
           }
         }
       }
+    },
+
+    // App Privacy Section
+    appPrivacy: {
+      title: 'Privacy Policy for the SPUFO App',
+      subtitle: 'We place great value on the protection of your data and would like to be transparent with you about how we handle your information.',
+      permissions: {
+        title: 'App Permissions',
+        location: {
+          title: 'Location',
+          description: 'The app determines the location for cases and images.'
+        },
+        photos: {
+          title: 'Photos',
+          description: 'The app can add images to the gallery.'
+        },
+        camera: {
+          title: 'Camera',
+          description: 'The app accesses the camera when taking photos.'
+        }
+      },
+      processing: {
+        title: 'Data Processing and Storage',
+        description: 'The SPUFO app stores all data locally on your device. There is no backup and no backend where your data is stored centrally. The only exception is crash logs (Crash Logs), which are automatically collected by Apple to ensure app stability and troubleshooting.'
+      },
+      localData: {
+        title: 'What data is collected and stored locally on your device?',
+        photos: {
+          title: 'Photos',
+          description: 'A core function of the app is capturing and editing camera shots.'
+        },
+        location: {
+          title: 'Location',
+          description: 'The location is stored as coordinate pairs in the metadata of trace images.'
+        },
+        device: {
+          title: 'Smartphone Model',
+          description: 'The model name is stored in the metadata of trace images.'
+        },
+        language: {
+          title: 'Language',
+          description: 'The app automatically adapts to the device language. The language can be adjusted in the settings.'
+        },
+        initials: {
+          title: 'Initials',
+          description: 'Initials of the person using the app.'
+        },
+        caseLifetime: {
+          title: 'Case Lifetime',
+          description: 'After this time expires, the case is deleted at the next app start (standard 30 days).'
+        },
+        caseData: {
+          title: 'Case Data',
+          description: 'The following case data can be captured: ESW designation, location, street, damaged (person), date/time, processing (initials), note, overviews, overview photos, trace photos.'
+        }
+      },
+      externalData: {
+        title: 'What data is transmitted to external parties?',
+        googleMaps: {
+          title: 'Google Maps API',
+          description: 'To help you capture addresses, we use the Google Maps API. Your location is transmitted to Google for this purpose. Please note that this is only used for address autocomplete and no further data is sent to Google.'
+        }
+      },
+      deletion: {
+        title: 'Deletion of Data',
+        description: 'All app data on your device can be deleted at any time via the settings.'
+      }
     }
   }
 };

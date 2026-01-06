@@ -479,6 +479,73 @@ const frTranslations = {
           }
         }
       }
+    },
+
+    // App Privacy Section
+    appPrivacy: {
+      title: 'Politique de confidentialité pour l\'application SPUFO',
+      subtitle: 'Nous attachons une grande importance à la protection de vos données et souhaitons vous expliquer de manière transparente comment nous traitons vos informations.',
+      permissions: {
+        title: 'Permissions de l\'application',
+        location: {
+          title: 'Localisation',
+          description: 'L\'application détermine la localisation pour les cas et les images.'
+        },
+        photos: {
+          title: 'Photos',
+          description: 'L\'application peut ajouter des images à la galerie.'
+        },
+        camera: {
+          title: 'Caméra',
+          description: 'L\'application accède à la caméra lors de la prise de photos.'
+        }
+      },
+      processing: {
+        title: 'Traitement et stockage des données',
+        description: 'L\'application SPUFO stocke toutes les données localement sur votre appareil. Il n\'y a pas de sauvegarde et pas de backend où vos données sont stockées de manière centralisée. La seule exception sont les journaux de crash (Crash Logs), qui sont automatiquement collectés par Apple pour assurer la stabilité de l\'application et le débogage.'
+      },
+      localData: {
+        title: 'Quelles données sont collectées et stockées localement sur votre appareil ?',
+        photos: {
+          title: 'Photos',
+          description: 'Une fonction principale de l\'application est la capture et l\'édition d\'images de caméra.'
+        },
+        location: {
+          title: 'Localisation',
+          description: 'La localisation est stockée comme une paire de coordonnées dans les métadonnées des images de traces.'
+        },
+        device: {
+          title: 'Modèle de smartphone',
+          description: 'Le nom du modèle est stocké dans les métadonnées des images de traces.'
+        },
+        language: {
+          title: 'Langue',
+          description: 'L\'application s\'adapte automatiquement à la langue de l\'appareil. La langue peut être ajustée dans les paramètres.'
+        },
+        initials: {
+          title: 'Initiales',
+          description: 'Initiales de la personne utilisant l\'application.'
+        },
+        caseLifetime: {
+          title: 'Durée de vie du cas',
+          description: 'Après expiration de ce délai, le cas est supprimé au prochain démarrage de l\'application (standard 30 jours).'
+        },
+        caseData: {
+          title: 'Données de cas',
+          description: 'Les données de cas suivantes peuvent être collectées : désignation ESW, lieu, rue, victime (personne), date / heure, traitement (initiales), note, aperçus, photos d\'aperçu, photos de traces.'
+        }
+      },
+      externalData: {
+        title: 'Quelles données sont transmises à des tiers ?',
+        googleMaps: {
+          title: 'API Google Maps',
+          description: 'Pour vous aider à saisir les adresses, nous utilisons l\'API Google Maps. Votre localisation est transmise à Google à cet effet. Veuillez noter que cela est uniquement utilisé pour l\'autocomplétion d\'adresses et aucune autre donnée n\'est envoyée à Google.'
+        }
+      },
+      deletion: {
+        title: 'Suppression des données',
+        description: 'Toutes les données de l\'application sur votre appareil peuvent être supprimées à tout moment via les paramètres.'
+      }
     }
 
   }
